@@ -1,22 +1,12 @@
-This is a portfolio project to showcase my hot TypeScript, Next.js React, and copy-writing chops.
+This is a portfolio project to showcase my TypeScript, Next.js, React, and copy-writing chops.
 
 ## Fat Slob Plumbing
 
-First, run the development server:
+Stress testing domestic sewage systems since 2013.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+First, ask yourself: what sort of web-site would a business named "Fat Slob Plumbing" have?
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+So the objective here is to use TypeScript, Next.js, and React to create a web-site which looks and feels like "Fat Slob Plumbing", but in the background has a whole lot of up-to-date code (and some Easter eggs too).
 
 ## Learn More
 
