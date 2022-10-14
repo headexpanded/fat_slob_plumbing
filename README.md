@@ -1,12 +1,14 @@
-This is a portfolio project to showcase my TypeScript, Next.js, React, and copy-writing chops.
+This is a portfolio project to showcase my TypeScript, Next.js, React, Bootstrap, and copy-writing chops.
 
 ## Fat Slob Plumbing
 
-#Stress testing domestic sewage systems since 2013.#
+# Stress testing domestic sewage systems since 2013.
 
 Ask yourself: what sort of web-site would a business named "Fat Slob Plumbing" have?
 
-It would probably be quite bad, right? So the challenge here is to use TypeScript, Next.js, and React to produce a "bad" website for Ron & Dave, the two guys who own and run Fat Slob Plumbing.
+It would probably be quite bad, right? But to their credit, the two guys who own and run Fat Slob Plumbing, Ron & Dave, realised they needed to modernise. So they hired me, Mark Hatherly, to update their site.
+
+I used TypeScript, Next.js, React, and Bootstrap to produce a new website for Fat Slob Plumbing, and guess what? - business has NOT gone down the toilet: quite the reverse, in fact.
 
 ## Learn More
 
