@@ -29,7 +29,7 @@ export const ServicesSection = () => {
 {/*  extract key from serviceCards, spread the rest into card component */}
 <section className="servicesSection">
   <div className="container px-4">
-    <div className="row gap-5 mt-5">
+    <div className="row gap-5">
       
           {serviceCards.map(({key,...other}) => {
               return <FSPCards.ServicesCard key={key} {...other}/>
