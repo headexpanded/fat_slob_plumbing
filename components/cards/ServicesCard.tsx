@@ -13,18 +13,22 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
             .servicesCard{
                 border: 2px solid #804D00;
                 border-radius: 10px;
+                height: 300px;
                 margin: 1rem;
                 max-width: 300px;
                 text-align:left;
                 transition: color 0.15s ease, border-color 0.15s ease;
             }
             
-            .servicesCard h3 {
-                font-size: 3rem;
+            .servicesCard h2 {
+                font-size: 1.5rem;
                 font-weight:bold;
+                padding: 6px;
+                margin: 0 0 1rem 0;
             }
             .servicesCard p {
-                font-size: 1.5rem;
+                font-size: 1.25rem
+                margin: 0px;
             }
         
         

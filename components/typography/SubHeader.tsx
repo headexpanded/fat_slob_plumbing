@@ -10,6 +10,7 @@ type SubHeaderProps = {
 // define Italic component. Use for sub-title slogans, customer reviews
 export const SubHeader =({content, color="#804D00"}:SubHeaderProps) => {
     return(
+        <>
         <style jsx>{`
         p {
             color: ${color??"#804D00"};
@@ -18,5 +19,6 @@ export const SubHeader =({content, color="#804D00"}:SubHeaderProps) => {
             font-style: italic;
         }
         `}</style>
+        </>
     )
 }
