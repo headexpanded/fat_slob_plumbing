@@ -19,6 +19,7 @@ export const ServicesSection = () => {
     display:flex;
     flex-direction: row;
     gap:1.5rem;
+    width: 100%;
     min-height: 500px;
     background-color:#B0840E;
     justify-content: space-between;
