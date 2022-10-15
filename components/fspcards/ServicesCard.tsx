@@ -16,9 +16,9 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
                 border: 2px solid #804D00;
                 border-radius: 10px;
                 height: 300px;
-                margin: 1rem;
-                max-width: 300px;
-                padding: 4px;
+                
+                
+                
                 text-align:left;
                 transition: color 0.15s ease, border-color 0.15s ease;
             }
