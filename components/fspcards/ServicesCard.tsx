@@ -11,7 +11,16 @@ type ServicesCardProps = {
 export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
     return (
         <>
-        <div className="col-sm px-5 mt-1 mb-1 servicesCard"><h2>{title}</h2><p>{content}</p><Typography.SubHeader content ="only"/><Typography.SectionTitle content ={price}/></div>
+        <div className="col-sm px-5 mt-1 mb-1 servicesCard"><h2>{title}</h2>
+        <div className="container text-center">
+            <div className="row align-items-end">
+                <div className="col">
+                    <p>{content}</p><Typography.SubHeader content ="only"/>
+                    <Typography.SectionTitle content ={price}/>
+                </div>
+            </div>
+        </div>
+        </div>
         <style jsx>{`
             .servicesCard{
                 background-color:#CCB209;
