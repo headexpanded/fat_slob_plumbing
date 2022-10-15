@@ -23,6 +23,7 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
             .custReviewCard p {
                 font-size: 1.25rem;
                 font-style: italic;
+                padding-top: 24px;
 
             }
         
