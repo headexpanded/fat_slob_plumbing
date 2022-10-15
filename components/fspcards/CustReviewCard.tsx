@@ -14,7 +14,7 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
             .custReviewCard {
                 border: 2px solid #CCB209;
                 border-radius: 10px;
-                min-height: 300px;
+                height: auto;
                 text-align: left;
                 transition: color 0.15s ease, border-color 0.15s ease;
                 padding: 20px 8px;
