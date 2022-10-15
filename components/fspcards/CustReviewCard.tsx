@@ -12,7 +12,7 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
         <style jsx>{`
             
             .custReviewCard {
-                border: 2px solid #804d00;
+                border: 2px solid #CCB209;
                 border-radius: 10px;
                 min-height: 300px;
                 text-align: left;
@@ -26,12 +26,13 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
             .custReviewCard p {
                 font-size: 1.25rem;
                 font-style: italic;
+                padding: 6px;
 
             }
         
             .custReviewCard h2, p {
                 color: #CCB209;
-                padding: 6px;
+                
                 margin: 0 0 1rem 0;
             }
         
