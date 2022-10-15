@@ -14,9 +14,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to Fat Slob Plumbing!
-        </h1>
+        <Typography.MainTitle content="Welcome to Fat Slob Plumbing!"/>
 <div className="intro"><Typography.Paragraph content="Stress testing domestic sewage systems since 2013."/>
 </div>
         <p className={styles.description}>
