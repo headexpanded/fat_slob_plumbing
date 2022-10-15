@@ -15,7 +15,7 @@ export const MainTitle =({content, color="white"}:MainTitleProps) =>{
         <style jsx>{`
             h1 {
                 color: ${color??"white"}
-                font-size: 5rem;
+                font-size: 64px;
                 line-height: 1.15;
                 padding:12px;
                 margin-top:8px;
