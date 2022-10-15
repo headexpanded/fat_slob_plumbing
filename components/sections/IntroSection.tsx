@@ -13,8 +13,8 @@ return (
         <div className="introTitle"><Typography.MainTitle content = "Fat Slob Plumbing"/></div>
         <div className="introSub"><Typography.SubHeader content="Stress testing domestic sewage systems since 2013"/></div>
         <div className="container px-2 pb-1">
-            <div className="row gap-1 text-center">
-                <div className="col-sm">
+            <div className="row gap-1">
+                <div className="col-sm text-center">
                     <Typography.SectionTitle content="What's the capacity of YOUR home's sewage system?"/>
                     <Typography.Paragraph content = "Most people don't know. But you should!"/>
                     <Typography.Paragraph content="These days most homes just can't deal with non-standard loads."/>
