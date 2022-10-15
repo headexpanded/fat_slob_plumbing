@@ -30,8 +30,8 @@ export const ServicesSection = () => {
 {/*  extract key from serviceCards, spread the rest into card component */}
 <section className="servicesSection">
   <div className="servicesTitle"><Typography.SectionTitle content="Our Services"/></div>
-  <div className="container px-4">
-    <div className="row gap-5">
+  <div className="container px-4 pb-2">
+    <div className="row gap-1">
       
           {serviceCards.map(({key,...other}) => {
               return <FSPCards.ServicesCard key={key} {...other}/>
@@ -41,11 +41,11 @@ export const ServicesSection = () => {
   </div>
 </section>
 <style jsx>{`
-.servicesSection{
-    background-color:#B0840E;
-    min-height: 500px;
-    color: #804d00;
-}
+    .servicesSection{
+        background-color:#B0840E;
+        min-height: 500px;
+        color: #804d00;
+    }
 
 `}</style>
 
