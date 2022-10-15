@@ -1,5 +1,4 @@
 // define properties of Main Title
-// color is black until project color palette is determined
 
 //  define MainTitle type properties
 type MainTitleProps = {
