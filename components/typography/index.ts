@@ -6,7 +6,6 @@ import { MainTitle } from "./MainTitle";
 import { SubHeader } from "./SubHeader";
 import { SectionTitle } from "./SectionTitle";
 
-
 export const Typography ={
     Paragraph,
     MainTitle,
