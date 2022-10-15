@@ -19,12 +19,12 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                     </div>
                 </div>
             </div>
-        <div className="container d-flex flex-row text-center">
-            <div className="row align-items-end justify-content-center text-center">
-                <div className="col pe-0 text-center">
+        <div className="container d-flex flex-row">
+            <div className="row align-items-end justify-content-center">
+                <div className="col pe-0">
                     <Typography.SubHeader content ="only"/>
                 </div>
-                <div className="col ps-0 text-center">
+                <div className="col ps-0">
                     <Typography.SectionTitle content = {price}/>
                 </div>
             </div>
