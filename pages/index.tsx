@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         
         <Typography.SubHeader content="Welcome to"/>
-        <Typography.SectionTitle content="FAT SLOB PLUMBING"/>
+        <Typography.MainTitle content="FAT SLOB PLUMBING"/>
         <Typography.SubHeader content="Stress testing domestic sewage systems since 2013"/>
         <Typography.Paragraph content="What's the capacity of YOUR home's sewage system?"/>
         <Typography.Paragraph content="Most people don't know. But you should! These days most homes

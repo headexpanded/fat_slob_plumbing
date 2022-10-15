@@ -11,9 +11,9 @@ type SubHeaderProps = {
 export const SubHeader =({content, color="#804D00"}:SubHeaderProps) => {
     return(
         <>
-        <div>{content}</div>
+        <h4>{content}</h4>
         <style jsx>{`
-        p {
+        h4 {
             color: ${color??"#804D00"};
             font-size: 20px;
             text-align: center;

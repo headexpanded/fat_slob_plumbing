@@ -8,7 +8,7 @@ type SectionTitleProps = {
 export const SectionTitle = ({content}:SectionTitleProps) => {
     return (
         <>
-        <div>{content}</div>
+        <h2>{content}</h2>
         <style jsx>{`
             h2 {
                 font-style: italic;
