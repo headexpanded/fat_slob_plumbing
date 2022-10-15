@@ -15,7 +15,7 @@ return (
         <div className="container px-4 pb-2">
             <div className="row gap-1">
                 <div className="col">
-                    <Typography.Paragraph content="What's the capacity of {<strong>}your{</strong>} home's sewage system?"/>
+                    <Typography.Paragraph content="What's the capacity of YOUR home's sewage system?"/>
                     <Typography.Paragraph content = "Most people don't know. But you should! These days most homes just can't deal with non-standard loads. Take our advice - you need to stress test your system now. After all, no-one wants an unplanned blockage!"/>
                 </div>
             </div>
