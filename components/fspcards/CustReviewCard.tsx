@@ -21,15 +21,12 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
             }
 
             .custReviewCard p {
+                color: #CCB209;
                 font-size: 1.25rem;
                 font-style: italic;
-
-            }
-        
-            .custReviewCard h2, p {
-                color: #CCB209;
-                margin: 1rem 0 1rem 0;
                 font-weight:bold;
+                margin: 1rem 0 1rem 0;
+
             }
         
         `}</style>
