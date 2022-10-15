@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import { Typography } from '../components/typography'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to Fat Slob Plumbing!
         </h1>
-
+<div className="intro"><Typography.Paragraph content="Stress testing domestic sewage systems since 2013.</div>
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
