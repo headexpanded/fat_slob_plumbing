@@ -41,12 +41,9 @@ export const ServicesSection = () => {
 <style jsx>{`
 .servicesSection{
     background-color:#B0840E;
-    
-    gap:1.5rem;
-    justify-content: space-between;
     min-height: 500px;
-    padding: 12px 12px;
-    width: 100%;
+    
+    
     
 }
 
