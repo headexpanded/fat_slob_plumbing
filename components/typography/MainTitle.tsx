@@ -17,8 +17,7 @@ export const MainTitle =({content, color="#804D00"}:MainTitleProps) =>{
                 color: ${color??"#804D00"};
                 font-size: 5rem;
                 line-height: 1.1;
-                padding:4px;
-                
+                padding: 12px 4px;
                 text-align: center;
             }
         `}</style>
