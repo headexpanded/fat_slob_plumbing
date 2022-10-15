@@ -4,7 +4,7 @@
 //  define MainTitle type properties
 type MainTitleProps = {
     content: string;
-    color?: "#804D00";
+    color?: "#804D00" | "black";
 }
 
 // define MainTitle component
