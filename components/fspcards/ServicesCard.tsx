@@ -34,7 +34,7 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
             .servicesCard p {
                 font-size: 1.25rem
                 margin: 0 0 1rem 0;
-                padding: 6px;
+                
             }
         
         `}</style>
