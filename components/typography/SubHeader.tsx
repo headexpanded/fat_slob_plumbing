@@ -18,7 +18,7 @@ export const SubHeader =({content, color="#804D00"}:SubHeaderProps) => {
             font-size: 20px;
             text-align: center;
             font-style: italic;
-            padding: 16px 8px;
+            padding: 16px;
         }
         `}</style>
         </>

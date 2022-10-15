@@ -11,6 +11,7 @@ export const SectionTitle = ({content}:SectionTitleProps) => {
         <h2>{content}</h2>
         <style jsx>{`
             h2 {
+                color: #804D00;
                 font-style: italic;
                 font-size: 2rem;
                 font-weight: bold;
