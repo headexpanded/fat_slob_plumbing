@@ -1,4 +1,4 @@
-// define div to hols Services Cards
+// define div to hold Services Cards
 import {FSPCards} from "../fspcards";
 import {Typography} from "../typography";
 

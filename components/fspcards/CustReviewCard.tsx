@@ -8,24 +8,26 @@ type CustReviewCardProps ={
 export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
     return(
         <>
-        <div className="custReviewCard">cust review here</div>
+        <div className="col px-5 mt-3 mb-5 custReviewCard"><p>{content}</p><p>- {customer}</p></div>
         <style jsx>{`
             
             .custReviewCard {
                 border: 2px solid #804d00;
-                margin: 1rem;
-                max-width: 300px;
+                border-radius: 10px;
+                min-height: 300px;
                 text-align: left;
+                transition: color 0.15s ease, border-color 0.15s ease;
             }
-        .custReviewCard h3 {
-            font-size: 3rem;
-            font-weight:bold;
-        }
+            .custReviewCard h2 {
+                font-size: 3rem;
+                font-weight:bold;
+            }
 
-        .custReviewCard p {
-            font-size: 1.5rem;
-            
-        }
+            .custReviewCard p {
+                font-size: 1.25rem;
+                font-style: italic;
+
+            }
         
         
         

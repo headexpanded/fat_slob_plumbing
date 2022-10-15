@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { Typography } from '../components/typography'
 import { Sections } from '../components/sections'
 import styles from '../styles/Home.module.css'
+import { CustReviewsSection } from '../components/sections/CustReviewsSection'
 
 const Home: NextPage = () => {
   
@@ -28,6 +29,10 @@ const Home: NextPage = () => {
 </main>
       {/* Services */}
       <Sections.ServicesSection></Sections.ServicesSection>
+      {/* Customer Reviews */}
+      <CustReviewsSection></CustReviewsSection>
+
+
       <main className={styles.main}>   
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
