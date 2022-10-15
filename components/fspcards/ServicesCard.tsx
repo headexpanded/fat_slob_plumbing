@@ -11,7 +11,7 @@ type ServicesCardProps = {
 export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
     return (
         <>
-        <div className="col-sm px-5 mt-1 mb-1 servicesCard">
+        <div className="col-sm px-1 mt-1 mb-1 servicesCard">
             <div className="container">
                 <div className="row">
                     <div className="col">
