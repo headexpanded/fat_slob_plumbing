@@ -17,6 +17,7 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
                 min-height: 300px;
                 text-align: left;
                 transition: color 0.15s ease, border-color 0.15s ease;
+                padding: 6px;
             }
             .custReviewCard h2 {
                 font-size: 3rem;
