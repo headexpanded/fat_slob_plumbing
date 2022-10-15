@@ -15,7 +15,10 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <h2>{title}</h2><p>{content}</p>
+                        <h2>{title}</h2>
+                        <div className="servicesInfo">
+                            <p>{content}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,6 +57,10 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                 font-size: 1.25rem
                 margin: 0 0 1rem 0;
                 
+            }
+
+            .servicesInfo{
+                min-height:80%;
             }
         
         `}</style>
