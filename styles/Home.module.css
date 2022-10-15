@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: darkkhaki;
+  background-color: #ccb209;
 }
 
 .footer {
@@ -30,7 +30,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #875e04;
   text-decoration: none;
 }
 
