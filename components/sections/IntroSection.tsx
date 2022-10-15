@@ -12,7 +12,7 @@ return (
         <div className="introSub"><Typography.SubHeader content="Welcome to"/></div>
         <div className="introTitle"><Typography.MainTitle content = "Fat Slob Plumbing"/></div>
         <div className="introSub"><Typography.SubHeader content="Stress testing domestic sewage systems since 2013"/></div>
-        <div className="container px-4 pb-2">
+        <div className="container px-2 pb-2">
             <div className="row gap-1">
                 <div className="col">
                     <Typography.Paragraph content="What's the capacity of YOUR home's sewage system?"/>
