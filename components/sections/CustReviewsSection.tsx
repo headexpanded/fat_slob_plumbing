@@ -9,15 +9,15 @@ type CustReviewsSectionProps ={
 export const CustReviewsSection = () => {
     const custReviews = [
         {key: "1",
-        content: "",
+        content: "Ron & Dave turned up, and 20 minutes later my facilities were blocked. Great work, would highly recommend!",
         customer:"Bill Skinner"
         },
         {key:"2",
-        content: "",
+        content: "New flat, didn't want no problems with my lav. Ron unloaded, & it passed the test! A lot of stress off my mind.",
         customer: "Vic Walker"},
     
         {key: "3",
-        content: "",
+        content: "I took the Explosive option & I'm glad I did! Don't wait until it's too late - Fat Slob Plumbers are the best!",
         customer: "Noreen Davis"}
     ]
     return (
