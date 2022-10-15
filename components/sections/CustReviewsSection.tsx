@@ -37,10 +37,10 @@ export const CustReviewsSection = () => {
         <style jsx>{`
         .custReviewsSection{
             background-color: #875E04;
-            min-height: 400px;
+            min-height: 300px;
 
         }
-        .custReviewsSection h2 {
+        .custReviewsSection > h2 {
             color: #CCB209;
         }
         
