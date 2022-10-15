@@ -32,11 +32,15 @@ export const ServicesSection = () => {
   <div className="servicesTitle"><Typography.SectionTitle content="Our Services"/></div>
   <div className="servicesIntro">
     <div className="container">
-      <Typography.Paragraph content ="We're experts in
-                    stress testing domestic sewage systems. Our experienced
-                    experts, Ron & Dave, come to your home and by the time we
-                    leave, you'll <strong><em>know for sure</em></strong> if your
-                    system can take it - or not!"/>
+      <div className="row">
+        <div className="col-sm">
+          <Typography.Paragraph content ="We're experts in
+                        stress testing domestic sewage systems. Our experienced
+                        experts, Ron & Dave, come to your home and by the time we
+                        leave, you'll <strong><em>know for sure</em></strong> if your
+                        system can take it - or not!"/>
+        </div>
+      </div>
     </div>
     </div>
   <div className="container px-4 pb-2">
