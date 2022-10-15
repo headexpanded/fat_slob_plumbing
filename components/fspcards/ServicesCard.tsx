@@ -12,6 +12,7 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
         <div className="servicesCard"><h2>{title}</h2><p>{content}</p></div>
         <style jsx>{`
             .servicesCard{
+                background-color:#CCB209;
                 border: 2px solid #804D00;
                 border-radius: 10px;
                 height: 300px;
