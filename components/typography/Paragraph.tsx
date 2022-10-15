@@ -15,7 +15,7 @@ export const Paragraph =({content, color="#804D00"}:ParagraphProps) =>{
         <style jsx>{`
             p {
                 color: ${color??"#804D00"};
-                font-size: 24px;
+                font-size: 1.25rem;
                 text-align: left;
             }
         `}</style>

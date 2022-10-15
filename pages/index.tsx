@@ -43,11 +43,12 @@ const Home: NextPage = () => {
                   no-one wants an unplanned blockage!"/>
 
       {/* Services */}
+      
         {/*  extract key from serviceCards, spread the rest into card component */}
         {serviceCards.map(({key,...other}) => {
           return <ServicesCard key={key} {...other}/>
         })}
-        
+       
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>

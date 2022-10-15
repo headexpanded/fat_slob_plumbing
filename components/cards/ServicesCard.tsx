@@ -1,3 +1,5 @@
+
+
 // define ServicesCard properties
 type ServicesCardProps = {
     content: string;
@@ -8,7 +10,7 @@ type ServicesCardProps = {
 export const ServicesCard =({title, content}:ServicesCardProps) =>{
     return (
         <>
-        <div className="servicesCard">some text here</div>
+        <div className="servicesCard"></div>
         <style jsx>{`
             .servicesCard{
                 border: 2px solid #804D00;
