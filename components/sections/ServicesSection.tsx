@@ -1,5 +1,6 @@
 // define div to hols Services Cards
 import {FSPCards} from "../fspcards";
+import {Typography} from "../typography";
 
 
 type ServicesSectionProps = {
@@ -28,6 +29,7 @@ export const ServicesSection = () => {
 <>
 {/*  extract key from serviceCards, spread the rest into card component */}
 <section className="servicesSection">
+  <div className="servicesTitle"><Typography.MainTitle content="Our Services"/></div>
   <div className="container px-4">
     <div className="row gap-5">
       
