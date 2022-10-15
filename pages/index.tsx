@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Typography.MainTitle content="Welcome to Fat Slob Plumbing!"/>
-<div className="intro"><Typography.Paragraph content="Stress testing domestic sewage systems since 2013."/>
+<div><Typography.Paragraph content="Stress testing domestic sewage systems since 2013."/>
 </div>
         <p className={styles.description}>
           Get started by editing{' '}
