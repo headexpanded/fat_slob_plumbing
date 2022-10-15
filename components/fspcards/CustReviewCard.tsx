@@ -10,10 +10,8 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
         <>
         <div className="col-sm px-5 mt-1 mb-1 custReviewCard">
             <p>{content}</p>
-            <div className="col-sm px-5 mt-1 mb-1 custReviewCard">
-                <p>- {customer}</p>
-            </div>
-            </div>
+            <p>- {customer}</p>
+        </div>
         <style jsx>{`
             
             .custReviewCard {
