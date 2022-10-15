@@ -1,4 +1,5 @@
 // define properties of Italic texts
+// color may change when palette is finalised.
 
 // define Italic type properties
 type ItalicProps = {
