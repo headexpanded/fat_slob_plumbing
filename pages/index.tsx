@@ -18,7 +18,10 @@ const Home: NextPage = () => {
         <Typography.MainTitle content="FAT SLOB PLUMBING"/>
         <Typography.Italic content="Stress testing domestic sewage systems since 2013."/>
         <Typography.Paragraph content="What's the capacity of YOUR home's sewage system?"/>
-
+        <Typography.Paragraph content="Most people don't know. But you should! These days most homes
+                  just can't deal with non-standard loads. Take our advice - you
+                  need to stress test your system now. After all,
+                  no-one wants an unplanned blockage!"/>
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
