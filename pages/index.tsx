@@ -14,9 +14,10 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div><Typography.MainTitle content="Welcome to Fat Slob Plumbing!"/></div>
-<div><Typography.Paragraph content="Stress testing domestic sewage systems since 2013."/>
-</div>
+        <Typography.Paragraph content="Welcome to"/>
+        <Typography.MainTitle content="FAT SLOB PLUMBING"/>
+<Typography.Paragraph content="Stress testing domestic sewage systems since 2013."/>
+
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
