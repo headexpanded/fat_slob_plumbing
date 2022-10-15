@@ -44,11 +44,9 @@ export const ServicesSection = () => {
 .servicesSection{
     background-color:#B0840E;
     min-height: 500px;
+    color: #804d00;
 }
 
-.servicesSection h2 {
-  color: #804d00;
-}
 `}</style>
 
 
