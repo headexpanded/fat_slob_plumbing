@@ -12,17 +12,20 @@ export const ServicesSection = () => {
     {
       key: "1",
       title: "Regular",
-      content: "4x pints of lager"
+      content: "4x pints of lager",
+      price: "149.95"
     },
     {
       key: "2",
       title: "Strong",
-      content: "5x pints of lager, 2x pints Ron's homebrew"
+      content: "5x pints of lager, 2x pints Ron's homebrew",
+      price: "199.95"
     },
     {
       key: "3",
       title: "Explosive",
-      content: "5x pints of lager, 2x pints Ron's homebrew, 2x Moong Dhal"
+      content: "5x pints of lager, 2x pints Ron's homebrew, 2x Moong Dhal",
+      price: "299.95"
     }
   ]
     return(

@@ -2,14 +2,15 @@
 // define ServicesCard properties
 type ServicesCardProps = {
     content: string;
+    price: string;
     title: string;
 }
 
 // define ServicesCard component
-export const ServicesCard =({title, content}:ServicesCardProps) =>{
+export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
     return (
         <>
-        <div className="col-sm px-5 mt-1 mb-1 servicesCard"><h2>{title}</h2><p>{content}</p></div>
+        <div className="col-sm px-5 mt-1 mb-1 servicesCard"><h2>{title}</h2><p>{content}</p><h2>{price}</h2></div>
         <style jsx>{`
             .servicesCard{
                 background-color:#CCB209;
