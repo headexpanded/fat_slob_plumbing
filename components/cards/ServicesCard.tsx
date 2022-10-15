@@ -8,7 +8,7 @@ type ServicesCardProps = {
 export const ServicesCard =({title, content}:ServicesCardProps) =>{
     return (
         <>
-        <div className="servicesCard">some text here</div>
+        <div className="servicesCard"><h2>{title}</h2><p>{content}</p></div>
         <style jsx>{`
             .servicesCard{
                 border: 2px solid #804D00;
@@ -30,10 +30,6 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
                 font-size: 1.25rem
                 margin: 0px;
             }
-        
-        
-        
-        
         
         `}</style>
         </>
