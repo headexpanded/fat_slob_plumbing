@@ -2,10 +2,11 @@
 type CustReviewCardProps ={
     content:string;
     customer: string;
+    color?: "#CCB209";
 }
 
 // define CustReviewCard component
-export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
+export const CustReviewCard=({content, customer, color}:CustReviewCardProps) => {
     return(
         <>
         <div className="col px-5 mt-3 mb-5 custReviewCard"><p>{content}</p><p>- {customer}</p></div>
@@ -24,6 +25,7 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
             }
 
             .custReviewCard p {
+                color: #CCB209;
                 font-size: 1.25rem;
                 font-style: italic;
 
