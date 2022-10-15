@@ -33,7 +33,6 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
         
             .custReviewCard h2, p {
                 color: #CCB209;
-                
                 margin: 0 0 1rem 0;
             }
         

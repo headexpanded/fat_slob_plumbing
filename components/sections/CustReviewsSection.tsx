@@ -23,7 +23,7 @@ export const CustReviewsSection = () => {
     return (
         <>
         <section className="custReviewsSection">
-            <div className="custReviewsTitle"><Typography.MainTitle content="Customer Reviews"/></div>
+            <div className="custReviewsTitle"><Typography.SectionTitle content="Customer Reviews"/></div>
             <div className="container px-4">
                 <div className="row gap-5">
             {/*  extract key from custReviews, spread the rest into card component */}
