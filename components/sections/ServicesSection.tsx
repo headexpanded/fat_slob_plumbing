@@ -30,9 +30,6 @@ export const ServicesSection = () => {
     {serviceCards.map(({key,...other}) => {
           return <FSPCards.ServicesCard key={key} {...other}/>
         })}
-<FSPCards.ServicesCard title="hello" content="goodbye"/>
-<FSPCards.ServicesCard title="hello" content="goodbye"/>
-<FSPCards.ServicesCard title="hello" content="goodbye"/>
 </section>
 <style jsx>{`
 .servicesSection{
