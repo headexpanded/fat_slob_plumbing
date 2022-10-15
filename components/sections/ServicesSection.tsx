@@ -16,13 +16,14 @@ export const ServicesSection = () => {
 </section>
 <style jsx>{`
 .servicesSection{
+    background-color:#B0840E;
     display:flex;
     flex-direction: row;
     gap:1.5rem;
-    width: 100%;
-    min-height: 500px;
-    background-color:#B0840E;
     justify-content: space-between;
+    min-height: 500px;
+    padding: 4px 12px;
+    width: 100%;
     
 }
 
