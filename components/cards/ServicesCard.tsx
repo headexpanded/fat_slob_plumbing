@@ -1,5 +1,4 @@
 
-
 // define ServicesCard properties
 type ServicesCardProps = {
     content: string;

@@ -3,8 +3,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Typography } from '../components/typography'
 import { Cards } from '../components/cards'
+import { Sections } from '../components/sections'
 import styles from '../styles/Home.module.css'
-import { ServicesCard } from '../components/cards/ServicesCard'
 
 const Home: NextPage = () => {
   const serviceCards = [
@@ -43,7 +43,7 @@ const Home: NextPage = () => {
                   no-one wants an unplanned blockage!"/>
 
       {/* Services */}
-      
+      <Sections.ServicesSection></Sections.ServicesSection>
         {/*  extract key from serviceCards, spread the rest into card component */}
         {serviceCards.map(({key,...other}) => {
           return <ServicesCard key={key} {...other}/>
