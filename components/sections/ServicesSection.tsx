@@ -30,11 +30,11 @@ export const ServicesSection = () => {
 <section className="servicesSection">
   <div className="container-sm">
     <div className="row row-cols-3 align-items-center">
-      <div className="col">
+      
           {serviceCards.map(({key,...other}) => {
               return <FSPCards.ServicesCard key={key} {...other}/>
           })}
-      </div>
+      
     </div>
   </div>
 </section>
