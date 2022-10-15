@@ -31,12 +31,14 @@ export const ServicesSection = () => {
 <section className="servicesSection">
   <div className="servicesTitle"><Typography.SectionTitle content="Our Services"/></div>
   <div className="servicesIntro">
-    <Typography.Paragraph content ="We're experts in
-                  stress testing domestic sewage systems. Our experienced
-                  experts, Ron & Dave, come to your home and by the time we
-                  leave, you'll <strong><em>know for sure</em></strong> if your
-                  system can take it - or not!"/>
-  </div>
+    <div className="container">
+      <Typography.Paragraph content ="We're experts in
+                    stress testing domestic sewage systems. Our experienced
+                    experts, Ron & Dave, come to your home and by the time we
+                    leave, you'll <strong><em>know for sure</em></strong> if your
+                    system can take it - or not!"/>
+    </div>
+    </div>
   <div className="container px-4 pb-2">
     <div className="row gap-3">
       
