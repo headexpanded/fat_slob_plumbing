@@ -24,7 +24,7 @@ export const CustReviewsSection = () => {
         <>
         <section className="custReviewsSection">
             <div className="custReviewsTitle"><Typography.SectionTitle content="Customer Reviews"/></div>
-            <div className="container px-4">
+            <div className="container px-4 pb-2">
                 <div className="row gap-1">
             {/*  extract key from custReviews, spread the rest into card component */}
                     {custReviews.map(({key, ...other}) =>{
@@ -39,7 +39,7 @@ export const CustReviewsSection = () => {
             background-color: #875E04;
             color: #CCB209;
             min-height: 300px;
-            margin-bottom: 20px;
+            
 
         }
         
