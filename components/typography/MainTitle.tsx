@@ -8,7 +8,7 @@ type MainTitleProps = {
 }
 
 // define MainTitle component
-export const MainTitle =({content}:MainTitleProps) =>{
+export const MainTitle =({content, color="#804D00"}:MainTitleProps) =>{
     return (
         <>
         <h1>{content}</h1>
