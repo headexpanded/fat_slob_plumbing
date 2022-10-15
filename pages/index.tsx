@@ -4,8 +4,26 @@ import Image from 'next/image'
 import { Typography } from '../components/typography'
 import { Cards } from '../components/cards'
 import styles from '../styles/Home.module.css'
+import { ServicesCard } from '../components/cards/ServicesCard'
 
 const Home: NextPage = () => {
+  const serviceCards = [
+    {
+      key: "1",
+      title: "Regular",
+      content: "4x pints of lager"
+    },
+    {
+      key: "2",
+      title: "Strong",
+      content: "5x pints of lager, 2x pints Ron's homebrew"
+    },
+    {
+      key: "3",
+      title: "Explosive",
+      content: "5x pints of lager, 2x pints Ron's homebrew, 2x Moong Dhal"
+    }
+  ]
   return (
     <div className={styles.container}>
       <Head>
@@ -23,9 +41,13 @@ const Home: NextPage = () => {
                   just can't deal with non-standard loads. Take our advice - you
                   need to stress test your system now. After all,
                   no-one wants an unplanned blockage!"/>
-        <div className="servicesCard">
-          <Cards.ServicesCard title="Regular" content="For single seat situations."/>
-        </div>
+
+      {/* Services */}
+        {/*  extract key from serviceCards, spread the rest into card component */}
+        {serviceCards.map(({key,...other}) => {
+          return <ServicesCard key={key} {...other}/>
+        })}
+        
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
