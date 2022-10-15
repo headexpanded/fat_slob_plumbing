@@ -31,7 +31,7 @@ export const ServicesSection = () => {
 <section className="servicesSection">
   <div className="servicesTitle"><Typography.SectionTitle content="Our Services"/></div>
   <div className="container px-4 pb-2">
-    <div className="row gap-1">
+    <div className="row gap-3">
       
           {serviceCards.map(({key,...other}) => {
               return <FSPCards.ServicesCard key={key} {...other}/>
