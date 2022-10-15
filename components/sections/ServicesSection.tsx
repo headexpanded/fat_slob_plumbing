@@ -24,7 +24,7 @@ export const ServicesSection = () => {
     {
       key: "3",
       title: "Explosive",
-      content: `{<ul><li>6 x pints of lager</li><li>2 x pints Ron's homebrew</li><li>2 x Moong Dhal</li><li>1 x 350g jar Sauerkraut</li><li>500ml prune juice</li></ul>}`,
+      content: `${<ul><li>6 x pints of lager</li><li>2 x pints Ron's homebrew</li><li>2 x Moong Dhal</li><li>1 x 350g jar Sauerkraut</li><li>500ml prune juice</li></ul>}`,
       price: "299.95"
     }
   ]
