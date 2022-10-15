@@ -38,10 +38,8 @@ export const CustReviewsSection = () => {
         .custReviewsSection{
             background-color: #875E04;
             min-height: 300px;
-
-        }
-        .custReviewsSection > h2 {
             color: #CCB209;
+
         }
         
         `}</style>
