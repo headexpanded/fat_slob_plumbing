@@ -9,7 +9,7 @@ type ServicesCardProps = {
 export const ServicesCard =({title, content}:ServicesCardProps) =>{
     return (
         <>
-        <div className="col p-3 servicesCard"><h2>{title}</h2><p>{content}</p></div>
+        <div className="col px-5 servicesCard"><h2>{title}</h2><p>{content}</p></div>
         <style jsx>{`
             .servicesCard{
                 background-color:#CCB209;
