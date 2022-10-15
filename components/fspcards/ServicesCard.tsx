@@ -24,7 +24,7 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                 <div className="col pe-0">
                     <Typography.SubHeader content ="only"/>
                 </div>
-                <div className="col">
+                <div className="col ps-0">
                     <Typography.SectionTitle content = {price}/>
                 </div>
             </div>
