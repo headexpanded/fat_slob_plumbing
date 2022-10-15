@@ -28,7 +28,7 @@ export const ServicesSection = () => {
 <>
 {/*  extract key from serviceCards, spread the rest into card component */}
 <section className="servicesSection">
-  <div className="container-sm">
+  <div className="container-sm px-4">
     <div className="row gx-3 align-items-center">
       
           {serviceCards.map(({key,...other}) => {
