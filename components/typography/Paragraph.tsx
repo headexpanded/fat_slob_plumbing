@@ -7,7 +7,7 @@ type ParagraphProps ={
     color?: "#804D00";
 }
 
-// define Paragraph component: used for paragraph text, duh.
+// define Paragraph component
 export const Paragraph =({content, color="#804D00"}:ParagraphProps) =>{
     return (
         <>
@@ -16,7 +16,7 @@ export const Paragraph =({content, color="#804D00"}:ParagraphProps) =>{
             p {
                 color: ${color??"#804D00"};
                 font-size: 24px;
-                text-align: center;
+                text-align: left;
             }
         `}</style>
         </>
