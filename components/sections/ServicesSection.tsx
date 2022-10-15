@@ -41,8 +41,7 @@ export const ServicesSection = () => {
 <style jsx>{`
 .servicesSection{
     background-color:#B0840E;
-    display:flex;
-    flex-direction: row;
+    
     gap:1.5rem;
     justify-content: space-between;
     min-height: 500px;
