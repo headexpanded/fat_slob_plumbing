@@ -60,7 +60,7 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
             }
 
             .servicesInfo{
-                min-height:80%;
+                min-height:360px;
             }
         
         `}</style>
