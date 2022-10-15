@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Typography } from '../components/typography'
+import { Cards } from '../components/cards'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -22,7 +23,9 @@ const Home: NextPage = () => {
                   just can't deal with non-standard loads. Take our advice - you
                   need to stress test your system now. After all,
                   no-one wants an unplanned blockage!"/>
-        
+        <div className="servicesCard">
+          <Cards.ServicesCard title="Regular" content="For single seat situations."/>
+        </div>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>
