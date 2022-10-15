@@ -16,6 +16,7 @@ export const Paragraph =({content, color="white"}:ParagraphProps) =>{
             p {
                 color: ${color??"white"};
                 font-size: 16px;
+                padding: 8px;
             }
         `}</style>
         </>
