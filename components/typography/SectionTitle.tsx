@@ -15,7 +15,7 @@ export const SectionTitle = ({content}:SectionTitleProps) => {
                 font-size: 2rem;
                 font-weight: bold;
                 line-height: 1.1;
-                padding: 12px 4px 0px 4px;
+                padding: 24px 4px 0px 4px;
                 text-align: center;
             }
         `}</style>
