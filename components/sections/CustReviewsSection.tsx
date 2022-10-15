@@ -41,7 +41,9 @@ export const CustReviewsSection = () => {
 
         }
         
-        
+        .custReviewsSection h1 {
+            color: #CCB209;
+        }
         
         `}</style>
         
