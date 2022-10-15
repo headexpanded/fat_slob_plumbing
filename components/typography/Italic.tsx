@@ -7,7 +7,7 @@ type ItalicProps = {
     color?: "#804D00";
 }
 
-// define Italic component. Used for sub-title slogans, customer reviews
+// define Italic component. Use for sub-title slogans, customer reviews
 export const Italic =({content, color="#804D00"}:ItalicProps) => {
     return(
         <style jsx>{`
