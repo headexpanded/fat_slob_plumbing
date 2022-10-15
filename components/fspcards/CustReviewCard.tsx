@@ -12,6 +12,7 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
         <style jsx>{`
             
             .custReviewCard {
+                background-color: #B0840E;
                 border: 2px solid #CCB209;
                 border-radius: 10px;
                 height: auto;
