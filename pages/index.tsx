@@ -17,7 +17,8 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to Fat Slob Plumbing!
         </h1>
-<div className="intro"><Typography.Paragraph content="Stress testing domestic sewage systems since 2013.</div>
+<div className="intro"><Typography.Paragraph content="Stress testing domestic sewage systems since 2013."/>
+</div>
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
