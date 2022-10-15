@@ -39,8 +39,6 @@ export const CustReviewsSection = () => {
             background-color: #875E04;
             color: #CCB209;
             min-height: 300px;
-            
-
         }
         
         `}</style>
