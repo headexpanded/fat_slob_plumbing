@@ -40,8 +40,7 @@ export const CustReviewsSection = () => {
             min-height: 400px;
 
         }
-        
-        .custReviewsSection h1 {
+        .custReviewsSection h2 {
             color: #CCB209;
         }
         
