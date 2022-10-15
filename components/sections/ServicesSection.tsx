@@ -39,7 +39,7 @@ export const ServicesSection = () => {
     gap:1.5rem;
     justify-content: space-between;
     min-height: 500px;
-    padding: 4px 12px;
+    padding: 12px 12px;
     width: 100%;
     
 }
