@@ -11,8 +11,8 @@ type ServicesCardProps = {
 export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
     return (
         <>
-        <div className="col-sm d-flex flex-row px-5 mt-1 mb-1 servicesCard"><h2>{title}</h2>
-        <div className="container text-center">
+        <div className="col-sm px-5 mt-1 mb-1 servicesCard"><h2>{title}</h2>
+        <div className="container d-flex flex-row text-center">
             <div className="row align-items-end justify-content-center">
                 <div className="col">
                     <p>{content}</p><Typography.SubHeader content ="only"/>
