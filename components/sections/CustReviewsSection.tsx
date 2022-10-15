@@ -25,7 +25,7 @@ export const CustReviewsSection = () => {
         <section className="custReviewsSection">
             <div className="custReviewsTitle"><Typography.SectionTitle content="Customer Reviews"/></div>
             <div className="container px-4 pb-2">
-                <div className="row gap-1">
+                <div className="row gap-2">
             {/*  extract key from custReviews, spread the rest into card component */}
                     {custReviews.map(({key, ...other}) =>{
                         return <FSPCards.CustReviewCard key={key} {...other}/>

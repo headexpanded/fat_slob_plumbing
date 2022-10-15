@@ -26,12 +26,10 @@ return (
     <style jsx>{`
     .introSection{
         background-color: #CCB209;
-        min-height: 500px;
+        min-height: 400px;
     }
     
     `}</style>
-    
-    
     
     </>
 );
