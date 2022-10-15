@@ -16,6 +16,7 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                 <div className="row">
                     <div className="col">
                         <h2>{title}</h2>
+                        <Typography.Paragraph content="The night before your appointment, we will consume:"/>
                         <div className="servicesInfo">
                             <p>{content}</p>
                         </div>
