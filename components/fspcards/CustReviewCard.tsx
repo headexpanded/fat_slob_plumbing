@@ -31,7 +31,9 @@ export const CustReviewCard=({content, customer, color}:CustReviewCardProps) => 
 
             }
         
-        
+            .custReviewCard h2, p{
+                color: #CCB209;
+            }
         
         `}</style>
         
