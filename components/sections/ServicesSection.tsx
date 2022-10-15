@@ -7,9 +7,29 @@ type ServicesSectionProps = {
 }
 
 export const ServicesSection = () => {
+    const serviceCards = [
+    {
+      key: "1",
+      title: "Regular",
+      content: "4x pints of lager"
+    },
+    {
+      key: "2",
+      title: "Strong",
+      content: "5x pints of lager, 2x pints Ron's homebrew"
+    },
+    {
+      key: "3",
+      title: "Explosive",
+      content: "5x pints of lager, 2x pints Ron's homebrew, 2x Moong Dhal"
+    }
+  ]
     return(
 <>
 <section className="servicesSection">
+    {serviceCards.map(({key,...other}) => {
+          return <FSPCards.ServicesCard key={key} {...other}/>
+        })}
 <FSPCards.ServicesCard title="hello" content="goodbye"/>
 <FSPCards.ServicesCard title="hello" content="goodbye"/>
 <FSPCards.ServicesCard title="hello" content="goodbye"/>
