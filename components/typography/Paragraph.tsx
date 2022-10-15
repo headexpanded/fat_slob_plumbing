@@ -7,7 +7,7 @@ type ParagraphProps ={
     color?: "#804D00";
 }
 
-// define Paragraph component
+// define Paragraph component: used for paragraph text, duh.
 export const Paragraph =({content, color="#804D00"}:ParagraphProps) =>{
     return (
         <>
