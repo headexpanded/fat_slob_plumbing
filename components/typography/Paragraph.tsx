@@ -4,7 +4,7 @@
 // define Paragraph type properties
 type ParagraphProps ={
     content: string;
-    color?: "#804D00"
+    color?: "#804D00";
 }
 
 // define Paragraph component
@@ -15,9 +15,8 @@ export const Paragraph =({content, color="#804D00"}:ParagraphProps) =>{
         <style jsx>{`
             p {
                 color: ${color??"#804D00"};
-                font-size: 20px;
+                font-size: 24px;
                 text-align: center;
-                font-style: italic;
             }
         `}</style>
         </>
