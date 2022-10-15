@@ -21,7 +21,6 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
             .servicesCard h2, p {
                 color: #804d00;
                 padding: 6px;
-                margin: 0 0 1rem 0;
                 
             }
 
