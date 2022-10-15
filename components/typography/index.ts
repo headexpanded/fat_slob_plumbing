@@ -3,10 +3,10 @@
 
 import { Paragraph } from "./Paragraph";
 import { MainTitle } from "./MainTitle";
-import { Italic } from "./Italic";
+import { SubHeader } from "./SubHeader";
 
 export const Typography ={
     Paragraph,
     MainTitle,
-    Italic,
+    SubHeader,
 };

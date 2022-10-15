@@ -2,13 +2,13 @@
 // color may change when palette is finalised.
 
 // define Italic type properties
-type ItalicProps = {
+type SubHeaderProps = {
     content: string;
     color?: "#804D00";
 }
 
 // define Italic component. Use for sub-title slogans, customer reviews
-export const Italic =({content, color="#804D00"}:ItalicProps) => {
+export const SubHeader =({content, color="#804D00"}:SubHeaderProps) => {
     return(
         <style jsx>{`
         p {
