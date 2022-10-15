@@ -8,7 +8,7 @@ type CustReviewCardProps ={
 export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
     return(
         <>
-        <div className="col-sm col-md-1 px-5 mt-3 mb-5 custReviewCard"><p>{content}</p><p>- {customer}</p></div>
+        <div className="col-sm col-md-6 px-5 mt-3 mb-5 custReviewCard"><p>{content}</p><p>- {customer}</p></div>
         <style jsx>{`
             
             .custReviewCard {
