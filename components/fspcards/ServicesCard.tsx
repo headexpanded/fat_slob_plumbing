@@ -26,11 +26,13 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
                 color: #804d00;
                 padding: 6px;
                 margin: 0 0 1rem 0;
+                
             }
 
             .servicesCard h2 {
-                font-size: 1.5rem;
+                font-size: 2 rem;
                 font-weight:bold;
+                text-align: center;
             }
             
             .servicesCard p {
