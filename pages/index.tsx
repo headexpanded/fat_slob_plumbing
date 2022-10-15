@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { Typography } from '../components/typography'
-import { Cards } from '../components/cards'
+import { FSPCards } from '../components/fspcards'
 import { Sections } from '../components/sections'
 import styles from '../styles/Home.module.css'
 
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
       <Sections.ServicesSection></Sections.ServicesSection>
         {/*  extract key from serviceCards, spread the rest into card component */}
         {serviceCards.map(({key,...other}) => {
-          return <ServicesCard key={key} {...other}/>
+          return <FSPCards.ServicesCard key={key} {...other}/>
         })}
        
         <div className={styles.grid}>

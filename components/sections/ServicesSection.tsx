@@ -1,18 +1,18 @@
 // define div to hols Services Cards
-import {Cards} from "../cards";
+import {FSPCards} from "../fspcards";
 
 
 type ServicesSectionProps = {
-    // content: Cards.ServicesCard (title="" content="");
+    // content: FSPCards.ServicesCard (title="" content="");
 }
 
 export const ServicesSection = () => {
     return(
 <>
 <section className="servicesSection">
-<Cards.ServicesCard title="hello" content="goodbye"/>
-<Cards.ServicesCard title="hello" content="goodbye"/>
-<Cards.ServicesCard title="hello" content="goodbye"/>
+<FSPCards.ServicesCard title="hello" content="goodbye"/>
+<FSPCards.ServicesCard title="hello" content="goodbye"/>
+<FSPCards.ServicesCard title="hello" content="goodbye"/>
 </section>
 <style jsx>{`
 .servicesSection{
