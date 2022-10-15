@@ -13,6 +13,7 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
             .servicesCard{
                 border: 2px solid #804D00;
                 border-radius: 10px;
+                height: 300px;
                 margin: 1rem;
                 max-width: 300px;
                 text-align:left;
