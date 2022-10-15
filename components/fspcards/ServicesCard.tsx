@@ -22,7 +22,10 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
         <div className="container d-flex flex-row text-center">
             <div className="row align-items-end justify-content-center">
                 <div className="col">
-                    <Typography.SubHeader content ="only"/><Typography.SectionTitle content ={price}/>
+                    <Typography.SubHeader content ="only"/>
+                </div>
+                <div className="col">
+                    <Typography.SectionTitle content = {price}/>
                 </div>
             </div>
         </div>
