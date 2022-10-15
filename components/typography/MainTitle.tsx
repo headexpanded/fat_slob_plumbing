@@ -14,10 +14,10 @@ export const MainTitle =({content, color="#804D00"}:MainTitleProps) =>{
         <h1>{content}</h1>
         <style jsx>{`
             h1{
-                font-size: 3rem;
+                font-size: 4rem;
                 color: ${color??"#804D00"}
                 padding:12px;
-                margin-top:12px;
+                margin-top:8px;
             }
         `}</style>
         </>
