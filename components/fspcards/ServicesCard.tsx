@@ -15,7 +15,7 @@ export const ServicesCard =({title, content}:ServicesCardProps) =>{
                 background-color:#CCB209;
                 border: 2px solid #804D00;
                 border-radius: 10px;
-                height: 300px;
+                height: auto;
                 transition: color 0.15s ease, border-color 0.15s ease;
             }
             .servicesCard h2, p {
