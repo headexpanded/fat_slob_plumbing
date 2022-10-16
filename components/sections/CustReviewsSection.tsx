@@ -17,7 +17,7 @@ export const CustReviewsSection = () => {
         customer: "Vic Walker"},
     
         {key: "3",
-        content: "I took the Explosive option & I'm glad I did! Don't wait until it's too late - Fat Slob Plumbers are the best!",
+        content: "My husband invited his football team over, so I chose the Explosive option a few days before. I'm glad I did!",
         customer: "Noreen Davis"}
     ]
     return (
@@ -37,7 +37,6 @@ export const CustReviewsSection = () => {
         <style jsx>{`
         .custReviewsSection{
             background-color: var(--solidBrown);
-            color: var(--lagerYellow);
             min-height: 300px;
             padding:0px 0px 12px 0px;
         }

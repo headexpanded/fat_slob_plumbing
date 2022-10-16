@@ -16,6 +16,8 @@ const Home: NextPage = () => {
 
       {/* Intro Section */}
       <Sections.IntroSection/>
+      {/* How We Work */}
+      <Sections.HowWeWorkSection></Sections.HowWeWorkSection>
       {/* Services */}
       <Sections.ServicesSection></Sections.ServicesSection>
       {/* Customer Reviews */}
