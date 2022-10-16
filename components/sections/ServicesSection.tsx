@@ -13,19 +13,19 @@ export const ServicesSection = () => {
       key: "1",
       title: "Regular",
       content: "4 x pints of lager, 1 x chicken vindaloo",
-      price: "149.95"
+      price: "199.95"
     },
     {
       key: "2",
       title: "Strong",
       content: "5 x pints of lager, 1 x pint Ron's homebrew",
-      price: "199.95"
+      price: "299.95"
     },
     {
       key: "3",
       title: "Explosive",
       content: `{<ul><li>6 x pints of lager</li><li>2 x pints Ron's homebrew</li><li>2 x Moong Dhal</li><li>1 x 350g jar Sauerkraut</li><li>500ml prune juice</li></ul>}`,
-      price: "299.95"
+      price: "399.95"
     }
   ]
     return(
