@@ -27,7 +27,7 @@ return (
 
     <style jsx>{`
     .introSection{
-        background-color: #CCB209;
+        background-color: var(--hintOfBrown);
         min-height: 380px;
     }
     
