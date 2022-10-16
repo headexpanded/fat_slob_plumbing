@@ -5,7 +5,7 @@ import { IntroSection } from "./IntroSection";
 import { CustReviewsSection } from "./CustReviewsSection";
 
 export const Sections = {
-    ServicesSection,
     IntroSection,
+    ServicesSection,
     CustReviewsSection,
 }

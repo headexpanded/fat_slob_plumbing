@@ -1,10 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import { Typography } from '../components/typography'
 import { Sections } from '../components/sections'
 import styles from '../styles/Home.module.css'
-import { CustReviewsSection } from '../components/sections/CustReviewsSection'
 
 const Home: NextPage = () => {
   
@@ -21,7 +19,7 @@ const Home: NextPage = () => {
       {/* Services */}
       <Sections.ServicesSection></Sections.ServicesSection>
       {/* Customer Reviews */}
-      <CustReviewsSection></CustReviewsSection>
+      <Sections.CustReviewsSection></Sections.CustReviewsSection>
 
 
       <main className={styles.main}>   
