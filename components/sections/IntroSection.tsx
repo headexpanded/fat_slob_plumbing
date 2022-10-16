@@ -16,10 +16,10 @@ return (
             <div className="row gap-1">
                 <div className="col-sm">
                     <Typography.SectionTitle content="What's the capacity of YOUR home's sewage system?"/>
-                    <Typography.Paragraph content = "Most people don't know. But you should!"/>
-                    <Typography.Paragraph content="Most homes just can't deal with non-standard loads."/>
+                    <Typography.Paragraph content = "A lot of people don't know. But you should!"/>
+                    <Typography.Paragraph content="Most home systems can't flush a big load."/>
                     <Typography.Paragraph content = "Take our advice - you need to stress test your system, NOW!"/>
-                    <Typography.Paragraph content = "After all, no-one wants an unplanned blockage!"/>
+                    <Typography.Paragraph content = "Why? Because no-one wants a blockage!"/>
                 </div>
             </div>
         </div>
