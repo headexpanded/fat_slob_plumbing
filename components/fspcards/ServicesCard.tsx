@@ -11,10 +11,10 @@ type ServicesCardProps = {
 export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
     return (
         <>
-        <div className="px-1 mt-1 mb-1 servicesCard">
+        <div className="col-lg px-1 mt-1 mb-1 servicesCard">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg">
+                    <div className="col">
                         <h2>{title}</h2>
                         <Typography.ParagraphL content="The night before your appointment, we will consume:"/>
                         <div className="servicesInfo">
