@@ -24,7 +24,7 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
             }
 
             .custReviewCard p {
-                color: #CCB209;
+                color: var(--hintOfBrown);
                 font-size: 1.25rem;
                 font-style: italic;
                 font-weight:bold;
