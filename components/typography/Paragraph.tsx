@@ -4,7 +4,7 @@
 // define Paragraph type properties
 type ParagraphProps ={
     content: string;
-    color?: "#804D00";
+    color?: "#804D00" | "black";
 }
 
 // define Paragraph component

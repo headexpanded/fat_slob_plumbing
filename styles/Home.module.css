@@ -1,5 +1,5 @@
 ._container {
-  background-color: #ccb209;
+  background-color: var(--hintOfBrown);
   padding: 0rem;
 }
 
@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ccb209;
+  background-color: -var(--hintOfBrown);
 }
 
 .footer {
