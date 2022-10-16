@@ -16,7 +16,7 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                 <div className="row">
                     <div className="col">
                         <h2>{title}</h2>
-                        <Typography.ParagraphL content="The night before your appointment, we will consume:"/>
+                        <Typography.ParagraphL content="Night before:"/>
                         <div className="servicesInfo">
                             <p>{content}</p>
                         </div>
@@ -29,7 +29,7 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                     <Typography.SubHeader content ="ONLY"/>
                 </div>
                 <div className="col p-0">
-                    <Typography.SectionTitle content = {price}/>
+                    <Typography.SectionTitleDark content = {price}/>
                 </div>
             </div>
         </div>

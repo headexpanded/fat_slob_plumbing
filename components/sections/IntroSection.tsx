@@ -15,7 +15,7 @@ return (
         <div className="container px-2 pb-1">
             <div className="row gap-1">
                 <div className="col-sm">
-                    <Typography.SectionTitle content="What's the capacity of YOUR sewage system?"/>
+                    <Typography.SectionTitleDark content="What's the capacity of YOUR sewage system?"/>
                 </div>
             </div>
         </div>

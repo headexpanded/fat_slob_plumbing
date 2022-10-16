@@ -23,7 +23,7 @@ export const CustReviewsSection = () => {
     return (
         <>
         <section className="custReviewsSection">
-            <div className="custReviewsTitle"><Typography.SectionTitle content="Customer Reviews"/></div>
+            <div className="custReviewsTitle"><Typography.SectionTitleLight content="Customer Reviews"/></div>
             <div className="container px-4 pb-2">
                 <div className="row gap-3">
             {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
@@ -36,9 +36,10 @@ export const CustReviewsSection = () => {
 
         <style jsx>{`
         .custReviewsSection{
-            background-color: #875E04;
-            color: #CCB209;
+            background-color: var(--solidBrown);
+            color: var(--lagerYellow);
             min-height: 300px;
+            padding:0px 0px 12px 0px;
         }
         
         `}</style>

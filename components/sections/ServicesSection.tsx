@@ -32,7 +32,7 @@ export const ServicesSection = () => {
 <>
 {/*  extract key from serviceCards, spread the rest into card component */}
 <section className="servicesSection">
-  <div className="servicesTitle"><Typography.SectionTitle content="Choose Your Service Level"/></div>
+  <div className="servicesTitle"><Typography.SectionTitleDark content="Choose Your Service Level"/></div>
   <div className="servicesIntro">
     <div className="container">
       <div className="row">
@@ -59,8 +59,9 @@ export const ServicesSection = () => {
 <style jsx>{`
     .servicesSection{
         background-color:var(--lemonCurry);
-        min-height: 500px;
         color: var(--hintOfBrown);
+        min-height: 500px;
+        padding: 0px 0px 12px 0px;
     }
 
 `}</style>
