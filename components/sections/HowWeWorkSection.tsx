@@ -26,7 +26,7 @@ export const HowWeWorkSection = () => {
                 <div className="row">
                     <div className="col-2"></div>
                     <div className="col-8" ><Typography.ParagraphL content ="The night before your appointment, 
-                    we consume suitable amounts of food and drink ensure optimal performance 
+                    we consume suitable amounts of food and drink to ensure optimal performance 
                     when we arrive at your home the next day." color="#fefceb"/></div>
                     <div className="col-2"></div>
                 </div>
