@@ -1,5 +1,4 @@
 // define properties of paragraph texts
-// color is #804D00 until project color palette is finalised
 
 // define Paragraph type properties
 type ParagraphLProps ={

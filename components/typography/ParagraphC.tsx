@@ -1,20 +1,28 @@
 // define properties of paragraph texts
-// color is #804D00 until project color palette is finalised
-
+// import {Palette} from "../palette/Palette"
 // define Paragraph type properties
+type Palette ={
+    hintOfBrown?: "#fefceb",
+    lagerYellow?: "#f5d714",
+    solidBrown?: "#804d00" | "blue",
+    lemonCurry?: "#be9b0c",
+
+}
+
 type ParagraphCProps ={
     content: string;
-    color?: "#804D00" | "black";
+    color?: Palette;
 }
 
 // define Paragraph component
-export const ParagraphC =({content, color="#804D00"}:ParagraphCProps) =>{
+export const ParagraphC =({content, color}:ParagraphCProps) =>{
     return (
         <>
         <p>{content}</p>
         <style jsx>{`
             p {
-                color: ${color??"#804D00"};
+                
+                color: ${color?.solidBrown};
                 font-size: 1.25rem;
                 text-align: center;
             }

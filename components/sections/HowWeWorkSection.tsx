@@ -11,9 +11,15 @@ export const HowWeWorkSection = () => {
         <>
         <section className="howWeWorkSection">
             <div className="howWeWorkTitle"><Typography.SectionTitleLight content="How We Work"/></div>
-            <div className="container px-4 pb-2">
-                <div className="row gap-3">
-                    
+            <div className="container">
+                <div className="row">
+                    <div className="col-2"></div>
+                    <div className="col-8" ><Typography.ParagraphL content ="We're experts in
+                        stress testing domestic sewage systems. Our experienced
+                        professionals, Ron & Dave, come to your home and by the time we
+                        leave, you'll know for sure if your
+                        system can take it - or not!"/></div>
+                    <div className="col-2"></div>
                 </div>
             </div>
         </section>
@@ -23,6 +29,10 @@ export const HowWeWorkSection = () => {
             background-color: var(--solidBrown);
             min-height: 400px;
             padding:0px 0px 12px 0px;
+        }
+        
+        .howWeWorkSection p{
+            color: var(--hintOfBrown);
         }
         
         `}</style>
