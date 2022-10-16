@@ -16,7 +16,7 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                 <div className="row">
                     <div className="col">
                         <h2>{title}</h2>
-                        <Typography.ParagraphL content="Night before:"/>
+                        <Typography.ParagraphL content="Night before:" color= "#804d00"/>
                         <div className="servicesInfo">
                             <p>{content}</p>
                         </div>
@@ -26,10 +26,17 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
         <div className="container d-flex flex-row align-items-center justify-content-center">
             <div className="row align-items-baseline justify-content-center">
                 <div className="col p-0 m-0">
-                    <Typography.SubHeader content ="ONLY"/>
+                    <Typography.SubHeader content ="only" color="#804d00"/>
                 </div>
                 <div className="col p-0">
-                    <Typography.SectionTitleDark content = {price}/>
+                    <Typography.SectionTitle content = {price} color="var(--solidBrown)"/>
+                </div>
+            </div>
+        </div>
+        <div className="container  d-flex flex-row align-items-center justify-content-center">
+            <div className="row align-items-baseline justify-content-center">
+                <div className="col resLink p-0 m-0"><a href="#">
+                    <Typography.SubHeader content ="Make Your Reservation" color="var(--solidBrown)"/></a>
                 </div>
             </div>
         </div>
@@ -58,6 +65,9 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                 font-size: 1.25rem
                 margin: 0 0 1rem 0;
                 
+            }
+            .resLink a {
+                color: var(--solidBrown);
             }
 
             .servicesInfo{

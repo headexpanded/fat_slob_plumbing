@@ -4,17 +4,17 @@
 //  define MainTitle type properties
 type MainTitleProps = {
     content: string;
-    color?: "#804D00" | "black";
+    color?: string;
 }
 
 // define MainTitle component
-export const MainTitle =({content, color="#804D00"}:MainTitleProps) =>{
+export const MainTitle =({content, color}:MainTitleProps) =>{
     return (
         <>
         <h1>{content}</h1>
         <style jsx>{`
             h1 {
-                color:var(--solidBrown);
+                color: ${color??""};
                 font-size: 5rem;
                 font-weight: bold;
                 line-height: 1.1;

@@ -30,9 +30,7 @@ export const CustReviewCard=({content, customer}:CustReviewCardProps) => {
                 font-weight:bold;
                 margin: 1rem 0 1rem 0;
             }
-            .custReviewCard:hover{
-                transform: scale(1.05);
-            }
+            
         
         `}</style>
         

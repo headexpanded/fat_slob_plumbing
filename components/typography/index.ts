@@ -5,14 +5,12 @@ import { ParagraphL } from "./ParagraphL";
 import { ParagraphC } from "./ParagraphC";
 import { MainTitle } from "./MainTitle";
 import { SubHeader } from "./SubHeader";
-import { SectionTitleDark } from "./SectionTitleDark";
-import { SectionTitleLight } from "./SectionTitleLight";
+import { SectionTitle } from "./SectionTitle";
 
 export const Typography ={
     ParagraphL,
     ParagraphC,
     MainTitle,
     SubHeader,
-    SectionTitleDark,
-    SectionTitleLight
+    SectionTitle
 };

@@ -22,6 +22,8 @@ const Home: NextPage = () => {
       <Sections.ServicesSection></Sections.ServicesSection>
       {/* Customer Reviews */}
       <Sections.CustReviewsSection></Sections.CustReviewsSection>
+      {/* About Us */}
+      <Sections.AboutUsSection></Sections.AboutUsSection>
       {/* Footer */}
       <Sections.FooterSection></Sections.FooterSection>
 

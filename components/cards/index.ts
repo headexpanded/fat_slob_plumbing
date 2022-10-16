@@ -4,7 +4,7 @@ import { ServicesCard } from "./ServicesCard";
 import { CustReviewCard } from "./CustReviewCard";
 
 
-export const FSPCards = {
+export const Cards = {
     ServicesCard,
     CustReviewCard,
 }

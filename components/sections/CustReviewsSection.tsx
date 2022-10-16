@@ -1,5 +1,5 @@
 // define div to hold Customer Review cards
-import {FSPCards} from "../fspcards";
+import {Cards} from "../cards";
 import {Typography} from "../typography";
 
 type CustReviewsSectionProps ={
@@ -23,12 +23,12 @@ export const CustReviewsSection = () => {
     return (
         <>
         <section className="custReviewsSection">
-            <div className="custReviewsTitle"><Typography.SectionTitleLight content="Customer Reviews"/></div>
+            <div className="custReviewsTitle"><Typography.SectionTitle content="Customer Reviews" color="var(--hintOfBrown)"/></div>
             <div className="container px-4 pb-2">
                 <div className="row gap-3">
             {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
                     {custReviews.map(({key, ...other}) =>{
-                        return <FSPCards.CustReviewCard key={key} {...other}/>
+                        return <Cards.CustReviewCard key={key} {...other}/>
                     })}
                 </div>
             </div>
@@ -37,8 +37,8 @@ export const CustReviewsSection = () => {
         <style jsx>{`
         .custReviewsSection{
             background-color: var(--solidBrown);
-            min-height: 300px;
-            padding:0px 0px 12px 0px;
+            min-height: 400px;
+            padding:28px 0px 0px 0px;
         }
         
         `}</style>

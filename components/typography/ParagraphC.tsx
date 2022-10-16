@@ -11,18 +11,17 @@
 
 type ParagraphCProps ={
     content: string;
-    color: string;
+    color?: string;
 }
 
 // define Paragraph component
 export const ParagraphC =({content, color}:ParagraphCProps) =>{
-    //  const textColor = color.solidBrown;
     return (
         <>
         <p>{content}</p>
         <style jsx>{`
             p {
-                color: ${color??"#804d00"};
+                color: ${color??""};
                 font-size: 1.25rem;
                 font-weight: bold;
                 text-align: center;

@@ -10,7 +10,7 @@ export const HowWeWorkSection = () => {
     return (
         <>
         <section className="howWeWorkSection">
-            <div className="howWeWorkTitle"><Typography.SectionTitleLight content="How We Work"/></div>
+            <div className="howWeWorkTitle"><Typography.SectionTitle content="How We Work" color="var(--hintOfBrown)"/></div>
             <div className="container">
                 <div className="row">
                     <div className="col-2"></div>

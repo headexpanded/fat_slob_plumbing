@@ -9,8 +9,8 @@ type FooterSectionProps ={
 export const FooterSection = () => {
     return(
 <>
-<div className="footerSection">
-    <div className="container">
+<div className="footerSection ">
+    <div className="container ">
         <div className="row">
             <div className="col-2"></div>
             <div className="col-8"><p>We are not licenced plumbers. In case of emergency, you should contact a real plumber.</p></div>
@@ -28,6 +28,8 @@ export const FooterSection = () => {
 .footerSection    p{
         color: var(--lemonCurry);
         font-size:small;
+        margin:0px;
+        padding:4px 0px 4px 0px;
     }
 
 

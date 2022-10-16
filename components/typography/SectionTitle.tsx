@@ -1,17 +1,18 @@
 // define properties of Section Title Dark text
 
 // define Section Title Dark type properties
-type SectionTitleDarkProps = {
+type SectionTitleProps = {
     content: string;
+    color?: string;
 }
 
-export const SectionTitleDark = ({content}:SectionTitleDarkProps) => {
+export const SectionTitle = ({content, color}:SectionTitleProps) => {
     return (
         <>
         <h2>{content}</h2>
         <style jsx>{`
             h2 {
-                color: var(--solidBrown);
+                color: ${color??""};
                 font-style: italic;
                 font-size: 2rem;
                 font-weight: bold;

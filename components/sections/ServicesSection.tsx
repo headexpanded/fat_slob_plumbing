@@ -1,5 +1,5 @@
 // define div to hold Services Cards
-import {FSPCards} from "../fspcards";
+import {Cards} from "../cards";
 import {Typography} from "../typography";
 
 
@@ -32,7 +32,7 @@ export const ServicesSection = () => {
 <>
 {/*  extract key from serviceCards, spread the rest into card component */}
 <section className="servicesSection">
-  <div className="servicesTitle"><Typography.SectionTitleDark content="Choose Your Service Level"/></div>
+  <div className="servicesTitle"><Typography.SectionTitle content="Choose Your Service Level" color="var(--solidBrown)"/></div>
   <div className="servicesIntro">
     <div className="container">
       <div className="row">
@@ -46,7 +46,7 @@ export const ServicesSection = () => {
     <div className="row gap-3">
       
           {serviceCards.map(({key,...other}) => {
-              return <FSPCards.ServicesCard key={key} {...other}/>
+              return <Cards.ServicesCard key={key} {...other}/>
           })}
       
     </div>
