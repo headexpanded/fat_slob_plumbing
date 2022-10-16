@@ -37,13 +37,13 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
         <style jsx>{`
             .servicesCard{
                 background-color:var(--hintOfBrown);
-                border: 2px solid #804D00;
+                border: 2px solid var(--solidBrown);
                 border-radius: 10px;
                 min-height: 400px;
                 transition: color 0.15s ease, border-color 0.15s ease;
             }
             .servicesCard h2, p {
-                color: #804d00;
+                color: var(--solidBrown);
                 padding: 6px;
                 
             }
