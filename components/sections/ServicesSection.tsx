@@ -58,7 +58,7 @@ export const ServicesSection = () => {
 </section>
 <style jsx>{`
     .servicesSection{
-        background-color:var(--lemonCurry);
+        background-color:var(--lagerYellow);
         color: var(--hintOfBrown);
         min-height: 500px;
         padding: 0px 0px 12px 0px;
