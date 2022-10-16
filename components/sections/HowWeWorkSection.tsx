@@ -18,7 +18,7 @@ export const HowWeWorkSection = () => {
                         stress testing domestic sewage systems. Our experienced
                         professionals, Ron & Dave, come to your home and by the time we
                         leave, you'll know for sure if your
-                        system can take it - or not!"/></div>
+                        system can take it - or not!" color="#fefceb"/></div>
                     <div className="col-2"></div>
                 </div>
             </div>
@@ -33,6 +33,8 @@ export const HowWeWorkSection = () => {
         
         .howWeWorkSection p{
             color: var(--hintOfBrown);
+            font-size: 1.25rem;
+            font-weight: bold;
         }
         
         `}</style>

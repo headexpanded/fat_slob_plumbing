@@ -3,11 +3,11 @@
 // define Paragraph type properties
 type ParagraphLProps ={
     content: string;
-    color?: "#804D00" | "black";
+    color: string;
 }
 
 // define Paragraph component
-export const ParagraphL =({content, color="#804D00"}:ParagraphLProps) =>{
+export const ParagraphL =({content, color}:ParagraphLProps) =>{
     return (
         <>
         <p>{content}</p>
