@@ -1,13 +1,15 @@
 
 // Index of various font styles for Fat Slob Plumbing.
 
-import { Paragraph } from "./Paragraph";
+import { ParagraphL } from "./ParagraphL";
+import { ParagraphC } from "./ParagraphC";
 import { MainTitle } from "./MainTitle";
 import { SubHeader } from "./SubHeader";
 import { SectionTitle } from "./SectionTitle";
 
 export const Typography ={
-    Paragraph,
+    ParagraphL,
+    ParagraphC,
     MainTitle,
     SubHeader,
     SectionTitle,

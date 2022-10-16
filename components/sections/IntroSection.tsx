@@ -22,21 +22,21 @@ return (
         <div className="container text-center">
             <div className="row ">
                 <div className="col-2"></div>
-                <div className="col-8"><Typography.Paragraph content = "Most home systems can't flush a big load."/></div>
+                <div className="col-8"><Typography.ParagraphC content = "Most home systems can't flush a big load."/></div>
                 <div className="col-2"></div>
             </div>
         </div>
         <div className="container text-center">
             <div className="row ">
                 <div className="col-2"></div>
-                <div className="col-8"><Typography.Paragraph content = "Take our advice - you need to stress test your system, NOW!"/></div>
+                <div className="col-8"><Typography.ParagraphC content = "Take our advice - you need to stress test your system, NOW!"/></div>
                 <div className="col-2"></div>
             </div>
         </div>
         <div className="container text-center">
             <div className="row ">
                 <div className="col-2"></div>
-                <div className="col-8"><Typography.Paragraph content = "Because no-one likes a blockage!"/></div>
+                <div className="col-8"><Typography.ParagraphC content = "Because no-one likes a blockage!"/></div>
                 <div className="col-2"></div>
             </div>
         </div>

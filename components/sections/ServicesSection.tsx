@@ -37,7 +37,7 @@ export const ServicesSection = () => {
     <div className="container">
       <div className="row">
         <div className="col-sm">
-          <Typography.Paragraph content ="We're experts in
+          <Typography.ParagraphL content ="We're experts in
                         stress testing domestic sewage systems. Our experienced
                         experts, Ron & Dave, come to your home and by the time we
                         leave, you'll know for sure if your

@@ -2,13 +2,13 @@
 // color is #804D00 until project color palette is finalised
 
 // define Paragraph type properties
-type ParagraphProps ={
+type ParagraphLProps ={
     content: string;
     color?: "#804D00" | "black";
 }
 
 // define Paragraph component
-export const Paragraph =({content, color="#804D00"}:ParagraphProps) =>{
+export const ParagraphL =({content, color="#804D00"}:ParagraphLProps) =>{
     return (
         <>
         <p>{content}</p>
