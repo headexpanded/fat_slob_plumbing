@@ -24,6 +24,7 @@ export const ParagraphC =({content, color}:ParagraphCProps) =>{
             p {
                 color: ${color??"#804d00"};
                 font-size: 1.25rem;
+                font-weight: bold;
                 text-align: center;
             }
         `}</style>

@@ -13,8 +13,9 @@ export const ParagraphL =({content, color}:ParagraphLProps) =>{
         <p>{content}</p>
         <style jsx>{`
             p {
-                color: ${color??"#804D00"};
+                color: ${color?? "#fefceb"};
                 font-size: 1.25rem;
+                font-weight: bold;
                 text-align: left;
             }
         `}</style>
