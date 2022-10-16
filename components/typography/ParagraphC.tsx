@@ -2,27 +2,28 @@
 // import {Palette} from "../palette/Palette"
 // define Paragraph type properties
 type Palette ={
-    hintOfBrown?: "#fefceb",
-    lagerYellow?: "#f5d714",
-    solidBrown?: "#804d00" | "blue",
-    lemonCurry?: "#be9b0c",
+    hintOfBrown: "#fefceb",
+    lagerYellow: "#f5d714",
+    solidBrown: "#804d00",
+    lemonCurry: "#be9b0c",
 
 }
 
 type ParagraphCProps ={
     content: string;
-    color?: Palette;
+    color: Palette;
 }
 
 // define Paragraph component
 export const ParagraphC =({content, color}:ParagraphCProps) =>{
+    //  const textColor = color.solidBrown;
     return (
         <>
         <p>{content}</p>
         <style jsx>{`
             p {
                 
-                color: ${color?.solidBrown};
+                color: #804d00;
                 font-size: 1.25rem;
                 text-align: center;
             }
