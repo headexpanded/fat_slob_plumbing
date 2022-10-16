@@ -36,7 +36,7 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
         </div>
         <style jsx>{`
             .servicesCard{
-                background-color:#CCB209;
+                background-color:var(--hintOfBrown);
                 border: 2px solid #804D00;
                 border-radius: 10px;
                 min-height: 400px;
