@@ -17,7 +17,7 @@ return (
                 <div className="col-sm">
                     <Typography.SectionTitle content="What's the capacity of YOUR home's sewage system?"/>
                     <Typography.Paragraph content = "Most people don't know. But you should!"/>
-                    <Typography.Paragraph content="These days most homes just can't deal with non-standard loads."/>
+                    <Typography.Paragraph content="Most homes just can't deal with non-standard loads."/>
                     <Typography.Paragraph content = "Take our advice - you need to stress test your system, NOW!"/>
                     <Typography.Paragraph content = "After all, no-one wants an unplanned blockage!"/>
                 </div>
