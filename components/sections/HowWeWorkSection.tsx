@@ -19,7 +19,7 @@ export const HowWeWorkSection = () => {
         </section>
 
         <style jsx>{`
-        .custReviewsSection{
+        .howWeWorkSection{
             background-color: var(--solidBrown);
             min-height: 400px;
             padding:0px 0px 12px 0px;
