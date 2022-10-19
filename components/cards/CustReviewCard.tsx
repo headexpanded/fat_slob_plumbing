@@ -13,7 +13,7 @@ export const CustReviewCard = ({
 }: CustReviewCardProps) => {
   return (
     <>
-      <div className="px-5 mt-1 mb-1 custReviewCard">
+      <div className="px-1 mt-1 mb-1 custReviewCard">
         <p>{review}</p>
         <p>
           - {customerName}
@@ -26,6 +26,7 @@ export const CustReviewCard = ({
           border: 2px solid #7b6e4d;
           border-radius: 10px;
           height: auto;
+          position: relative;
           text-align: left;
           transition: color 0.15s ease, border-color 0.15s ease;
         }
@@ -39,9 +40,12 @@ export const CustReviewCard = ({
           padding: 12px 0px 0px 4px;
         }
         .custReviewCard img {
-          padding-left: 24px;
-          border-radius: 10px 10px 10px 10px;
+          border-radius: 50% 50%;
           filter: grayscale(100%);
+          position: absolute;
+          top: -50px;
+          left: -90px;
+          padding-left: 24px;
         }
       `}</style>
     </>
