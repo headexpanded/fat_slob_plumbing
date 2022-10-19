@@ -1,5 +1,5 @@
 // section components index for Fat Slob Plumbing
-
+import { NavBarSection } from "./NavBarSection";
 import { IntroSection } from "./IntroSection";
 import { HowWeWorkSection } from "./HowWeWorkSection";
 import { ServicesSection } from "./ServicesSection";
@@ -11,6 +11,7 @@ import { FooterSection } from "./FooterSection";
 
 
 export const Section = {
+    NavBar: NavBarSection,
     Intro: IntroSection,
     HowWeWork: HowWeWorkSection,
     Services: ServicesSection,
