@@ -3,25 +3,26 @@
 
 //  define MainTitle type properties
 type MainTitleProps = {
-    content: string;
-    color?: string;
-}
+  content: string;
+  color?: string;
+};
 
 // define MainTitle component
-export const MainTitle =({content, color}:MainTitleProps) =>{
-    return (
-        <>
-        <h1>{content}</h1>
-        <style jsx>{`
-            h1 {
-                color: ${color??""};
-                font-size: 5rem;
-                font-weight: bold;
-                line-height: 1.1;
-                padding: 4px 4px 0px 4px;
-                text-align: center;
-            }
-        `}</style>
-        </>
-    );
+export const MainTitle = ({ content, color }: MainTitleProps) => {
+  return (
+    <>
+      <h1>{content}</h1>
+      <style jsx>{`
+        h1 {
+          color: ${color ?? ""};
+          font-size: 6rem;
+          font-weight: 800;
+          letter-spacing: -0.15rem;
+          line-height: 1.1;
+          padding: 4px 4px 0px 4px;
+          text-align: center;
+        }
+      `}</style>
+    </>
+  );
 };

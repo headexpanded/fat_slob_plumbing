@@ -1,70 +1,63 @@
 // define div to hold Services Cards
-import {Cards} from "../cards";
-import {Typography} from "../typography";
-
+import { Cards } from "../cards";
+import { Typography } from "../typography";
 
 type ServicesSectionProps = {
-    // content: FSPCards.ServicesCard (title="" content="");
-}
+  // content: FSPCards.ServicesCard (title="" content="");
+};
 
 export const ServicesSection = () => {
-    const serviceCards = [
+  const serviceCards = [
     {
       key: "1",
       title: "Regular",
       content: "4 x pints of lager, 1 x chicken vindaloo",
-      price: "199.95"
+      price: "\u00a3199.95",
     },
     {
       key: "2",
       title: "Strong",
       content: "5 x pints of lager, 1 x pint Ron's homebrew",
-      price: "299.95"
+      price: "\u00a3299.95",
     },
     {
       key: "3",
       title: "Explosive",
       content: `{<ul><li>6 x pints of lager</li><li>2 x pints Ron's homebrew</li><li>2 x Moong Dhal</li><li>1 x 350g jar Sauerkraut</li><li>500ml prune juice</li></ul>}`,
-      price: "399.95"
-    }
-  ]
-    return(
-<>
-{/*  extract key from serviceCards, spread the rest into card component */}
-<section className="servicesSection">
-  <div className="servicesTitle"><Typography.SectionTitle content="Choose Your Service Level" color="var(--solidBrown)"/></div>
-  <div className="servicesIntro">
-    <div className="container">
-      <div className="row">
-        <div className="col-sm">
-          
+      price: "\u00a3399.95",
+    },
+  ];
+  return (
+    <>
+      {/*  extract key from serviceCards, spread the rest into card component */}
+      <section className="servicesSection">
+        <div className="servicesTitle">
+          <Typography.SectionTitle
+            content="Choose Your Service Level"
+            color="var(--solidBrown)"
+          />
         </div>
-      </div>
-    </div>
-    </div>
-  <div className="container px-4 pb-2">
-    <div className="row gap-3">
-      
-          {serviceCards.map(({key,...other}) => {
-              return <Cards.ServicesCard key={key} {...other}/>
-          })}
-      
-    </div>
-  </div>
-</section>
-<style jsx>{`
-    .servicesSection{
-        background-color:var(--lagerYellow);
-        color: var(--hintOfBrown);
-        min-height: 500px;
-        padding: 0px 0px 12px 0px;
-    }
 
-`}</style>
+        <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
+          <div className="row gap-3">
+            {serviceCards.map(({ key, ...other }) => {
+              return <Cards.ServicesCard key={key} {...other} />;
+            })}
+          </div>
+        </div>
+      </section>
+      <style jsx>{`
+        .servicesSection {
+          background-color: var(--hintOfBrown);
+          color: var(--hintOfBrown);
+          min-height: 100vh;
+          padding: 40px 0px 20px 0px;
+        }
 
-
-</>
-
-
-    )
-}
+        .servicesTitle {
+          padding: 40px 0px 40px 0px;
+        }
+      `}</style>
+    </>
+  );
+};

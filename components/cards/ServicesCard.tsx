@@ -2,46 +2,66 @@ import { Typography } from "../typography";
 
 // define ServicesCard properties
 type ServicesCardProps = {
-    content: string;
-    price: string;
-    title: string;
-}
+  content: string;
+  price: string;
+  title: string;
+};
 
 // define ServicesCard component
-export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
-    return (
-        <>
-        <div className="col-lg px-1 mt-1 mb-1 servicesCard">
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-                        <h2>{title}</h2>
-                        <Typography.ParagraphL content="Night before:" color= "#804d00"/>
-                        <div className="servicesInfo">
-                            <p>{content}</p>
-                        </div>
-                    </div>
+export const ServicesCard = ({ title, content, price }: ServicesCardProps) => {
+  const pound = "\u00a3";
+  return (
+    <>
+      <div className="px-1 mt-1 mb-1 servicesCard">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <h2>{title}</h2>
+              <div className="nightBefore">
+                <Typography.ParagraphL
+                  content="Night before:"
+                  color="#804d00"
+                />
+                <div className="servicesInfo">
+                  <p>{content}</p>
                 </div>
+              </div>
+              <div className="onTheDay">
+                <Typography.ParagraphL
+                  content="Morning of appointment:"
+                  color="#804d00"
+                />
+              </div>
             </div>
-        <div className="container d-flex flex-row align-items-center justify-content-center">
-            <div className="row align-items-baseline justify-content-center">
-                <div className="col p-0 m-0">
-                    <Typography.SubHeader content ="only" color="#804d00"/>
-                </div>
-                <div className="col p-0">
-                    <Typography.SectionTitle content = {price} color="var(--solidBrown)"/>
-                </div>
+          </div>
+        </div>
+        <div className="container d-flex flex-row align-items-center justify-content-center p-0 m-0">
+          <div className="row align-items-baseline justify-content-center p-0 m-0">
+            <div className="col p-0 m-0">
+              <Typography.SubHeader content="only" color="#804d00" />
             </div>
-        </div>
-        <div className="container  d-flex flex-row align-items-center justify-content-center">
-            <div className="row align-items-baseline justify-content-center">
-                <div className="col resLink p-0 m-0"><a href="#">
-                    <Typography.SubHeader content ="Make Your Reservation" color="var(--solidBrown)"/></a>
-                </div>
+            <div className="col p-0 m-0">
+              <Typography.SectionTitle
+                content={price}
+                color="var(--solidBrown)"
+              />
             </div>
+          </div>
         </div>
+        <div className="container  d-flex flex-row align-items-center justify-content-center p-0 m-0">
+          <div className="row align-items-baseline justify-content-center p-0 m-0">
+            <div className="col resLink p-0 m-0">
+              <a href="#">
+                <Typography.SubHeader
+                  content="Make Your Reservation"
+                  color="var(--solidBrown)"
+                />
+              </a>
+            </div>
+          </div>
         </div>
-        <style jsx>{`
+      </div>
+      <style jsx>{`
             .servicesCard{
                 background-color:var(--hintOfBrown);
                 border: 2px solid var(--solidBrown);
@@ -66,15 +86,32 @@ export const ServicesCard =({title, content, price}:ServicesCardProps) =>{
                 margin: 0 0 1rem 0;
                 
             }
+
+            .nightBefore{
+                min-height: 200px;
+            }
+
+            .onTheDay{
+                min-height: 200px;    
+            }
+
+            .resLink{
+                padding:0px;
+            }
             .resLink a {
-                color: var(--solidBrown);
+                text-decoration: underline;
+            }
+
+            .resLink a:hover {
+                color: var(--lemonCurry);
+                transform: scale(1.25);
             }
 
             .servicesInfo{
-                min-height:360px;
+                min-height: 100px;
             }
         
         `}</style>
-        </>
-    );
-}
+    </>
+  );
+};

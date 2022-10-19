@@ -1,4 +1,7 @@
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--hintOfBrown);
   padding: 0;
@@ -7,9 +10,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 :root {
-  --solidBrown: #804d00;
-  --lagerYellow: #f5d714;
-  --lemonCurry: #be9b0c;
+  --solidBrown: #7b6e4d;
+  --lagerYellow: #7b6e4d;
+  --coffee: #e3d1b5;
   --hintOfBrown: #fefceb;
 }
 

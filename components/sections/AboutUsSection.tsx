@@ -1,39 +1,39 @@
 // define About Us section
 import { Typography } from "../typography";
 
-type AboutUsSectionProps = {
+type AboutUsSectionProps = {};
 
-};
-
-export const AboutUsSection =() => {
-    const employees = [
-        {
-            key: "1",
-            title: "Ron",
-            content: ""
-        },
-        {   key:"2",
-            title: "Dave",
-            content: ""
-        },
-        {   key:"3",
-            title: "Trish",
-            content :""
-        }
-    ]
-    return(
-        <>
-        <div className="aboutUs">
-            <Typography.SectionTitle content = "About Us" color="var(--solidBrown)"/>
+export const AboutUsSection = () => {
+  const employees = [
+    {
+      key: "1",
+      title: "Ron",
+      content: "",
+    },
+    { key: "2", title: "Dave", content: "" },
+    { key: "3", title: "Trish", content: "" },
+  ];
+  return (
+    <>
+      <div className="aboutUs">
+        <div className="aboutUsTitle">
+          <Typography.SectionTitle
+            content="About Us"
+            color="var(--solidBrown)"
+          />
         </div>
-        <style jsx>{`
+      </div>
+      <style jsx>{`
         .aboutUs {
-        background-color: var(--lagerYellow);
-        padding: 0px 0px 12px 0px;
-        min-height: 500px;
+          background-color: var(--hintOfBrown);
+          padding: 40px 0px 20px 0px;
+          min-height: 100vh;
         }
-        
-        `}</style>
-        </>
-    )
-}
+
+        .aboutUsTitle {
+          padding: 0px 0px 40px 0px;
+        }
+      `}</style>
+    </>
+  );
+};

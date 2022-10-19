@@ -1,63 +1,98 @@
 // define How We Work Section
-import {Typography} from "../typography";
+import { Typography } from "../typography";
 
-type HowWeWorkSectionProps ={
-
-}
+type HowWeWorkSectionProps = {};
 
 export const HowWeWorkSection = () => {
-    
-    return (
-        <>
-        <section className="howWeWorkSection">
-            <div className="howWeWorkTitle"><Typography.SectionTitle content="How We Work" color="var(--hintOfBrown)"/></div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8" ><Typography.ParagraphL content ="We're experts in
-                        stress testing domestic sewage systems. Our experienced
-                        team of professionals - Ron & Dave - come to your home and by the time we
+  return (
+    <>
+      <section className="howWeWorkSection">
+        <div className="howWeWorkTitle">
+          <Typography.SectionTitle
+            content="How We Work"
+            color="var(--solidBrown)"
+          />
+        </div>
+        <div className="container pb-4">
+          <div className="row">
+            <div className="col-2"></div>
+            <div className="col-8">
+              <Typography.ParagraphL
+                content="We're experts in
+                        stress-testing domestic sewage systems."
+                color="var(--solidBrown)"
+              />
+            </div>
+            <div className="col-2"></div>
+          </div>
+        </div>
+        <div className="container pb-4">
+          <div className="row">
+            <div className="col-2"></div>
+            <div className="col-8">
+              <Typography.ParagraphL
+                content="Our experienced
+                        professionals come to your home by appointment. By the time we
                         leave, you'll know for sure if your
-                        system can take it - or not!" color="#fefceb"/></div>
-                    <div className="col-2"></div>
-                </div>
+                        system can take it - or not!"
+                color="var(--solidBrown)"
+              />
             </div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8" ><Typography.ParagraphL content ="The night before your appointment, 
-                    we consume suitable amounts of food and drink to ensure optimal performance 
-                    when we arrive at your home the next day." color="#fefceb"/></div>
-                    <div className="col-2"></div>
-                </div>
+            <div className="col-2"></div>
+          </div>
+        </div>
+        <div className="container pb-4">
+          <div className="row">
+            <div className="col-2"></div>
+            <div className="col-8">
+              <Typography.ParagraphL
+                content="The night before your appointment, 
+                    your Fat Slob Plumber will ingest a carefully formulated blend of food and drink to ensure optimal performance 
+                    the next morning."
+                color="var(--solidBrown)"
+              />
             </div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8" ><Typography.ParagraphL content ="Then, on the morning of your appointment, 
-                    we also ingest a carefully planned mix of supplementary nutriments, so there's no waiting around." color="#fefceb"/></div>
-                    <div className="col-2"></div>
-                </div>
+            <div className="col-2"></div>
+          </div>
+        </div>
+        <div className="container pb-4">
+          <div className="row">
+            <div className="col-2"></div>
+            <div className="col-8">
+              <Typography.ParagraphL
+                content=" 
+                    We then consume a mix of supplementary nutriments on the morning of your appointment, to make sure there's no waiting around."
+                color="var(--solidBrown)"
+              />
             </div>
-            <div className="container">
-                <div className="row">
-                    <div className="col-2"></div>
-                    <div className="col-8" ><Typography.ParagraphL content ="The exact blend and quantity of solids and liquids 
-                    depends on the Service Level you choose: see below." color="#fefceb"/></div>
-                    <div className="col-2"></div>
-                </div>
+            <div className="col-2"></div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col-2"></div>
+            <div className="col-8">
+              <Typography.ParagraphL
+                content="The precise blend and quantity of solids and liquids 
+                    consumed by Fat Slob Plumbing depends on the Service Level you choose: see below."
+                color="var(--solidBrown)"
+              />
             </div>
-        </section>
+            <div className="col-2"></div>
+          </div>
+        </div>
+      </section>
 
-        <style jsx>{`
-        .howWeWorkSection{
-            background-color: var(--solidBrown);
-            min-height: 400px;
-            padding:20px 0px 20px 0px;
+      <style jsx>{`
+        .howWeWorkSection {
+          background-color: var(--coffee);
+          min-height: 100vh;
+          padding: 40px 0px 20px 0px;
         }
-        
-        `}</style>
-        
-        </>
-    )
-}
+
+        .howWeWorkTitle {
+        }
+      `}</style>
+    </>
+  );
+};

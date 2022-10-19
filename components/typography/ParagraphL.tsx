@@ -15,7 +15,6 @@ export const ParagraphL =({content, color}:ParagraphLProps) =>{
             p {
                 color: ${color??""};
                 font-size: 1.25rem;
-                font-weight: bold;
                 text-align: left;
             }
         `}</style>
