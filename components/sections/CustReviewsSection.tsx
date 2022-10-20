@@ -20,20 +20,21 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
     <>
       <section className="custReviewsSection">
         <div className="custReviewsTitle">
-          <Typography.SectionTitle content="Customer Reviews" color="#7b6e4d" />
+          <Typography.SectionTitle
+            content="Customer Reviews"
+            color="var(--solidBrown)"
+          />
         </div>
-        <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
-          <div className="row  gap-3">
-            {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
+        <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-4">
+          {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
 
-            {data?.map(({ id, ...other }) => {
-              return (
-                <div className="col-lg" key={id}>
-                  <Cards.CustReviewCard {...other} />
-                </div>
-              );
-            })}
-          </div>
+          {data?.map(({ id, ...other }) => {
+            return (
+              <div className="row p-3" key={id}>
+                <Cards.CustReviewCard {...other} />
+              </div>
+            );
+          })}
         </div>
       </section>
 
@@ -42,9 +43,6 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
           background-color: var(--coffee);
           min-height: 100vh;
           padding: 28px 0px 0px 0px;
-        }
-
-        .custReviewsTitle {
         }
       `}</style>
     </>

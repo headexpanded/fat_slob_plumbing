@@ -13,7 +13,7 @@ export const CustReviewCard = ({
 }: CustReviewCardProps) => {
   return (
     <>
-      <div className="px-1 mt-1 mb-1 custReviewCard">
+      <div className="px-1 gy-4 mt-1 mb-1 custReviewCard">
         <div className="custReview">
           <p>{review}</p>
         </div>
@@ -52,6 +52,7 @@ export const CustReviewCard = ({
           justify-content: flex-end;
           margin-right: 20px;
         }
+
         .custName p {
           color: var(--solidBrown);
           font-size: 1.25rem;
@@ -59,6 +60,7 @@ export const CustReviewCard = ({
           font-weight: bold;
           padding: 4px 8px 0px 8px;
         }
+
         img {
           background-size: cover;
           background-position: center;
@@ -73,8 +75,8 @@ export const CustReviewCard = ({
           border: 2px solid var(--solidBrown);
           border-radius: 50%;
           position: absolute;
-          top: -40px;
-          left: 150px;
+          top: -20%;
+          left: 40%;
         }
       `}</style>
     </>
