@@ -17,7 +17,11 @@ export const CustReviewCard = ({
         <p>{review}</p>
         <p>
           - {customerName}
-          <img className="img-fluid" src={photo} alt="Customer photo" />
+          <img
+            className="img-fluid img-circle"
+            src={photo}
+            alt="Customer photo"
+          />
         </p>
       </div>
       <style jsx>{`
@@ -40,7 +44,6 @@ export const CustReviewCard = ({
           padding: 12px 0px 0px 4px;
         }
         .custReviewCard img {
-          border-radius: 50% 50%;
           filter: grayscale(100%);
           position: absolute;
           top: -50px;
