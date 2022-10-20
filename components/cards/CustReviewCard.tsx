@@ -17,11 +17,9 @@ export const CustReviewCard = ({
         <p>{review}</p>
         <p>
           - {customerName}
-          <img
-            className="img-fluid img-circle"
-            src={photo}
-            alt="Customer photo"
-          />
+          <div className="imgWrapper">
+            <img src={photo} alt="Customer photo" />
+          </div>
         </p>
       </div>
       <style jsx>{`
@@ -44,11 +42,19 @@ export const CustReviewCard = ({
           padding: 12px 0px 0px 4px;
         }
         .custReviewCard img {
-          filter: grayscale(100%);
+          filter: sepia(80%);
+          border-radius: 50%;
           position: absolute;
+
+          background: var(--hintOfBrown);
+          background-size: cover;
+          background-position: center;
           top: -50px;
-          left: -90px;
-          padding-left: 24px;
+          left: -50px;
+          transition: 0.5s ease;
+        }
+
+        .imgWrapper {
         }
       `}</style>
     </>
