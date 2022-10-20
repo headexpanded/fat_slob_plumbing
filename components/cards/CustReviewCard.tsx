@@ -14,18 +14,23 @@ export const CustReviewCard = ({
   return (
     <>
       <div className="px-1 mt-1 mb-1 custReviewCard">
-        <p>{review}</p>
-        <p>
-          - {customerName}
-          <div className="imgWrapper">
-            <img src={photo} alt="Customer photo" />
+        <div className="custReview">
+          <p>{review}</p>
+        </div>
+        <div className="custNameWrapper">
+          <div className="custName">
+            <p>- {customerName}</p>
           </div>
-        </p>
+        </div>
+
+        <div className="imgWrapper">
+          <img src={photo} alt="Customer photo" />
+        </div>
       </div>
       <style jsx>{`
         .custReviewCard {
           background-color: var(--hintOfBrown);
-          border: 2px solid #7b6e4d;
+          border: 2px solid var(--solidBrown);
           border-radius: 10px;
           height: auto;
           position: relative;
@@ -33,28 +38,43 @@ export const CustReviewCard = ({
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
-        .custReviewCard p {
-          color: #7b6e4d;
+        .custReview p {
+          color: var(--solidBrown);
           font-size: 1.25rem;
           font-style: italic;
           font-weight: bold;
-          margin: 1rem 0 1rem 0;
-          padding: 12px 0px 0px 4px;
+          padding: 52px 8px 0px 8px;
         }
-        .custReviewCard img {
-          filter: sepia(80%);
-          border-radius: 50%;
-          position: absolute;
 
-          background: var(--hintOfBrown);
+        .custNameWrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          margin-right: 20px;
+        }
+        .custName p {
+          color: var(--solidBrown);
+          font-size: 1.25rem;
+          font-style: italic;
+          font-weight: bold;
+          padding: 4px 8px 0px 8px;
+        }
+        img {
           background-size: cover;
           background-position: center;
-          top: -50px;
-          left: -50px;
-          transition: 0.5s ease;
+          border-radius: 50%;
+          filter: sepia(100%);
+          height: 80px;
+          width: 80px;
         }
 
         .imgWrapper {
+          background: var(--hintOfBrown);
+          border: 2px solid var(--solidBrown);
+          border-radius: 50%;
+          position: absolute;
+          top: -40px;
+          left: 150px;
         }
       `}</style>
     </>

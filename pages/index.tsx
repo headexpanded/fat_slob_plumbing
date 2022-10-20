@@ -22,17 +22,17 @@ const Home = ({ customerReviewCards }: HomeProps) => {
       {/* Intro Section */}
       <Section.Intro />
       {/* How We Work */}
-      <Section.HowWeWork></Section.HowWeWork>
+      <Section.HowWeWork />
       {/* Services */}
-      <Section.Services></Section.Services>
+      <Section.Services />
       {/* Customer Reviews */}
       <Section.CustReviews data={customerReviewCards}></Section.CustReviews>
       {/* Franchises */}
-      <Section.Franchises></Section.Franchises>
+      <Section.Franchises />
       {/* Valued Partners */}
-      <Section.Partners></Section.Partners>
+      <Section.Partners />
       {/* About Us */}
-      <Section.AboutUs></Section.AboutUs>
+      <Section.AboutUs />
       {/* Footer */}
 
       <main className={styles.main}>
