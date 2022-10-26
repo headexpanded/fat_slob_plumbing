@@ -2,13 +2,17 @@ import { Typography } from "../typography";
 
 // define ServicesCard properties
 type ServicesCardProps = {
-  content: string;
+  nightBeforeContent: string;
   price: string;
   title: string;
 };
 
 // define ServicesCard component
-export const ServicesCard = ({ title, content, price }: ServicesCardProps) => {
+export const ServicesCard = ({
+  title,
+  nightBeforeContent,
+  price,
+}: ServicesCardProps) => {
   const pound = "\u00a3";
   return (
     <>
@@ -18,18 +22,22 @@ export const ServicesCard = ({ title, content, price }: ServicesCardProps) => {
             <div className="col">
               <h2>{title}</h2>
               <div className="nightBefore">
-                <Typography.ParagraphL
-                  content="Night before:"
-                  color="#804d00"
+                <Typography.NavLink
+                  navLink="The night before your appointment, we will consume at least:"
+                  color="var(--solidBrown)"
                 />
                 <div className="servicesInfo">
-                  <p>{content}</p>
+                  <p>
+                    <ul>
+                      <li>{nightBeforeContent}</li>
+                    </ul>
+                  </p>
                 </div>
               </div>
               <div className="onTheDay">
-                <Typography.ParagraphL
-                  content="Morning of appointment:"
-                  color="#804d00"
+                <Typography.NavLink
+                  navLink="On the morning of your appointment, we will consume at least:"
+                  color="var(--solidBrown)"
                 />
               </div>
             </div>
@@ -38,7 +46,7 @@ export const ServicesCard = ({ title, content, price }: ServicesCardProps) => {
         <div className="container d-flex flex-row align-items-center justify-content-center p-0 m-0">
           <div className="row align-items-baseline justify-content-center p-0 m-0">
             <div className="col p-0 m-0">
-              <Typography.SubHeader content="only" color="#804d00" />
+              <Typography.SubHeader content="only" color="var(--richBrown)" />
             </div>
             <div className="col p-0 m-0">
               <Typography.SectionTitle
@@ -52,8 +60,8 @@ export const ServicesCard = ({ title, content, price }: ServicesCardProps) => {
           <div className="row align-items-baseline justify-content-center p-0 m-0">
             <div className="col resLink p-0 m-0">
               <a href="#">
-                <Typography.SubHeader
-                  content="Make Your Reservation"
+                <Typography.NavLink
+                  navLink="Make Your Reservation"
                   color="var(--solidBrown)"
                 />
               </a>
@@ -68,6 +76,7 @@ export const ServicesCard = ({ title, content, price }: ServicesCardProps) => {
                 border-radius: 10px;
                 min-height: 400px;
                 transition: color 0.15s ease, border-color 0.15s ease;
+                filter: drop-shadow(8px 8px 12px var(--solidBrown));
             }
             .servicesCard h2, p {
                 color: var(--solidBrown);

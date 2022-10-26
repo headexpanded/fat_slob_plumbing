@@ -2,28 +2,27 @@
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 
-type ServicesSectionProps = {
-  // content: FSPCards.ServicesCard (title="" content="");
-};
-
 export const ServicesSection = () => {
   const serviceCards = [
     {
       key: "1",
       title: "Regular",
-      content: "4 x pints of lager, 1 x chicken vindaloo",
+      nightBeforeContent:
+        "4x pints lager, 1x chicken vindaloo, 1x large bowl spicy cabbage soup.",
       price: "\u00a3199.95",
     },
     {
       key: "2",
       title: "Strong",
-      content: "5 x pints of lager, 1 x pint Ron's homebrew",
+      nightBeforeContent:
+        "All   Regular items, PLUS 2x pints lager, 2x rogan josh, 2x chili kebabs (w/ extra hot sauce), 1x pint Ron's homebrew.",
       price: "\u00a3299.95",
     },
     {
       key: "3",
       title: "Explosive",
-      content: `{<ul><li>6 x pints of lager</li><li>2 x pints Ron's homebrew</li><li>2 x Moong Dhal</li><li>1 x 350g jar Sauerkraut</li><li>500ml prune juice</li></ul>}`,
+      nightBeforeContent:
+        "All Regular & Strong items, PLUS 2x pints lager, 2x pints Ron's homebrew, 2x Moong Dhal, 1x 350g jar Sauerkraut, 500ml prune juice",
       price: "\u00a3399.95",
     },
   ];
@@ -41,21 +40,24 @@ export const ServicesSection = () => {
         <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
           <div className="row gap-3">
             {serviceCards.map(({ key, ...other }) => {
-              return <Cards.ServicesCard key={key} {...other} />;
+              return (
+                <div className="col-lg" key={key}>
+                  <Cards.ServicesCard {...other} />
+                </div>
+              );
             })}
           </div>
         </div>
       </section>
       <style jsx>{`
         .servicesSection {
-          background-color: var(--hintOfBrown);
+          background-color: var(--coffee);
           color: var(--hintOfBrown);
           min-height: 100vh;
-          padding: 40px 0px 20px 0px;
-        }
-
-        .servicesTitle {
           padding: 40px 0px 40px 0px;
+        }
+        .servicesTitle {
+          padding: 0px 0px 0px 0px;
         }
       `}</style>
     </>
