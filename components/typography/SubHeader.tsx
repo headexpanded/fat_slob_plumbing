@@ -15,10 +15,8 @@ export const SubHeader = ({ content, color }: SubHeaderProps) => {
       <style jsx>{`
         h4 {
           color: ${color ?? ""};
-          font-size: 0.8rem;
-          text-align: left;
-          padding: 0px 0px 0px 442px;
-          margin: -20px 0px 60px 0px;
+          font-size: 0.9rem;
+          padding: 20px 0px 8px 0px;
         }
       `}</style>
     </>
