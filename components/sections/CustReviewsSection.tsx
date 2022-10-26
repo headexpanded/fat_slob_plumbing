@@ -43,9 +43,6 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
           min-height: 100vh;
           padding: 28px 0px 0px 0px;
         }
-
-        .custReviewsTitle {
-        }
       `}</style>
     </>
   );
