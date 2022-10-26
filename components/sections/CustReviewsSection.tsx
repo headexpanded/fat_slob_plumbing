@@ -20,10 +20,13 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
     <>
       <section className="custReviewsSection">
         <div className="custReviewsTitle">
-          <Typography.SectionTitle content="Customer Reviews" color="#7b6e4d" />
+          <Typography.SectionTitle
+            content="Customer Reviews"
+            color="var(--solidBrown)"
+          />
         </div>
         <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
-          <div className="row  gap-3">
+          <div className="row gap-5">
             {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
 
             {data?.map(({ id, ...other }) => {
@@ -41,7 +44,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         .custReviewsSection {
           background-color: var(--coffee);
           min-height: 100vh;
-          padding: 28px 0px 0px 0px;
+          padding: 40px 0px 20px 0px;
         }
 
         .custReviewsTitle {

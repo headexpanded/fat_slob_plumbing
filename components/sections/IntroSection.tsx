@@ -7,22 +7,14 @@ export const IntroSection = () => {
   return (
     <>
       <section className="introSection">
-        <div className="container">
-          <div className="row">
-            <div className="col-2"></div>
-            <div className="col-8">
-              <div className="introTitle">
-                <Typography.MainTitle
-                  content="Fat Slob Plumbing"
-                  color="var(--solidBrown)"
-                />
-                <Typography.SubHeader
-                  content="Stress testing domestic sewage systems since 2013"
-                  color="var(--solidBrown)"
-                />
-              </div>
+        <div className="container d-flex flex-row justify-content-center">
+          <div className="row ">
+            <div className="col-12 introTitle">
+              <Typography.MainTitle
+                content="Fat Slob Plumbing"
+                color="var(--solidBrown)"
+              />
             </div>
-            <div className="col-2"></div>
           </div>
         </div>
 
@@ -40,7 +32,7 @@ export const IntroSection = () => {
             </div>
           </div>
           <div className="container text-center">
-            <div className="row ">
+            <div className="row mx-5">
               <div className="col-2"></div>
               <div className="col-8">
                 <Typography.ParagraphC
@@ -71,6 +63,7 @@ export const IntroSection = () => {
           background-color: var(--hintOfBrown);
           min-height: 100vh;
           padding: 160px 0px 0px 0px;
+          text-align: center;
         }
         .introText {
           padding: 0px 0px 12px 0px;

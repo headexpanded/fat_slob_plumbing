@@ -27,12 +27,14 @@ export const CustReviewCard = ({
           <img src={photo} alt="Customer photo" />
         </div>
       </div>
+
       <style jsx>{`
         .custReviewCard {
           background-color: var(--hintOfBrown);
           border: 2px solid var(--solidBrown);
           border-radius: 10px;
-          height: auto;
+          filter: drop-shadow(8px 8px 12px var(--solidBrown));
+          min-height: 260px;
           position: relative;
           text-align: left;
           transition: color 0.15s ease, border-color 0.15s ease;
@@ -63,7 +65,7 @@ export const CustReviewCard = ({
           background-size: cover;
           background-position: center;
           border-radius: 50%;
-          filter: sepia(100%);
+          filter: grayscale(90%) contrast(90%) brightness(90%);
           height: 80px;
           width: 80px;
         }
