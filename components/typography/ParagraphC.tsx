@@ -1,13 +1,4 @@
-// define properties of paragraph texts
-// import {Palette} from "../palette/Palette"
-// define Paragraph type properties
-// type Palette ={
-// hintOfBrown: "#fefceb",
-// lagerYellow: "#f5d714",
-// solidBrown: "#804d00",
-// lemonCurry: "#be9b0c",
-//
-// }
+// define properties of centered paragraph texts
 
 type ParagraphCProps = {
   content: string;
@@ -22,7 +13,7 @@ export const ParagraphC = ({ content, color }: ParagraphCProps) => {
       <style jsx>{`
         p {
           color: ${color ?? ""};
-          font-size: 1.4rem;
+          font-size: 1.5rem;
           text-align: center;
           margin: 20px 0px 0px 0px;
         }

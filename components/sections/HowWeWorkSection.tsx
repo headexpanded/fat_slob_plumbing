@@ -32,7 +32,7 @@ export const HowWeWorkSection = () => {
             <div className="col-8">
               <Typography.ParagraphL
                 content="Our experienced
-                        professionals come to your home by appointment. By the time we
+                        professionals come to your home in the morning. By the time we
                         leave, you'll know for sure if your
                         system can take it - or not!"
                 color="var(--solidBrown)"
@@ -47,8 +47,7 @@ export const HowWeWorkSection = () => {
             <div className="col-8">
               <Typography.ParagraphL
                 content="The night before your appointment, 
-                    your Fat Slob Plumber will ingest a carefully formulated blend of food and drink to ensure optimal performance 
-                    the next morning."
+                    your Fat Slob Plumber will ingest a carefully formulated blend of food and drink to ensure optimal performance."
                 color="var(--solidBrown)"
               />
             </div>
@@ -85,7 +84,7 @@ export const HowWeWorkSection = () => {
 
       <style jsx>{`
         .howWeWorkSection {
-          background-color: var(--coffee);
+          background-color: var(--hintOfBrown);
           min-height: 100vh;
           padding: 40px 0px 20px 0px;
         }
