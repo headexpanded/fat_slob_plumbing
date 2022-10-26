@@ -7,10 +7,10 @@ import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
 
 type HomeProps = {
-  customerReviewCards: CustomerReview[];
+  customerReviews: CustomerReview[];
 };
 
-const Home = ({ customerReviewCards }: HomeProps) => {
+const Home = ({ customerReviews }: HomeProps) => {
   return (
     <div className={styles._container}>
       <Head>
@@ -28,7 +28,7 @@ const Home = ({ customerReviewCards }: HomeProps) => {
       {/* Services */}
       <Section.Services />
       {/* Customer Reviews */}
-      <Section.CustReviews data={customerReviewCards}></Section.CustReviews>
+      <Section.CustReviews data={customerReviews}></Section.CustReviews>
       {/* Franchises */}
       <Section.Franchises />
       {/* Valued Partners */}
