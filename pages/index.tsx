@@ -92,7 +92,7 @@ export async function getStaticProps() {
   return {
     props: {
       customerReviews: custReviewsData.customerReviews,
-      nightBefores: nightBeforeData.nightBefore,
+      // nightBefores: nightBeforeData.nightBefore,
     }, // will be passed to the page component as props
   };
 }
