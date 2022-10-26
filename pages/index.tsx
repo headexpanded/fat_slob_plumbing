@@ -23,12 +23,12 @@ const Home = ({ customerReviews }: HomeProps) => {
       <Section.NavBar />
       {/* Intro Section */}
       <Section.Intro />
+      {/* Customer Reviews */}
+      <Section.CustReviews data={customerReviews}></Section.CustReviews>
       {/* How We Work */}
       <Section.HowWeWork />
       {/* Services */}
       <Section.Services />
-      {/* Customer Reviews */}
-      <Section.CustReviews data={customerReviews}></Section.CustReviews>
       {/* Franchises */}
       <Section.Franchises />
       {/* Valued Partners */}
