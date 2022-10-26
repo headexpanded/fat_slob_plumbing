@@ -61,7 +61,7 @@ export default Home;
 export async function getStaticProps() {
   const query = gql`
     {
-      customerReviewCards {
+      customerReviews {
         customerName
         id
         review
@@ -76,7 +76,7 @@ export async function getStaticProps() {
   );
   return {
     props: {
-      customerReviewCards: data.customerReviewCards,
+      customerReviews: data.customerReviews,
     }, // will be passed to the page component as props
   };
 }
