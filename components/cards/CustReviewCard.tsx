@@ -63,7 +63,7 @@ export const CustReviewCard = ({
           background-size: cover;
           background-position: center;
           border-radius: 50%;
-          filter: sepia(100%);
+          filter: grayscale(100%);
           height: 80px;
           width: 80px;
         }
