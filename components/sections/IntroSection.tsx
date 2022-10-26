@@ -16,10 +16,6 @@ export const IntroSection = () => {
                   content="Fat Slob Plumbing"
                   color="var(--solidBrown)"
                 />
-                <Typography.SubHeader
-                  content="Stress testing domestic sewage systems since 2013"
-                  color="var(--solidBrown)"
-                />
               </div>
             </div>
             <div className="col-2"></div>
