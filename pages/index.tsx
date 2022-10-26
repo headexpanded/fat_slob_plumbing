@@ -61,7 +61,7 @@ const Home = ({ customerReviews }: HomeProps) => {
 export default Home;
 
 export async function getStaticProps() {
-  const query = gql`
+  const custReviewsQuery = gql`
     {
       customerReviews {
         customerName
@@ -74,7 +74,7 @@ export async function getStaticProps() {
 
   const data = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
-    query
+    custReviewsQuery
   );
   return {
     props: {
