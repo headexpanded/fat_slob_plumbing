@@ -72,13 +72,27 @@ export async function getStaticProps() {
     }
   `;
 
-  const data = await request(
+  const nightBeforeQuery = gql`
+    {
+      nightBefores {
+        edible
+      }
+    }
+  `;
+
+  const custReviewsData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     custReviewsQuery
   );
+
+  const nightBeforeData = await request(
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
+    nightBeforeQuery
+  );
   return {
     props: {
-      customerReviews: data.customerReviews,
+      customerReviews: custReviewsData.customerReviews,
+      nightBefores: nightBeforeData.nightBefore,
     }, // will be passed to the page component as props
   };
 }
