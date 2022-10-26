@@ -20,7 +20,10 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
     <>
       <section className="custReviewsSection">
         <div className="custReviewsTitle">
-          <Typography.SectionTitle content="Customer Reviews" color="#7b6e4d" />
+          <Typography.SectionTitle
+            content="Customer Reviews"
+            color="var(--solidBrown)"
+          />
         </div>
         <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
           <div className="row  gap-3">
