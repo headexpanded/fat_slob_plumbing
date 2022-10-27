@@ -27,11 +27,9 @@ export const ServicesCard = ({
                   color="var(--solidBrown)"
                 />
                 <div className="servicesInfo">
-                  <p>
-                    <ul>
-                      <li>{nightBeforeContent}</li>
-                    </ul>
-                  </p>
+                  <ul>
+                    <li>{nightBeforeContent}</li>
+                  </ul>
                 </div>
               </div>
               <div className="onTheDay">
