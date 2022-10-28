@@ -66,6 +66,7 @@ export const IntroSection = () => {
         .introSection {
           background-color: var(--hintOfBrown);
           min-height: 100vh;
+          width: auto;
           padding: 160px 0px 0px 0px;
         }
         .introText {
