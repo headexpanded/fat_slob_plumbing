@@ -5,12 +5,14 @@ import { Section } from "../components/sections";
 import styles from "../styles/Home.module.css";
 import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
+import { nightBefore } from "../components/sections/ServicesSection";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
+  nightBefores: nightBefore[];
 };
 
-const Home = ({ customerReviews }: HomeProps) => {
+const Home = ({ customerReviews, nightBefores }: HomeProps) => {
   return (
     <div className={styles._container}>
       <Head>
@@ -28,7 +30,7 @@ const Home = ({ customerReviews }: HomeProps) => {
       {/* How We Work */}
       <Section.HowWeWork />
       {/* Services */}
-      <Section.Services />
+      <Section.Services data={nightBefores} />
       {/* Franchises */}
       <Section.Franchises />
       {/* Valued Partners */}
@@ -76,6 +78,8 @@ export async function getStaticProps() {
     {
       nightBefores {
         edible
+        price
+        title
       }
     }
   `;
@@ -92,7 +96,7 @@ export async function getStaticProps() {
   return {
     props: {
       customerReviews: custReviewsData.customerReviews,
-      // nightBefores: nightBeforeData.nightBefore,
+      nightBefores: nightBeforeData.nightBefores,
     }, // will be passed to the page component as props
   };
 }

@@ -2,17 +2,13 @@ import { Typography } from "../typography";
 
 // define ServicesCard properties
 type ServicesCardProps = {
-  nightBeforeContent: string;
-  price: string;
-  title: string;
+  edible: string;
+  price?: string;
+  title?: string;
 };
 
 // define ServicesCard component
-export const ServicesCard = ({
-  title,
-  nightBeforeContent,
-  price,
-}: ServicesCardProps) => {
+export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
   const pound = "\u00a3";
   return (
     <>
@@ -28,7 +24,7 @@ export const ServicesCard = ({
                 />
                 <div className="servicesInfo">
                   <ul>
-                    <li>{nightBeforeContent}</li>
+                    <li>{edible}</li>
                   </ul>
                 </div>
               </div>

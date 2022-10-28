@@ -2,33 +2,20 @@
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 
-export const ServicesSection = () => {
-  const serviceCards = [
-    {
-      key: "1",
-      title: "Regular",
-      nightBeforeContent:
-        "4x pints lager, 1x chicken vindaloo, 1x large bowl spicy cabbage soup.",
-      price: "\u00a3199.95",
-    },
-    {
-      key: "2",
-      title: "Strong",
-      nightBeforeContent:
-        "All   Regular items, PLUS 2x pints lager, 2x rogan josh, 2x chili kebabs (w/ extra hot sauce), 1x pint Ron's homebrew.",
-      price: "\u00a3299.95",
-    },
-    {
-      key: "3",
-      title: "Explosive",
-      nightBeforeContent:
-        "All Regular & Strong items, PLUS 2x pints lager, 2x pints Ron's homebrew, 2x Moong Dhal, 1x 350g jar Sauerkraut, 500ml prune juice",
-      price: "\u00a3399.95",
-    },
-  ];
+export type nightBefore = {
+  edible: string;
+  id: string;
+  price?: string;
+  title?: string;
+};
+
+type ServicesSectionProps = {
+  data: Array<nightBefore>;
+};
+
+export const ServicesSection = ({ data }: ServicesSectionProps) => {
   return (
     <>
-      {/*  extract key from serviceCards, spread the rest into card component */}
       <section className="servicesSection">
         <div className="servicesTitle">
           <Typography.SectionTitle
@@ -39,9 +26,9 @@ export const ServicesSection = () => {
 
         <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
           <div className="row gap-3">
-            {serviceCards.map(({ key, ...other }) => {
+            {data?.map(({ id, ...other }) => {
               return (
-                <div className="col-lg" key={key}>
+                <div className="col-lg" key={id}>
                   <Cards.ServicesCard {...other} />
                 </div>
               );
