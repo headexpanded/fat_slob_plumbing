@@ -7,7 +7,7 @@ export const IntroSection = () => {
   return (
     <>
       <section className="introSection">
-        <div className="container">
+        <div className="container text-center">
           <div className="row">
             <div className="col-2"></div>
             <div className="col-8">
@@ -47,7 +47,7 @@ export const IntroSection = () => {
               <div className="col-2"></div>
             </div>
           </div>
-          <div className="container text-center">
+          <div className="container">
             <div className="row">
               <div className="col-2"></div>
               <div className="col-8">

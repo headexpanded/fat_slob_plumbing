@@ -13,15 +13,13 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
       <style jsx>{`
         h2 {
           color: ${color ?? ""};
-
-          text-transform: uppercase;
-          font-size: 5rem;
+          font-size: 3rem;
           font-weight: 800;
+          letter-spacing: -0.15rem;
           line-height: 1.1;
           padding: 48px 4px 80px 4px;
           text-align: center;
-          font-size: 46px;
-          letter-spacing: -0.1rem;
+          text-transform: uppercase;
         }
       `}</style>
     </>
