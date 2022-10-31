@@ -1,3 +1,5 @@
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 // define CustReviewCard properties
 type CustReviewCardProps = {
   review: string;
@@ -13,7 +15,7 @@ export const CustReviewCard = ({
 }: CustReviewCardProps) => {
   return (
     <>
-      <div className="px-1 mt-1 mb-1 custReviewCard">
+      <div className="custReviewCard px-1 mt-1 mb-1 ">
         <div className="custReview">
           <p>{review}</p>
         </div>

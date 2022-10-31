@@ -6,7 +6,7 @@ type NavBarSectionProps = {};
 export const NavBarSection = () => {
   return (
     <>
-      <section className="navBarSection">
+      <section className="NavBarSection">
         <div className="container d-flex flex-row px-5 justify-content-around">
           <Typography.NavLink navLink="HOME" color="var(--solidBrown)" />
           <Typography.NavLink navLink="SERVICES" color="var(--solidBrown)" />
@@ -19,11 +19,6 @@ export const NavBarSection = () => {
           <Typography.NavLink navLink="PARTNERS" color="var(--solidBrown)" />
         </div>
       </section>
-      <style jsx>{`
-        .navBarSection {
-          font-size: 0.5rem;
-        }
-      `}</style>
     </>
   );
 };
