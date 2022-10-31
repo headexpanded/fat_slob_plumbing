@@ -3,27 +3,15 @@
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 
-export type nightBefore = {
+export type foodAndDrink = {
   edible: string;
   id: string;
-  price?: string;
 };
-
 type ServicesSectionProps = {
-  data: Array<nightBefore>;
+  data: Array<foodAndDrink>;
 };
 
 export const ServicesSection = ({ data }: ServicesSectionProps) => {
-  const edibles = [];
-  edibles.push(
-    data?.map(({ id, edible }) => {
-      return "<li key=" + id + ">" + edible + " </li>";
-    })
-  );
-  for (let index = 0; index < edibles.length; index++) {
-    const element = edibles[index];
-    console.log(element);
-  }
   return (
     <>
       <section id="services" className="servicesSection">
@@ -45,23 +33,12 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
             <div className="col-2"></div>
           </div>
         </div>
-        <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
+        <div className="container d-flex flex-row align-items-center justify-content-space-evenly px-4 pb-2">
           <div className="row gap-3">
-            <ul>
-              {data?.map(({ ...edibles }) => {
-                return (
-                  <>
-                    {
-                      <li key={"id"}>
-                        {" "}
-                        +
-                        <Cards.BeforeCard food={edibles.edible} /> +
-                      </li>
-                    }
-                  </>
-                );
-              })}
-            </ul>
+            <div className="col-lg">
+              <Cards.BeforeCard data={data}></Cards.BeforeCard>
+              <Cards.BeforeCard data={data}></Cards.BeforeCard>
+            </div>
           </div>
         </div>
       </section>

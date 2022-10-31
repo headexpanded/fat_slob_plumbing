@@ -1,21 +1,32 @@
 import { Typography } from "../typography";
 
 // define BeforeCard properties
+export type foodAndDrink = {
+  edible: string;
+  id: string;
+};
+
 type BeforeCardProps = {
-  food: string;
-  price?: string;
+  data: Array<foodAndDrink>;
 };
 
 // define beforeCard component
-export const BeforeCard = ({ food, price }: BeforeCardProps) => {
-  const priceInPounds = "\u00a3" + price;
+export const BeforeCard = ({ data }: BeforeCardProps) => {
+  const priceInPounds = "\u00a3";
+
   return (
     <>
       <div className="beforeCard px-1 mt-1 mb-1">
         <div className="container">
           <div className="row">
             <div className="col p-0 m-0">
-              <div className="servicesInfo">{food}</div>
+              <div className="servicesInfo">
+                <ul>
+                  {data?.map(({ ...edibles }) => {
+                    return <>{<li key={"id"}> {edibles.edible} </li>}</>;
+                  })}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -85,7 +96,7 @@ export const BeforeCard = ({ food, price }: BeforeCardProps) => {
 
             .servicesInfo{
                 min-height: 300px;
-                color: blue;
+                color: var(--solidBrown);
             }
         
         `}</style>

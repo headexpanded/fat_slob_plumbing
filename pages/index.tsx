@@ -5,16 +5,16 @@ import { Section } from "../components/sections";
 import styles from "../styles/Home.module.css";
 import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
-import { nightBefore } from "../components/sections/ServicesSection";
+import { foodAndDrink } from "../components/sections/ServicesSection";
 import { navLink } from "../components/sections/NavBarSection";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
-  nightBefores: nightBefore[];
+  foodsAndDrinks: foodAndDrink[];
   navLinks: navLink[];
 };
 
-const Home = ({ customerReviews, nightBefores, navLinks }: HomeProps) => {
+const Home = ({ customerReviews, foodsAndDrinks, navLinks }: HomeProps) => {
   return (
     <div className={styles._container}>
       <Head>
@@ -32,7 +32,7 @@ const Home = ({ customerReviews, nightBefores, navLinks }: HomeProps) => {
       {/* How We Work */}
       <Section.HowWeWork />
       {/* Services */}
-      <Section.Services data={nightBefores}></Section.Services>
+      <Section.Services data={foodsAndDrinks}></Section.Services>
       {/* Franchises */}
       <Section.Franchises />
       {/* Partners */}
@@ -76,12 +76,10 @@ export async function getStaticProps() {
     }
   `;
 
-  const nightBeforeQuery = gql`
+  const foodsAndDrinksQuery = gql`
     {
-      nightBefores {
+      foodsAndDrinks {
         edible
-        price
-        id
       }
     }
   `;
@@ -101,9 +99,9 @@ export async function getStaticProps() {
     custReviewsQuery
   );
 
-  const nightBeforeData = await request(
+  const foodsAndDrinksData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
-    nightBeforeQuery
+    foodsAndDrinksQuery
   );
 
   const navLinkData = await request(
@@ -113,7 +111,7 @@ export async function getStaticProps() {
   return {
     props: {
       customerReviews: custReviewsData.customerReviews,
-      nightBefores: nightBeforeData.nightBefores,
+      foodAndDrink: foodsAndDrinksData.foodAndDrink,
       navLinks: navLinkData.navLinks,
     }, // will be passed to the page component as props
   };
