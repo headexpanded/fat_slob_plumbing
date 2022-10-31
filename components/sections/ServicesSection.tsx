@@ -1,5 +1,5 @@
-// define div to hold Services Cards
-import { Component } from "react";
+// define Services section
+
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 
@@ -7,7 +7,6 @@ export type nightBefore = {
   edible: string;
   id: string;
   price?: string;
-  title?: string;
 };
 
 type ServicesSectionProps = {
@@ -54,9 +53,6 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
           color: var(--hintOfBrown);
           min-height: 100vh;
           padding: 40px 0px 40px 0px;
-        }
-        .servicesTitle {
-          padding: 0px 0px 0px 0px;
         }
       `}</style>
     </>

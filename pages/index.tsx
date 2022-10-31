@@ -32,7 +32,7 @@ const Home = ({ customerReviews, nightBefores, navLinks }: HomeProps) => {
       {/* How We Work */}
       <Section.HowWeWork />
       {/* Services */}
-      <Section.Services data={nightBefores} />
+      <Section.Services data={nightBefores}></Section.Services>
       {/* Franchises */}
       <Section.Franchises />
       {/* Partners */}
@@ -81,7 +81,7 @@ export async function getStaticProps() {
       nightBefores {
         edible
         price
-        title
+        id
       }
     }
   `;
@@ -91,6 +91,7 @@ export async function getStaticProps() {
       navLinks {
         navLinkName
         navLink
+        id
       }
     }
   `;

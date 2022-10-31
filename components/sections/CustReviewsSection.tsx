@@ -1,4 +1,5 @@
-// define div to hold Customer Review cards
+// define Customer Reviews section
+
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 import { request, gql } from "graphql-request";
@@ -18,7 +19,7 @@ type CustReviewsSectionProps = {
 export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
   return (
     <>
-      <section className="custReviewsSection">
+      <section id="custReviews" className="custReviewsSection">
         <div className="custReviewsTitle">
           <Typography.SectionTitle
             content="Customer Reviews"

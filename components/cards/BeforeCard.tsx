@@ -4,11 +4,10 @@ import { Typography } from "../typography";
 type BeforeCardProps = {
   edible: string;
   price?: string;
-  title?: string;
 };
 
 // define beforeCard component
-export const BeforeCard = ({ title, edible, price }: BeforeCardProps) => {
+export const BeforeCard = ({ edible, price }: BeforeCardProps) => {
   const priceInPounds = "\u00a3" + price;
   return (
     <>
@@ -16,18 +15,9 @@ export const BeforeCard = ({ title, edible, price }: BeforeCardProps) => {
         <div className="container">
           <div className="row">
             <div className="col">
-              <h2>{title}</h2>
-              <div className="nightBefore">
-                <div className="servicesInfo">
-                  <ul>
-                    <li>
-                      <Typography.SubHeader content="Hello World" />
-                      <>{edible}</>
-                    </li>
-                  </ul>
-                </div>
+              <div className="servicesInfo">
+                <>{edible}</>
               </div>
-              <div className="onTheDay"></div>
             </div>
           </div>
         </div>
