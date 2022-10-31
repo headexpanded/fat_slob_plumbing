@@ -9,8 +9,7 @@ export const IntroSection = () => {
       <section id="intro" className="introSection">
         <div className="container text-center">
           <div className="row">
-            <div className="col-2"></div>
-            <div className="col-8">
+            <div className="col-12">
               <div className="introTitle">
                 <Typography.MainTitle
                   content="Fat Slob Plumbing"
@@ -18,19 +17,20 @@ export const IntroSection = () => {
                 />
               </div>
             </div>
-            <div className="col-2"></div>
           </div>
         </div>
 
         <div className="introText">
           <div className="container text-center">
             <div className="row">
-              <div className="col-12">
+              <div className="col-2"></div>
+              <div className="col-8">
                 <Typography.ParagraphC
                   content="Most home systems can't flush a big load."
                   color="var(--solidBrown)"
                 />
               </div>
+              <div className="col-2"></div>
             </div>
           </div>
           <div className="container text-center">
