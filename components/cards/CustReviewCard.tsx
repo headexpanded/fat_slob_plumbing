@@ -32,6 +32,7 @@ export const CustReviewCard = ({
           background-color: var(--hintOfBrown);
           border: 2px solid var(--solidBrown);
           border-radius: 10px;
+          filter: drop-shadow(8px 8px 12px var(--solidBrown));
           height: auto;
           position: relative;
           text-align: left;

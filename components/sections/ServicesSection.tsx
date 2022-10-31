@@ -23,7 +23,18 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
             color="var(--solidBrown)"
           />
         </div>
-
+        <div className="container pb-4">
+          <div className="row">
+            <div className="col-2"></div>
+            <div className="col-8">
+              <Typography.ParagraphC
+                content="Select the foods and drinks you want your Fat Slob Plumber to consume before coming to your home:"
+                color="var(--solidBrown)"
+              />
+            </div>
+            <div className="col-2"></div>
+          </div>
+        </div>
         <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
           <div className="row gap-3">
             {data?.map(({ id, ...other }) => {
