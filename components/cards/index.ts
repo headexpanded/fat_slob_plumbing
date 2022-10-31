@@ -1,10 +1,10 @@
 
 // index of card styles for Fat Slob Plumbing
-import { ServicesCard } from "./ServicesCard";
+import { BeforeCard } from "./beforeCard";
 import { CustReviewCard } from "./CustReviewCard";
 
 
 export const Cards = {
-    ServicesCard,
+    BeforeCard,
     CustReviewCard,
 }

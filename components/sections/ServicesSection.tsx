@@ -1,4 +1,5 @@
 // define div to hold Services Cards
+import { Component } from "react";
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 
@@ -40,7 +41,7 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
             {data?.map(({ id, ...other }) => {
               return (
                 <div className="col-lg" key={id}>
-                  <Cards.ServicesCard {...other} />
+                  <Cards.BeforeCard {...other} />
                 </div>
               );
             })}

@@ -1,18 +1,18 @@
 import { Typography } from "../typography";
 
-// define ServicesCard properties
-type ServicesCardProps = {
+// define BeforeCard properties
+type BeforeCardProps = {
   edible: string;
   price?: string;
   title?: string;
 };
 
-// define ServicesCard component
-export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
+// define beforeCard component
+export const BeforeCard = ({ title, edible, price }: BeforeCardProps) => {
   const priceInPounds = "\u00a3" + price;
   return (
     <>
-      <div className="px-1 mt-1 mb-1 servicesCard">
+      <div className="beforeCard px-1 mt-1 mb-1">
         <div className="container">
           <div className="row">
             <div className="col">
@@ -20,16 +20,14 @@ export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
               <div className="nightBefore">
                 <div className="servicesInfo">
                   <ul>
-                    <li>{edible}</li>
+                    <li>
+                      <Typography.SubHeader content="Hello World" />
+                      <>{edible}</>
+                    </li>
                   </ul>
                 </div>
               </div>
-              <div className="onTheDay">
-                <Typography.ParagraphC
-                  content="On the morning of your appointment, we will consume at least:"
-                  color="var(--solidBrown)"
-                />
-              </div>
+              <div className="onTheDay"></div>
             </div>
           </div>
         </div>
@@ -51,7 +49,7 @@ export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
         </div>
       </div>
       <style jsx>{`
-            .servicesCard{
+            .beforeCard{
                 background-color:var(--hintOfBrown);
                 border: 2px solid var(--solidBrown);
                 border-radius: 10px;
@@ -59,19 +57,19 @@ export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
                 transition: color 0.15s ease, border-color 0.15s ease;
                 filter: drop-shadow(8px 8px 12px var(--solidBrown));
             }
-            .servicesCard h2, p {
+            .beforeCard h2, p {
                 color: var(--solidBrown);
                 padding: 6px;
                 
             }
 
-            .servicesCard h2 {
+            .beforeCard h2 {
                 font-size: 2 rem;
                 font-weight:bold;
                 text-align: center;
             }
             
-            .servicesCard p {
+            .beforeCard li {
                 font-size: 1.25rem
                 margin: 0 0 1rem 0;
                 

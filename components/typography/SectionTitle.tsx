@@ -1,4 +1,5 @@
-// define properties of Section Title Dark text
+import { NavLink } from "./NavLink";
+// define properties of Section Titles
 
 // define Section Title Dark type properties
 type SectionTitleProps = {
@@ -10,6 +11,7 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
   return (
     <>
       <h2>{content}</h2>
+
       <style jsx>{`
         h2 {
           color: ${color ?? ""};
