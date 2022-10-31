@@ -14,6 +14,16 @@ type ServicesSectionProps = {
 };
 
 export const ServicesSection = ({ data }: ServicesSectionProps) => {
+  const edibles = [];
+  edibles.push(
+    data?.map(({ id, edible }) => {
+      return "<li key=" + id + ">" + edible + " </li>";
+    })
+  );
+  for (let index = 0; index < edibles.length; index++) {
+    const element = edibles[index];
+    console.log(element);
+  }
   return (
     <>
       <section id="services" className="servicesSection">
@@ -37,13 +47,21 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
         </div>
         <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
           <div className="row gap-3">
-            {data?.map(({ id, ...other }) => {
-              return (
-                <div className="col-lg" key={id}>
-                  <Cards.BeforeCard {...other} />
-                </div>
-              );
-            })}
+            <ul>
+              {data?.map(({ ...edibles }) => {
+                return (
+                  <>
+                    {
+                      <li key={"id"}>
+                        {" "}
+                        +
+                        <Cards.BeforeCard food={edibles.edible} /> +
+                      </li>
+                    }
+                  </>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </section>
