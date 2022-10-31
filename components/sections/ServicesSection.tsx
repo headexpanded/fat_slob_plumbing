@@ -37,6 +37,8 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
           <div className="row gap-3">
             <div className="col-lg">
               <Cards.BeforeCard data={data}></Cards.BeforeCard>
+            </div>
+            <div className="col-lg">
               <Cards.BeforeCard data={data}></Cards.BeforeCard>
             </div>
           </div>
