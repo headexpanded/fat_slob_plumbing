@@ -80,6 +80,7 @@ export async function getStaticProps() {
     {
       foodsAndDrinks {
         edible
+        id
       }
     }
   `;
@@ -111,7 +112,7 @@ export async function getStaticProps() {
   return {
     props: {
       customerReviews: custReviewsData.customerReviews,
-      foodAndDrink: foodsAndDrinksData.foodAndDrink,
+      foodsAndDrinks: foodsAndDrinksData.foodsAndDrinks,
       navLinks: navLinkData.navLinks,
     }, // will be passed to the page component as props
   };
