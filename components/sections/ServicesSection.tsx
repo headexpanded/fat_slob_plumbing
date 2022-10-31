@@ -26,7 +26,7 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
             <div className="col-2"></div>
             <div className="col-8">
               <Typography.ParagraphC
-                content="Select the foods and drinks you want your Fat Slob Plumber to consume before coming to your home:"
+                content="Select the foods and drinks your Fat Slob Plumber will consume before visiting your home:"
                 color="var(--solidBrown)"
               />
             </div>

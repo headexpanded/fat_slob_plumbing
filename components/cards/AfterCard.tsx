@@ -15,25 +15,20 @@ export const AfterCard = () => {
   return (
     <>
       <div className="afterCard px-1 mt-1 mb-1">
-        <div className="container">
-          <div className="row">
-            <div className="col p-0 m-0">
-              <div>
-                <Typography.ParagraphC
-                  content="Your cart"
-                  color="var(--solidBrown)"
-                />
-              </div>
-              <div className="servicesInfo">
-                {/* <ul>
+        <div>
+          <Typography.ParagraphC
+            content="Your cart"
+            color="var(--solidBrown)"
+          />
+        </div>
+        <div className="servicesInfo">
+          {/* <ul>
                   {data?.map(({ ...edibles }) => {
                     return <>{<li key={"id"}> {edibles.edible} </li>}</>;
                   })}
                 </ul> */}
-              </div>
-            </div>
-          </div>
         </div>
+
         <div className="container d-flex flex-row align-items-center justify-content-center p-0 m-0">
           <div className="row align-items-baseline justify-content-center p-0 m-0">
             <div className="col p-0 m-0">

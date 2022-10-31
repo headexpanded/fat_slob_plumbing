@@ -15,24 +15,18 @@ export const BeforeCard = ({ data }: BeforeCardProps) => {
   return (
     <>
       <div className="beforeCard px-1 mt-1 mb-1">
-        <div className="container">
-          <div className="row">
-            <div className="col p-0 m-0">
-              <div>
-                <Typography.ParagraphC
-                  content="Your choices."
-                  color="var(--solidBrown)"
-                />
-              </div>
-              <div className="servicesInfo">
-                <ul>
-                  {data?.map(({ ...edibles }) => {
-                    return <>{<li key={"id"}> {edibles.edible} </li>}</>;
-                  })}
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div>
+          <Typography.ParagraphC
+            content="Your choices."
+            color="var(--solidBrown)"
+          />
+        </div>
+        <div className="servicesInfo">
+          <ul>
+            {data?.map(({ ...edibles }) => {
+              return <>{<li key={"id"}> {edibles.edible} </li>}</>;
+            })}
+          </ul>
         </div>
       </div>
       <style jsx>{`
