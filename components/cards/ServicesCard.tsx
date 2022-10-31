@@ -9,7 +9,7 @@ type ServicesCardProps = {
 
 // define ServicesCard component
 export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
-  const pound = "\u00a3";
+  const priceInPounds = "\u00a3" + price;
   return (
     <>
       <div className="px-1 mt-1 mb-1 servicesCard">
@@ -18,10 +18,6 @@ export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
             <div className="col">
               <h2>{title}</h2>
               <div className="nightBefore">
-                <Typography.ParagraphL
-                  content="The night before your appointment, we will consume at least:"
-                  color="var(--solidBrown)"
-                />
                 <div className="servicesInfo">
                   <ul>
                     <li>{edible}</li>
@@ -44,7 +40,7 @@ export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
             </div>
             <div className="col p-0 m-0">
               <Typography.SectionTitle
-                content={price}
+                content={priceInPounds}
                 color="var(--solidBrown)"
               />
             </div>
