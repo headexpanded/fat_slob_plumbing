@@ -16,7 +16,7 @@ type ServicesSectionProps = {
 export const ServicesSection = ({ data }: ServicesSectionProps) => {
   return (
     <>
-      <section className="servicesSection">
+      <section id="services" className="servicesSection">
         <div className="servicesTitle">
           <Typography.SectionTitle
             content="Choose Your Service Level"

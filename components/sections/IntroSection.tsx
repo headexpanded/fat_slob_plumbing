@@ -6,7 +6,7 @@ type IntroSectionProps = {};
 export const IntroSection = () => {
   return (
     <>
-      <section className="introSection">
+      <section id="intro" className="introSection">
         <div className="container text-center">
           <div className="row">
             <div className="col-2"></div>
@@ -25,14 +25,12 @@ export const IntroSection = () => {
         <div className="introText">
           <div className="container text-center">
             <div className="row">
-              <div className="col-2"></div>
-              <div className="col-8">
+              <div className="col-12">
                 <Typography.ParagraphC
                   content="Most home systems can't flush a big load."
                   color="var(--solidBrown)"
                 />
               </div>
-              <div className="col-2"></div>
             </div>
           </div>
           <div className="container text-center">

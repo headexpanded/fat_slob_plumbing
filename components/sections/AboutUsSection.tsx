@@ -15,14 +15,15 @@ export const AboutUsSection = () => {
   ];
   return (
     <>
-      <div className="aboutUs">
+      <section id="about" className="aboutUs">
         <div className="aboutUsTitle">
           <Typography.SectionTitle
             content="About Us"
             color="var(--solidBrown)"
           />
         </div>
-      </div>
+      </section>
+
       <style jsx>{`
         .aboutUs {
           background-color: var(--hintOfBrown);

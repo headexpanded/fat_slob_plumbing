@@ -1,22 +1,28 @@
 // define NavBar properties
-import { Typography } from "../typography";
+import { NavLink } from "../typography/NavLink";
 
-type NavBarSectionProps = {};
+export type navLink = {
+  navLinkName: string;
+  navLink: string;
+  id: string;
+};
 
-export const NavBarSection = () => {
+type NavBarSectionProps = {
+  data: Array<navLink>;
+};
+
+export const NavBarSection = ({ data }: NavBarSectionProps) => {
   return (
     <>
       <section className="NavBarSection">
         <div className="container d-flex flex-row px-5 justify-content-around">
-          <Typography.NavLink navLink="HOME" color="var(--solidBrown)" />
-          <Typography.NavLink navLink="SERVICES" color="var(--solidBrown)" />
-          <Typography.NavLink
-            navLink="RESERVATIONS"
-            color="var(--solidBrown)"
-          />
-          <Typography.NavLink navLink="FRANCHISES" color="var(--solidBrown)" />
-          <Typography.NavLink navLink="T-SHIRTS" color="var(--solidBrown)" />
-          <Typography.NavLink navLink="PARTNERS" color="var(--solidBrown)" />
+          {data?.map(({ id, ...other }) => {
+            return (
+              <div key={id}>
+                <NavLink {...other} />
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

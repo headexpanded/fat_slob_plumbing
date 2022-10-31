@@ -18,8 +18,8 @@ export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
             <div className="col">
               <h2>{title}</h2>
               <div className="nightBefore">
-                <Typography.NavLink
-                  navLink="The night before your appointment, we will consume at least:"
+                <Typography.ParagraphL
+                  content="The night before your appointment, we will consume at least:"
                   color="var(--solidBrown)"
                 />
                 <div className="servicesInfo">
@@ -29,8 +29,8 @@ export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
                 </div>
               </div>
               <div className="onTheDay">
-                <Typography.NavLink
-                  navLink="On the morning of your appointment, we will consume at least:"
+                <Typography.ParagraphC
+                  content="On the morning of your appointment, we will consume at least:"
                   color="var(--solidBrown)"
                 />
               </div>
@@ -51,16 +51,7 @@ export const ServicesCard = ({ title, edible, price }: ServicesCardProps) => {
           </div>
         </div>
         <div className="container  d-flex flex-row align-items-center justify-content-center p-0 m-0">
-          <div className="row align-items-baseline justify-content-center p-0 m-0">
-            <div className="col resLink p-0 m-0">
-              <a href="#">
-                <Typography.NavLink
-                  navLink="Make Your Reservation"
-                  color="var(--solidBrown)"
-                />
-              </a>
-            </div>
-          </div>
+          <div className="row align-items-baseline justify-content-center p-0 m-0"></div>
         </div>
       </div>
       <style jsx>{`

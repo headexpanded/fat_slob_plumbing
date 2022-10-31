@@ -1,27 +1,27 @@
 // define About Us section
 import { Typography } from "../typography";
 
-type AboutUsSectionProps = {};
+type PartnersSectionProps = {};
 
-export const ValuedPartnersSection = () => {
+export const PartnersSection = () => {
   return (
     <>
-      <div className="valuedPartners">
-        <div className="valuedPartnersTitle">
+      <section id="partners" className="partners">
+        <div className="partnersTitle">
           <Typography.SectionTitle
             content="Our Valued Partners"
             color="var(--solidBrown)"
           />
         </div>
-      </div>
+      </section>
       <style jsx>{`
-        .valuedPartners {
+        .partners {
           background-color: var(--coffee);
           padding: 40px 0px 20px 0px;
           min-height: 100vh;
         }
 
-        .valuedPartnersTitle {
+        .partnersTitle {
           padding: 0px 0px 40px 0px;
         }
       `}</style>

@@ -6,13 +6,15 @@ import styles from "../styles/Home.module.css";
 import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
 import { nightBefore } from "../components/sections/ServicesSection";
+import { navLink } from "../components/sections/NavBarSection";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
   nightBefores: nightBefore[];
+  navLinks: navLink[];
 };
 
-const Home = ({ customerReviews, nightBefores }: HomeProps) => {
+const Home = ({ customerReviews, nightBefores, navLinks }: HomeProps) => {
   return (
     <div className={styles._container}>
       <Head>
@@ -22,7 +24,7 @@ const Home = ({ customerReviews, nightBefores }: HomeProps) => {
       </Head>
 
       {/* NavBar */}
-      <Section.NavBar />
+      <Section.NavBar data={navLinks}></Section.NavBar>
       {/* Intro Section */}
       <Section.Intro />
       {/* Customer Reviews */}
@@ -33,7 +35,7 @@ const Home = ({ customerReviews, nightBefores }: HomeProps) => {
       <Section.Services data={nightBefores} />
       {/* Franchises */}
       <Section.Franchises />
-      {/* Valued Partners */}
+      {/* Partners */}
       <Section.Partners />
       {/* About Us */}
       <Section.AboutUs />
@@ -84,6 +86,15 @@ export async function getStaticProps() {
     }
   `;
 
+  const navLinksQuery = gql`
+    {
+      navLinks {
+        navLinkName
+        navLink
+      }
+    }
+  `;
+
   const custReviewsData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     custReviewsQuery
@@ -93,10 +104,16 @@ export async function getStaticProps() {
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     nightBeforeQuery
   );
+
+  const navLinkData = await request(
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
+    navLinksQuery
+  );
   return {
     props: {
       customerReviews: custReviewsData.customerReviews,
       nightBefores: nightBeforeData.nightBefores,
+      navLinks: navLinkData.navLinks,
     }, // will be passed to the page component as props
   };
 }

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
 // define CustReviewCard properties
 type CustReviewCardProps = {
   review: string;
