@@ -8,7 +8,7 @@ export const ProductTable = ({ products }: ProductTableProps) => {
   const rows: any[] = [];
   let lastCategory: null = null;
 
-  products.forEach((product: { category?: any; name: any; price: number }) => {
+  products.forEach((product) => {
     if (product.category !== lastCategory) {
       rows.push(
         <ProductCardElements.ProductCategoryRow
@@ -18,10 +18,10 @@ export const ProductTable = ({ products }: ProductTableProps) => {
       );
     }
     rows.push(
-      <>
+      <div>
         <ProductCardElements.ProductCheckBox />
         <ProductCardElements.ProductRow product={product} key={product.name} />
-      </>
+      </div>
     );
     lastCategory = product.category;
   });

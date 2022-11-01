@@ -1,20 +1,16 @@
-// define a category row for the Products card
+// define a category row for the ProductCard
+
+import { ProductCardElements } from "../productCardElements";
 
 type ProductCategoryRowProps = {
   category: string;
-  key: string;
 };
 
-export const ProductCategoryRow = ({
-  category,
-  key,
-}: ProductCategoryRowProps) => {
+export const ProductCategoryRow = ({ category }: ProductCategoryRowProps) => {
   return (
     <>
-      <div id={key} className="categoryDiv">
-        <div>
-          <h3>{category}</h3>
-        </div>
+      <div className="categoryDiv">
+        <div>{category}</div>
       </div>
       <style jsx>{`
         .categoryDiv {
