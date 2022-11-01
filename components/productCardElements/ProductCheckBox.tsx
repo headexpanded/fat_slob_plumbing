@@ -4,11 +4,18 @@ type ProductCheckBoxProps = {
 
 export const ProductCheckBox = ({ name }: ProductCheckBoxProps) => {
   return (
-    <form>
-      <label htmlFor="">
-        <input type="checkbox" />
-        {name}
-      </label>
-    </form>
+    <>
+      <form className="formStyle">
+        <label htmlFor="">
+          <input type="checkbox" />
+          {name}
+        </label>
+      </form>
+      <style jsx>{`
+        .formStyle {
+          color: var(--solidBrown);
+        }
+      `}</style>
+    </>
   );
 };
