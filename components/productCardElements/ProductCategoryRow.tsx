@@ -10,8 +10,18 @@ export const ProductCategoryRow = ({
   key,
 }: ProductCategoryRowProps) => {
   return (
-    <div id={key}>
-      <div>{category}</div>
-    </div>
+    <>
+      <div id={key} className="categoryDiv">
+        <div>
+          <h3>{category}</h3>
+        </div>
+      </div>
+      <style jsx>{`
+        .categoryDiv {
+          display: flex;
+          flex-direction: row;
+        }
+      `}</style>
+    </>
   );
 };

@@ -18,19 +18,28 @@ export const ProductTable = ({ products }: ProductTableProps) => {
       );
     }
     rows.push(
-      <ProductCardElements.ProductRow product={product} key={product.name} />
+      <>
+        <ProductCardElements.ProductSearchBar />
+        <ProductCardElements.ProductRow product={product} key={product.name} />
+      </>
     );
     lastCategory = product.category;
   });
 
   return (
     <>
-      <div>
-        <div>Name</div>
-        <div>Price</div>
-      </div>
+      <div className="rowDiv">{rows}</div>
 
-      <div>{rows}</div>
+      <style jsx>{`
+        .colDiv {
+          display: flex;
+          flex-direction: row;
+        }
+        .rowDiv {
+          display: flex;
+          flex-direction: row;
+        }
+      `}</style>
     </>
   );
 };
