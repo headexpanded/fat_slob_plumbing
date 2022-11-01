@@ -13,7 +13,7 @@ export const CustReviewCard = ({
 }: CustReviewCardProps) => {
   return (
     <>
-      <div className="custReviewCard px-1 mt-1 mb-1 ">
+      <div className="custReviewCard px-1 my-3 ">
         <div className="custReview">
           <p>{review}</p>
         </div>

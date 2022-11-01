@@ -32,7 +32,7 @@ export const HowWeWorkSection = () => {
             <div className="col-8">
               <Typography.ParagraphL
                 content="Our experienced
-                        professionals come to your home in the morning. By the time we
+                        professionals come to your home. By the time we
                         leave, you'll know for sure if your
                         system can take it - or not!"
                 color="var(--solidBrown)"
@@ -60,7 +60,7 @@ export const HowWeWorkSection = () => {
             <div className="col-8">
               <Typography.ParagraphL
                 content=" 
-                    We then consume a mix of supplementary nutriments on the morning of your appointment, to make sure there's no waiting around."
+                    We also consume a mix of supplementary nutriments on the morning of your appointment - like coffee, cigarettes, & Coke - to make sure there's no waiting around."
                 color="var(--solidBrown)"
               />
             </div>

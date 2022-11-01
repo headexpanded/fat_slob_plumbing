@@ -36,7 +36,7 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
         <div className="container d-flex flex-row align-items-center justify-content-space-between px-4 pb-2">
           <div className="row gap-3">
             <div className="col-lg">
-              <Cards.BeforeCard data={data}></Cards.BeforeCard>
+              <Cards.ProductCard data={data}></Cards.ProductCard>
             </div>
             <div className="col-lg">
               <Cards.AfterCard></Cards.AfterCard>
