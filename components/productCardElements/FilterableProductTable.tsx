@@ -9,7 +9,6 @@ export const FilterableProductTable = ({
 }: FilterableProductTableProps) => {
   return (
     <div>
-      <ProductCardElements.ProductSearchBar />
       <ProductCardElements.ProductTable products={products} />
     </div>
   );

@@ -1,6 +1,6 @@
-type ProductSearchBarProps = {};
+type ProductCheckBoxProps = {};
 
-export const ProductSearchBar = () => {
+export const ProductCheckBox = () => {
   return (
     <form>
       <label>

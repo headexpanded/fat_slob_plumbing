@@ -19,7 +19,7 @@ export const ProductTable = ({ products }: ProductTableProps) => {
     }
     rows.push(
       <>
-        <ProductCardElements.ProductSearchBar />
+        <ProductCardElements.ProductCheckBox />
         <ProductCardElements.ProductRow product={product} key={product.name} />
       </>
     );
