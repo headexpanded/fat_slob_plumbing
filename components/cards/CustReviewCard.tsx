@@ -39,12 +39,16 @@ export const CustReviewCard = ({
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
-        .custReview p {
+        p {
           color: var(--solidBrown);
           font-size: 1.25rem;
           font-style: italic;
           font-weight: bold;
-          padding: 52px 8px 0px 8px;
+          padding: 4px 8px 0px 8px;
+        }
+
+        .custReview p {
+          padding-top: 52px;
         }
 
         .custNameWrapper {
@@ -53,13 +57,7 @@ export const CustReviewCard = ({
           justify-content: flex-end;
           margin-right: 20px;
         }
-        .custName p {
-          color: var(--solidBrown);
-          font-size: 1.25rem;
-          font-style: italic;
-          font-weight: bold;
-          padding: 4px 8px 0px 8px;
-        }
+
         img {
           background-size: cover;
           background-position: center;

@@ -30,10 +30,6 @@ export const AboutUsSection = () => {
           padding: 40px 0px 20px 0px;
           min-height: 100vh;
         }
-
-        .aboutUsTitle {
-          padding: 0px 0px 40px 0px;
-        }
       `}</style>
     </>
   );

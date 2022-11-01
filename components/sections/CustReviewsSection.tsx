@@ -45,7 +45,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         .custReviewsSection {
           background-color: var(--coffee);
           min-height: 80vh;
-          padding: 28px 0px 0px 0px;
+          padding: 40px 0px 40px 0px;
         }
       `}</style>
     </>

@@ -17,7 +17,7 @@ export const HowWeWorkSection = () => {
           <div className="row">
             <div className="col-2"></div>
             <div className="col-8">
-              <Typography.ParagraphL
+              <Typography.ParagraphC
                 content="We're experts in
                         stress-testing domestic sewage systems."
                 color="var(--solidBrown)"

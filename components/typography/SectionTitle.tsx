@@ -10,7 +10,12 @@ type SectionTitleProps = {
 export const SectionTitle = ({ content, color }: SectionTitleProps) => {
   return (
     <>
-      <h2>{content}</h2>
+      <div className="sectionTitle">
+        <h2>{content}</h2>
+        <div className="topLink">
+          <NavLink navLink="#" navLinkName="Back to Top" />
+        </div>
+      </div>
 
       <style jsx>{`
         h2 {
@@ -22,6 +27,10 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
           padding: 48px 4px 60px 4px;
           text-align: center;
           text-transform: uppercase;
+        }
+        .topLink {
+          text-align: center;
+          margin-top: -84px;
         }
       `}</style>
     </>
