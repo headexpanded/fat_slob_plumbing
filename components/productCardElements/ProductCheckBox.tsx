@@ -1,9 +1,14 @@
-type ProductCheckBoxProps = {};
+type ProductCheckBoxProps = {
+  name: string;
+};
 
-export const ProductCheckBox = () => {
+export const ProductCheckBox = ({ name }: ProductCheckBoxProps) => {
   return (
     <form>
-      <input type="checkbox" />
+      <label htmlFor="">
+        <input type="checkbox" />
+        {name}
+      </label>
     </form>
   );
 };

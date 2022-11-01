@@ -18,9 +18,8 @@ export const ProductTable = ({ products }: ProductTableProps) => {
       );
     }
     rows.push(
-      <div>
-        <ProductCardElements.ProductCheckBox />
-        <ProductCardElements.ProductRow product={product} key={product.name} />
+      <div className="rowDiv">
+        <ProductCardElements.ProductCheckBox name={product.name} />
       </div>
     );
     lastCategory = product.category;
@@ -28,12 +27,12 @@ export const ProductTable = ({ products }: ProductTableProps) => {
 
   return (
     <>
-      <div className="rowDiv">{rows}</div>
+      <div className="colDiv">{rows}</div>
 
       <style jsx>{`
         .colDiv {
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
         }
         .rowDiv {
           display: flex;
