@@ -1,5 +1,6 @@
 // define Franchises Section properties
 import { Typography } from "../typography";
+import { ProductCardElements } from "../productCardElements";
 
 type FranchisesSectionProps = {};
 
@@ -13,6 +14,7 @@ export const FranchisesSection = () => {
             color="var(--solidBrown)"
           />
         </div>
+        <div></div>
       </section>
 
       <style jsx>{`
