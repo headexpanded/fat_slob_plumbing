@@ -2,10 +2,14 @@
 
 type ProductCategoryRowProps = {
   category: string;
+  key: string;
 };
-export const ProductCategoryRow = ({ category }: ProductCategoryRowProps) => {
+export const ProductCategoryRow = ({
+  category,
+  key,
+}: ProductCategoryRowProps) => {
   return (
-    <div>
+    <div id={key}>
       <div>{category}</div>
     </div>
   );
