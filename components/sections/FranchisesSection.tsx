@@ -1,6 +1,5 @@
 // define Franchises Section properties
 import { Typography } from "../typography";
-import { Cards } from "../cards";
 import { ProductCard } from "../cards/ProductCard";
 
 type FranchisesSectionProps = {};
@@ -15,7 +14,8 @@ export const FranchisesSection = () => {
             color="var(--solidBrown)"
           />
         </div>
-        <div>
+        <div className="prodCards">
+          <ProductCard />
           <ProductCard />
         </div>
       </section>
@@ -25,6 +25,12 @@ export const FranchisesSection = () => {
           background-color: var(--hintOfBrown);
           min-height: 100vh;
           padding: 40px 0px 20px 0px;
+        }
+        .prodCards {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding: 40px 0px;
         }
       `}</style>
     </>

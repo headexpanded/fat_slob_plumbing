@@ -1,6 +1,7 @@
 // define Services section
 import { createContext } from "react";
 import { Cards } from "../cards";
+import { ProductCard } from "../cards/ProductCard";
 import { Typography } from "../typography";
 
 export type foodAndDrink = {
@@ -43,6 +44,10 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
             </div>
           </div>
         </div>
+        <div className="prodCards">
+          <ProductCard />
+          <ProductCard />
+        </div>
         <div className="container pb-4">
           <div className="row">
             <div className="col-2"></div>
@@ -62,6 +67,12 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
           color: var(--hintOfBrown);
           min-height: 100vh;
           padding: 40px 0px 40px 0px;
+        }
+        .prodCards {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding: 40px 0px;
         }
       `}</style>
     </>

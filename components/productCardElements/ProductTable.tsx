@@ -37,6 +37,7 @@ export const ProductTable = ({ products }: ProductTableProps) => {
         .rowDiv {
           display: flex;
           flex-direction: row;
+          color: var(--solidBrown);
         }
       `}</style>
     </>
