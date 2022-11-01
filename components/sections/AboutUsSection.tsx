@@ -27,8 +27,8 @@ export const AboutUsSection = () => {
       <style jsx>{`
         .aboutUs {
           background-color: var(--hintOfBrown);
-          padding: 40px 0px 20px 0px;
           min-height: 100vh;
+          padding: 40px 0px 20px 0px;
         }
       `}</style>
     </>

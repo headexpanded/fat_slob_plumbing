@@ -20,7 +20,6 @@ export const FranchisesSection = () => {
           background-color: var(--hintOfBrown);
           min-height: 100vh;
           padding: 40px 0px 20px 0px;
-          position: relative;
         }
       `}</style>
     </>
