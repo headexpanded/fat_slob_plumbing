@@ -4,6 +4,7 @@ type ProductCategoryRowProps = {
   category: string;
   key: string;
 };
+
 export const ProductCategoryRow = ({
   category,
   key,

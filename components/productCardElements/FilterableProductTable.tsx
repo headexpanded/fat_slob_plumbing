@@ -1,13 +1,7 @@
 import { ProductCardElements } from "../productCardElements";
 
 type FilterableProductTableProps = {
-  products: [
-    {
-      category: string;
-      name: string;
-      price: number;
-    }
-  ];
+  products: any[];
 };
 
 export const FilterableProductTable = ({

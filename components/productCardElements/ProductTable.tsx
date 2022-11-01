@@ -1,34 +1,27 @@
-import { ReactElement, JSXElementConstructor, ReactFragment } from "react";
 import { ProductCardElements } from "../productCardElements";
 
 type ProductTableProps = {
-  products: [
-    {
-      category: string;
-      name: string;
-      price: number;
-    }
-  ];
+  products: any[];
 };
 
 export const ProductTable = ({ products }: ProductTableProps) => {
   const rows: any[] = [];
-  let lastCategory: string = "";
+  let lastCategory: null = null;
 
-  products.forEach(
-    (item: { category: string; name: string; price: number }) => {
-      if (item.category !== lastCategory) {
-        rows.push(
-          <ProductCardElements.ProductCategoryRow
-            category={item.category}
-            key={item.category}
-          />
-        );
-      }
-      rows.push(<ProductCardElements.ProductRow product={item} />);
-      lastCategory = item.category;
+  products.forEach((product: { category?: any; name: any; price: number }) => {
+    if (product.category !== lastCategory) {
+      rows.push(
+        <ProductCardElements.ProductCategoryRow
+          category={product.category}
+          key={product.category}
+        />
+      );
     }
-  );
+    rows.push(
+      <ProductCardElements.ProductRow product={product} key={product.name} />
+    );
+    lastCategory = product.category;
+  });
 
   return (
     <>
