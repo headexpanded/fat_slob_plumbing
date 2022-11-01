@@ -16,10 +16,7 @@ export const AfterCard = () => {
     <>
       <div className="afterCard px-1 mt-1 mb-1">
         <div>
-          <Typography.ParagraphC
-            content="Your cart"
-            color="var(--solidBrown)"
-          />
+          <h3>Your Cart</h3>
         </div>
         <div className="servicesInfo">
           {/* <ul>
@@ -55,7 +52,15 @@ export const AfterCard = () => {
                 transition: color 0.15s ease, border-color 0.15s ease;
                 filter: drop-shadow(8px 8px 12px var(--solidBrown));
             }
-            .afterCard h2, p {
+
+            .afterCard h3 {
+              color: var(--solidBrown);
+              text-align: center;
+              font-size: 2rem;
+              font-weight: bold;
+              padding: 32px 8px 16px 8px;
+            }
+            .afterCard  p {
                 color: var(--solidBrown);
                 padding: 6px;
                 

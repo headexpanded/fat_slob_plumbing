@@ -1,9 +1,19 @@
 // define About Us section
+import { Cards } from "../cards";
 import { Typography } from "../typography";
 
-type PartnersSectionProps = {};
+export type partner = {
+  title: string;
+  id: string;
+  desc: string;
+  photo: string;
+};
 
-export const PartnersSection = () => {
+type PartnersSectionProps = {
+  data: Array<partner>;
+};
+
+export const PartnersSection = ({ data }: PartnersSectionProps) => {
   return (
     <>
       <section id="partners" className="partners">
@@ -13,11 +23,26 @@ export const PartnersSection = () => {
             color="var(--solidBrown)"
           />
         </div>
+        <div className="partnerCards">
+          <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
+            <div className="row  gap-3">
+              {/*  extract key from Partners, spread the rest into PartnerCard component */}
+
+              {data?.map(({ id, ...other }) => {
+                return (
+                  <div className="col-lg" key={id}>
+                    <Cards.PartnerCard {...other} />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </section>
       <style jsx>{`
         .partners {
           background-color: var(--coffee);
-          padding: 40px 0px 20px 0px;
+          padding: 40px 0px 40px 0px;
           min-height: 100vh;
         }
 

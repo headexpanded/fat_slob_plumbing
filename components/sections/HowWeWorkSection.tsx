@@ -47,7 +47,7 @@ export const HowWeWorkSection = () => {
             <div className="col-8">
               <Typography.ParagraphL
                 content="The night before your appointment, 
-                    your Fat Slob Plumber will ingest a carefully formulated blend of food and drink to ensure optimal performance."
+                    your Fat Slob Plumber ingests a carefully formulated blend of food and drink to ensure optimal performance."
                 color="var(--solidBrown)"
               />
             </div>

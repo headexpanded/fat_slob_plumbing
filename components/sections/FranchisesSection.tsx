@@ -31,7 +31,7 @@ export const FranchisesSection = () => {
         }
         .franchisesTitle > div {
           text-align: center;
-          margin-top: -100px;
+          margin-top: -84px;
         }
       `}</style>
     </>

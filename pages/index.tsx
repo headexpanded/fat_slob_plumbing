@@ -7,14 +7,21 @@ import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
 import { foodAndDrink } from "../components/sections/ServicesSection";
 import { navLink } from "../components/sections/NavBarSection";
+import { partner } from "../components/sections/PartnersSection";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
   foodsAndDrinks: foodAndDrink[];
   navLinks: navLink[];
+  partners: partner[];
 };
 
-const Home = ({ customerReviews, foodsAndDrinks, navLinks }: HomeProps) => {
+const Home = ({
+  customerReviews,
+  foodsAndDrinks,
+  navLinks,
+  partners,
+}: HomeProps) => {
   return (
     <div className={styles._container}>
       <Head>
@@ -36,7 +43,7 @@ const Home = ({ customerReviews, foodsAndDrinks, navLinks }: HomeProps) => {
       {/* Franchises */}
       <Section.Franchises />
       {/* Partners */}
-      <Section.Partners />
+      <Section.Partners data={partners}></Section.Partners>
       {/* About Us */}
       <Section.AboutUs />
       {/* Footer */}
@@ -95,6 +102,17 @@ export async function getStaticProps() {
     }
   `;
 
+  const partnersQuery = gql`
+    {
+      partners {
+        id
+        title
+        photo
+        desc
+      }
+    }
+  `;
+
   const custReviewsData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     custReviewsQuery
@@ -109,11 +127,16 @@ export async function getStaticProps() {
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     navLinksQuery
   );
+  const partnersData = await request(
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
+    partnersQuery
+  );
   return {
     props: {
       customerReviews: custReviewsData.customerReviews,
       foodsAndDrinks: foodsAndDrinksData.foodsAndDrinks,
       navLinks: navLinkData.navLinks,
+      partners: partnersData.partners,
     }, // will be passed to the page component as props
   };
 }

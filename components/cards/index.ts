@@ -3,10 +3,12 @@
 import { BeforeCard } from "./BeforeCard";
 import { AfterCard } from "./AfterCard";
 import { CustReviewCard } from "./CustReviewCard";
+import { PartnerCard } from "./PartnerCard";
 
 
 export const Cards = {
     BeforeCard,
     AfterCard,
     CustReviewCard,
+    PartnerCard
 }

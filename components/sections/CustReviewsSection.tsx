@@ -27,7 +27,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
           />
         </div>
         <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
-          <div className="row  gap-3">
+          <div className="row  gap-3 pt-5">
             {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
 
             {data?.map(({ id, ...other }) => {
@@ -44,7 +44,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
       <style jsx>{`
         .custReviewsSection {
           background-color: var(--coffee);
-          min-height: 100vh;
+          min-height: 80vh;
           padding: 28px 0px 0px 0px;
         }
       `}</style>
