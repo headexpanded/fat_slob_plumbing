@@ -1,5 +1,4 @@
 import { ProductCardElements } from "../productCardElements";
-import { ProductCategorySelect } from "./ProductCategorySelect";
 
 type FilterableProductTableProps = {
   products: any[];
@@ -12,7 +11,7 @@ export const FilterableProductTable = ({
     <>
       <div>
         <div>
-          <ProductCategorySelect />
+          <ProductCardElements.ProductCategorySelect />
         </div>
         <div className="productTable">
           <ProductCardElements.ProductTable products={products} />
