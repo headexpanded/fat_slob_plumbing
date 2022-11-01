@@ -31,6 +31,7 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
         .topLink {
           text-align: center;
           margin-top: -84px;
+          padding-bottom: 40px;
         }
       `}</style>
     </>
