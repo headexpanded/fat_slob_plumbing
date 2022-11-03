@@ -4,67 +4,72 @@ const PRODUCTS = [
   {
     category: "Food",
     price: 29.95,
-    name: "Large bowl Moog Dhal",
+    name: "2x Large bowl Moog Dhal",
   },
   {
     category: "Food",
     price: 34.95,
-    name: "Large chili Kebab",
+    name: "1x Large chili Kebab",
   },
   {
     category: "Food",
     price: 17.95,
-    name: "500g Jar Sauerkraut",
+    name: "1x 500g Jar Sauerkraut",
   },
   {
     category: "Food",
     price: 44.95,
-    name: "Extra Hot Chicken Vindaloo",
+    name: "1x Extra Hot Chicken Vindaloo",
   },
   {
     category: "Food",
     price: 38.95,
-    name: "Mexican Bean Dip",
+    name: "2x Mexican Bean Dip",
   },
   {
     category: "Food",
     price: 38.95,
-    name: "Thai Red Lentil Curry",
+    name: "1x Thai Red Lentil Curry",
   },
   {
     category: "Drinks",
     price: 6.0,
-    name: "Pint of Ron's Home Brew",
+    name: "4x pints Strong Lager",
   },
   {
     category: "Drinks",
     price: 6.0,
-    name: "500ml Metamucil",
+    name: "2x pints Ron's Home Brew",
+  },
+  {
+    category: "Drinks",
+    price: 6.0,
+    name: "1x 500ml Metamucil",
   },
   {
     category: "Drinks",
     price: 8.95,
-    name: "500ml Prune Juice",
+    name: "1x 500ml Prune Juice",
   },
   {
     category: "Extras",
     price: 8.95,
-    name: "Dr Schulz's Formula #2",
+    name: "2x pills Dr Schulz's Formula #2",
   },
   {
     category: "Extras",
     price: 16.95,
-    name: "4-ply Toilet Paper",
+    name: "4x rolls of 4-ply Toilet Paper",
   },
   {
     category: "Extras",
     price: 10.0,
-    name: "Recent newspaper/magazine",
+    name: "Recent newspapers/magazines",
   },
   {
     category: "Extras",
     price: 25.0,
-    name: "Lavender Air Freshener",
+    name: "2x 350ml Lavender Air Freshener",
   },
 ];
 
@@ -86,7 +91,7 @@ export const ProductCard = () => {
           border: 2px solid var(--solidBrown);
           border-radius: 10px;
           filter: drop-shadow(8px 8px 12px var(--solidBrown));
-          padding: 4px 8px 12px 8px;
+          padding: 4px 8px 40px 8px;
         }
       `}</style>
     </>

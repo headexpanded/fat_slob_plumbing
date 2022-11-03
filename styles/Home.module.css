@@ -89,6 +89,12 @@
   margin-left: 0.5rem;
 }
 
+.aboutUs {
+  background-color: var(--hintOfBrown);
+  min-height: 100vh;
+  padding: 40px 0px 20px 0px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

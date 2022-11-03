@@ -34,7 +34,7 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
             <div className="col-2"></div>
           </div>
         </div>
-        <div className="container d-flex flex-row align-items-center justify-content-space-between px-4 pb-2">
+        {/* <div className="container d-flex flex-row align-items-center justify-content-space-between px-4 pb-2">
           <div className="row gap-3">
             <div className="col-lg">
               <Cards.BeforeCard data={data}></Cards.BeforeCard>
@@ -43,21 +43,17 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
               <Cards.AfterCard></Cards.AfterCard>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="prodCards">
-          <ProductCard />
-          <ProductCard />
-        </div>
-        <div className="container pb-4">
-          <div className="row">
-            <div className="col-2"></div>
-            <div className="col-8">
-              <Typography.ParagraphC
-                content="Included with all selections: air-freshener, toilet paper, reading material."
-                color="var(--solidBrown)"
-              />
+          <div className="container">
+            <div className="row gap-3">
+              <div className="col-lg">
+                <ProductCard />
+              </div>
+              <div className="col-lg">
+                <ProductCard />
+              </div>
             </div>
-            <div className="col-2"></div>
           </div>
         </div>
       </section>

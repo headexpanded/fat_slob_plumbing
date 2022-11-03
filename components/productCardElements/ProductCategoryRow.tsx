@@ -11,12 +11,19 @@ export const ProductCategoryRow = ({ category }: ProductCategoryRowProps) => {
     <>
       <div className="categoryDiv">
         <div>
-          <Typography.ParagraphC content={category} color="var(--solidBrown)" />
+          <h3>{category}</h3>
         </div>
       </div>
       <style jsx>{`
         .categoryDiv {
           padding: 20px;
+        }
+        h3 {
+          color: var(--solidBrown);
+          text-align: center;
+          font-size: 2rem;
+          font-weight: bold;
+          padding: 32px 8px 16px 8px;
         }
       `}</style>
     </>
