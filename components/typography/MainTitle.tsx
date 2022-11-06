@@ -17,7 +17,7 @@ export const MainTitle = ({ content, color }: MainTitleProps) => {
           color: ${color ?? ""};
           font-size: 5rem;
           font-weight: 800;
-          letter-spacing: -0.15rem;
+          letter-spacing: -0.1rem;
           line-height: 1.1;
           text-align: center;
         }

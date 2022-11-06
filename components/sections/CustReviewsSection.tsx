@@ -22,7 +22,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
       <section id="custReviews" className="custReviewsSection">
         <div className="custReviewsTitle">
           <Typography.SectionTitle
-            content="Customer Reviews"
+            content="What Our Customers Say"
             color="var(--solidBrown)"
           />
         </div>
