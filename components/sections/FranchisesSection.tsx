@@ -10,7 +10,7 @@ type FranchisesSectionProps = {};
 export const FranchisesSection = () => {
   return (
     <>
-      <div className="franchisesSection ps-3">
+      <section className="franchisesSection ps-3">
         <div className="franchisesTitle">
           <Typography.SectionTitle
             content="Franchises Available Now!"
@@ -19,7 +19,7 @@ export const FranchisesSection = () => {
         </div>
 
         {/* <FSPForm></FSPForm> */}
-      </div>
+      </section>
 
       <style jsx>{`
         .franchisesSection {
