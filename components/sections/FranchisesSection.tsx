@@ -18,7 +18,7 @@ export const FranchisesSection = () => {
           />
         </div>
 
-        {/* <FSPForm></FSPForm> */}
+        <FSPForm></FSPForm>
       </section>
 
       <style jsx>{`
