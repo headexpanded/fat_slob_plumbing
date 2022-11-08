@@ -1,6 +1,9 @@
 // define Franchises Section properties
 import { Typography } from "../typography";
 import { ProductCard } from "../cards/ProductCard";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 type FranchisesSectionProps = {};
 
@@ -14,6 +17,13 @@ export const FranchisesSection = () => {
             color="var(--solidBrown)"
           />
         </div>
+        <Container className="ps-3">
+          <Row>
+            <Col>Something goes here.</Col>
+            <Col>Something goes here.</Col>
+            <Col>Something goes here.</Col>
+          </Row>
+        </Container>
       </section>
 
       <style jsx>{`
