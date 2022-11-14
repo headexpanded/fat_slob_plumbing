@@ -13,7 +13,7 @@ export const CustReviewCard = ({
 }: CustReviewCardProps) => {
   return (
     <>
-      <div className="px-1 mt-1 mb-1 custReviewCard">
+      <div className="px-3 mt-1 mb-1 custReviewCard">
         <div className="custReview">
           <p>{review}</p>
         </div>
@@ -31,10 +31,12 @@ export const CustReviewCard = ({
       <style jsx>{`
         .custReviewCard {
           background-color: var(--hintOfBrown);
-          border: 2px solid var(--solidBrown);
+          // border: 2px solid var(--solidBrown);
           border-radius: 10px;
-          filter: drop-shadow(8px 8px 12px var(--solidBrown));
-          min-height: 260px;
+          filter: drop-shadow(2px 2px 4px var(--solidBrown));
+          min-height: 280px;
+          width: 280px;
+
           position: relative;
           text-align: left;
           transition: color 0.15s ease, border-color 0.15s ease;
@@ -74,9 +76,10 @@ export const CustReviewCard = ({
           background: var(--hintOfBrown);
           border: 2px solid var(--solidBrown);
           border-radius: 50%;
+          // filter: drop-shadow(1px 1px 2px var(--solidBrown));
           position: absolute;
-          top: -40px;
-          left: 150px;
+          top: -15%;
+          left: 40%;
         }
       `}</style>
     </>

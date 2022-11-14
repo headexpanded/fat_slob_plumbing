@@ -1,7 +1,9 @@
 // define div to hold Customer Review cards
 import { Cards } from "../cards";
 import { Typography } from "../typography";
-import { request, gql } from "graphql-request";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { useState } from "react";
 
 export type CustomerReview = {
@@ -21,29 +23,32 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
       <section className="custReviewsSection">
         <div className="custReviewsTitle">
           <Typography.SectionTitle
-            content="Customer Reviews"
+            content="You What?"
             color="var(--solidBrown)"
           />
         </div>
-        <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
-          <div className="row gap-5">
+        <Container>
+          <Row className="gap-3">
             {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
-
             {data?.map(({ id, ...other }) => {
               return (
-                <div className="col-lg" key={id}>
+                <div className="col d-flex justify-content-center" key={id}>
                   <Cards.CustReviewCard {...other} />
                 </div>
               );
             })}
-          </div>
-        </div>
+          </Row>
+        </Container>
       </section>
 
       <style jsx>{`
         .custReviewsSection {
-          background-color: var(--coffee);
-          min-height: 100vh;
+          background-image: linear-gradient(
+            185deg,
+            var(--hintOfBrown),
+            var(--hinOfBrown)
+          );
+          min-height: 80vh;
           padding: 40px 0px 20px 0px;
         }
 

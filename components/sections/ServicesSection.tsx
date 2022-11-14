@@ -1,6 +1,8 @@
 // define div to hold Services Cards
 import { Cards } from "../cards";
 import { Typography } from "../typography";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 export const ServicesSection = () => {
   const serviceCards = [
@@ -37,8 +39,8 @@ export const ServicesSection = () => {
           />
         </div>
 
-        <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
-          <div className="row gap-3">
+        <Container>
+          <Row className="gap-3">
             {serviceCards.map(({ key, ...other }) => {
               return (
                 <div className="col-lg" key={key}>
@@ -46,8 +48,8 @@ export const ServicesSection = () => {
                 </div>
               );
             })}
-          </div>
-        </div>
+          </Row>
+        </Container>
       </section>
       <style jsx>{`
         .servicesSection {

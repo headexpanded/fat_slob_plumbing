@@ -17,8 +17,16 @@ export const FranchisesSection = () => {
             color="var(--solidBrown)"
           />
         </div>
+        <Container fluid="sm">
+          <Row>
+            <Col sm={10} md="auto">
+              <FSPForm></FSPForm>
+            </Col>
+            <Col></Col>
 
-        <FSPForm></FSPForm>
+            <Col></Col>
+          </Row>
+        </Container>
       </section>
 
       <style jsx>{`

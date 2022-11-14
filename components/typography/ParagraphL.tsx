@@ -1,23 +1,24 @@
 // define properties of paragraph texts
 
 // define Paragraph type properties
-type ParagraphLProps ={
-    content: string;
-    color?: string;
-}
+type ParagraphLProps = {
+  content: string;
+  color?: string;
+};
 
 // define Paragraph component
-export const ParagraphL =({content, color}:ParagraphLProps) =>{
-    return (
-        <>
-        <p>{content}</p>
-        <style jsx>{`
-            p {
-                color: ${color??""};
-                font-size: 1.25rem;
-                text-align: left;
-            }
-        `}</style>
-        </>
-    )
-}
+export const ParagraphL = ({ content, color }: ParagraphLProps) => {
+  return (
+    <>
+      <p>{content}</p>
+      <style jsx>{`
+        p {
+          color: ${color ?? ""};
+          font-size: 1.25rem;
+          text-align: left;
+          line-height: 0.8;
+        }
+      `}</style>
+    </>
+  );
+};

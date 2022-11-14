@@ -18,7 +18,7 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
           font-size: 5rem;
           font-weight: 800;
           line-height: 1.1;
-          padding: 48px 4px 80px 4px;
+          padding: 48px 4px 80px 40px;
           text-align: center;
           font-size: 46px;
           letter-spacing: -0.1rem;

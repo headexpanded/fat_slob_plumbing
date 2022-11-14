@@ -1,4 +1,7 @@
 import { Typography } from "../typography";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 // define ServicesCard properties
 type ServicesCardProps = {
@@ -17,9 +20,9 @@ export const ServicesCard = ({
   return (
     <>
       <div className="px-1 mt-1 mb-1 servicesCard">
-        <div className="container">
-          <div className="row">
-            <div className="col">
+        <Container>
+          <Row>
+            <Col>
               <h2>{title}</h2>
               <div className="nightBefore">
                 <Typography.NavLink
@@ -27,11 +30,9 @@ export const ServicesCard = ({
                   color="var(--solidBrown)"
                 />
                 <div className="servicesInfo">
-                  <p>
-                    <ul>
-                      <li>{nightBeforeContent}</li>
-                    </ul>
-                  </p>
+                  <ul>
+                    <li>{nightBeforeContent}</li>
+                  </ul>
                 </div>
               </div>
               <div className="onTheDay">
@@ -40,9 +41,9 @@ export const ServicesCard = ({
                   color="var(--solidBrown)"
                 />
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
         <div className="container d-flex flex-row align-items-center justify-content-center p-0 m-0">
           <div className="row align-items-baseline justify-content-center p-0 m-0">
             <div className="col p-0 m-0">
@@ -72,11 +73,11 @@ export const ServicesCard = ({
       <style jsx>{`
             .servicesCard{
                 background-color:var(--hintOfBrown);
-                border: 2px solid var(--solidBrown);
+                // border: 2px solid var(--solidBrown);
                 border-radius: 10px;
                 min-height: 400px;
                 transition: color 0.15s ease, border-color 0.15s ease;
-                filter: drop-shadow(8px 8px 12px var(--solidBrown));
+                filter: drop-shadow(2px 2px 4px var(--solidBrown));
             }
             .servicesCard h2, p {
                 color: var(--solidBrown);
@@ -108,7 +109,7 @@ export const ServicesCard = ({
                 padding:0px;
             }
             .resLink a {
-                text-decoration: underline;
+                text-decoration: none;
             }
 
             .resLink a:hover {

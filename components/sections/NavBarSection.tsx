@@ -1,5 +1,8 @@
 // define NavBar properties
-import { Typography } from "../typography";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import { NavLink } from "../typography/NavLink";
 
 type NavBarSectionProps = {};
 
@@ -7,20 +10,32 @@ export const NavBarSection = () => {
   return (
     <>
       <section className="navBarSection">
-        <div className="container d-flex flex-row px-5 justify-content-around">
-          <Typography.NavLink navLink="HOME" color="var(--solidBrown)" />
-          <Typography.NavLink navLink="SERVICES" color="var(--solidBrown)" />
-          <Typography.NavLink
-            navLink="RESERVATIONS"
-            color="var(--solidBrown)"
-          />
-          <Typography.NavLink navLink="FRANCHISES" color="var(--solidBrown)" />
-          <Typography.NavLink navLink="T-SHIRTS" color="var(--solidBrown)" />
-          <Typography.NavLink navLink="PARTNERS" color="var(--solidBrown)" />
-        </div>
+        <Navbar expand="lg">
+          <Container>
+            <Nav.Link href="#home">
+              <NavLink navLink="HOME" color="var(--solidBrown)" />
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink navLink="SERVICES" color="var(--solidBrown)" />
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink navLink="BOOKINGS" color="var(--solidBrown)" />
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink navLink="FRANCHISES" color="var(--solidBrown)" />
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink navLink="T-SHIRTS" color="var(--solidBrown)" />
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink navLink="PARTNERS" color="var(--solidBrown)" />
+            </Nav.Link>
+          </Container>
+        </Navbar>
       </section>
       <style jsx>{`
         .navBarSection {
+          background-color: var(--coffee);
           font-size: 0.5rem;
         }
       `}</style>

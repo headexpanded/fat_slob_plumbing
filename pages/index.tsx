@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import { Section } from "../components/sections";
 import styles from "../styles/Home.module.css";
 import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
+import { Section } from "../components/sections";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
@@ -21,7 +21,7 @@ function Home({ customerReviews }: HomeProps) {
       {/* Navbar Section */}
       <Section.NavBar />
       {/* Intro Section */}
-      <Section.Intro />
+      <Section.Hero />
       {/* Customer Reviews */}
       <Section.CustReviews data={customerReviews}></Section.CustReviews>
       {/* How We Work */}
