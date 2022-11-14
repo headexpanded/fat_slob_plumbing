@@ -22,6 +22,13 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
           color: ${color ?? ""};
           font-size: 3rem;
           font-weight: 800;
+<<<<<<< HEAD
+=======
+          line-height: 1.1;
+          padding: 48px 4px 80px 40px;
+          text-align: center;
+          font-size: 46px;
+>>>>>>> night-before
           letter-spacing: -0.1rem;
           line-height: 1.1;
           padding: 48px 4px 60px 4px;

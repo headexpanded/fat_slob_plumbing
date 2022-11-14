@@ -24,8 +24,8 @@ export const NavLink = ({ navLinkName, navLink }: NavLinkProps) => {
 
         h4:hover {
           cursor: pointer;
-          text-decoration: underline;
-          transform: scale(1.025);
+          text-decoration: none;
+          transform: scale(1.1);
         }
       `}</style>
     </>

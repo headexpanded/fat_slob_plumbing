@@ -3,6 +3,8 @@ import { createContext } from "react";
 import { Cards } from "../cards";
 import { ProductCard } from "../cards/ProductCard";
 import { Typography } from "../typography";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 export type foodAndDrink = {
   edible: string;
@@ -22,40 +24,18 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
             color="var(--solidBrown)"
           />
         </div>
-        <div className="container pb-4">
-          <div className="row">
-            <div className="col-2"></div>
-            <div className="col-8">
-              <Typography.ParagraphC
-                content="Select the foods and drinks your Fat Slob Plumber will consume before visiting your home:"
-                color="var(--solidBrown)"
-              />
-            </div>
-            <div className="col-2"></div>
-          </div>
-        </div>
-        {/* <div className="container d-flex flex-row align-items-center justify-content-space-between px-4 pb-2">
-          <div className="row gap-3">
-            <div className="col-lg">
-              <Cards.BeforeCard data={data}></Cards.BeforeCard>
-            </div>
-            <div className="col-lg">
-              <Cards.AfterCard></Cards.AfterCard>
-            </div>
-          </div>
-        </div> */}
-        <div className="prodCards">
-          <div className="container">
-            <div className="row gap-3">
-              <div className="col-lg">
-                <ProductCard />
-              </div>
-              <div className="col-lg">
-                <ProductCard />
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <Container>
+          <Row className="gap-3">
+            {serviceCards.map(({ key, ...other }) => {
+              return (
+                <div className="col-lg" key={key}>
+                  <Cards.ServicesCard {...other} />
+                </div>
+              );
+            })}
+          </Row>
+        </Container>
       </section>
       <style jsx>{`
         .servicesSection {
