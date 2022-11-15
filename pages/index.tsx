@@ -6,21 +6,14 @@ import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
 import { Partner } from "../components/sections/PartnersSection";
 import { Section } from "../components/sections";
-import { NavLink } from "../components/sections";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
   partners: Partner[];
-  navLinks: NavLink[];
   foodAndDrinks: FoodAndDrink[];
 };
 
-const Home = ({
-  customerReviews,
-  navLinks,
-  partners,
-  foodAndDrinks,
-}: HomeProps) => {
+const Home = ({ customerReviews, partners, foodAndDrinks }: HomeProps) => {
   return (
     <div className={styles._container}>
       <Head>
