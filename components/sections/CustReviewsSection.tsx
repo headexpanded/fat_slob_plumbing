@@ -31,7 +31,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         <Container>
           <Row className="gap-3">
             {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
-            {data?.map(({ id, ...other }) => {
+            {data.map(({ id, ...other }) => {
               return (
                 <div className="col d-flex justify-content-center" key={id}>
                   <Cards.CustReviewCard {...other} />
@@ -47,7 +47,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
           background-image: linear-gradient(
             185deg,
             var(--hintOfBrown),
-            var(--hinOfBrown)
+            var(--hintOfBrown)
           );
           min-height: 80vh;
           padding: 40px 0px 20px 0px;

@@ -2,7 +2,7 @@
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 
-export type partner = {
+export type Partner = {
   title: string;
   id: string;
   desc: string;
@@ -10,7 +10,7 @@ export type partner = {
 };
 
 type PartnersSectionProps = {
-  data: Array<partner>;
+  data: Array<Partner>;
 };
 
 export const PartnersSection = ({ data }: PartnersSectionProps) => {

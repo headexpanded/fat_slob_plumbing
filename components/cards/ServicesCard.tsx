@@ -5,17 +5,13 @@ import Col from "react-bootstrap/Col";
 
 // define ServicesCard properties
 type ServicesCardProps = {
-  nightBeforeContent: string;
   price: string;
   title: string;
+  id: string;
 };
 
 // define ServicesCard component
-export const ServicesCard = ({
-  title,
-  nightBeforeContent,
-  price,
-}: ServicesCardProps) => {
+export const ServicesCard = ({ title, id, price }: ServicesCardProps) => {
   const pound = "\u00a3";
   return (
     <>
@@ -31,7 +27,7 @@ export const ServicesCard = ({
                 />
                 <div className="servicesInfo">
                   <ul>
-                    <li>{nightBeforeContent}</li>
+                    <li></li>
                   </ul>
                 </div>
               </div>

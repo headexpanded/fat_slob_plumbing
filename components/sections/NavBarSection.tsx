@@ -1,38 +1,23 @@
 // define NavBar properties
-<<<<<<< HEAD
-=======
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
->>>>>>> night-before
 import { NavLink } from "../typography/NavLink";
 
 export type navLink = {
   navLinkName: string;
   navLink: string;
   id: string;
+  color?: string;
 };
 
 type NavBarSectionProps = {
   data: Array<navLink>;
 };
 
-export const NavBarSection = ({ data }: NavBarSectionProps) => {
+export const NavBarSection = () => {
   return (
     <>
-<<<<<<< HEAD
-      <section className="NavBarSection">
-        <div className="container d-flex flex-row px-5 justify-content-around">
-          {data?.map(({ id, ...other }) => {
-            return (
-              <div key={id}>
-                <NavLink {...other} />
-              </div>
-            );
-          })}
-        </div>
-      </section>
-=======
       <section className="navBarSection">
         <Navbar expand="lg">
           <Container>
@@ -63,7 +48,6 @@ export const NavBarSection = ({ data }: NavBarSectionProps) => {
           font-size: 0.5rem;
         }
       `}</style>
->>>>>>> night-before
     </>
   );
 };

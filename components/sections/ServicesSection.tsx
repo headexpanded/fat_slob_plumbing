@@ -1,13 +1,14 @@
 // define Services section
-import { createContext } from "react";
+
 import { Cards } from "../cards";
-import { ProductCard } from "../cards/ProductCard";
 import { Typography } from "../typography";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
 export type foodAndDrink = {
   edible: string;
+  price: string;
+  title: string;
   id: string;
 };
 type ServicesSectionProps = {
@@ -27,9 +28,9 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
 
         <Container>
           <Row className="gap-3">
-            {serviceCards.map(({ key, ...other }) => {
+            {data.map(({ id, ...other }) => {
               return (
-                <div className="col-lg" key={key}>
+                <div className="col-lg" key={id}>
                   <Cards.ServicesCard {...other} />
                 </div>
               );

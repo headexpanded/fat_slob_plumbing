@@ -4,17 +4,22 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
+import { Partner } from "../components/sections/PartnersSection";
 import { Section } from "../components/sections";
+import { NavLink } from "../components/sections";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
+  partners: Partner[];
+  navLinks: NavLink[];
+  foodAndDrinks: FoodAndDrink[];
 };
 
 const Home = ({
   customerReviews,
-  foodsAndDrinks,
   navLinks,
   partners,
+  foodAndDrinks,
 }: HomeProps) => {
   return (
     <div className={styles._container}>
@@ -32,7 +37,7 @@ const Home = ({
       {/* How We Work */}
       <Section.HowWeWork />
       {/* Services */}
-      <Section.Services></Section.Services>
+      <Section.Services>data={foodAndDrinks}</Section.Services>
       {/* Franchises */}
       <Section.Franchises />
       {/* Partners */}
@@ -76,15 +81,6 @@ export async function getStaticProps() {
     }
   `;
 
-  const foodsAndDrinksQuery = gql`
-    {
-      foodsAndDrinks {
-        edible
-        id
-      }
-    }
-  `;
-
   const navLinksQuery = gql`
     {
       navLinks {
@@ -106,14 +102,18 @@ export async function getStaticProps() {
     }
   `;
 
+  const foodsAndDrinksQuery = gql`
+    {
+      foodsAndDrinks {
+        edible
+        id
+      }
+    }
+  `;
+
   const custReviewsData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
-    custReviewsQuery
-  );
-
-  const foodsAndDrinksData = await request(
-    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
-    foodsAndDrinksQuery
+    custReviewQuery
   );
 
   const navLinkData = await request(
@@ -122,12 +122,19 @@ export async function getStaticProps() {
   );
   const partnersData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
-    custReviewQuery
+    partnersQuery
+  );
+  const foodAndDrinksData = await request(
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
+    foodsAndDrinksQuery
   );
 
   return {
     props: {
-      customerReviews: data.customerReviews,
+      customerReviews: custReviewsData,
+      partners: partnersData,
+      navLinks: navLinkData,
+      foodAndDrinks: foodAndDrinksData,
     }, // will be passed to the page component as props
   };
 }
