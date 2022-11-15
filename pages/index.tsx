@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
 import { Partner } from "../components/sections/PartnersSection";
+import { FoodAndDrink } from "../components/sections/ServicesSection";
 import { Section } from "../components/sections";
 
 type HomeProps = {

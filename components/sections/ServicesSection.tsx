@@ -5,14 +5,14 @@ import { Typography } from "../typography";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-export type foodAndDrink = {
+export type FoodAndDrink = {
   edible: string;
   price: string;
   title: string;
   id: string;
 };
 type ServicesSectionProps = {
-  data: Array<foodAndDrink>;
+  data: Array<FoodAndDrink>;
 };
 
 export const ServicesSection = ({ data }: ServicesSectionProps) => {
