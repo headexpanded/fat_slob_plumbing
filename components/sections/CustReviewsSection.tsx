@@ -22,13 +22,13 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
       <section id="custReviews" className="custReviewsSection">
         <div>
           <Typography.SectionTitle
-            content="You What?"
+            content="Happy Customers"
             color="var(--solidBrown)"
           />
         </div>
         <Container>
           <Row className="gap-3">
-            {data?.map(({ id, ...other }) => {
+            {data.map(({ id, ...other }) => {
               return (
                 <div className="col-lg" key={id}>
                   <Cards.CustReviewCard {...other} />

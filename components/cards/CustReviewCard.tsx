@@ -31,7 +31,6 @@ export const CustReviewCard = ({
       <style jsx>{`
         .custReviewCard {
           background-color: var(--hintOfBrown);
-          
           border-radius: 10px;
           filter: drop-shadow(2px 2px 4px var(--solidBrown));
           min-height: 280px;
