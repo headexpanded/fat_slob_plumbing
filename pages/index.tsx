@@ -37,7 +37,7 @@ const Home = ({
       {/* How We Work */}
       <Section.HowWeWork />
       {/* Services */}
-      <Section.Services>data={foodAndDrinks}</Section.Services>
+      <Section.Services data={foodAndDrinks}></Section.Services>
       {/* Franchises */}
       <Section.Franchises />
       {/* Partners */}
