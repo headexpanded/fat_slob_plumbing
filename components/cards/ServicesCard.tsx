@@ -11,7 +11,7 @@ type ServicesCardProps = {
 };
 
 // define ServicesCard component
-export const ServicesCard = ({ title, id, price }: ServicesCardProps) => {
+export const ServicesCard = ({ title, price }: ServicesCardProps) => {
   const pound = "\u00a3";
   return (
     <>
@@ -21,22 +21,13 @@ export const ServicesCard = ({ title, id, price }: ServicesCardProps) => {
             <Col>
               <h2>{title}</h2>
               <div className="nightBefore">
-                <Typography.NavLink
-                  navLink="The night before your appointment, we will consume at least:"
-                  color="var(--solidBrown)"
-                />
                 <div className="servicesInfo">
                   <ul>
                     <li></li>
                   </ul>
                 </div>
               </div>
-              <div className="onTheDay">
-                <Typography.NavLink
-                  navLink="On the morning of your appointment, we will consume at least:"
-                  color="var(--solidBrown)"
-                />
-              </div>
+              <div className="onTheDay"></div>
             </Col>
           </Row>
         </Container>
@@ -57,8 +48,8 @@ export const ServicesCard = ({ title, id, price }: ServicesCardProps) => {
           <div className="row align-items-baseline justify-content-center p-0 m-0">
             <div className="col resLink p-0 m-0">
               <a href="#">
-                <Typography.NavLink
-                  navLink="Make Your Reservation"
+                <Typography.SubHeader
+                  content="Make Your Reservation"
                   color="var(--solidBrown)"
                 />
               </a>

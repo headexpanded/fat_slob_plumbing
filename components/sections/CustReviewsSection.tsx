@@ -4,14 +4,12 @@ import { Cards } from "../cards";
 import { Typography } from "../typography";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { useState } from "react";
 
 export type CustomerReview = {
   customerName: string;
   review: string;
   id: string;
-  photo?: string;
+  photo: string;
 };
 
 type CustReviewsSectionProps = {
