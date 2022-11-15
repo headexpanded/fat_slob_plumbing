@@ -7,7 +7,6 @@ import Col from "react-bootstrap/Col";
 type ServicesCardProps = {
   price: string;
   title: string;
-  id: string;
 };
 
 // define ServicesCard component

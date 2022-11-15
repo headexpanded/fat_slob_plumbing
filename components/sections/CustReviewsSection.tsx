@@ -29,7 +29,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         <Container>
           <Row className="gap-3">
             {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
-            {data.map(({ id, ...other }) => {
+            {data?.map(({ id, ...other }) => {
               return (
                 <div className="col d-flex justify-content-center" key={id}>
                   <Cards.CustReviewCard {...other} />

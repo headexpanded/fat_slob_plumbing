@@ -28,7 +28,7 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
 
         <Container>
           <Row className="gap-3">
-            {data.map(({ id, ...other }) => {
+            {data?.map(({ id, ...other }) => {
               return (
                 <div className="col-lg" key={id}>
                   <Cards.ServicesCard {...other} />
