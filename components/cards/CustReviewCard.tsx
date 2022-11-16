@@ -2,7 +2,7 @@
 type CustReviewCardProps = {
   review: string;
   customerName: string;
-  photo?: string;
+  photo: string;
 };
 
 // define CustReviewCard component

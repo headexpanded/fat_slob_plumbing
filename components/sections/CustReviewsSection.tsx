@@ -13,10 +13,10 @@ export type CustomerReview = {
 };
 
 type CustReviewsSectionProps = {
-  data: Array<CustomerReview>;
+  custData: Array<CustomerReview>;
 };
 
-export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
+export const CustReviewsSection = ({ custData }: CustReviewsSectionProps) => {
   return (
     <>
       <section id="custReviews" className="custReviewsSection">
@@ -28,7 +28,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         </div>
         <Container>
           <Row className="gap-3">
-            {data.map(({ id, ...other }) => {
+            {custData.map(({ id, ...other }) => {
               return (
                 <div className="col-lg" key={id}>
                   <Cards.CustReviewCard {...other} />
