@@ -10,11 +10,11 @@ import { Section } from "../components/sections";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
-  partners: Partner[];
+  partnersProp: Partner[];
   foodAndDrinks: FoodAndDrink[];
 };
 
-const Home = ({ customerReviews, partners, foodAndDrinks }: HomeProps) => {
+const Home = ({ customerReviews, partnersProp, foodAndDrinks }: HomeProps) => {
   return (
     <div className={styles._container}>
       <Head>
@@ -23,7 +23,7 @@ const Home = ({ customerReviews, partners, foodAndDrinks }: HomeProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Navbar Section */}
-      <Section.NavBar />
+      {/* <Section.NavBar /> */}
       {/* Intro Section */}
       <Section.Hero />
       {/* Customer Reviews */}
@@ -35,7 +35,7 @@ const Home = ({ customerReviews, partners, foodAndDrinks }: HomeProps) => {
       {/* Franchises */}
       <Section.Franchises />
       {/* Partners */}
-      <Section.Partners data={partners}></Section.Partners>
+      <Section.Partners data={partnersProp}></Section.Partners>
       {/* About Us */}
       <Section.AboutUs />
       {/* Footer */}
@@ -118,6 +118,7 @@ export async function getStaticProps() {
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     partnersQuery
   );
+
   const foodAndDrinksData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     foodsAndDrinksQuery
@@ -126,7 +127,7 @@ export async function getStaticProps() {
   return {
     props: {
       customerReviews: custReviewsData,
-      partners: partnersData,
+      partnersProp: partnersData,
       navLinks: navLinkData,
       foodAndDrinks: foodAndDrinksData,
     }, // will be passed to the page component as props

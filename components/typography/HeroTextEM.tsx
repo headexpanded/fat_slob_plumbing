@@ -1,12 +1,12 @@
 import styled, { keyframes } from "styled-components";
 
 // define Hero text component
-type HeroTextProps = {
+type HeroTextEMProps = {
   content: string;
   color?: string;
 };
 
-export const HeroText = ({ content, color }: HeroTextProps) => {
+export const HeroTextEM = ({ content, color }: HeroTextEMProps) => {
   return <Wrapper>{content}</Wrapper>;
 };
 
@@ -23,9 +23,10 @@ const Wrapper = styled.span`
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
   color: var(--solidBrown);
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  opacity: 0;
-  padding: 56px 0px 4px 0px;
+  margin-top: 0px;
+  padding: 0px 0px 4px 0px;
   text-align: center;
+  text-transform: uppercase;
 `;

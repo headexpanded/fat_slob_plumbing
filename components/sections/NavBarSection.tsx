@@ -24,9 +24,7 @@ export const NavBarSection = () => {
             <Nav.Link href="#home">
               <NavLink navLink="HOME" color="var(--solidBrown)" />
             </Nav.Link>
-            <Nav.Link>
-              <NavLink navLink="SERVICES" color="var(--solidBrown)" />
-            </Nav.Link>
+            <Nav.Link href="#services">SERVICES</Nav.Link>
             <Nav.Link>
               <NavLink navLink="BOOKINGS" color="var(--solidBrown)" />
             </Nav.Link>

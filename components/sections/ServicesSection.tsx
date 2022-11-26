@@ -11,11 +11,13 @@ export type FoodAndDrink = {
   title: string;
   id: string;
 };
+
 type ServicesSectionProps = {
-  data: Array<FoodAndDrink>;
+  data: FoodAndDrink[];
 };
 
 export const ServicesSection = ({ data }: ServicesSectionProps) => {
+  console.log(data);
   return (
     <>
       <section id="services" className="servicesSection">
@@ -28,13 +30,13 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
 
         <Container>
           <Row className="gap-3">
-            {data?.map(({ id, ...other }) => {
+            {/* {data.map(({ id, ...other }) => {
               return (
                 <div className="col-lg" key={id}>
                   <Cards.ServicesCard {...other} />
                 </div>
               );
-            })}
+            })} */}
           </Row>
         </Container>
       </section>

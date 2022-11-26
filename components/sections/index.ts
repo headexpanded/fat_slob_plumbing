@@ -8,6 +8,7 @@ import { FranchisesSection } from "./FranchisesSection";
 import { PartnersSection } from "./PartnersSection"
 import { AboutUsSection } from "./AboutUsSection";
 import { FooterSection } from "./FooterSection";
+import { Spacer } from "./Spacer";
 
 
 export const Section = {
@@ -19,5 +20,6 @@ export const Section = {
     Franchises: FranchisesSection,
     Partners: PartnersSection,
     AboutUs: AboutUsSection,
-    Footer: FooterSection
+    Footer: FooterSection,
+    Spacer: Spacer
 }

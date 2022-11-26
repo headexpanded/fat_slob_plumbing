@@ -19,11 +19,7 @@ export const HowWeWorkSection = () => {
         <Container>
           <Row>
             <Col>
-              <Typography.ParaL
-                content="We're experts in
-                        stress-testing domestic sewage systems."
-                color="var(--solidBrown)"
-              />
+              <Typography.ParaL content=" " color="var(--solidBrown)" />
             </Col>
           </Row>
         </Container>
@@ -31,8 +27,8 @@ export const HowWeWorkSection = () => {
           <Row>
             <Col>
               <Typography.ParaL
-                content="Our experienced
-                        professionals come to your home in the morning."
+                content=" Our experienced
+                professionals visit your home."
                 color="var(--solidBrown)"
               />
             </Col>
@@ -53,7 +49,7 @@ export const HowWeWorkSection = () => {
             <div className="col-2"></div>
             <div className="col-8">
               <Typography.ParaL
-                content="The night before your appointment, 
+                content="In the 24 hours before your appointment, 
                     your Fat Slob Plumber ingests a carefully formulated blend of food and drink to ensure optimal performance."
                 color="var(--solidBrown)"
               />
@@ -67,7 +63,7 @@ export const HowWeWorkSection = () => {
             <div className="col-8">
               <Typography.ParaL
                 content=" 
-                    We also consume a mix of supplementary nutriments on the morning of your appointment - like coffee, cigarettes, & Coke - to make sure there's no waiting around."
+                    We also consume a mix of supplementary nutriments when we arrive at your home - like coffee, cigarettes, & Coke - to make sure there's no waiting around."
                 color="var(--solidBrown)"
               />
             </div>

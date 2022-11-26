@@ -1,7 +1,5 @@
 // define PartnerCard properties
 
-import { Typography } from "../typography";
-
 type PartnerCardProps = {
   title: string;
   desc: string;
@@ -9,11 +7,12 @@ type PartnerCardProps = {
 };
 
 export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
+  console.log({ title });
   return (
     <>
       <div className="partnerCard">
         <h3>{title}</h3>
-        <img src={photo} alt={"Photo of" + title} />
+        <img src={photo} alt={"Photo of " + title} />
         <p>{desc}</p>
       </div>
       <style jsx>{`
@@ -23,10 +22,10 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           justify-content: center;
           align-items: center;
           background-color: var(--hintOfBrown);
-          border: 2px solid var(--solidBrown);
-          border-radius: 10px;
+
+          border-radius: 16px;
           color: var(--solidBrown);
-          filter: drop-shadow(8px 8px 12px var(--solidBrown));
+          filter: drop-shadow(2px 4px 8px var(--solidBrown));
           padding: 4px 8px 12px 8px;
         }
 
@@ -51,7 +50,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           background-size: cover;
           background-position: center;
           border: 2px solid var(--solidBrown);
-          border-radius: 10%;
+          border-radius: 8%;
           filter: grayscale(100%);
           height: 300px;
           width: 300px;

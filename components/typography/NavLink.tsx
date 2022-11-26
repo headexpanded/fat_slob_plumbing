@@ -2,7 +2,7 @@
 
 // define NavBar type properties
 type NavLinkProps = {
-  navLinkName: string;
+  navLinkName?: string;
   navLink: string;
   color?: string;
 };

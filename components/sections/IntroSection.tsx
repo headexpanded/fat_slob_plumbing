@@ -25,7 +25,7 @@ export const IntroSection = () => {
             <div className="row">
               <div className="col-2"></div>
               <div className="col-8">
-                <Typography.ParagraphC
+                <Typography.ParaC
                   content="Can your home system flush a big load?"
                   color="var(--solidBrown)"
                 />
@@ -37,7 +37,7 @@ export const IntroSection = () => {
             <div className="row ">
               <div className="col-2"></div>
               <div className="col-8">
-                <Typography.ParagraphC
+                <Typography.ParaC
                   content="Take our advice - you need to stress test your facilities, NOW!"
                   color="var(--solidBrown)"
                 />
@@ -49,7 +49,7 @@ export const IntroSection = () => {
             <div className="row">
               <div className="col-2"></div>
               <div className="col-8">
-                <Typography.ParagraphC
+                <Typography.ParaC
                   content="Because no-one likes a surprise blockage!"
                   color="var(--solidBrown)"
                 />

@@ -1,4 +1,5 @@
 // define About Us section
+
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 
@@ -14,6 +15,11 @@ type PartnersSectionProps = {
 };
 
 export const PartnersSection = ({ data }: PartnersSectionProps) => {
+  const values = Object.values(data);
+  values.forEach((value) => {
+    console.log(value);
+  });
+
   return (
     <>
       <section id="partners" className="partners">
@@ -28,7 +34,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
             <div className="row  gap-3">
               {/*  extract key from Partners, spread the rest into PartnerCard component */}
 
-              {data?.map(({ id, ...other }) => {
+              {values.map(({ id, ...other }) => {
                 return (
                   <div className="col-lg" key={id}>
                     <Cards.PartnerCard {...other} />

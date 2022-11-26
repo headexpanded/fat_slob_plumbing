@@ -6,12 +6,12 @@ type AboutUsSectionProps = {};
 export const AboutUsSection = () => {
   const employees = [
     {
-      key: "1",
+      id: "1",
       title: "Ron",
       content: "",
     },
-    { key: "2", title: "Dave", content: "" },
-    { key: "3", title: "Trish", content: "" },
+    { id: "2", title: "Dave", content: "" },
+    { id: "3", title: "Trish", content: "" },
   ];
   return (
     <>
@@ -26,7 +26,7 @@ export const AboutUsSection = () => {
           <div className="row">
             <div className="col-2"></div>
             <div className="col-8">
-              <Typography.ParagraphC
+              <Typography.ParaC
                 content="Our domestic sewage system always blocked up after a good night."
                 color="var(--solidBrown)"
               />
@@ -36,13 +36,22 @@ export const AboutUsSection = () => {
           <div className="row">
             <div className="col-2"></div>
             <div className="col-8">
-              <Typography.ParagraphC
+              <Typography.ParaC
                 content="We got tired of the nasty early morning surprises. So we decided to do something about it."
                 color="var(--solidBrown)"
               />
             </div>
             <div className="col-2"></div>
           </div>
+        </div>
+        <div className="row">
+          {employees.map(({ id, ...other }) => {
+            return (
+              <div className="col-8" key={id}>
+                {other.title}
+              </div>
+            );
+          })}
         </div>
       </section>
 

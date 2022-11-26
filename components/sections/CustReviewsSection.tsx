@@ -5,18 +5,20 @@ import { Typography } from "../typography";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 
-export type CustomerReview = {
-  customerName: string;
-  review: string;
-  id: string;
-  photo: string;
-};
+export type CustomerReview = [
+  {
+    customerName: string;
+    review: string;
+    id: string;
+    photo: string;
+  }
+];
 
 type CustReviewsSectionProps = {
-  custData: Array<CustomerReview>;
+  data: Array<CustomerReview>;
 };
 
-export const CustReviewsSection = ({ custData }: CustReviewsSectionProps) => {
+export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
   return (
     <>
       <section id="custReviews" className="custReviewsSection">
@@ -27,15 +29,7 @@ export const CustReviewsSection = ({ custData }: CustReviewsSectionProps) => {
           />
         </div>
         <Container>
-          <Row className="gap-3">
-            {custData.map(({ id, ...other }) => {
-              return (
-                <div className="col-lg" key={id}>
-                  <Cards.CustReviewCard {...other} />
-                </div>
-              );
-            })}
-          </Row>
+          <Row className="gap-3"></Row>
         </Container>
       </section>
 

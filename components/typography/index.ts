@@ -8,6 +8,7 @@ import { SubHeader } from "./SubHeader";
 import { SectionTitle } from "./SectionTitle";
 import { NavLink } from "./NavLink";
 import { HeroText } from "./HeroText";
+import { HeroTextEM } from "./HeroTextEM";
 
 export const Typography ={
     ParaL: ParagraphL,
@@ -17,5 +18,6 @@ export const Typography ={
     SectionTitle:SectionTitle,
     NavLink: NavLink,
     Hero: HeroText,
+    HeroEM: HeroTextEM
 };
 
