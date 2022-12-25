@@ -4,7 +4,7 @@ I'm a lucky guy! As a junior web developer, it's tough to land your first free-l
 
 That's why I'm honoured to have been hired by Fat Slob Plumbing to build their website!
 
-I'm using TypeScript, Next.js, React, Bootstrap, and HyGraph to produce a new website for Fat Slob Plumbing. Business is booming - they're franchising!
+I'm using TypeScript, Next.js, React, HyGraph, and pure CSS to produce a new website for Fat Slob Plumbing. Business is booming - they're franchising!
 
 # To Do:
 
