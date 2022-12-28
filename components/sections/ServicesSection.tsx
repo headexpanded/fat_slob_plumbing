@@ -17,7 +17,7 @@ type ServicesSectionProps = {
 };
 
 export const ServicesSection = ({ data }: ServicesSectionProps) => {
-  console.log(data);
+  console.log("Food and Drinks " + data);
   return (
     <>
       <section id="services" className="servicesSection">

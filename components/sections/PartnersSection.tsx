@@ -16,8 +16,9 @@ type PartnersSectionProps = {
 
 export const PartnersSection = ({ data }: PartnersSectionProps) => {
   const values = Object.values(data);
+  console.log("data is:" + data);
   values.forEach((value) => {
-    console.log(value);
+    console.log("this" + value.title);
   });
 
   return (
