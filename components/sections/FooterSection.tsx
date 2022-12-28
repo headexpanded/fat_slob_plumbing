@@ -10,16 +10,16 @@ export const FooterSection = () => {
   return (
     <>
       <div className="footerSection ">
-        <div className="container ">
-          <div className="row">
-            <div className="col-2"></div>
-            <div className="col-8">
+        <div>
+          <div>
+            <div></div>
+            <div>
               <p>
                 We are not licenced plumbers. In case of emergency, you should
                 contact a real plumber.
               </p>
             </div>
-            <div className="col-2"></div>
+            <div></div>
           </div>
         </div>
       </div>
