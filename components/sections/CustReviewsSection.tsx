@@ -4,6 +4,7 @@ import { Cards } from "../cards";
 import { Typography } from "../typography";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import { CustReviewCard } from "../cards/CustReviewCard";
 
 export type CustomerReview = [
   {
@@ -24,12 +25,26 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
       <section id="custReviews" className="custReviewsSection">
         <div>
           <Typography.SectionTitle
-            content="Happy Customers"
+            content="Happy Customers and fings"
             color="var(--solidBrown)"
           />
         </div>
         <Container>
-          <Row className="gap-3"></Row>
+          <Row className="gap-3">
+            {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
+            {data?.map(({ id, ...other }) => {
+              return (
+                <div className="col d-flex justify-content-center" key={id}>
+                  <CustReviewCard
+                    review={""}
+                    customerName={""}
+                    photo={""}
+                    {...other}
+                  />
+                </div>
+              );
+            })}
+          </Row>
         </Container>
       </section>
 
