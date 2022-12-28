@@ -2,8 +2,6 @@
 
 import { Cards } from "../cards";
 import { Typography } from "../typography";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 
 export type FoodAndDrink = {
   edible: string;
@@ -28,17 +26,13 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
           />
         </div>
 
-        <Container>
-          <Row className="gap-3">
-            {/* {data.map(({ id, ...other }) => {
+        {/* {data.map(({ id, ...other }) => {
               return (
                 <div className="col-lg" key={id}>
                   <Cards.ServicesCard {...other} />
                 </div>
               );
             })} */}
-          </Row>
-        </Container>
       </section>
       <style jsx>{`
         .servicesSection {
