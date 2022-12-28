@@ -4,17 +4,15 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
-import { Partner } from "../components/sections/PartnersSection";
-import { FoodAndDrink } from "../components/sections/ServicesSection";
+import { ValuedPartner } from "../components/sections/ValuedPartnersSection";
 import { Section } from "../components/sections";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
-  partnersProp: Partner[];
-  foodAndDrinks: FoodAndDrink[];
+  partnersData: ValuedPartner[];
 };
 
-const Home = ({ customerReviews, partnersProp, foodAndDrinks }: HomeProps) => {
+function Home({ customerReviews, partnersData }: HomeProps) {
   return (
     <div className={styles._container}>
       <Head>
@@ -31,11 +29,11 @@ const Home = ({ customerReviews, partnersProp, foodAndDrinks }: HomeProps) => {
       {/* How We Work */}
       <Section.HowWeWork />
       {/* Services */}
-      <Section.Services data={foodAndDrinks}></Section.Services>
+      {/* <Section.Services /> */}
       {/* Franchises */}
       <Section.Franchises />
-      {/* Partners */}
-      <Section.Partners data={partnersProp}></Section.Partners>
+      {/* Valued Partners */}
+      <Section.Partners data={partnersData}></Section.Partners>
       {/* About Us */}
       <Section.AboutUs />
       {/* Footer */}
@@ -59,7 +57,7 @@ const Home = ({ customerReviews, partnersProp, foodAndDrinks }: HomeProps) => {
       </footer>
     </div>
   );
-};
+}
 
 export default Home;
 
@@ -75,16 +73,6 @@ export async function getStaticProps() {
     }
   `;
 
-  const navLinksQuery = gql`
-    {
-      navLinks {
-        navLinkName
-        navLink
-        id
-      }
-    }
-  `;
-
   const partnersQuery = gql`
     {
       partners {
@@ -96,40 +84,20 @@ export async function getStaticProps() {
     }
   `;
 
-  const foodsAndDrinksQuery = gql`
-    {
-      foodsAndDrinks {
-        edible
-        id
-      }
-    }
-  `;
-
-  const custReviewsData = await request(
+  const data = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     custReviewQuery
   );
 
-  const navLinkData = await request(
-    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
-    navLinksQuery
-  );
   const partnersData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     partnersQuery
   );
 
-  const foodAndDrinksData = await request(
-    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
-    foodsAndDrinksQuery
-  );
-
   return {
     props: {
-      customerReviews: custReviewsData,
-      partnersProp: partnersData,
-      navLinks: navLinkData,
-      foodAndDrinks: foodAndDrinksData,
+      customerReviews: data.customerReviews,
+      partnersData: partnersData.partners,
     }, // will be passed to the page component as props
   };
 }
