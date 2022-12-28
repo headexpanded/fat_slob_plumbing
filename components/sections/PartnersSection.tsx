@@ -25,13 +25,13 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           />
         </div>
         <div className="partnerCards">
-          <div className="container d-flex flex-row align-items-center justify-content-center px-4 pb-2">
-            <div className="row  gap-3">
+          <div>
+            <div>
               {/*  extract key from Partners, spread the rest into PartnerCard component */}
 
               {data.map(({ id, ...other }) => {
                 return (
-                  <div className="col-lg" key={id}>
+                  <div key={id}>
                     <Cards.PartnerCard {...other} />
                   </div>
                 );
