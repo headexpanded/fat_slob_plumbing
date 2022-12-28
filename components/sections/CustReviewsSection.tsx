@@ -7,9 +7,9 @@ import Row from "react-bootstrap/Row";
 
 export type CustomerReview = [
   {
+    id: string;
     customerName: string;
     review: string;
-    id: string;
     photo: string;
   }
 ];
