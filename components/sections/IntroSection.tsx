@@ -7,56 +7,28 @@ export const IntroSection = () => {
   return (
     <>
       <section id="intro" className="introSection">
-        <div className="container text-center">
-          <div className="row">
-            <div className="col-12">
-              <div className="introTitle">
-                <Typography.MainTitle
-                  content="Fat Slob Plumbing"
-                  color="var(--solidBrown)"
-                />
-              </div>
-            </div>
-          </div>
+        <div className="introTitle">
+          <Typography.Hero
+            content="Fat Slob Plumbing"
+            color="var(--solidBrown)"
+          />
         </div>
 
         <div className="introText">
-          <div className="container text-center">
-            <div className="row">
-              <div className="col-2"></div>
-              <div className="col-8">
-                <Typography.ParaC
-                  content="Can your home system flush a big load?"
-                  color="var(--solidBrown)"
-                />
-              </div>
-              <div className="col-2"></div>
-            </div>
-          </div>
-          <div className="container text-center">
-            <div className="row ">
-              <div className="col-2"></div>
-              <div className="col-8">
-                <Typography.ParaC
-                  content="Take our advice - you need to stress test your facilities, NOW!"
-                  color="var(--solidBrown)"
-                />
-              </div>
-              <div className="col-2"></div>
-            </div>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-2"></div>
-              <div className="col-8">
-                <Typography.ParaC
-                  content="Because no-one likes a surprise blockage!"
-                  color="var(--solidBrown)"
-                />
-              </div>
-              <div className="col-2"></div>
-            </div>
-          </div>
+          <Typography.ParaC
+            content="Can your home system flush a big load?"
+            color="var(--solidBrown)"
+          />
+
+          <Typography.ParaC
+            content="Take our advice - you need to stress test your facilities, NOW!"
+            color="var(--solidBrown)"
+          />
+
+          <Typography.ParaC
+            content="Because no-one likes a surprise blockage!"
+            color="var(--solidBrown)"
+          />
         </div>
       </section>
 
