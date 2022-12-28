@@ -2,17 +2,13 @@
 
 import { Cards } from "../cards";
 import { Typography } from "../typography";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
 
-export type CustomerReview = [
-  {
-    id: string;
-    customerName: string;
-    review: string;
-    photo: string;
-  }
-];
+export type CustomerReview = {
+  id: string;
+  customerName: string;
+  review: string;
+  photo: string;
+};
 
 type CustReviewsSectionProps = {
   data: Array<CustomerReview>;
@@ -28,18 +24,15 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
             color="var(--solidBrown)"
           />
         </div>
-        <Container>
-          <Row className="gap-3">
-            {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
-            {data?.map(({ id, ...other }) => {
-              return (
-                <div className="col d-flex justify-content-center" key={id}>
-                  <Cards.CustReviewCard {...other} />
-                </div>
-              );
-            })}
-          </Row>
-        </Container>
+
+        {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
+        {data?.map(({ id, ...other }) => {
+          return (
+            <div className="col d-flex justify-content-center" key={id}>
+              <Cards.CustReviewCard {...other} />
+            </div>
+          );
+        })}
       </section>
 
       <style jsx>{`
