@@ -1,7 +1,4 @@
 import { Typography } from "../typography";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 // define ServicesCard properties
 type ServicesCardProps = {
@@ -14,37 +11,30 @@ export const ServicesCard = ({ title, price }: ServicesCardProps) => {
   const pound = "\u00a3";
   return (
     <>
-      <div className="px-1 mt-1 mb-1 servicesCard">
-        <Container>
-          <Row>
-            <Col>
-              <h2>{title}</h2>
-              <div className="nightBefore">
-                <div className="servicesInfo">
-                  <ul>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="onTheDay"></div>
-            </Col>
-          </Row>
-        </Container>
-        <div className="container d-flex flex-row align-items-center justify-content-center p-0 m-0">
-          <div className="row align-items-baseline justify-content-center p-0 m-0">
-            <div className="col p-0 m-0">
-              <Typography.SubHeader content="only" color="var(--richBrown)" />
-            </div>
-            <div className="col p-0 m-0">
-              <Typography.SectionTitle
-                content={price}
-                color="var(--solidBrown)"
-              />
-            </div>
+      <div className="servicesCard">
+        <h2>{title}</h2>
+        <div className="nightBefore">
+          <div className="servicesInfo">
+            <ul>
+              <li></li>
+            </ul>
           </div>
         </div>
-        <div className="container  d-flex flex-row align-items-center justify-content-center p-0 m-0">
-          <div className="row align-items-baseline justify-content-center p-0 m-0">
+        <div className="onTheDay"></div>
+        <div>
+          <div>
+            <div>
+              <Typography.SubHeader content="only" color="var(--richBrown)" />
+            </div>
+
+            <Typography.SectionTitle
+              content={price}
+              color="var(--solidBrown)"
+            />
+          </div>
+        </div>
+        <div>
+          <div>
             <div className="col resLink p-0 m-0">
               <a href="#">
                 <Typography.SubHeader
