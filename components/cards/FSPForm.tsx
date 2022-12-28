@@ -1,11 +1,11 @@
-import Form from "react-bootstrap/Form";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
+// import FloatingLabel from "react-bootstrap/FloatingLabel";
+// import Button from "react-bootstrap/Button";
 
 export const FSPForm = () => {
   return (
     <>
-      <Form className="p-5">
+      {/* <Form className="p-5">
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <FloatingLabel
             controlId="floatingInput"
@@ -17,9 +17,9 @@ export const FSPForm = () => {
           <Form.Text className="text-muted">
             We will never share your email with anyone else.
           </Form.Text>
-        </Form.Group>
+        </Form.Group> */}
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+      {/* <Form.Group className="mb-3" controlId="formBasicPassword">
           <Form.Label>Your Message</Form.Label>
           <Form.Control
             as="textarea"
@@ -34,7 +34,7 @@ export const FSPForm = () => {
         <Button variant="primary" type="submit">
           Submit
         </Button>
-      </Form>
+      </Form> */}
     </>
   );
 };
