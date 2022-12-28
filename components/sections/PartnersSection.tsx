@@ -15,18 +15,12 @@ type PartnersSectionProps = {
 };
 
 export const PartnersSection = ({ data }: PartnersSectionProps) => {
-  const values = Object.values(data);
-  console.log("data is:" + data);
-  values.forEach((value) => {
-    console.log("this" + value.title);
-  });
-
   return (
     <>
       <section id="partners" className="partners">
         <div className="partnersTitle">
           <Typography.SectionTitle
-            content="Our Valued Partners"
+            content="Our Valued Partners and all"
             color="var(--solidBrown)"
           />
         </div>
@@ -35,7 +29,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
             <div className="row  gap-3">
               {/*  extract key from Partners, spread the rest into PartnerCard component */}
 
-              {values.map(({ id, ...other }) => {
+              {data.map(({ id, ...other }) => {
                 return (
                   <div className="col-lg" key={id}>
                     <Cards.PartnerCard {...other} />

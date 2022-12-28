@@ -4,12 +4,12 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { gql, request } from "graphql-request";
 import { CustomerReview } from "../components/sections/CustReviewsSection";
-import { ValuedPartner } from "../components/sections/ValuedPartnersSection";
+import { Partner } from "../components/sections/PartnersSection";
 import { Section } from "../components/sections";
 
 type HomeProps = {
   customerReviews: CustomerReview[];
-  partnersData: ValuedPartner[];
+  partnersData: Partner[];
 };
 
 function Home({ customerReviews, partnersData }: HomeProps) {
