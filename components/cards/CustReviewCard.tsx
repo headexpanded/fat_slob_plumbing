@@ -9,11 +9,11 @@ type CustReviewCardProps = {
 export const CustReviewCard = ({
   review,
   customerName,
-  photo
+  photo,
 }: CustReviewCardProps) => {
   return (
     <>
-      <div className="custReviewCard px-1 my-3 ">
+      <div className="custReviewCard">
         <div className="custReview">
           <p>{review}</p>
         </div>
