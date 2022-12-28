@@ -22,37 +22,24 @@ export const AboutUsSection = () => {
             color="var(--solidBrown)"
           />
         </div>
-        <div className="container pb-4">
-          <div className="row">
-            <div className="col-2"></div>
-            <div className="col-8">
-              <Typography.ParaC
-                content="Our domestic sewage system always blocked up after a good night."
-                color="var(--solidBrown)"
-              />
+
+        <Typography.ParaC
+          content="Our domestic sewage system always blocked up after a good night."
+          color="var(--solidBrown)"
+        />
+
+        <Typography.ParaC
+          content="We got tired of the nasty early morning surprises. So we decided to do something about it."
+          color="var(--solidBrown)"
+        />
+
+        {employees.map(({ id, ...other }) => {
+          return (
+            <div className="col-8" key={id}>
+              {other.title}
             </div>
-            <div className="col-2"></div>
-          </div>
-          <div className="row">
-            <div className="col-2"></div>
-            <div className="col-8">
-              <Typography.ParaC
-                content="We got tired of the nasty early morning surprises. So we decided to do something about it."
-                color="var(--solidBrown)"
-              />
-            </div>
-            <div className="col-2"></div>
-          </div>
-        </div>
-        <div className="row">
-          {employees.map(({ id, ...other }) => {
-            return (
-              <div className="col-8" key={id}>
-                {other.title}
-              </div>
-            );
-          })}
-        </div>
+          );
+        })}
       </section>
 
       <style jsx>{`
