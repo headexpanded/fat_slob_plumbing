@@ -6,8 +6,8 @@ type PartnerCardProps = {
   photo: string;
 };
 
+// define PartnerCard component
 export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
-  console.log({ title });
   return (
     <>
       <div className="partnerCard">

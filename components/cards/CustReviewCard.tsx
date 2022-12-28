@@ -9,7 +9,7 @@ type CustReviewCardProps = {
 export const CustReviewCard = ({
   review,
   customerName,
-  photo,
+  photo
 }: CustReviewCardProps) => {
   return (
     <>

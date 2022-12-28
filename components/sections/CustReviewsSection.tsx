@@ -4,7 +4,6 @@ import { Cards } from "../cards";
 import { Typography } from "../typography";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import { CustReviewCard } from "../cards/CustReviewCard";
 
 export type CustomerReview = [
   {
@@ -35,12 +34,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
             {data?.map(({ id, ...other }) => {
               return (
                 <div className="col d-flex justify-content-center" key={id}>
-                  <CustReviewCard
-                    review={""}
-                    customerName={""}
-                    photo={""}
-                    {...other}
-                  />
+                  <Cards.CustReviewCard {...other} />
                 </div>
               );
             })}
