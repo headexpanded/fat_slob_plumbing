@@ -20,7 +20,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
       <section id="custReviews" className="custReviewsSection">
         <div>
           <Typography.SectionTitle
-            content="Happy Customers and fings"
+            content="Happy Customers"
             color="var(--solidBrown)"
           />
         </div>
@@ -28,7 +28,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
         {data?.map(({ id, ...other }) => {
           return (
-            <div className="col d-flex justify-content-center" key={id}>
+            <div key={id}>
               <Cards.CustReviewCard {...other} />
             </div>
           );
