@@ -27,10 +27,4 @@ const TitleText = styled.h1`
   animation-iteration-count: 1;
   animation-timing-function: linear;
   color: var(--solidBrown);
-  font-size: 6rem;
-  font-weight: 800;
-  letter-spacing: -0.15rem;
-  line-height: 1.1;
-  margin-bottom: -20px;
-  text-align: center;
 `;

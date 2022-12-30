@@ -17,43 +17,36 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
       </div>
       <style jsx>{`
         .partnerCard {
+          border-radius: var(--borderRadius);
+          color: var(--defaultFontColor);
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background-color: var(--hintOfBrown);
-
-          border-radius: 16px;
-          color: var(--solidBrown);
-          filter: drop-shadow(2px 4px 8px var(--solidBrown));
-          padding: 4px 8px 12px 8px;
+          padding: 0.5rem;
+          place-items: center;
+          text-align: center;
         }
 
         .partnerCard h3 {
-          color: var(--solidBrown);
-          text-align: center;
           font-size: 2rem;
-          font-weight: bold;
-          padding: 32px 8px 16px 8px;
+          font-weight: 700;
+          padding: inherit;
         }
 
         .partnerCard p {
-          color: var(--solidBrown);
-          font-size: 1.25rem;
+          font-size: 1rem;
           font-style: italic;
-          font-weight: bold;
-          padding: 32px 8px 0px 12px;
-          text-align: center;
+          font-weight: 400;
+          padding: inherit;
         }
 
         img {
           background-size: cover;
           background-position: center;
-          border: 2px solid var(--solidBrown);
-          border-radius: 8%;
+          border: 2px solid var(--coffee);
+          border-radius: var(--borderRadius);
           filter: grayscale(100%);
-          height: 300px;
-          width: 300px;
+          height: 16rem;
+          aspect-ratio: 1/1;
         }
       `}</style>
     </>

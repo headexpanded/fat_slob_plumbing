@@ -28,7 +28,7 @@ export const HeroSection = () => {
         <Typography.ParaC content="Imagine it." color="var(--solidBrown)" />
 
         <Typography.ParaC
-          content="Friends visiting - suddenly your lav blocks up."
+          content="Got vistors - suddenly your lav blocks up."
           color="var(--solidBrown)"
         />
 
@@ -55,15 +55,7 @@ export const HeroSection = () => {
 
       <style jsx>{`
         .heroSection {
-          background-image: linear-gradient(
-            180deg,
-            var(--hintOfBrown),
-            var(--coffee)
-          );
-          margin-bottom: 0px;
-          min-height: 100vh;
-          padding: 120px 0px 0px 0px;
-          position: relative;
+          height: 100vh;
           text-align: center;
         }
       `}</style>

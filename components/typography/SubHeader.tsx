@@ -1,5 +1,4 @@
 // define properties of Italic texts
-// color may change when palette is finalised.
 
 // define Italic type properties
 type SubHeaderProps = {
@@ -15,9 +14,6 @@ export const SubHeader = ({ content, color }: SubHeaderProps) => {
       <style jsx>{`
         h4 {
           color: ${color ?? ""};
-          font-size: 0.9rem;
-          padding: 20px 0px 8px 0px;
-          margin-top: -80px;
         }
       `}</style>
     </>

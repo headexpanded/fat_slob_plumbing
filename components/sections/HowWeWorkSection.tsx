@@ -72,9 +72,7 @@ export const HowWeWorkSection = () => {
 
       <style jsx>{`
         .howWeWorkSection {
-          background-color: var(--coffee);
-          min-height: 100vh;
-          padding: 40px 0px 20px 0px;
+          height: 100vh;
         }
 
         .howWeWorkTitle {

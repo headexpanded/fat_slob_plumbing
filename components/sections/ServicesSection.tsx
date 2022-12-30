@@ -36,16 +36,10 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
       </section>
       <style jsx>{`
         .servicesSection {
-          background-color: var(--coffee);
-          color: var(--hintOfBrown);
-          min-height: 100vh;
+          height: 100vh;
           padding: 40px 0px 40px 0px;
         }
         .prodCards {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-evenly;
-          padding: 40px 0px;
         }
       `}</style>
     </>

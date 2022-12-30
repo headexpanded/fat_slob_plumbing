@@ -1,5 +1,4 @@
 // define properties of Main Title
-// color is #804D00 until project color palette is finalised
 
 //  define MainTitle type properties
 type MainTitleProps = {
@@ -15,11 +14,6 @@ export const MainTitle = ({ content, color }: MainTitleProps) => {
       <style jsx>{`
         h1 {
           color: ${color ?? ""};
-          font-size: 2rem;
-          font-weight: 800;
-          letter-spacing: -0.1rem;
-          line-height: 1.1;
-          text-align: center;
         }
       `}</style>
     </>

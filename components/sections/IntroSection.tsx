@@ -34,12 +34,9 @@ export const IntroSection = () => {
 
       <style jsx>{`
         .introSection {
-          background-color: var(--hintOfBrown);
-          min-height: 100vh;
-          padding: 160px 0px 0px 0px;
+          height: 100vh;
         }
         .introText {
-          padding: 0px 0px 12px 0px;
         }
       `}</style>
     </>

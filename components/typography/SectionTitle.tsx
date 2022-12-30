@@ -20,22 +20,8 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
       <style jsx>{`
         h2 {
           color: ${color ?? ""};
-          font-size: 3rem;
-          font-weight: 800;
-          line-height: 1.1;
-          padding: 48px 4px 80px 40px;
-          text-align: center;
-          font-size: 46px;
-          letter-spacing: -0.1rem;
-          line-height: 1.1;
-          padding: 48px 4px 60px 4px;
-          text-align: center;
-          text-transform: uppercase;
         }
         .topLink {
-          text-align: center;
-          margin-top: -84px;
-          padding-bottom: 40px;
         }
       `}</style>
     </>

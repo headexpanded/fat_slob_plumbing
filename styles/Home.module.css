@@ -1,17 +1,14 @@
 ._container {
-  background-color: var(--hintOfBrown);
   padding: 0rem;
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: -var(--hintOfBrown);
 }
 
 .footer {
@@ -83,9 +80,7 @@
 }
 
 .aboutUs {
-  background-color: var(--hintOfBrown);
-  min-height: 100vh;
-  padding: 40px 0px 20px 0px;
+  height: 100vh;
 }
 
 @media (max-width: 600px) {

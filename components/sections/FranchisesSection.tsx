@@ -20,12 +20,9 @@ export const FranchisesSection = () => {
 
       <style jsx>{`
         .franchisesSection {
-          background-color: var(--hintOfBrown);
-          min-height: 100vh;
-          padding: 40px 0px 20px 0px;
+          height: 100vh;
         }
         .franchisesTitle {
-          padding: 0px 0px 40px 0px;
         }
       `}</style>
     </>

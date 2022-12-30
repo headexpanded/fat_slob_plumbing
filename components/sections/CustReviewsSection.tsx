@@ -37,13 +37,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
 
       <style jsx>{`
         .custReviewsSection {
-          background-image: linear-gradient(
-            185deg,
-            var(--hintOfBrown),
-            var(--hintOfBrown)
-          );
-          min-height: 80vh;
-          padding: 40px 0px 20px 0px;
+          height: 80vh;
         }
       `}</style>
     </>

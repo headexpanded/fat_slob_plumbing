@@ -42,13 +42,10 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
       </section>
       <style jsx>{`
         .partners {
-          background-color: var(--coffee);
-          padding: 40px 0px 40px 0px;
-          min-height: 100vh;
+          height: 100vh;
         }
 
         .partnersTitle {
-          padding: 0px 0px 40px 0px;
         }
       `}</style>
     </>
