@@ -44,8 +44,6 @@ export const AboutUsSection = () => {
 
       <style jsx>{`
         .aboutUsSection {
-          height: 100vh;
-          text-align: center;
         }
       `}</style>
     </>

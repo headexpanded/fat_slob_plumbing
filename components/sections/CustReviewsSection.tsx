@@ -37,8 +37,6 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
 
       <style jsx>{`
         .custReviewsSection {
-          height: 100vh;
-          text-align: center;
         }
       `}</style>
     </>

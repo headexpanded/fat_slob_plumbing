@@ -72,8 +72,6 @@ export const HowWeWorkSection = () => {
 
       <style jsx>{`
         .howWeWorkSection {
-          height: 100vh;
-          text-align: center;
         }
 
         .howWeWorkTitle {

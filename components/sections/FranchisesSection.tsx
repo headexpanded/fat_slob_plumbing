@@ -17,8 +17,6 @@ export const FranchisesSection = () => {
 
       <style jsx>{`
         .franchisesSection {
-          height: 100vh;
-          text-align: center;
         }
         .franchisesTitle {
         }

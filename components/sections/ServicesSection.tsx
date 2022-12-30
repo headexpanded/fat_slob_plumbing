@@ -36,8 +36,6 @@ export const ServicesSection = ({ data }: ServicesSectionProps) => {
       </section>
       <style jsx>{`
         .servicesSection {
-          height: 100vh;
-          text-align: center;
         }
         .prodCards {
         }

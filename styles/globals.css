@@ -28,6 +28,10 @@ html {
   margin: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 * + * {
   margin-bottom: 0.5rem;
   --borderRadius: 0.5rem;
@@ -41,6 +45,7 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+section[class$="Section"] {
+  height: 100vh;
+  text-align: center;
 }

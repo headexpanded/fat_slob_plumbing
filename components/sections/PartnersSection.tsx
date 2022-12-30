@@ -42,12 +42,10 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
       </section>
       <style jsx>{`
         .partnersSection {
-          height: 100vh;
-          text-align: center;
+          
         }
 
         .partnersTitle {
-          
         }
       `}</style>
     </>
