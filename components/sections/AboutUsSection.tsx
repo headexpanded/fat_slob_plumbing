@@ -15,22 +15,22 @@ export const AboutUsSection = () => {
   ];
   return (
     <>
-      <section id="about" className="aboutUs">
+      <section id="about" className="aboutUsSection">
         <div className="aboutUsTitle">
           <Typography.SectionTitle
             content="About Us"
-            color="var(--solidBrown)"
+            color="var(--defaultFontColor)"
           />
         </div>
 
         <Typography.ParaC
           content="Our domestic sewage system always blocked up after a good night."
-          color="var(--solidBrown)"
+          color="var(--defaultFontColor)"
         />
 
         <Typography.ParaC
           content="We got tired of the nasty early morning surprises. So we decided to do something about it."
-          color="var(--solidBrown)"
+          color="var(--defaultFontColor)"
         />
 
         {employees.map(({ id, ...other }) => {
@@ -43,8 +43,9 @@ export const AboutUsSection = () => {
       </section>
 
       <style jsx>{`
-        .aboutUs {
+        .aboutUsSection {
           height: 100vh;
+          text-align: center;
         }
       `}</style>
     </>

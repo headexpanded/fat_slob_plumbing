@@ -29,7 +29,7 @@ html {
 }
 
 * + * {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   --borderRadius: 0.5rem;
 }
 

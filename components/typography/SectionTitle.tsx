@@ -1,4 +1,3 @@
-import { NavLink } from "./NavLink";
 // define properties of Section Titles
 
 // define Section Title Dark type properties
@@ -13,7 +12,7 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
       <div className="sectionTitle">
         <h2>{content}</h2>
         <div className="topLink">
-          <NavLink navLink="#" navLinkName="Back to Top" />
+          <a href="#">Back To Top</a>
         </div>
       </div>
 

@@ -21,7 +21,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         <div>
           <Typography.SectionTitle
             content="Happy Customers"
-            color="var(--solidBrown)"
+            color="var(--defaultFontColor)"
           />
         </div>
 
@@ -37,7 +37,8 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
 
       <style jsx>{`
         .custReviewsSection {
-          height: 80vh;
+          height: 100vh;
+          text-align: center;
         }
       `}</style>
     </>

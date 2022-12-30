@@ -17,11 +17,11 @@ type PartnersSectionProps = {
 export const PartnersSection = ({ data }: PartnersSectionProps) => {
   return (
     <>
-      <section id="partners" className="partners">
+      <section id="partners" className="partnersSection">
         <div className="partnersTitle">
           <Typography.SectionTitle
-            content="Our Valued Partners and all"
-            color="var(--solidBrown)"
+            content="Our Valued Partners"
+            color="var(--defaultFontColor)"
           />
         </div>
         <div className="partnerCards">
@@ -41,11 +41,13 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
         </div>
       </section>
       <style jsx>{`
-        .partners {
+        .partnersSection {
           height: 100vh;
+          text-align: center;
         }
 
         .partnersTitle {
+          
         }
       `}</style>
     </>

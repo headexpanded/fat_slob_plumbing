@@ -10,7 +10,7 @@ export const HowWeWorkSection = () => {
         <div className="howWeWorkTitle">
           <Typography.SectionTitle
             content="How We Work"
-            color="var(--solidBrown)"
+            color="var(--defaultFontColor)"
           />
         </div>
 
@@ -73,6 +73,7 @@ export const HowWeWorkSection = () => {
       <style jsx>{`
         .howWeWorkSection {
           height: 100vh;
+          text-align: center;
         }
 
         .howWeWorkTitle {

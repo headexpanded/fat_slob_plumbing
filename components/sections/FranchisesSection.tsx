@@ -1,6 +1,5 @@
 // define Franchises Section properties
 import { Typography } from "../typography";
-import { FSPForm } from "../cards/FSPForm";
 
 type FranchisesSectionProps = {};
 
@@ -11,16 +10,15 @@ export const FranchisesSection = () => {
         <div className="franchisesTitle">
           <Typography.SectionTitle
             content="Franchises Available Now!"
-            color="var(--solidBrown)"
+            color="var(--defaultFontColor)"
           />
         </div>
-
-        <FSPForm></FSPForm>
       </section>
 
       <style jsx>{`
         .franchisesSection {
           height: 100vh;
+          text-align: center;
         }
         .franchisesTitle {
         }
