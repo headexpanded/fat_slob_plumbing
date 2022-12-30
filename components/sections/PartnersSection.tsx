@@ -18,34 +18,46 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
   return (
     <>
       <section id="partners" className="partnersSection">
-        <div className="partnersTitle">
-          <Typography.SectionTitle
-            content="Our Valued Partners"
-            color="var(--defaultFontColor)"
-          />
-        </div>
-        <div className="partnerCards">
-          <div>
-            <div>
-              {/*  extract key from Partners, spread the rest into PartnerCard component */}
+        <Typography.SectionTitle
+          content="Our Valued Partners"
+          color="var(--defaultFontColor)"
+        />
 
-              {data.map(({ id, ...other }) => {
-                return (
-                  <div key={id}>
-                    <Cards.PartnerCard {...other} />
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+        {/*  extract key from Partners, spread the rest into PartnerCard component */}
+
+        <div className="partnerCards">
+          {data.map(({ id, ...other }) => {
+            return (
+              <div className="partnerCard" key={id}>
+                <Cards.PartnerCard {...other} />
+              </div>
+            );
+          })}
         </div>
       </section>
       <style jsx>{`
-        .partnersSection {
-          
+        .partnerCards {
+          border: 2px solid red;
+          display: flex;
+          flex-direction: column;
+          place-items: center;
         }
 
-        .partnersTitle {
+        .partnerCard {
+          display: flex;
+          flex-direction: column;
+          border: 2px solid green;
+          border-radius: var(--borderRadius);
+          max-width: 400px;
+          margin-bottom: 0px;
+          place-items: center;
+        }
+
+        @media screen and (min-width: 550px) {
+          .partnerCards {
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
         }
       `}</style>
     </>

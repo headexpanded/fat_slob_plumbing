@@ -10,38 +10,21 @@ type PartnerCardProps = {
 export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
   return (
     <>
-      <div className="partnerCard">
-        <h3>{title}</h3>
-        <img src={photo} alt={"Photo of " + title} />
-        <p>{desc}</p>
-      </div>
+      <h3>{title}</h3>
+      <img src={photo} alt={"Photo of " + title} />
+      <p>{desc}</p>
+
       <style jsx>{`
-        .partnerCard {
-          border-radius: var(--borderRadius);
-          color: var(--defaultFontColor);
-          display: flex;
-          flex-direction: column;
-          place-items: center;
+        p {
+          width: 80%;
         }
-
-        .partnerCard h3 {
-          font-size: 2rem;
-          font-weight: 700;
-        }
-
-        .partnerCard p {
-          font-size: 1rem;
-          font-style: italic;
-          font-weight: 400;
-        }
-
         img {
           background-size: cover;
           background-position: center;
-          border: 2px solid var(--coffee);
+          border: 0;
           border-radius: var(--borderRadius);
           filter: grayscale(100%);
-          height: 16rem;
+          width: 300px;
           aspect-ratio: 1/1;
         }
       `}</style>

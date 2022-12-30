@@ -11,16 +11,11 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
     <>
       <div className="sectionTitle">
         <h2>{content}</h2>
-        <div className="topLink">
-          <a href="#">Back To Top</a>
-        </div>
       </div>
 
       <style jsx>{`
         h2 {
           color: ${color ?? ""};
-        }
-        .topLink {
         }
       `}</style>
     </>
