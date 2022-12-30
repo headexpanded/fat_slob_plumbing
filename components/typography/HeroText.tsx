@@ -7,7 +7,11 @@ type HeroTextProps = {
 };
 
 export const HeroText = ({ content, color }: HeroTextProps) => {
-  return <Wrapper>{content}</Wrapper>;
+  return (
+    <>
+      <p>{content}</p>
+    </>
+  );
 };
 
 const animation = keyframes`
@@ -22,10 +26,4 @@ const Wrapper = styled.span`
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
-  color: var(--solidBrown);
-  font-size: 1.8rem;
-  font-weight: 800;
-  opacity: 0;
-  padding: 56px 0px 4px 0px;
-  text-align: center;
 `;

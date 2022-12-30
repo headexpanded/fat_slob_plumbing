@@ -16,35 +16,38 @@ export const HeroSection = () => {
 
         <Spacer />
 
-        <Typography.Hero content="can" color="var(--solidBrown)" />
-        <Typography.HeroEM content="your " color="var(--solidBrown)" />
+        <Typography.Hero content="can" color="var(--defaultFontColor)" />
+        <Typography.HeroEM content="your " color="var(--defaultFontColor)" />
         <Typography.Hero
           content="lav take a big load?"
-          color="var(--solidBrown)"
+          color="var(--defaultFontColor)"
         />
 
         <Spacer />
 
-        <Typography.ParaC content="Imagine it." color="var(--solidBrown)" />
+        <Typography.ParaC
+          content="Imagine it."
+          color="var(--defaultFontColor)"
+        />
 
         <Typography.ParaC
           content="Got vistors - suddenly your lav blocks up."
-          color="var(--solidBrown)"
+          color="var(--defaultFontColor)"
         />
 
         <Typography.ParaC
           content="You don't need that."
-          color="var(--solidBrown)"
+          color="var(--defaultFontColor)"
         />
 
         <Typography.ParaC
           content="So hire us - we'll stress test it for you!"
-          color="var(--solidBrown)"
+          color="var(--defaultFontColor)"
         />
 
         <Typography.ParaC
           content="Not sure? Here's what our customers say..."
-          color="var(--solidBrown)"
+          color="var(--defaultFontColor)"
         />
 
         {/* <Button variant="outline-secondary">MAKE A BOOKING</Button>
@@ -55,8 +58,6 @@ export const HeroSection = () => {
 
       <style jsx>{`
         .heroSection {
-          height: 100vh;
-          text-align: center;
         }
       `}</style>
     </>

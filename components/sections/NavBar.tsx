@@ -8,14 +8,14 @@ export type navLink = {
   color?: string;
 };
 
-type NavBarSectionProps = {
+type NavBarProps = {
   data: Array<navLink>;
 };
 
-export const NavBarSection = () => {
+export const NavBar = () => {
   return (
     <>
-      <section className="navBarSection">
+      <section className="navBar">
         <a href="#">Home</a>
 
         <a href="">Services</a>
@@ -29,7 +29,7 @@ export const NavBarSection = () => {
         <a href="">Partners</a>
       </section>
       <style jsx>{`
-        .navBarSection {
+        .navBar {
         }
       `}</style>
     </>
