@@ -21,22 +21,18 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           color: var(--defaultFontColor);
           display: flex;
           flex-direction: column;
-          padding: 0.5rem;
           place-items: center;
-          text-align: center;
         }
 
         .partnerCard h3 {
           font-size: 2rem;
           font-weight: 700;
-          padding: inherit;
         }
 
         .partnerCard p {
           font-size: 1rem;
           font-style: italic;
           font-weight: 400;
-          padding: inherit;
         }
 
         img {

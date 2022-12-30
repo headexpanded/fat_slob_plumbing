@@ -46,6 +46,7 @@ a {
 }
 
 section[class$="Section"] {
-  height: 100vh;
+  height: auto;
+  padding: 0.5rem;
   text-align: center;
 }
