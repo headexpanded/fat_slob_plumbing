@@ -4,13 +4,13 @@
 :root {
   /* Colour Palette */
   --defaultBG: hsl(0, 0%, 95%);
-  --defaultFontColor: hsl(0, 0%, 45%);
+  --defaultFontColor: hsl(0, 0%, 30%);
 
   --vomitGreen: #7b6e4d;
   --coffee: #e3d1b5;
   --hintOfBrown: #fefceb;
 
-  --shadow: rgb(61, 61, 61);
+  --shadow: hsl(0, 0%, 24%);
 
   /* Font Family */
   font-family: "Inter", sans-serif;

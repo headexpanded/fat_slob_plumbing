@@ -30,7 +30,9 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
         .partnerCard > img {
           background-size: cover;
           background-position: center;
-          border-radius: var(--borderRadius);
+          // border-radius: var(--borderRadius);
+          box-shadow: -1px -1px 1px 1px hsl(0, 0%, 20%),
+            1px 1px 1px 1px hsl(0, 0%, 20%);
           filter: grayscale(100%);
           height: 200px;
           aspect-ratio: 1/1;
@@ -41,7 +43,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
 
         .partnerDesc > p {
           padding: 0.75rem;
-          font-size:.75rem;
+          font-size: 0.75rem;
         }
       `}</style>
     </>
