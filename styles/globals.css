@@ -3,17 +3,21 @@
 
 :root {
   /* Colour Palette */
-  --defaultBG: hsl(0, 0%, 98%);
-  --defaultFontColor: hsl(36, 83%, 38%);
+  --defaultBG: hsl(0, 0%, 95%);
+  --defaultFontColor: hsl(0, 0%, 45%);
 
   --vomitGreen: #7b6e4d;
   --coffee: #e3d1b5;
   --hintOfBrown: #fefceb;
 
+  --shadow: rgb(61, 61, 61);
+
   /* Font Family */
   font-family: "Inter", sans-serif;
   /* Base Font Size */
   font-size: 16px;
+
+  --boxshadow: 1px 2px 6px 1px var(--shadow);
 }
 
 @supports (font-variation-settings: normal) {
@@ -32,10 +36,14 @@ html {
   box-sizing: border-box;
 }
 
-* + * {
+body{
+  background-color: var(--defaultBG);
+}
+
+/* * + * {
   margin-bottom: 0.5rem;
   --borderRadius: 0.5rem;
-}
+} */
 
 a {
   color: var(--defaultFontColor);
@@ -45,5 +53,7 @@ a {
 section[class$="Section"] {
   color: var(--defaultFontColor);
   height: auto;
-  padding: 0.5rem;
+  text-align: center;
+  margin: 0 1rem;
+  padding: 1rem;
 }

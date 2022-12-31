@@ -28,7 +28,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
         <div className="partnerCards">
           {data.map(({ id, ...other }) => {
             return (
-              <div className="partnerCard" key={id}>
+              <div className="cardWrapper" key={id}>
                 <Cards.PartnerCard {...other} />
               </div>
             );
@@ -37,27 +37,20 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
       </section>
       <style jsx>{`
         .partnerCards {
-          border: 2px solid red;
           display: flex;
+          gap: 1rem;
           flex-direction: column;
+          flex-wrap: no-wrap;
           place-items: center;
         }
 
-        .partnerCard {
-          display: flex;
-          flex-direction: column;
-          border: 2px solid green;
-          border-radius: var(--borderRadius);
-          max-width: 400px;
-          margin-bottom: 0px;
-          place-items: center;
-        }
-
-        @media screen and (min-width: 550px) {
+        
+        @media screen and (min-width: 640px) {
           .partnerCards {
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: no-wrap;
           }
+          
         }
       `}</style>
     </>
