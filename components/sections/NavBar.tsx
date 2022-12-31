@@ -18,18 +18,20 @@ export const NavBar = () => {
       <section className="navBar">
         <a href="#">Home</a>
 
-        <a href="">Services</a>
-
-        <a href=""></a>
+        <a href="">Bookings</a>
 
         <a href="">Franchises</a>
 
-        <a href="">T-shirts</a>
+        <a href="">T-Shirts</a>
 
         <a href="">Partners</a>
       </section>
       <style jsx>{`
         .navBar {
+          height: 2rem;
+          border-bottom: 1px solid black;
+          display:flex;
+          justify-content: space-evenly;
         }
       `}</style>
     </>

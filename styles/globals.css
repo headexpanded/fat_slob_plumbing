@@ -36,7 +36,7 @@ html {
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: var(--defaultBG);
 }
 
@@ -48,6 +48,17 @@ body{
 a {
   color: var(--defaultFontColor);
   text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover::after {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  content: "";
+  height: 2px;
+  background-color: var(--vomitGreen);
+  margin: 0;
 }
 
 section[class$="Section"] {
