@@ -8,6 +8,8 @@ I'm using TypeScript, Next.js, React, HyGraph, and pure CSS to produce a new web
 
 Business is booming - they're franchising!
 
+Ron & Dave are both life-long Port Vale FC fans, so I've used The Vale's kit for the colour palette, with some secondary colours from The Vale's home page. Funnily enough, the palette nicely matches what Ron & Dave produce on a daily basis at their customer's homes.
+
 # To Do:
 
 - nav bar
