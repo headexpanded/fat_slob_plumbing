@@ -3,21 +3,23 @@
 
 :root {
   /* Colour Palette */
-  --defaultBG: hsl(0, 0%, 95%);
-  --defaultFontColor: hsl(0, 0%, 30%);
+  --defaultBG: hsla(36, 99%, 34%, 0.74);
+  --defaultFontColor: hsl(56, 100%, 50%);
 
-  --vomitGreen: #7b6e4d;
+  --PVbrown: hsl(41, 31%, 43%);
+  --PVgold: hsl(36, 100%, 50%);
+  --PVyellow:hsl(56, 100%, 50%);
   --coffee: #e3d1b5;
   --hintOfBrown: #fefceb;
 
-  --shadow: hsl(0, 0%, 24%);
+  --shadow: hsl(0, 0%, 48%);
 
   /* Font Family */
   font-family: "Inter", sans-serif;
   /* Base Font Size */
   font-size: 16px;
 
-  --boxshadow: 1px 2px 6px 1px var(--shadow);
+  --boxshadow: 1px 2px 6px 1px var(--PVgold);
 }
 
 @supports (font-variation-settings: normal) {
@@ -46,9 +48,13 @@ body {
 } */
 
 a {
-  color: var(--defaultFontColor);
+  color: var(--PVyellow);
   text-decoration: none;
   cursor: pointer;
+}
+
+a:hover {
+  transform: scale(1.05);
 }
 
 a:hover::after {
@@ -57,7 +63,7 @@ a:hover::after {
   flex-grow: 1;
   content: "";
   height: 2px;
-  background-color: var(--vomitGreen);
+  background-color: var(--PVgold);
   margin: 0;
 }
 

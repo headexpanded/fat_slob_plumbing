@@ -29,8 +29,8 @@ export const NavBar = () => {
       <style jsx>{`
         .navBar {
           height: 2rem;
-          border-bottom: 1px solid black;
-          display:flex;
+          border-bottom: 1px solid var(--PVgold);
+          display: flex;
           justify-content: space-evenly;
         }
       `}</style>
