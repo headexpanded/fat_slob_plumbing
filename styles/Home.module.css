@@ -1,11 +1,11 @@
-/* .main {
+.main {
   height: 100vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
 
 /* .footer {
   display: flex;

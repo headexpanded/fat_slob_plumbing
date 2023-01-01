@@ -14,7 +14,7 @@ type HomeProps = {
 
 function Home({ customerReviews, partnersData }: HomeProps) {
   return (
-    <div className={styles._container}>
+    <div className="main">
       <Head>
         <title>Fat Slob Plumbing</title>
         <meta
@@ -27,7 +27,7 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       </Head>
       {/* Navbar Section */}
       <Section.NavBar />
-      {/* Intro Section */}
+      {/* Hero Section */}
       <Section.Hero />
       {/* Customer Reviews */}
       <Section.CustReviews data={customerReviews}></Section.CustReviews>
@@ -43,12 +43,12 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       <Section.AboutUs />
       {/* Footer */}
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}>
         <div className={styles.grid}></div>
-      </main>
+      </main> */}
 
       <Section.Footer></Section.Footer>
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -59,7 +59,7 @@ function Home({ customerReviews, partnersData }: HomeProps) {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer>
+      </footer> */}
     </div>
   );
 }

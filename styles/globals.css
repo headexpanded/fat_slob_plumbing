@@ -3,7 +3,7 @@
 
 :root {
   /* Colour Palette */
-  --defaultBG: hsla(36, 99%, 34%, 0.74);
+  --defaultBG: hsla(36, 99%, 34%, 0.75);
   --defaultFontColor: hsl(56, 100%, 50%);
 
   --PVbrown: hsl(41, 31%, 43%);
@@ -59,18 +59,15 @@ a:hover {
 
 a:hover::after {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   flex-grow: 1;
   content: "";
-  height: 2px;
+  height: 1px;
   background-color: var(--PVgold);
-  margin: 0;
 }
 
 section[class$="Section"] {
   color: var(--defaultFontColor);
   height: auto;
   text-align: center;
-  margin: 0 1rem;
-  padding: 1rem;
 }

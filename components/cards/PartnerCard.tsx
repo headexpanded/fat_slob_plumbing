@@ -12,7 +12,9 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
     <>
       <div className="partnerCard">
         <h3>{title}</h3>
-        <img src={photo} alt={"Photo of " + title} />
+        <picture className="picture">
+          <img src={photo} alt={"Photo of " + title} loading="lazy" />
+        </picture>
         <div className="partnerDesc">
           <p>{desc}</p>
         </div>
@@ -28,7 +30,11 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           box-shadow: var(--boxshadow);
         }
 
-        .partnerCard > img {
+        .partnerCard h3 {
+          margin: 0;
+        }
+
+        .picture > img {
           background-size: cover;
           background-position: center;
           border: 1px solid var(--PVyellow);
@@ -38,12 +44,14 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           aspect-ratio: 1/1;
         }
         .partnerDesc {
+          border: 2px solid red;
           min-height: 20%;
+          max-width: 90%;
         }
 
         .partnerDesc > p {
-          padding: 0.75rem;
           font-size: 0.75rem;
+          text-overflow: ellipsis;
         }
       `}</style>
     </>

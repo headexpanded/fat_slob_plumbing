@@ -9,30 +9,21 @@ type FooterSectionProps = {
 export const FooterSection = () => {
   return (
     <>
-      <div className="footerSection ">
-        <div>
-          <div>
-            <div></div>
-            <div>
-              <p>
-                We are not licenced plumbers. In case of emergency, you should
-                contact a real plumber.
-              </p>
-            </div>
-            <div></div>
-          </div>
-        </div>
-      </div>
+      <footer className="footerSection ">
+        <p>
+          We are not licenced plumbers. In case of emergency, you should contact
+          a real plumber.
+        </p>
+      </footer>
       <style jsx>{`
         .footerSection {
-          background-color: var(--solidBrown);
-          text-align: center;
+          background-color: var(--PVgold);
         }
         .footerSection p {
-          color: var(--lemonCurry);
-          font-size: 0.8rem;
+          color: var(--PVbrown);
+          font-size: 0.5rem;
           margin: 0px;
-          padding: 8px 0px 8px 0px;
+          padding: 0.5rem 0;
         }
       `}</style>
     </>

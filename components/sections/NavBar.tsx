@@ -28,8 +28,10 @@ export const NavBar = () => {
       </section>
       <style jsx>{`
         .navBar {
+          
           height: 2rem;
-          border-bottom: 1px solid var(--PVgold);
+          // border-bottom: 1px solid var(--PVgold);
+          box-shadow: 0px 2px 2px 0px var(--shadow);
           display: flex;
           justify-content: space-evenly;
         }
