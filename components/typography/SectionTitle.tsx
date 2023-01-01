@@ -1,6 +1,5 @@
 // define properties of Section Titles
 
-// define Section Title Dark type properties
 type SectionTitleProps = {
   content?: string;
   color?: string;
