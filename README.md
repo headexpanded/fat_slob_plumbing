@@ -12,15 +12,13 @@ Ron & Dave are both life-long fans of [Port Vale FC](https://www.port-vale.co.uk
 
 # To Do:
 
-- nav bar
-
 - style photos in Cust Reviews
 
 - font
 
 - helpful slider ("Trish")
 
-- Cust reviews carousel
+- Cust reviews styles
 
 - map of Britain api for Franchise section
 
@@ -36,4 +34,3 @@ Ron & Dave are both life-long fans of [Port Vale FC](https://www.port-vale.co.uk
 
 - Twitter account, bot, feed, etc
 
-- HyGraph custReviews schema name change
