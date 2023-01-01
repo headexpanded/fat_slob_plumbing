@@ -22,6 +22,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
         .partnerCard {
           display: flex;
           flex-direction: column;
+          border: 1px solid var(--PVyellow);
           border-radius: var(--borderRadius);
           place-items: center;
           box-shadow: var(--boxshadow);
@@ -30,9 +31,8 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
         .partnerCard > img {
           background-size: cover;
           background-position: center;
-          // border-radius: var(--borderRadius);
-          box-shadow: -1px -1px 1px 1px hsl(0, 0%, 20%),
-            1px 1px 1px 1px hsl(0, 0%, 20%);
+          border: 1px solid var(--PVyellow);
+          border-radius: var(--borderRadius);
           filter: grayscale(100%);
           height: 200px;
           aspect-ratio: 1/1;

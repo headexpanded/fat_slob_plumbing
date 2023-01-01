@@ -24,7 +24,7 @@ export const NavBar = () => {
 
         <a href="">T-Shirts</a>
 
-        <a href="">Partners</a>
+        <a href="#partners">Partners</a>
       </section>
       <style jsx>{`
         .navBar {

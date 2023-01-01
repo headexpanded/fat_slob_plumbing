@@ -8,18 +8,18 @@
 
   --PVbrown: hsl(41, 31%, 43%);
   --PVgold: hsl(36, 100%, 50%);
-  --PVyellow:hsl(56, 100%, 50%);
-  --coffee: #e3d1b5;
-  --hintOfBrown: #fefceb;
+  --PVyellow: hsl(56, 100%, 50%);
 
-  --shadow: hsl(0, 0%, 48%);
+  --shadow: hsl(36, 99%, 34%, 0.75);
 
   /* Font Family */
   font-family: "Inter", sans-serif;
   /* Base Font Size */
   font-size: 16px;
 
-  --boxshadow: 1px 2px 6px 1px var(--PVgold);
+  --boxshadow: 2px 2px 24px 8px var(--shadow);
+
+  --borderRadius: 0.5rem;
 }
 
 @supports (font-variation-settings: normal) {
@@ -44,7 +44,7 @@ body {
 
 /* * + * {
   margin-bottom: 0.5rem;
-  --borderRadius: 0.5rem;
+  
 } */
 
 a {
