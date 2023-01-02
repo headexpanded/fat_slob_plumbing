@@ -15,6 +15,7 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
       <style jsx>{`
         h2 {
           color: ${color ?? ""};
+          font-size: clamp(1rem, 30vw, 60px);
         }
       `}</style>
     </>

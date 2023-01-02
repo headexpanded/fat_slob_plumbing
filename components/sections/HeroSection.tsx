@@ -37,8 +37,9 @@ export const HeroSection = () => {
             content="You don't need that."
             color="var(--defaultLight)"
           />
+          <Typography.ParaL content="So hire us." color="var(--defaultLight)" />
           <Typography.ParaL
-            content="So hire us - we'll stress test it for you!"
+            content="We'll give it a good stress test."
             color="var(--defaultLight)"
           />
         </div>
@@ -59,19 +60,18 @@ export const HeroSection = () => {
           position: relative;
         }
 
-        .heroStrap{
-          display:flex;
+        .heroStrap {
+          display: flex;
           justify-content: center;
           align-items: baseline;
 
-          .heroStrap  p:first-child{
+          .heroStrap p:first-child {
             padding-right: 12px;
           }
-
-
-        } .heroIntroText {
+        }
+        .heroIntroText {
           border: 2px solid red;
-          position:absolute;
+          position: absolute;
           top: 40vh;
           left: 10vw;
         }
