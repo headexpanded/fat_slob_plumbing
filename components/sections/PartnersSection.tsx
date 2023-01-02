@@ -40,18 +40,20 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           display: flex;
           gap: 1rem;
           flex-direction: column;
-          flex-wrap: no-wrap;
-          place-items: center;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+        }
+        
+        @media screen and (min-width: 768px) {
+          .partnerCards {
+            flex-direction: row;
+            flex-grow: 1;
+            justify-content: space-evenly;
+          }
         }
 
         
-        @media screen and (min-width: 640px) {
-          .partnerCards {
-            flex-direction: row;
-            flex-wrap: no-wrap;
-          }
-          
-        }
       `}</style>
     </>
   );

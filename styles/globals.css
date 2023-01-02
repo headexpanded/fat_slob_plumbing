@@ -3,8 +3,8 @@
 
 :root {
   /* Colour Palette */
-  --defaultBG: hsla(36, 99%, 34%, 0.75);
-  --defaultFontColor: hsl(56, 100%, 50%);
+  --defaultDark: hsla(0, 0%, 15%, 0.75);
+  --defaultLight: hsl(0, 0%, 99%);
 
   --PVbrown: hsl(41, 31%, 43%);
   --PVgold: hsl(36, 100%, 50%);
@@ -17,7 +17,7 @@
   /* Base Font Size */
   font-size: 16px;
 
-  --boxshadow: 2px 2px 24px 8px var(--shadow);
+  --boxshadow: 1px 1px 16px 0px var(--defaultDark);
 
   --borderRadius: 0.5rem;
 }
@@ -39,35 +39,42 @@ html {
 }
 
 body {
-  background-color: var(--defaultBG);
+  background: rgb(4, 0, 71);
+  background: linear-gradient(
+    150deg,
+    hsl(243, 100%, 14%) 1%,
+    hsl(210, 100%, 22%) 30%,
+    hsla(190, 100%, 30%, 0.8) 87%
+  );
 }
 
-/* * + * {
-  margin-bottom: 0.5rem;
-  
-} */
 
-a {
-  color: var(--PVyellow);
-  text-decoration: none;
-  cursor: pointer;
-}
 
-a:hover {
-  transform: scale(1.05);
-}
-
-a:hover::after {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  content: "";
-  height: 1px;
-  background-color: var(--PVgold);
+h1 {
+  font-size: 4rem;
+  text-align: left;
+  display: inline-block;
+  margin: 0px;
 }
 
 section[class$="Section"] {
-  color: var(--defaultFontColor);
+  color: var(--defaultLight);
   height: auto;
   text-align: center;
+}
+
+div ~ p {
+  padding: 1rem 4rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 640px) {
+  div ~ p {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: clamp(70%, 80vw, 60%);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
 }
