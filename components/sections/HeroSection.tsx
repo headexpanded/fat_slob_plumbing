@@ -17,11 +17,11 @@ export const HeroSection = () => {
 
         <Spacer />
         <div className="heroStrap">
-          <Typography.Hero content="can" color="var(--defaultLight)" />
-          <Typography.HeroEM content="your" color="var(--defaultLight)" />
+          <Typography.Hero content="can" color="var(--defaultDark)" />
+          <Typography.HeroEM content="your" color="var(--defaultDark)" />
           <Typography.Hero
             content="lav take a big load?"
-            color="var(--defaultLight)"
+            color="var(--defaultDark)"
           />
         </div>
 
@@ -30,7 +30,7 @@ export const HeroSection = () => {
         <div className="heroIntroText">
           <Typography.ParaL content="Imagine it." color="var(--defaultLight)" />
           <Typography.ParaL
-            content="Got vistors - suddenly your lav blocks up."
+            content="Got visitors - suddenly your lav blocks up."
             color="var(--defaultLight)"
           />
           <Typography.ParaL
@@ -66,7 +66,7 @@ export const HeroSection = () => {
           align-items: baseline;
 
           .heroStrap p:first-child {
-            padding-right: 12px;
+            padding-right: 1rem;
           }
         }
         .heroIntroText {

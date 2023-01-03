@@ -17,9 +17,11 @@ export const NavBar = () => {
       <style jsx>{`
         .navBar {
           height: 2rem;
-          border-bottom: 1px solid var(--PVgold);
+          border-bottom: 1px solid var(--defaultDark);
+          box-shadow: 0px 2px 4px 0px var(--defaultDark);
           display: flex;
           justify-content: space-evenly;
+          flex-grow:1;
           align-items: center;
         }
 
@@ -29,6 +31,7 @@ export const NavBar = () => {
           cursor: pointer;
           text-transform: uppercase;
           font-size: 0.75rem;
+          font-weight: 700;
           display: flex;
           flex-direction: column;
         }
@@ -40,7 +43,7 @@ export const NavBar = () => {
         .navBar > a:hover::after,
         .navBar > a:focus::after {
           content: "";
-          height: 1px;
+          height: 2px;
           background-color: var(--defaultLight);
         }
       `}</style>

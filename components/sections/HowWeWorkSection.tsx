@@ -9,7 +9,7 @@ export const HowWeWorkSection = () => {
       <section className="howWeWorkSection">
         <Typography.SectionTitle
           content="How We Work"
-          color="var(--defaultFontColor)"
+          color="var(--defaultDark)"
         />
 
         <Typography.ParaL

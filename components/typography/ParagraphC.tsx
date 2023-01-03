@@ -13,10 +13,10 @@ export const ParagraphC = ({ content, color }: ParagraphCProps) => {
       <style jsx>{`
         p {
           color: ${color ?? ""};
-          /* font-size: 1.1rem;
-          font-weight: 500;
+          font-size: 1.1rem;
+          
           text-align: center;
-          padding: 0px 0px 4px 0px; */
+          padding: 0px 0px 4px 0px;
         }
       `}</style>
     </>

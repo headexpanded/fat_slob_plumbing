@@ -19,8 +19,8 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
     <>
       <section id="partners" className="partnersSection">
         <Typography.SectionTitle
-          content="Our Valued Partners"
-          color="var(--defaultFontColor)"
+          content="Our Partners"
+          color="var(--defaultLight)"
         />
 
         {/*  extract key from Partners, spread the rest into PartnerCard component */}

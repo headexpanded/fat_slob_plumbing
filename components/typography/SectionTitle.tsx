@@ -9,13 +9,14 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
   return (
     <>
       <div className="sectionTitle">
-        <h2>{content}</h2>
+        <h1>{content}</h1>
       </div>
 
       <style jsx>{`
         h2 {
-          color: ${color ?? ""};
+          color: var(--defaultDark);
           font-size: clamp(1rem, 30vw, 60px);
+          letter-spacing: -0.1rem;
         }
       `}</style>
     </>

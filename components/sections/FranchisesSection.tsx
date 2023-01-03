@@ -9,8 +9,8 @@ export const FranchisesSection = () => {
       <section className="franchisesSection">
         <div className="franchisesTitle">
           <Typography.SectionTitle
-            content="Franchises Available Now!"
-            color="var(--defaultFontColor)"
+            content="Franchises"
+            color="var(--defaultLight)"
           />
         </div>
       </section>
