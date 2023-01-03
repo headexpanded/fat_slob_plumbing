@@ -15,6 +15,7 @@ export const CustReviewCard = ({
     <>
       <div className="custReviewCard">
         <div className="custReview">
+          <img src={photo} alt="Customer photo" />
           <p>{review}</p>
         </div>
         <div className="custNameWrapper">
@@ -23,59 +24,50 @@ export const CustReviewCard = ({
           </div>
         </div>
 
-        <div className="imgWrapper">
-          <img src={photo} alt="Customer photo" />
-        </div>
+        <div className="imgWrapper"></div>
       </div>
 
       <style jsx>{`
         .custReviewCard {
-          //filter: drop-shadow(2px 2px 4px var(--solidBrown));
+          border: 2px solid red;
           min-height: 280px;
           width: 280px;
 
-          position: relative;
-          text-align: left;
+          
           transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         p {
-          color: var(--solidBrown);
+          color: var(--defaultLight);
           font-size: 1.25rem;
           font-style: italic;
           font-weight: bold;
-          padding: 4px 8px 0px 8px;
+          padding: 0px .5rem;
+          margin:0px;
         }
 
-        .custReview p {
-          padding-top: 52px;
+        .custReview {
+          padding-top: 1rem;
         }
 
         .custNameWrapper {
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
-          margin-right: 20px;
+          margin: 1rem;
         }
 
         img {
           background-size: cover;
           background-position: center;
+          border: 2px solid var(--defaultLight);
           border-radius: 50%;
           filter: grayscale(90%) contrast(90%) brightness(90%);
           height: 80px;
-          width: 80px;
+          aspect-ratio: 1/1;
         }
 
-        .imgWrapper {
-          background: var(--hintOfBrown);
-          border: 2px solid var(--solidBrown);
-          border-radius: 50%;
-          // filter: drop-shadow(1px 1px 2px var(--solidBrown));
-          position: absolute;
-          top: -15%;
-          left: 40%;
-        }
+        
       `}</style>
     </>
   );

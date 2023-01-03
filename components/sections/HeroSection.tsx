@@ -17,11 +17,11 @@ export const HeroSection = () => {
 
         <Spacer />
         <div className="heroStrap">
-          <Typography.Hero content="can" color="var(--defaultDark)" />
-          <Typography.HeroEM content="your" color="var(--defaultDark)" />
+          <Typography.Hero content="can" color="var(--defaultLight)" />
+          <Typography.HeroEM content="your" color="var(--defaultLight)" />
           <Typography.Hero
             content="lav take a big load?"
-            color="var(--defaultDark)"
+            color="var(--defaultLight)"
           />
         </div>
 

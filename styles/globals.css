@@ -66,6 +66,10 @@ section[class$="Section"] {
   text-align: center;
 }
 
+section[class$="Section"] h1 {
+  margin-bottom: 2rem;
+}
+
 div ~ p {
   padding: 1rem 4rem;
   font-weight: 800;
