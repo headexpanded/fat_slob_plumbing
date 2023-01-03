@@ -62,7 +62,7 @@ export const HeroSection = () => {
 
         .heroStrap {
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: baseline;
 
           .heroStrap p:first-child {
