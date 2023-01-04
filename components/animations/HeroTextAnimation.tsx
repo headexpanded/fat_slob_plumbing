@@ -1,9 +1,10 @@
 type HeroTextAnimationProps = {};
 
 export const HeroTextAnimation = () => {
-  const HeroText = "Stress  Testing  Domestic Sewage Systems since 2013".split(
+  const HeroText = "Stress Testing Domestic Sewage Systems since 2013".split(
     ""
-  );
+    );
+    console.log(HeroText);
   return (
     <>
       <div>
@@ -21,10 +22,10 @@ export const HeroTextAnimation = () => {
           animation-fill-mode: both;
           animation-iteration-count: 1;
           animation-timing-function: linear;
-          color: var(--solidBrown);
-          display: inline-block;
-          font-size: clamp(8px, 20vw, 1.5rem);
-          font-weight: 800;
+          color: var(--defaultLight);
+          // display: inline-block;
+          font-size: clamp(.5rem, 20vw, 1.2rem);
+          font-weight: 700;
           margin-top: 1rem;
           opacity: 0;
           text-align: center;
