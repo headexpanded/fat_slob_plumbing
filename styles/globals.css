@@ -58,7 +58,7 @@ h1 {
   margin: 0px;
 }
 
-section[class$="Section"] {
+section[class$="Section"]{
   color: var(--defaultLight);
   height: auto;
   display: flex;

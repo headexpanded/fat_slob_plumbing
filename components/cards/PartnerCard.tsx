@@ -25,17 +25,18 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           display: flex;
           flex-direction: column;
           border: 1px solid var(--defaultLight);
-          place-items: center;
+          align-items: center;
+          justify-content: center;
           box-shadow: var(--boxshadow);
-          width: calc(100vw - 40px);
-          margin: 0 auto;
+          min-height: 340px;
+          
+          width: clamp(240px, calc(33vw - 40px), 340px);
         }
 
-        @media screen and (min-width: 768px) {
+        /* @media screen and (min-width: 768px) {
           .partnerCard {
-            width: calc(33vw - 40px);
           }
-        }
+        } */
 
         .partnerCard > h3 {
           margin: 0;

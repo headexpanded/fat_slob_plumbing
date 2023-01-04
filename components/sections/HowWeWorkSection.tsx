@@ -26,8 +26,12 @@ export const HowWeWorkSection = () => {
         />
 
         <Typography.ParaL
-          content="In the 24 hours before your appointment, 
-                    your Fat Slob Plumber ingests a carefully formulated blend of food and drink to ensure optimal performance."
+          content="Every day, your Fat Slob Plumber ingests a carefully formulated blend of food and drink."
+          color=""
+        />
+
+        <Typography.ParaL
+          content="This ensures optimal performance."
           color=""
         />
 
@@ -38,8 +42,8 @@ export const HowWeWorkSection = () => {
         />
 
         <Typography.ParaL
-          content="The precise blend and quantity of solids and liquids 
-                    consumed by Fat Slob Plumbing depends on the Service Level you choose: see below."
+          content="Want to know the precise blend and quantity of solids and liquids 
+                    consumed by Fat Slob Plumbing?"
           color=""
         />
       </section>

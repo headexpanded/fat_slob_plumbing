@@ -1,6 +1,5 @@
 // define Intro Section properties
 import { Typography } from "../typography";
-
 import { Spacer } from "./Spacer";
 import { HeroTextAnimation } from "../animations/HeroTextAnimation";
 
@@ -43,16 +42,16 @@ export const HeroSection = () => {
             color="var(--defaultLight)"
           />
         </div>
+        <button className="btn">MAKE A BOOKING</button>
+        <button className="btn">BUY A FRANCHISE</button>
 
         <Typography.ParaC
           content="Not sure? Here's what our customers say..."
           color="var(--defaultLight)"
         />
 
-        {/* <Button variant="outline-secondary">MAKE A BOOKING</Button>
             
             
-              <Button variant="outline-secondary">BUY A FRANCHISE</Button> */}
       </section>
 
       <style jsx>{`
@@ -74,6 +73,12 @@ export const HeroSection = () => {
           position: absolute;
           top: 40vh;
           left: 10vw;
+        }
+
+        .btn{
+          color: var(--defaultLight);
+          background: none;
+          border: 2px solid red;
         }
       `}</style>
     </>

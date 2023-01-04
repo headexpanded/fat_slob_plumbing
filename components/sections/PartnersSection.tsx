@@ -37,23 +37,26 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
       </section>
       <style jsx>{`
         .partnerCards {
-          display: flex;
+          width: 90vw;
+          display: grid;
           gap: 1rem;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          margin: 0 auto;
-        }
-        
-        @media screen and (min-width: 768px) {
-          .partnerCards {
-            flex-direction: row;
-            flex-grow: 1;
-            justify-content: space-evenly;
-          }
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          justify-content: space-evenly;
+          margin-bottom: 4rem;
+          place-items: center;
         }
 
-        
+         @media screen and (min-width: 768px) {
+          .partnerCards {
+            display:flex;
+            flex-direction: row;
+            flex-grow: 1;
+          }
+        }
+        /* .cardWrapper {
+          display: flex;
+          flex-direction: column;
+        } */
       `}</style>
     </>
   );
