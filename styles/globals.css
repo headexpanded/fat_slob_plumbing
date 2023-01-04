@@ -72,7 +72,7 @@ section[class$="Section"] h1:not(.heroSection h1) {
 }
 
 section[class$="Section"] p {
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 div ~ p {

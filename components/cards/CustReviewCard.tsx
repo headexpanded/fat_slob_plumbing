@@ -29,12 +29,8 @@ export const CustReviewCard = ({
 
       <style jsx>{`
         .custReviewCard {
-          border: 2px solid red;
-          min-height: 280px;
-          width: 280px;
-
-          
-          transition: color 0.15s ease, border-color 0.15s ease;
+          min-height: 200px;
+          width: 360px;
         }
 
         p {
@@ -48,6 +44,9 @@ export const CustReviewCard = ({
 
         .custReview {
           padding-top: 1rem;
+          display:flex;
+          align-items: center;
+          gap: .5rem;
         }
 
         .custNameWrapper {
@@ -55,6 +54,10 @@ export const CustReviewCard = ({
           flex-direction: row;
           justify-content: flex-end;
           margin: 1rem;
+        }
+
+        .custName p {
+          font-size: 1rem;
         }
 
         img {
