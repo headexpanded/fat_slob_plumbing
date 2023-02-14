@@ -46,7 +46,7 @@ In order to ensure that the Fat Slob Plumbing community is welcoming to all, ple
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within Streemer, please send an e-mail to someone here. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability in the Fat Slob Plumbing code, please send an e-mail to someone here. All security vulnerabilities will be promptly addressed.
 
 ## License
 
