@@ -8,7 +8,7 @@ I'm using TypeScript, Next.js, React, HyGraph, and **pure CSS** to produce a new
 
 Business is booming - they're franchising!
 
-(Why highlight the pure CSS? Because I'm proud of it! Take a look at globals.css if you're interested ⁻ I've tried hard to write _cascading_ styles which respect HML semantics)
+(Why highlight the pure CSS? Because I'm proud of it! Take a look at globals.css if you're interested ⁻ I've tried hard to write _cascading_ styles which respect HMTL semantics)
 
 # To Do:
 
