@@ -8,7 +8,7 @@ I'm using TypeScript, Next.js, React, HyGraph, and pure CSS to produce a new web
 
 Business is booming - they're franchising!
 
-Ron & Dave are both life-long fans of [Port Vale FC](https://www.port-vale.co.uk/ "currently mid-table in League One"), so I've used The Vale's kit for the colour palette, with some secondary colours from The Vale's home page.
+Ron & Dave are both life-long fans of [Port Vale FC](https://www.port-vale.co.uk/ "currently mid-table in League One"), so I've used parts The Vale's kit for the colour palette, with some secondary colours from The Vale's home page.
 
 Funnily enough, the palette nicely matches what Ron & Dave produce on a daily basis at their customer's homes.
 
@@ -36,3 +36,18 @@ Funnily enough, the palette nicely matches what Ron & Dave produce on a daily ba
 
 - Twitter account, bot, feed, etc
 
+## Contributing
+
+Thank you for considering contributing to the Fat Slob Plumbing code-base!
+
+## Code of Conduct
+
+In order to ensure that the Fat Slob Plumbing community is welcoming to all, please review and abide by our Code of Conduct.
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Streemer, please send an e-mail to someone here. All security vulnerabilities will be promptly addressed.
+
+## License
+
+Fat Slob Plumbing is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

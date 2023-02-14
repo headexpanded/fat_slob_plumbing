@@ -3,8 +3,8 @@ type HeroTextAnimationProps = {};
 export const HeroTextAnimation = () => {
   const HeroText = "Stress Testing Domestic Sewage Systems since 2013".split(
     ""
-    );
-    console.log(HeroText);
+  );
+  console.log(HeroText);
   return (
     <>
       <div>
@@ -24,7 +24,7 @@ export const HeroTextAnimation = () => {
           animation-timing-function: linear;
           color: var(--defaultLight);
           // display: inline-block;
-          font-size: clamp(.5rem, 20vw, 1.2rem);
+          font-size: clamp(0.5rem, 2vw, 1rem);
           font-weight: 700;
           margin-top: 1rem;
           opacity: 0;

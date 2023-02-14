@@ -42,8 +42,9 @@ export const HeroSection = () => {
             color="var(--defaultLight)"
           />
         </div>
-        <button className="btn">MAKE A BOOKING</button>
-        <button className="btn">BUY A FRANCHISE</button>
+        <button className="btnBooking">MAKE A BOOKING</button>
+        <Spacer/>
+        <button className="btnFranchise">BUY A FRANCHISE</button>
 
         <Typography.ParaC
           content="Not sure? Here's what our customers say..."

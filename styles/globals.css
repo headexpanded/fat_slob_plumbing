@@ -3,7 +3,7 @@
 
 :root {
   /* Colour Palette */
-  --defaultDark: hsl(249, 100%, 25%);
+  --defaultDark: hsl(249, 100%, 20%);
   --defaultLight: hsl(0, 0%, 99%);
 
   --PVbrown: hsl(41, 31%, 43%);
@@ -17,7 +17,7 @@
   /* Base Font Size */
   font-size: 16px;
 
-  --boxshadow: 1px 1px 16px 0px var(--defaultDark);
+  --boxshadow: 2px 2px 24px 2px var(--defaultDark);
 
   --borderRadius: 0.5rem;
 }
@@ -30,21 +30,21 @@
 
 html {
   scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
   user-select: none;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   background-color: white;
   background-image: linear-gradient(
     170deg,
-    hsl(239, 100%, 50%) 1%,
-    hsl(238, 100%, 60%) 20%
+    hsl(239, 100%, 90%) 1%,
+    hsl(238, 100%, 80%) 20%
   );
   margin: 0px;
 }
@@ -58,7 +58,7 @@ h1 {
   margin: 0px;
 }
 
-section[class$="Section"]{
+section[class$="Section"] {
   color: var(--defaultLight);
   height: auto;
   display: flex;
@@ -79,6 +79,21 @@ div ~ p {
   padding: 1rem 4rem;
   font-weight: 800;
   margin: 0 auto;
+}
+
+button {
+  border: none;
+  background-image: linear-gradient(
+    15deg,
+    hsl(120, 100%, 40%) 1%,
+    hsl(120, 100%, 50%) 100%
+  );
+  color: var(--defaultLight);
+  font-size: 1em;
+  font-weight: 800;
+  width: min(45vw, 240px);
+  aspect-ratio: 3/1;
+  box-shadow: var(--boxshadow);
 }
 
 @media screen and (min-width: 640px) {
