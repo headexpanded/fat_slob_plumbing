@@ -10,15 +10,15 @@ Business is booming - they're franchising!
 
 ## React
 
-- I'm going a bit crazy here: the mission is to make just about everything a React component, including cards, paragraphs, animations, and more. Plenty more to do on that.
+- I'm on a mission to make just about everything a React component, including cards, paragraphs, animations, and more. Plenty more to do on that.
 
 ## Pure CSS
 
-Why highlight the pure CSS? Because I'm proud of it! Take a look at globals.css if you're interested ⁻ I've tried hard to write _cascading_ styles which respect HMTL semantics.
+- Why highlight the pure CSS? Because I'm proud of it! Take a look at globals.css if you're interested ⁻ I've tried hard to write _cascading_ styles which respect HMTL semantics.
 
 ## TypeScript
 
-Quite a challenge getting it all working properly that's for sure: lots to learn!
+- Quite a challenge getting it all working properly that's for sure: lots to learn!
 
 # To Do:
 
