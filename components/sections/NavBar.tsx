@@ -18,7 +18,7 @@ export const NavBar = () => {
         .navBar {
           height: 2rem;
           border-bottom: 1px solid var(--defaultDark);
-          box-shadow: 0px 2px 4px 0px var(--defaultDark);
+          box-shadow: 0px 1px 8px 0px var(--defaultDark);
           display: flex;
           justify-content: space-evenly;
           flex-grow:1;
