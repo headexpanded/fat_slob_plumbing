@@ -61,7 +61,7 @@ section[class$="Section"] {
   color: var(--defaultLight);
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100vh;
   place-items: center;
 }
 
@@ -72,6 +72,11 @@ section[class$="Section"] h1:not(.heroSection h1) {
 
 section[class$="Section"] p {
   /* border: 2px solid red; */
+}
+
+section[class$="Section"] .heroButtons {
+  /* display: flex;
+  flex-direction: row; */
 }
 
 div ~ p {
@@ -89,7 +94,7 @@ button {
   border: none;
   box-shadow: var(--boxshadow);
   color: var(--defaultLight);
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 900;
   width: min(45vw, 240px);
   aspect-ratio: 3/1;
@@ -103,5 +108,11 @@ button {
     flex-direction: row;
     justify-content: left;
     max-width: clamp(70%, 80vw, 60%);
+  }
+  section[class$="Section"] .heroButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: min(90vw, 800px);
   }
 }

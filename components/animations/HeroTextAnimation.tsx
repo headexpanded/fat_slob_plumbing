@@ -4,7 +4,7 @@ export const HeroTextAnimation = () => {
   const HeroText = "Stress Testing Domestic Sewage Systems since 2013".split(
     ""
   );
-  console.log(HeroText);
+
   return (
     <>
       <div>

@@ -2,6 +2,7 @@
 
 import { Cards } from "../cards";
 import { Typography } from "../typography";
+import { Spacer } from "./Spacer";
 
 export type CustomerReview = {
   id: string;
@@ -18,6 +19,8 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
   return (
     <>
       <section id="custReviews" className="custReviewsSection">
+        <Spacer />
+        <Spacer />
         <div>
           <Typography.SectionTitle
             content="Happy Customers"

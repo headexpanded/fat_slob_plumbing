@@ -16,7 +16,7 @@ export const HeroSection = () => {
 
         <Spacer />
         <div className="heroStrap">
-          <Typography.Hero
+          <Typography.ParaC
             content="can your lav take a big load?"
             color="var(--defaultLight)"
           />
@@ -40,19 +40,19 @@ export const HeroSection = () => {
             color="var(--defaultLight)"
           />
         </div>
-        <div>
+        <Spacer />
+        <div className="heroButtons">
           <button className="btnBooking">MAKE A BOOKING</button>
-          <Spacer/>
+          <Spacer />
           <button className="btnFranchise">BUY A FRANCHISE</button>
         </div>
+        <Spacer />
 
         <Typography.ParaC
           content="Not sure? Here's what our customers say..."
           color="var(--defaultLight)"
         />
-
-            
-            
+        
       </section>
 
       <style jsx>{`
@@ -69,16 +69,13 @@ export const HeroSection = () => {
           }
         }
         .heroIntroText {
-          border: 2px solid red;
           position: absolute;
           top: 40vh;
           left: 10vw;
         }
 
-        .btn{
-          color: var(--defaultLight);
-          background: none;
-          border: 2px solid red;
+        .heroButtons {
+          // margin-top: 24px;
         }
       `}</style>
     </>
