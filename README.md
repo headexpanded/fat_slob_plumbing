@@ -4,23 +4,17 @@ I'm a lucky guy! As a junior web developer, it's tough to land your first free-l
 
 That's why I'm honoured to have been hired by Fat Slob Plumbing to build their website!
 
-I'm using TypeScript, Next.js, React, HyGraph, and pure CSS to produce a new website for Fat Slob Plumbing.
+I'm using TypeScript, Next.js, React, HyGraph, and **pure CSS** to produce a new website for Fat Slob Plumbing.
 
 Business is booming - they're franchising!
 
+(Why highlight the pure CSS? Because I'm proud of it! Take a look at globals.css if you're interested ⁻ I've tried hard to write _cascading_ styles which respect HML semantics)
+
 # To Do:
-
-- style photos in Cust Reviews
-
-- font
 
 - helpful slider ("Trish")
 
-- Cust reviews styles
-
-- map of Britain api for Franchise section
-
-- Valued Partners section: card, businesses, text
+- Franchise section
 
 - About Us section: HyGraph, photos, card, text
 
