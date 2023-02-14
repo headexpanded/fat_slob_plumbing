@@ -10,10 +10,12 @@ type SubHeaderProps = {
 export const SubHeader = ({ content, color }: SubHeaderProps) => {
   return (
     <>
-      <h4>{content}</h4>
+      <p>{content}</p>
       <style jsx>{`
-        h4 {
-          color: ${color ?? ""};
+        p {
+          color: ${color ?? "var(--defaultLight"};
+          font-size: 1.5rem;
+          font-weight: 700;
         }
       `}</style>
     </>

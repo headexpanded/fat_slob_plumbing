@@ -25,12 +25,16 @@ export const CustReviewCard = ({
         </div>
 
         <div className="imgWrapper"></div>
+        
       </div>
 
       <style jsx>{`
         .custReviewCard {
-          min-height: 200px;
+          height: 220px;
+          padding: 0.5rem;
           width: 360px;
+          // border-bottom: 1px solid var(--defaultLight);
+          box-shadow: 0px 0px 200px 0px white;
         }
 
         p {

@@ -6,11 +6,7 @@
   --defaultDark: hsl(249, 100%, 20%);
   --defaultLight: hsl(0, 0%, 99%);
 
-  --PVbrown: hsl(41, 31%, 43%);
-  --PVgold: hsl(36, 100%, 50%);
-  --PVyellow: hsl(56, 100%, 50%);
-
-  --shadow: hsl(36, 99%, 34%, 0.75);
+  --shadow: hsla(235, 100%, 8%, 0.75);
 
   /* Font Family */
   font-family: "Inter", sans-serif;
@@ -45,6 +41,12 @@ body {
     hsl(239, 93%, 83%) 1%,
     hsl(238, 100%, 80%) 20%
   );
+/* background-image: linear-gradient(
+    180deg,
+    hsl(0, 0%, 77%) 1%,
+    hsl(0, 0%, 57%) 80%
+  ); */
+
   margin: 0px;
 }
 
@@ -58,10 +60,9 @@ h1 {
 }
 
 section[class$="Section"] {
-  color: var(--defaultLight);
+  color: var(--defaultDark);
   display: flex;
   flex-direction: column;
-  height: 100vh;
   place-items: center;
 }
 
@@ -71,6 +72,7 @@ section[class$="Section"] h1:not(.heroSection h1) {
 }
 
 section[class$="Section"] p {
+  color: var(--defaultLight);
   /* border: 2px solid red; */
 }
 

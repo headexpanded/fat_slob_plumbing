@@ -29,12 +29,13 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           justify-content: center;
           box-shadow: var(--boxshadow);
           min-height: 340px;
+          width: 320px;
           
-          width: clamp(240px, calc(33vw - 40px), 340px);
         }
 
-        /* @media screen and (min-width: 768px) {
+        /* @media screen and (min-width: 640px) {
           .partnerCard {
+            // width: 320px;
           }
         } */
 
@@ -59,9 +60,11 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
 
         .partnerDesc > p {
           font-size: 0.75rem;
+          font-weight: 700;
           text-align: left;
           margin: 0px;
           padding: 1rem;
+          color: var(--defaultDark);
         }
       `}</style>
     </>

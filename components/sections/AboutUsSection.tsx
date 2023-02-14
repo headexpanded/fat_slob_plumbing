@@ -1,5 +1,6 @@
 // define About Us section
 import { Typography } from "../typography";
+import { Spacer } from "./Spacer";
 
 type AboutUsSectionProps = {};
 
@@ -16,6 +17,7 @@ export const AboutUsSection = () => {
   return (
     <>
       <section id="about" className="aboutUsSection">
+        <Spacer />
         <div className="aboutUsTitle">
           <Typography.SectionTitle
             content="About Us"

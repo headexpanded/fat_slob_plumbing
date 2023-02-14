@@ -29,17 +29,28 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         </div>
 
         {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
-        {data?.map(({ id, ...other }) => {
-          return (
-            <div key={id}>
-              <Cards.CustReviewCard {...other} />
-            </div>
-          );
-        })}
+
+        <div className="custReviewCards">
+          {data?.map(({ id, ...other }) => {
+            return (
+              <div key={id}>
+                <Cards.CustReviewCard {...other} />
+              </div>
+            );
+          })}
+        </div>
+        <Spacer />
       </section>
 
       <style jsx>{`
-        .custReviewsSection {
+        .custReviewCards {
+          width: 90vw;
+          display: grid;
+          gap: 2rem;
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          justify-content: space-evenly;
+          margin-bottom: 4rem;
+          place-items: center;
         }
       `}</style>
     </>

@@ -14,10 +14,12 @@ export const HeroSection = () => {
 
         <HeroTextAnimation></HeroTextAnimation>
 
-        <Spacer />
+        {/* <Spacer /> */}
         <div className="heroStrap">
+          <Typography.ParaC content="can" color="var(--defaultLight)" />
+          <Typography.SubHeader content=" your " color="var(--defaultLight)" />
           <Typography.ParaC
-            content="can your lav take a big load?"
+            content="lav take a big load?"
             color="var(--defaultLight)"
           />
         </div>
@@ -27,7 +29,7 @@ export const HeroSection = () => {
         <div className="heroIntroText">
           <Typography.ParaL content="Imagine it." color="var(--defaultLight)" />
           <Typography.ParaL
-            content="Got visitors - suddenly your lav blocks up."
+            content="Friends over - and your lav blocks up."
             color="var(--defaultLight)"
           />
           <Typography.ParaL
@@ -41,18 +43,19 @@ export const HeroSection = () => {
           />
         </div>
         <Spacer />
+        <Spacer />
         <div className="heroButtons">
           <button className="btnBooking">MAKE A BOOKING</button>
           <Spacer />
           <button className="btnFranchise">BUY A FRANCHISE</button>
         </div>
         <Spacer />
+        <Spacer />
 
         <Typography.ParaC
           content="Not sure? Here's what our customers say..."
           color="var(--defaultLight)"
         />
-        
       </section>
 
       <style jsx>{`
@@ -63,19 +66,23 @@ export const HeroSection = () => {
         .heroStrap {
           align-items: baseline;
           display: flex;
-          justify-content: flex-start;
-          .heroStrap p:first-child {
+          justify-content: space-evenly;
+          margin-top: 1rem;
+          width: clamp(240px, 60vw + 36px, 200px);
+          .heroStrap p:last-child {
             padding-right: 1rem;
           }
         }
         .heroIntroText {
           position: absolute;
           top: 40vh;
-          left: 10vw;
+          left; 10vw;
         }
 
-        .heroButtons {
-          // margin-top: 24px;
+        @media screen and (min-width: 640px) {
+          .heroIntroText {
+            left: 200vw;
+          }
         }
       `}</style>
     </>

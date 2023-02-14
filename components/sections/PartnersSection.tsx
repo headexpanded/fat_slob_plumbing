@@ -39,24 +39,21 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
         .partnerCards {
           width: 90vw;
           display: grid;
-          gap: 1rem;
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 2rem;
+          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
           justify-content: space-evenly;
           margin-bottom: 4rem;
           place-items: center;
         }
 
-         @media screen and (min-width: 768px) {
+        @media screen and (min-width: 640px) {
           .partnerCards {
-            display:flex;
-            flex-direction: row;
+            // grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+            // display:flex;
+            // flex-direction: row;
             flex-grow: 1;
           }
         }
-        /* .cardWrapper {
-          display: flex;
-          flex-direction: column;
-        } */
       `}</style>
     </>
   );
