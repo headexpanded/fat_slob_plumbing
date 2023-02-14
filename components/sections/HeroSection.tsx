@@ -16,10 +16,8 @@ export const HeroSection = () => {
 
         <Spacer />
         <div className="heroStrap">
-          <Typography.Hero content="can" color="var(--defaultLight)" />
-          <Typography.HeroEM content="your" color="var(--defaultLight)" />
           <Typography.Hero
-            content="lav take a big load?"
+            content="can your lav take a big load?"
             color="var(--defaultLight)"
           />
         </div>
@@ -63,10 +61,9 @@ export const HeroSection = () => {
         }
 
         .heroStrap {
+          align-items: baseline;
           display: flex;
           justify-content: flex-start;
-          align-items: baseline;
-
           .heroStrap p:first-child {
             padding-right: 1rem;
           }
