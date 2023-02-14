@@ -54,7 +54,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
         }
 
         .partnerDesc {
-          border: 2px solid red;
+          // border: 2px solid red;
         }
 
         .partnerDesc > p {
