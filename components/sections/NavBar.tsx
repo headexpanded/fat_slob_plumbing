@@ -6,14 +6,14 @@ export const NavBar = () => {
       <section className="navBar" role="navigation">
         <a href="#">Home</a>
 
-        <a href="">Our Story</a>
+        <a href="#ourStorySection">Our Story</a>
         
 
-        <a href="">Franchises</a>
+        <a href="franchisesSection">Franchises</a>
 
         <a href="">T-Shirts</a>
 
-        <a href="#partners">Partners</a>
+        <a href="#partnersSection">Partners</a>
       </section>
       <style jsx>{`
         .navBar {

@@ -30,7 +30,7 @@ export const HowWeWorkSection = () => {
         />
 
         <Typography.ParaL
-          content="Every day, your Fat Slob Plumber ingests a carefully formulated blend of food and drink."
+          content="Every day, your Fat Slob Plumber ingests a carefully formulated blend of food and drink - curries, kebabs, lager, full English, and so on."
           color=""
           fontWeight="700"
         />
@@ -43,8 +43,16 @@ export const HowWeWorkSection = () => {
 
         <Typography.ParaL
           content=" 
-                    We also consume a mix of supplementary nutriments when we arrive at your home - like coffee, cigarettes, & Coke - to make sure there's no waiting around."
+                    We also consume a mix of supplementary nutriments when we're at your home - like coffee, cigarettes, & Coke - to make sure there's no waiting around."
           color=""
+          fontWeight="700"
+        />
+
+        <Typography.ParaL
+          content=" 
+                    At your request, we bring our own reading material."
+          color="var(--defaultLight)"
+          fontWeight="700"
         />
 
         {/* <Typography.ParaL

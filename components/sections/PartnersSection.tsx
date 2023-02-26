@@ -18,7 +18,7 @@ type PartnersSectionProps = {
 export const PartnersSection = ({ data }: PartnersSectionProps) => {
   return (
     <>
-      <section id="partners" className="partnersSection">
+      <section id="partnersSection" className="partnersSection">
         <Spacer />
         <Typography.SectionTitle
           content="Our Partners"

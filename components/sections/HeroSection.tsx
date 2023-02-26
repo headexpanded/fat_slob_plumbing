@@ -17,7 +17,7 @@ export const HeroSection = () => {
 
         <div className="heroStrap">
           <Typography.SubHeader
-            content="can YOUR lav take a big load?"
+            content="can YOUR lav flush a big load?"
             color="var(--defaultLight)"
           />
         </div>

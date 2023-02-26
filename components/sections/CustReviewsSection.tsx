@@ -27,6 +27,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
             color="var(--defaultFontColor)"
           />
         </div>
+        <Spacer />
 
         {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
 
@@ -39,7 +40,6 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
             );
           })}
         </div>
-        <Spacer />
       </section>
 
       <style jsx>{`

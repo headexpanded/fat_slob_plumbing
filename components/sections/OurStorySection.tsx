@@ -18,7 +18,7 @@ export const OurStorySection = () => {
   ];
   return (
     <>
-      <section id="about" className="ourStorySection">
+      <section id="ourStorySection" className="ourStorySection">
         <Spacer />
         <div className="ourStoryTitle">
           <Typography.SectionTitle

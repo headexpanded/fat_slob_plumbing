@@ -7,7 +7,7 @@ type ParagraphLProps = {
   fontWeight ?: string;
 };
 
-// define Paragraph component
+// define ParagraphL component
 export const ParagraphL = ({ content, color, fontWeight }: ParagraphLProps) => {
   return (
     <>
