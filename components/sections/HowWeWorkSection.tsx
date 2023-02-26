@@ -15,8 +15,8 @@ export const HowWeWorkSection = () => {
         />
 
         <Typography.ParaL
-          content=" Our experienced
-                professionals visit your home."
+          content=" Our experienced,
+                professional toilet testers visit your home."
           color=""
           fontWeight="700"
         />

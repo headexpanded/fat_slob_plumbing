@@ -9,7 +9,5 @@ type ProductRowProps = {
 };
 
 export const ProductRow = ({ product }: ProductRowProps) => {
-  return (
-    <Typography.ParagraphL content={product.name} color="var(--solidBrown)" />
-  );
+  return <Typography.ParaL content={product.name} color="var(--solidBrown)" />;
 };
