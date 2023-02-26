@@ -6,7 +6,7 @@ import { ServicesSection } from "./ServicesSection";
 import { CustReviewsSection } from "./CustReviewsSection";
 import { FranchisesSection } from "./FranchisesSection";
 import { PartnersSection } from "./PartnersSection";
-import { AboutUsSection } from "./AboutUsSection";
+import { OurStorySection } from "./OurStorySection";
 import { FooterSection } from "./FooterSection";
 import { Spacer } from "./Spacer";
 
@@ -18,7 +18,7 @@ export const Section = {
   CustReviews: CustReviewsSection,
   Franchises: FranchisesSection,
   Partners: PartnersSection,
-  AboutUs: AboutUsSection,
+  OurStory: OurStorySection,
   Footer: FooterSection,
   Spacer: Spacer,
 };

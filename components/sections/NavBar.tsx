@@ -6,7 +6,7 @@ export const NavBar = () => {
       <section className="navBar" role="navigation">
         <a href="#">Home</a>
 
-        <a href="">Theme</a>
+        <a href="">Our Story</a>
         
 
         <a href="">Franchises</a>

@@ -1,5 +1,6 @@
 // define Intro Section properties
 import { Typography } from "../typography";
+import { Cards } from "../cards";
 import { Spacer } from "./Spacer";
 import { HeroTextAnimation } from "../animations/HeroTextAnimation";
 
@@ -14,54 +15,64 @@ export const HeroSection = () => {
 
         {/* <HeroTextAnimation></HeroTextAnimation> */}
 
-        
         <div className="heroStrap">
-          
           <Typography.SubHeader
             content="can YOUR lav take a big load?"
             color="var(--defaultLight)"
           />
-          
         </div>
 
         <Spacer />
 
-        <div className="heroIntroText">
-          <Typography.ParaL
-            content="Imagine it."
-            color="var(--defaultLight)"
-            fontWeight="700"
-          />
-          <Typography.ParaL
-            content="Friends over - and your lav blocks up."
-            color="var(--defaultLight)"
-            fontWeight="700"
-          />
-          <Typography.ParaL
-            content="You don't need that."
-            color="var(--defaultLight)"
-            fontWeight="700"
-          />
-          <Typography.ParaL
-            content="So hire us."
-            color="var(--defaultLight)"
-            fontWeight="700"
-          />
-          <Typography.ParaL
-            content="Fat Slob Plumbing."
-            color="var(--defaultDark)"
-            fontWeight="900"
-          />
-          <Typography.ParaL
-            content="The U.K.'s Number Two toilet testing service."
-            color="var(--defaultLight)"
-            fontWeight="700"
-          />
-          <Typography.ParaL
-            content="We'll give it a good stress test."
-            color="var(--defaultLight)"
-            fontWeight="700"
-          />
+        <div className="heroBlock">
+          <div className="heroIntroText">
+            <Typography.ParaL
+              content="Imagine it."
+              color="var(--defaultLight)"
+              fontWeight="700"
+            />
+            <Typography.ParaL
+              content="Friends over - and your lav blocks up."
+              color="var(--defaultLight)"
+              fontWeight="700"
+            />
+            <Typography.ParaL
+              content="You don't need that."
+              color="var(--defaultLight)"
+              fontWeight="700"
+            />
+            <Typography.ParaL
+              content="So hire us."
+              color="var(--defaultLight)"
+              fontWeight="700"
+            />
+            <Typography.ParaL
+              content="Fat Slob Plumbing."
+              color="var(--defaultDark)"
+              fontWeight="900"
+            />
+            <Typography.ParaL
+              content="The U.K.'s number 2 toilet testing service."
+              color="var(--defaultLight)"
+              fontWeight="700"
+            />
+            <Typography.ParaL
+              content="We'll give it a good stress test."
+              color="var(--defaultLight)"
+              fontWeight="700"
+            />
+          </div>
+          <div className="heroCustomerCard">
+            {/* <div className="custReviewCards">
+              {data?.map(({ id, ...other }) => {
+                return (
+                  <div key={id}>
+                    <Cards.CustReviewCard {...other} />
+                  </div>
+                );
+              })}
+            </div> */}
+          </div>
         </div>
         <Spacer />
         <Spacer />
@@ -95,15 +106,45 @@ export const HeroSection = () => {
             // padding-right: 1rem;
           } */
         }
+        .heroBlock {
+          // border: 1px solid red;
+          display: flex;
+          flex-direction: column;
+        }
+
         .heroIntroText {
+          // border: 1px solid yellow;
+          width: 100%;
+        }
+
+        .heroCustomerCard {
+          // border: 1px solid white;
+          display: none;
         }
 
         @media screen and (min-width: 640px) {
+          .heroBlock {
+            flex-direction: row;
+            justify-content: space-between;
+          }
           .heroIntroText {
             left: 200vw;
           }
+          .heroCustomerCard {
+            // display:none;
+          }
         }
 
+        @media screen and (min-width: 1028px) {
+          .heroIntroText {
+            padding-left: 20px;
+            width: 50%;
+          }
+          .heroCustomerCard {
+            display: inline-block;
+            width: 50%;
+          }
+        }
       `}</style>
     </>
   );

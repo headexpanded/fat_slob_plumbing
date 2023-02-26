@@ -1,12 +1,12 @@
-// define About Us section
+// define Our Story section
 import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
 
-/* type AboutUsSectionProps = {
+/* type OurStorySectionProps = {
   data: Array<Lyric>;
 }; */
 
-export const AboutUsSection = () => {
+export const OurStorySection = () => {
   const employees = [
     {
       id: "1",
@@ -18,9 +18,9 @@ export const AboutUsSection = () => {
   ];
   return (
     <>
-      <section id="about" className="aboutUsSection">
+      <section id="about" className="ourStorySection">
         <Spacer />
-        <div className="aboutUsTitle">
+        <div className="ourStoryTitle">
           <Typography.SectionTitle
             content="Our Story"
             color="var(--defaultFontColor)"
@@ -62,7 +62,7 @@ export const AboutUsSection = () => {
       </section>
 
       <style jsx>{`
-        .aboutUsSection {
+        .ourStorySection {
         }
       `}</style>
     </>

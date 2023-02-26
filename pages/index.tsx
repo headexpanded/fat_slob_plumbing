@@ -40,7 +40,7 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       {/* Valued Partners */}
       <Section.Partners data={partnersData}></Section.Partners>
       {/* About Us */}
-      <Section.AboutUs></Section.AboutUs>
+      <Section.OurStory></Section.OurStory>
       {/* Footer */}
       <Section.Footer />
       {/* <footer className={styles.footer}>

@@ -15,7 +15,9 @@ export const CustReviewCard = ({
     <>
       <div className="custReviewCard">
         <div className="custReview">
-          <img src={photo} alt="Customer photo" />
+          <picture className="picture">
+            <img src={photo} alt="Customer photo" />
+          </picture>
           <p>{review}</p>
         </div>
         <div className="custNameWrapper">
