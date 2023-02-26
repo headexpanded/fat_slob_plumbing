@@ -41,11 +41,6 @@ body {
     hsl(239, 93%, 83%) 1%,
     hsl(238, 100%, 80%) 20%
   );
-/* background-image: linear-gradient(
-    180deg,
-    hsl(0, 0%, 77%) 1%,
-    hsl(0, 0%, 57%) 80%
-  ); */
 
   margin: 0px;
 }
@@ -54,9 +49,19 @@ h1 {
   display: inline-block;
   font-size: clamp(2rem, 10vw, 80px);
   font-weight: 900;
-  letter-spacing: -0.2rem;
+  letter-spacing: -0.1rem;
   margin: 0px;
   text-align: left;
+}
+
+h2 {
+  color: var(--defaultLight);
+  display: inline-flex;
+  font-size: clamp(1.25rem, 10vw, 40px);
+  font-weight: 900;
+  letter-spacing: -0.1rem;
+  margin: 0px;
+  text-align: center;
 }
 
 section[class$="Section"] {
@@ -72,7 +77,7 @@ section[class$="Section"] h1:not(.heroSection h1) {
 }
 
 section[class$="Section"] p {
-  color: var(--defaultLight);
+  /* color: var(--defaultLight); */
   /* border: 2px solid red; */
 }
 
@@ -93,6 +98,12 @@ button {
     hsl(120, 100%, 40%) 1%,
     hsl(120, 100%, 50%) 100%
   );
+  /* background-image: linear-gradient(
+    170deg,
+    hsl(239, 93%, 83%) 1%,
+    hsl(238, 100%, 80%) 20%
+  ); */
+
   border: none;
   box-shadow: var(--boxshadow);
   color: var(--defaultLight);
@@ -100,6 +111,12 @@ button {
   font-weight: 900;
   width: min(45vw, 240px);
   aspect-ratio: 3/1;
+}
+
+button:hover,
+:focus {
+  cursor: pointer;
+  transform: scale(1.05);
 }
 
 @media screen and (min-width: 640px) {
@@ -116,5 +133,8 @@ button {
     flex-direction: row;
     justify-content: space-evenly;
     width: min(90vw, 800px);
+  }
+  h1 {
+    letter-spacing: -0.2rem;
   }
 }

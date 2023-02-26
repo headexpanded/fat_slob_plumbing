@@ -10,44 +10,65 @@ export const HeroSection = () => {
     <>
       <section className="heroSection">
         <Spacer />
-        <Typography.Title content="Fat Slob Plumbing" />
+        <Typography.Title content="We Test Toilets" />
 
-        <HeroTextAnimation></HeroTextAnimation>
+        {/* <HeroTextAnimation></HeroTextAnimation> */}
 
-        {/* <Spacer /> */}
+        
         <div className="heroStrap">
-          <Typography.ParaC content="can" color="var(--defaultLight)" />
-          <Typography.SubHeader content=" your " color="var(--defaultLight)" />
-          <Typography.ParaC
-            content="lav take a big load?"
+          
+          <Typography.SubHeader
+            content="can YOUR lav take a big load?"
             color="var(--defaultLight)"
           />
+          
         </div>
 
         <Spacer />
 
         <div className="heroIntroText">
-          <Typography.ParaL content="Imagine it." color="var(--defaultLight)" />
+          <Typography.ParaL
+            content="Imagine it."
+            color="var(--defaultLight)"
+            fontWeight="700"
+          />
           <Typography.ParaL
             content="Friends over - and your lav blocks up."
             color="var(--defaultLight)"
+            fontWeight="700"
           />
           <Typography.ParaL
             content="You don't need that."
             color="var(--defaultLight)"
+            fontWeight="700"
           />
-          <Typography.ParaL content="So hire us." color="var(--defaultLight)" />
+          <Typography.ParaL
+            content="So hire us."
+            color="var(--defaultLight)"
+            fontWeight="700"
+          />
+          <Typography.ParaL
+            content="Fat Slob Plumbing."
+            color="var(--defaultDark)"
+            fontWeight="900"
+          />
+          <Typography.ParaL
+            content="The U.K.'s Number Two toilet testing service."
+            color="var(--defaultLight)"
+            fontWeight="700"
+          />
           <Typography.ParaL
             content="We'll give it a good stress test."
             color="var(--defaultLight)"
+            fontWeight="700"
           />
         </div>
         <Spacer />
         <Spacer />
         <div className="heroButtons">
-          <button className="btnBooking">MAKE A BOOKING</button>
+          <button className="heroButton btnBooking">MAKE A BOOKING</button>
           <Spacer />
-          <button className="btnFranchise">BUY A FRANCHISE</button>
+          <button className="heroButton btnFranchise">BUY A FRANCHISE</button>
         </div>
         <Spacer />
         <Spacer />
@@ -60,23 +81,21 @@ export const HeroSection = () => {
 
       <style jsx>{`
         .heroSection {
-          position: relative;
         }
 
         .heroStrap {
+          display: flex;
           align-items: baseline;
+          /* align-items: baseline;
           display: flex;
           justify-content: space-evenly;
           margin-top: 1rem;
-          width: clamp(240px, 60vw + 36px, 200px);
+          width: clamp(240px, 60vw + 36px, 600px);
           .heroStrap p:last-child {
-            padding-right: 1rem;
-          }
+            // padding-right: 1rem;
+          } */
         }
         .heroIntroText {
-          position: absolute;
-          top: 40vh;
-          left; 10vw;
         }
 
         @media screen and (min-width: 640px) {
@@ -84,6 +103,7 @@ export const HeroSection = () => {
             left: 200vw;
           }
         }
+
       `}</style>
     </>
   );

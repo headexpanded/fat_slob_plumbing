@@ -2,7 +2,9 @@
 import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
 
-type AboutUsSectionProps = {};
+/* type AboutUsSectionProps = {
+  data: Array<Lyric>;
+}; */
 
 export const AboutUsSection = () => {
   const employees = [
@@ -20,18 +22,33 @@ export const AboutUsSection = () => {
         <Spacer />
         <div className="aboutUsTitle">
           <Typography.SectionTitle
-            content="About Us"
+            content="Our Story"
             color="var(--defaultFontColor)"
           />
         </div>
 
-        <Typography.ParaC
-          content="Our domestic sewage system always blocked up after a good night."
+        <Typography.ParaL
+          content="Woke up one morning and the toilet was blocked."
           color="var(--defaultFontColor)"
         />
 
-        <Typography.ParaC
-          content="We got tired of the nasty early morning surprises. So we decided to do something about it."
+        <Typography.ParaL
+          content="We got tired of the nasty early morning surprises."
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="So we decided to do something about it!, by starting a specialist domestic sewage system testing service."
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="Business was booming, so we hired Mark Hatherly to build us a web-site. We're so glad we did!"
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="Mark's a great web dev, and  fantastic to work with! Firstly, he's a great guy. We get along really well: Mark's lived all over the world, met and worked with all kinds of different people, and it shows."
           color="var(--defaultFontColor)"
         />
 

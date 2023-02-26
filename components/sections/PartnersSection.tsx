@@ -2,6 +2,7 @@
 
 import { Cards } from "../cards";
 import { Typography } from "../typography";
+import { Spacer } from "./Spacer";
 
 export type Partner = {
   title: string;
@@ -18,6 +19,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
   return (
     <>
       <section id="partners" className="partnersSection">
+        <Spacer />
         <Typography.SectionTitle
           content="Our Partners"
           color="var(--defaultLight)"
@@ -34,6 +36,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
             );
           })}
         </div>
+        <Spacer />
       </section>
       <style jsx>{`
         .partnerCards {

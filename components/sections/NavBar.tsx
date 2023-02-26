@@ -3,10 +3,11 @@
 export const NavBar = () => {
   return (
     <>
-      <section className="navBar">
+      <section className="navBar" role="navigation">
         <a href="#">Home</a>
 
-        <a href="">Bookings</a>
+        <a href="">Theme</a>
+        
 
         <a href="">Franchises</a>
 
@@ -21,7 +22,7 @@ export const NavBar = () => {
           box-shadow: 0px 1px 8px 0px var(--defaultDark);
           display: flex;
           justify-content: space-evenly;
-          flex-grow:1;
+          flex-grow: 1;
           align-items: center;
         }
 

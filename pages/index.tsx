@@ -36,13 +36,13 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       {/* Services */}
       {/* <Section.Services /> */}
       {/* Franchises */}
-      <Section.Franchises />
+      {/* <Section.Franchises /> */}
       {/* Valued Partners */}
       <Section.Partners data={partnersData}></Section.Partners>
       {/* About Us */}
-      <Section.AboutUs />
+      <Section.AboutUs></Section.AboutUs>
       {/* Footer */}
-      <Section.Footer/>
+      <Section.Footer />
       {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -83,6 +83,7 @@ export async function getStaticProps() {
       }
     }
   `;
+
 
   const data = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",

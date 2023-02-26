@@ -4,20 +4,21 @@
 type ParagraphLProps = {
   content: string;
   color?: string;
+  fontWeight ?: string;
 };
 
 // define Paragraph component
-export const ParagraphL = ({ content, color }: ParagraphLProps) => {
+export const ParagraphL = ({ content, color, fontWeight }: ParagraphLProps) => {
   return (
     <>
       <p>{content}</p>
       <style jsx>{`
         p {
           color: ${color ?? ""};
-          width: 90vw;
-          text-align: left;
           font-size:1.5rem;
-          font-weight: 700;
+          font-weight: ${fontWeight ?? ""};
+          text-align: left;
+          width: 90vw;
         }
       `}</style>
     </>

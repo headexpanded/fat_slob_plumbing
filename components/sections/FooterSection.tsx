@@ -17,10 +17,12 @@ export const FooterSection = () => {
       </footer>
       <style jsx>{`
         .footerSection {
-          background-color: var(--PVgold);
+          // background-color: var(--PVgold);
+          display:flex;
+          justify-content: center;
         }
         .footerSection p {
-          color: var(--PVbrown);
+          color: var(--defaultDark);
           font-size: 0.5rem;
           margin: 0px;
           padding: 0.5rem 0;

@@ -25,32 +25,35 @@ export const CustReviewCard = ({
         </div>
 
         <div className="imgWrapper"></div>
-        
       </div>
 
       <style jsx>{`
         .custReviewCard {
+          background-color: var(--defaultLight);
           height: 220px;
           padding: 0.5rem;
-          width: 360px;
-          // border-bottom: 1px solid var(--defaultLight);
-          box-shadow: 0px 0px 200px 0px white;
+          box-shadow: 1px 0px 10px 0px var(--defaultDark);
+        }
+        @media screen and (min-width: 640px) {
+          .custReviewCard {
+            width: 360px;
+          }
         }
 
         p {
-          color: var(--defaultLight);
+          color: var(--defaultDark);
           font-size: 1.25rem;
           font-style: italic;
           font-weight: bold;
-          padding: 0px .5rem;
-          margin:0px;
+          padding: 0px 0.5rem;
+          margin: 0px;
         }
 
         .custReview {
           padding-top: 1rem;
-          display:flex;
+          display: flex;
           align-items: center;
-          gap: .5rem;
+          gap: 0.5rem;
         }
 
         .custNameWrapper {
@@ -73,8 +76,6 @@ export const CustReviewCard = ({
           height: 80px;
           aspect-ratio: 1/1;
         }
-
-        
       `}</style>
     </>
   );

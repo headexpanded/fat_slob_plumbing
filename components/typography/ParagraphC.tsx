@@ -9,11 +9,11 @@ type ParagraphCProps = {
 export const ParagraphC = ({ content, color }: ParagraphCProps) => {
   return (
     <>
-      <p>{content}</p>
+      <h2>{content}</h2>
       <style jsx>{`
-        p {
+        h2 {
           color: ${color ?? ""};
-          font-size: 1rem;
+          font-size: 2rem;
           font-weight: 700;
           // text-align: center;
           // padding: 0px 0px 4px 0px;
