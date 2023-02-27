@@ -79,7 +79,9 @@ export const HeroSection = () => {
         <div className="heroButtons">
           <button className="heroButton btnBooking">MAKE A BOOKING</button>
           <Spacer />
-          <button className="heroButton btnFranchise">BUY A FRANCHISE</button>
+          <a href="#franchisesSection">
+            <button className="heroButton btnFranchise">BUY A FRANCHISE</button>
+          </a>
         </div>
         <Spacer />
         <Spacer />

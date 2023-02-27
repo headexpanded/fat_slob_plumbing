@@ -16,15 +16,15 @@ export const HowWeWorkSection = () => {
 
         <Typography.ParaL
           content=" Our experienced,
-                professional toilet testers visit your home."
+                    professional toilet testers visit your home."
           color=""
           fontWeight="700"
         />
 
         <Typography.ParaL
           content="By the time we
-                        leave, you'll know for sure if your
-                        system can take it - or not!"
+                          leave, you'll know if your
+                          toilet can take it - or not!"
           color=""
           fontWeight="700"
         />
@@ -49,21 +49,33 @@ export const HowWeWorkSection = () => {
         />
 
         <Typography.ParaL
-          content=" 
-                    At your request, we bring our own reading material."
+          content="At your request, we bring our own reading material."
           color="var(--defaultLight)"
           fontWeight="700"
         />
 
-        {/* <Typography.ParaL
-          content="Want to know the precise blend and quantity of solids and liquids 
-                    consumed by Fat Slob Plumbing?"
+        
+          <Typography.ParaL
+            content="Don't wait - book us today!"
+            color=""
+            fontWeight="700"
+          />
+        
+        <Typography.ParaL
+          content="Or sign up for a monthly plan."
           color=""
-        /> */}
+          fontWeight="700"
+        />
+
         <Spacer />
       </section>
 
-      <style jsx>{``}</style>
+      <style jsx>{`
+        .howWeWorkText {
+          display: flex;
+          justify-content: space-around;
+        }
+      `}</style>
     </>
   );
 };

@@ -15,9 +15,8 @@ export const CustReviewCard = ({
     <>
       <div className="custReviewCard">
         <div className="custReview">
-          <picture className="picture">
-            <img src={photo} alt="Customer photo" />
-          </picture>
+          <img src={photo} alt="Customer photo" loading="lazy" />
+
           <p>{review}</p>
         </div>
         <div className="custNameWrapper">

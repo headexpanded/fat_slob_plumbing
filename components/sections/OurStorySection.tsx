@@ -48,7 +48,7 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="Mark's a great web dev, and  fantastic to work with! Firstly, he's a great guy. We get along really well: Mark's lived all over the world, met and worked with all kinds of different people, and it shows."
+          content="Mark's a great web dev, and fantastic to work with! Firstly, he's a great guy. We get along really well: Mark's lived all over the world, met and worked with all kinds of different people, and it shows."
           color="var(--defaultFontColor)"
         />
 

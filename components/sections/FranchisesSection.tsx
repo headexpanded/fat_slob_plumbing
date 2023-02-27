@@ -15,7 +15,7 @@ export const FranchisesSection = () => {
             color="var(--defaultLight)"
           />
         </div>
-        <Typography.ParaC
+        <Typography.SubHeader
           content="Can YOU deliver on demand?"
           color="var(--defaultLight)"
         />
@@ -37,7 +37,19 @@ export const FranchisesSection = () => {
         />
 
         <Typography.ParaL
-          content="We're looking for people who can deliver value. People who can fill a bowl under any cirumstances. "
+          content="We're looking for people who can deliver value."
+          color=""
+          fontWeight="700"
+        />
+
+        <Typography.ParaL
+          content="People who can fill a bowl any time, any place."
+          color=""
+          fontWeight="700"
+        />
+
+        <Typography.ParaL
+          content="If that sounds like you, check out our available franchises:"
           color=""
           fontWeight="700"
         />

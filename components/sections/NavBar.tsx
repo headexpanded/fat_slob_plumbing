@@ -9,7 +9,7 @@ export const NavBar = () => {
         <a href="#ourStorySection">Our Story</a>
         
 
-        <a href="franchisesSection">Franchises</a>
+        <a href="#franchisesSection">Franchises</a>
 
         <a href="">T-Shirts</a>
 

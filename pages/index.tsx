@@ -19,7 +19,7 @@ function Home({ customerReviews, partnersData }: HomeProps) {
         <title>Fat Slob Plumbing</title>
         <meta
           name="description"
-          content="Fat Slob Plumbing stress tests domestic sewage systems."
+          content="Fat Slob Plumbing stress tests domestic sewage systems. Book Fat Slob Plumbing to stress test YOUR toilet! Fat Slob Plubing is the number 2 toilet testing service in the UK!"
         />
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
