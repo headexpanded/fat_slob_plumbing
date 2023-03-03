@@ -22,6 +22,8 @@ function Home({ customerReviews, partnersData }: HomeProps) {
           key="desc"
           content="Fat Slob Plumbing stress tests toilets. We're the number 2 toilet testing service in the UK! Book Fat Slob Plumbing to stress test YOUR toilet!"
         />
+        <meta property="og:title" content="Fat Slob Plumbing" />
+        <meta property="og:description" content="The UK's number 2 toilet testing service."/>
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="icon" href="/favicon.ico" />
