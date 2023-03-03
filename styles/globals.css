@@ -48,12 +48,13 @@ body {
 
 h1 {
   display: inline-block;
+  font-family: "Inter var", sans-serif;
   font-size: clamp(2rem, 10vw, 80px);
   font-weight: 900;
   letter-spacing: -0.1rem;
   margin: 0px;
   text-align: left;
-  font-family: "Inter var", sans-serif;
+  translate: "no";
 }
 
 h2 {
@@ -64,6 +65,7 @@ h2 {
   letter-spacing: -0.1rem;
   margin: 0px;
   text-align: center;
+  translate:"no";
 }
 
 section[class$="Section"] {
@@ -92,6 +94,7 @@ div ~ p {
   font-weight: 800;
   margin: 0 auto;
   padding: 1rem 4rem;
+  translate: "no";
 }
 
 button {

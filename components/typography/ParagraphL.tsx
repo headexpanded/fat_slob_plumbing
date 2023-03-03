@@ -4,7 +4,7 @@
 type ParagraphLProps = {
   content: string;
   color?: string;
-  fontWeight ?: string;
+  fontWeight?: string;
 };
 
 // define ParagraphL component
@@ -15,7 +15,7 @@ export const ParagraphL = ({ content, color, fontWeight }: ParagraphLProps) => {
       <style jsx>{`
         p {
           color: ${color ?? ""};
-          font-size:1.5rem;
+          font-size: 1.5rem;
           font-weight: ${fontWeight ?? ""};
           text-align: left;
           width: 90vw;

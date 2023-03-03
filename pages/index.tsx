@@ -19,7 +19,8 @@ function Home({ customerReviews, partnersData }: HomeProps) {
         <title>Fat Slob Plumbing</title>
         <meta
           name="description"
-          content="Fat Slob Plumbing stress tests domestic sewage systems. Book Fat Slob Plumbing to stress test YOUR toilet! Fat Slob Plubing is the number 2 toilet testing service in the UK!"
+          key="desc"
+          content="Fat Slob Plumbing stress tests toilets. We're the number 2 toilet testing service in the UK! Book Fat Slob Plumbing to stress test YOUR toilet!"
         />
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
@@ -83,7 +84,6 @@ export async function getStaticProps() {
       }
     }
   `;
-
 
   const data = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
