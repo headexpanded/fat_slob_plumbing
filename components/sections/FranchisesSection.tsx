@@ -49,8 +49,8 @@ export const FranchisesSection = () => {
         />
 
         <Typography.ParaL
-          content="If that sounds like you, check out our available franchises:"
-          color=""
+          content="If that sounds like you - yes YOU, reading this right now - then you should buy a Fat Slob Plumbing franchise!"
+          color="var(--defaultLight)"
           fontWeight="700"
         />
       </section>

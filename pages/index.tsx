@@ -7,14 +7,12 @@ import { CustomerReview } from "../components/sections/CustReviewsSection";
 import { Partner } from "../components/sections/PartnersSection";
 import { Section } from "../components/sections";
 
-
 type HomeProps = {
   customerReviews: CustomerReview[];
   partnersData: Partner[];
 };
 
 function Home({ customerReviews, partnersData }: HomeProps) {
-  
   return (
     <div className="main">
       <Head>
