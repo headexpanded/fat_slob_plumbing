@@ -2,10 +2,6 @@
 import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
 
-/* type OurStorySectionProps = {
-  data: Array<Lyric>;
-}; */
-
 export const OurStorySection = () => {
   const employees = [
     {

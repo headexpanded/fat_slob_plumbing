@@ -1,4 +1,5 @@
 // define Intro Section properties
+import { useState } from "react";
 import { Typography } from "../typography";
 import { Cards } from "../cards";
 import { Spacer } from "./Spacer";
@@ -7,6 +8,7 @@ import { HeroTextAnimation } from "../animations/HeroTextAnimation";
 type HeroSectionProps = {};
 
 export const HeroSection = () => {
+  const [showBookingsDiv, setShowBookingsDiv] = useState(false);
   return (
     <>
       <section className="heroSection">
@@ -76,13 +78,34 @@ export const HeroSection = () => {
         </div>
         <Spacer />
         <Spacer />
-        <div className="heroButtons">
-          <button className="heroButton btnBooking">MAKE A BOOKING</button>
-          <Spacer />
-          <a href="#franchisesSection">
-            <button className="heroButton btnFranchise">BUY A FRANCHISE</button>
-          </a>
-        </div>
+
+        {!showBookingsDiv ? (
+          <div className="heroButtons">
+            <button
+              className="heroButton btnBooking"
+              onClick={() => setShowBookingsDiv(true)}
+            >
+              MAKE A BOOKING
+            </button>
+            <Spacer />
+            <a href="#franchisesSection">
+              <button className="heroButton btnFranchise">
+                BUY A FRANCHISE
+              </button>
+            </a>
+          </div>
+        ) : (
+          <div className="calendarBlocked">
+            <Typography.ParaC content="Sorry mate, the calendar's completely blocked up." />
+            <button
+              className="calendarButton"
+              onClick={() => setShowBookingsDiv(false)}
+            >
+              CLOSE
+            </button>
+          </div>
+        )}
+
         <Spacer />
         <Spacer />
 
@@ -119,6 +142,18 @@ export const HeroSection = () => {
           width: 100%;
         }
 
+        .calendarBlocked {
+          align-items:center;
+          background: red;
+          // border: 2px solid var(--defaultDark);
+          box-shadow: var(--boxshadow);
+          display: flex;
+          flex-direction:column;
+          height: auto;
+          justify-content: center;
+          padding: 1.5rem;
+          width: 80%;
+        }
         .heroCustomerCard {
           // border: 1px solid white;
           display: none;

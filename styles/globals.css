@@ -124,6 +124,11 @@ button:hover,
   transform: scale(1.05);
 }
 
+button.calendarButton{
+  margin-top:2rem;
+  width: max(5vw, 120px);
+}
+
 @media screen and (min-width: 640px) {
   div ~ p {
     font-size: 1.5rem;

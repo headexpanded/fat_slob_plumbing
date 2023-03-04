@@ -7,12 +7,14 @@ import { CustomerReview } from "../components/sections/CustReviewsSection";
 import { Partner } from "../components/sections/PartnersSection";
 import { Section } from "../components/sections";
 
+
 type HomeProps = {
   customerReviews: CustomerReview[];
   partnersData: Partner[];
 };
 
 function Home({ customerReviews, partnersData }: HomeProps) {
+  
   return (
     <div className="main">
       <Head>
@@ -20,10 +22,13 @@ function Home({ customerReviews, partnersData }: HomeProps) {
         <meta
           name="description"
           key="desc"
-          content="Fat Slob Plumbing stress tests toilets. We're the number 2 toilet testing service in the UK! Book Fat Slob Plumbing to stress test YOUR toilet!"
+          content="Fat Slob Plumbing stress tests toilets. We're the UK's number 2 toilet testing service! Book Fat Slob Plumbing to stress test YOUR toilet!"
         />
         <meta property="og:title" content="Fat Slob Plumbing" />
-        <meta property="og:description" content="The UK's number 2 toilet testing service."/>
+        <meta
+          property="og:description"
+          content="The UK's number 2 toilet testing service."
+        />
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="icon" href="/favicon.ico" />
@@ -58,6 +63,12 @@ function Home({ customerReviews, partnersData }: HomeProps) {
           </span>
         </a>
       </footer> */}
+      <dialog className="modal animated fadeInDown">
+        <Section.Dialog
+          modalIsVisible={false}
+          content="Nothing to see here yet"
+        />
+      </dialog>
     </div>
   );
 }
