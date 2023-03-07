@@ -71,6 +71,7 @@ function Home({ customerReviews, partnersData }: HomeProps) {
   );
 }
 
+
 export default Home;
 
 export async function getStaticProps() {
@@ -96,7 +97,7 @@ export async function getStaticProps() {
     }
   `;
 
-  const data = await request(
+  const custReviewData = await request(
     "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     custReviewQuery
   );
@@ -108,7 +109,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      customerReviews: data.customerReviews,
+      customerReviews: custReviewData.customerReviews,
       partnersData: partnersData.partners,
     }, // will be passed to the page component as props
   };

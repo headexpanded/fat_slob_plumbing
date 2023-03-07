@@ -43,7 +43,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           width: 90vw;
           display: grid;
           gap: 2rem;
-          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
           justify-content: space-evenly;
           margin-bottom: 4rem;
           place-items: center;
