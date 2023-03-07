@@ -42,11 +42,11 @@ Thank you for considering contributing to the Fat Slob Plumbing code-base!
 
 ## Code of Conduct
 
-In order to ensure that the Fat Slob Plumbing community is welcoming to all, please review and abide by our Code of Conduct.
+In order to ensure that the Fat Slob Plumbing community is welcoming to all, please be pleasant and well-mannered.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability in the Fat Slob Plumbing code, please send an e-mail to someone here. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability in the Fat Slob Plumbing code, please raise an issue. All security vulnerabilities will be promptly addressed.
 
 ## License
 
