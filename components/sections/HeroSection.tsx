@@ -13,7 +13,7 @@ export const HeroSection = () => {
     <>
       <section className="heroSection">
         <Spacer />
-        <Typography.Title content="We Test Toilets" />
+        <Typography.Title content="Fat Slob Plumbing" />
 
         {/* <HeroTextAnimation></HeroTextAnimation> */}
 
@@ -143,12 +143,12 @@ export const HeroSection = () => {
         }
 
         .calendarBlocked {
-          align-items:center;
+          align-items: center;
           background: red;
           // border: 2px solid var(--defaultDark);
           box-shadow: var(--boxshadow);
           display: flex;
-          flex-direction:column;
+          flex-direction: column;
           height: auto;
           justify-content: center;
           padding: 1.5rem;

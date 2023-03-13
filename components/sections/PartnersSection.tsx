@@ -44,16 +44,14 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           display: grid;
           gap: 2rem;
           grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-          justify-content: space-evenly;
+          justify-content: space-between;
           margin-bottom: 4rem;
           place-items: center;
         }
 
         @media screen and (min-width: 640px) {
           .partnerCards {
-            // grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-            // display:flex;
-            // flex-direction: row;
+            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
             flex-grow: 1;
           }
         }
