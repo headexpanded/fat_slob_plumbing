@@ -8,7 +8,7 @@ export const NavBar = () => {
 
   const handleTShirtClick = () => {
     setShowSoldOut(true);
-    setTimeout(() => setShowSoldOut(false), 8000);
+    setTimeout(() => setShowSoldOut(false), 3000);
   };
   return (
     <>
@@ -19,7 +19,7 @@ export const NavBar = () => {
 
         <a href="#franchisesSection">Franchises</a>
 
-        <a href="" onClick={handleTShirtClick}>
+        <a href="#" onClick={handleTShirtClick}>
           T-Shirts
         </a>
 
@@ -27,7 +27,7 @@ export const NavBar = () => {
       </section>
       {showSoldOut && (
         <div className="soldOut">
-          <Typography.ParaC content="Sold Out!" color="var(--defaultLight)" />
+          <Typography.ParaC content="Sorry, all sold out mate." color="var(--defaultLight)" />
         </div>
       )}
       <style jsx>{`
