@@ -29,7 +29,7 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="Ron woke up, made a pot of tea, flicked on the radio, and sat down on the toilet."
+          content="Ron woke up. Made a pot of tea. Flicked on the radio. And sat down on the toilet."
           color="var(--defaultFontColor)"
         />
 
@@ -89,17 +89,18 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="And Fat Slob Plumbing was born."
+          content="And Fat Slob Plumbing was born. The rest is history."
           color="var(--defaultFontColor)"
+          fontWeight="700"
         />
 
-        {employees.map(({ id, ...other }) => {
+        {/* {employees.map(({ id, ...other }) => {
           return (
             <div className="col-8" key={id}>
               {other.title}
             </div>
           );
-        })}
+        })} */}
       </section>
 
       <style jsx>{`
