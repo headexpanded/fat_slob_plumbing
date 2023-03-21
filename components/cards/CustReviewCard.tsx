@@ -31,7 +31,6 @@ export const CustReviewCard = ({
       <style jsx>{`
         .custReviewCard {
           background-color: var(--defaultLight);
-          height: 220px;
           padding: 0.5rem;
           box-shadow: 1px 0px 10px 0px var(--defaultDark);
         }
