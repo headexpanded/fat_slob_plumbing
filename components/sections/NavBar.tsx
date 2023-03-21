@@ -1,20 +1,35 @@
 // define NavBar properties
 
+import { useState } from "react";
+import { Typography } from "../typography";
+
 export const NavBar = () => {
+  const [showSoldOut, setShowSoldOut] = useState(false);
+
+  const handleTShirtClick = () => {
+    setShowSoldOut(true);
+    setTimeout(() => setShowSoldOut(false), 8000);
+  };
   return (
     <>
       <section className="navBar" role="navigation">
         <a href="#">Home</a>
 
         <a href="#ourStorySection">Our Story</a>
-        
 
         <a href="#franchisesSection">Franchises</a>
 
-        <a href="">T-Shirts</a>
+        <a href="" onClick={handleTShirtClick}>
+          T-Shirts
+        </a>
 
         <a href="#partnersSection">Partners</a>
       </section>
+      {showSoldOut && (
+        <div className="soldOut">
+          <Typography.ParaC content="Sold Out!" color="var(--defaultLight)" />
+        </div>
+      )}
       <style jsx>{`
         .navBar {
           height: 2rem;
@@ -46,6 +61,15 @@ export const NavBar = () => {
           content: "";
           height: 2px;
           background-color: var(--defaultLight);
+        }
+
+        .soldOut {
+          background: red;
+          box-shadow: var(--boxshadow);
+          display: flex;
+          justify-content: center;
+          padding: 1.5rem;
+          width: 100%;
         }
       `}</style>
     </>
