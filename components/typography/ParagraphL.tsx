@@ -5,10 +5,16 @@ type ParagraphLProps = {
   content: string;
   color?: string;
   fontWeight?: string;
+  tagged?: boolean;
 };
 
 // define ParagraphL component
-export const ParagraphL = ({ content, color, fontWeight }: ParagraphLProps) => {
+export const ParagraphL = ({
+  content,
+  color,
+  fontWeight,
+  tagged,
+}: ParagraphLProps) => {
   return (
     <>
       <p>{content}</p>
@@ -16,9 +22,10 @@ export const ParagraphL = ({ content, color, fontWeight }: ParagraphLProps) => {
         p {
           color: ${color ?? ""};
           font-size: 1.5rem;
-          font-weight: ${fontWeight ?? ""};
+          font-weight: ${fontWeight ?? "700"};
           text-align: left;
           width: 90vw;
+          tagged: ${tagged ?? false};
         }
       `}</style>
     </>
