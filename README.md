@@ -2,25 +2,27 @@
 
 ![Fat Slob Plumbing staff photo](./assets/img/staffPhoto-sm.png)
 
-I'm a lucky guy! As a junior web developer, it's tough to land your first free-lance gig.
+I'm a lucky guy! As a solo free-lance web developer, it's always tough to get hired by a world-class business!
 
 That's why I'm honoured to have been hired by Fat Slob Plumbing to build their website!
 
-I'm using TypeScript, Next.js, React, HyGraph, and **pure CSS** to produce a new website for Fat Slob Plumbing.
+Ron & Dave are on a mission to save humanity from the horror of a blocked toilet.
+
+Meanwhile, I'm on a mission to leverage TypeScript, Next.js, React, HyGraph, and **pure CSS** to produce the best website possible for Fat Slob Plumbing.
 
 Business is booming - they're franchising!
 
 ## React
 
-- I'm on a mission to make just about everything a React component, including cards, paragraphs, animations, and more. Plenty more to do on that.
+- I intend to make just about everything a React component, including cards, paragraphs, animations, spacers, and more. Plenty more to do on that.
 
 ## Pure CSS
 
-- Why highlight the pure CSS? Because I'm proud of it! Take a look at globals.css if you're interested ⁻ I've tried hard to write _cascading_ styles which respect HMTL semantics.
+- Why highlight the pure CSS? Because I'm proud of it! Take a look at the responsive design, the functions, and globals.css if you're interested. I've tried hard to write _cascading_ styles which respect HMTL semantics.
 
 ## TypeScript
 
-- Quite a challenge getting it all working properly that's for sure: lots to learn!
+- The goal is no anys at all. Lots to do.
 
 # To Do:
 
