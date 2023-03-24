@@ -25,25 +25,20 @@ export const HowWeWorkSection = () => {
           content="By the time we
                           leave, you'll know if your
                           toilet can take it - or not!"
-          color=""
-          fontWeight="700"
         />
-        <Typography.ParaC
+        <Spacer />
+        <Typography.SubHeader
           content="Dedicated Experts"
           color="var(--defaultLight)"
         />
-        <Typography.ParaL
-          content="Every day, your Fat Slob Plumber ingests a carefully formulated blend of food and drink - curries, kebabs, lager, full English, and so on."
-          color=""
-          fontWeight="700"
-        />
+        <Typography.ParaL content="Every day, your Fat Slob Plumber ingests a carefully formulated blend of food and drink - curries, kebabs, lager, full English, and so on." />
 
         <Typography.ParaL
           content="This ensures optimal performance."
           color=""
-          fontWeight="700"
         />
-        <Typography.ParaC
+        <Spacer />
+        <Typography.SubHeader
           content="Attention To Detail"
           color="var(--defaultLight)"
         />
