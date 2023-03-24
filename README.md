@@ -1,6 +1,6 @@
 # Fat Slob Plumbing
 
-![Fat Slob Plumbing staff photo](./assets/img/staffPhoto.png)
+![Fat Slob Plumbing staff photo](./assets/img/staffPhoto-sm.png)
 
 I'm a lucky guy! As a junior web developer, it's tough to land your first free-lance gig.
 
