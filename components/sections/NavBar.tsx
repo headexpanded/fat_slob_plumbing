@@ -27,18 +27,22 @@ export const NavBar = () => {
       </section>
       {showSoldOut && (
         <div className="soldOut">
-          <Typography.ParaC content="Sorry, all sold out mate." color="var(--defaultLight)" />
+          <Typography.ParaC
+            content="Sorry, all sold out mate."
+            color="var(--defaultLight)"
+          />
         </div>
       )}
       <style jsx>{`
         .navBar {
-          height: 2rem;
+          align-items: center;
           border-bottom: 1px solid var(--defaultDark);
           box-shadow: 0px 1px 8px 0px var(--defaultDark);
           display: flex;
-          justify-content: space-evenly;
           flex-grow: 1;
-          align-items: center;
+          height: 2rem;
+          justify-content: space-evenly;
+          width: 100%;
         }
 
         .navBar > a {
