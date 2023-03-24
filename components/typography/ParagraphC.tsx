@@ -3,10 +3,11 @@
 type ParagraphCProps = {
   content: string;
   color?: string;
+  fontWeight?: string;
 };
 
 // define Paragraph component
-export const ParagraphC = ({ content, color }: ParagraphCProps) => {
+export const ParagraphC = ({ content, color, fontWeight }: ParagraphCProps) => {
   return (
     <>
       <h2>{content}</h2>
@@ -14,7 +15,7 @@ export const ParagraphC = ({ content, color }: ParagraphCProps) => {
         h2 {
           color: ${color ?? ""};
           font-size: 2rem;
-          font-weight: 700;
+          font-weight: ${fontWeight ?? "700"};
           // text-align: center;
           // padding: 0px 0px 4px 0px;
         }
