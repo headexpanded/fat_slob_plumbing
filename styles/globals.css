@@ -97,6 +97,7 @@ button {
   );
 
   border: none;
+  border-radius: 4px;
   box-shadow: var(--boxshadow);
   color: var(--defaultLight);
   font-size: 1rem;
