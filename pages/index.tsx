@@ -60,12 +60,12 @@ function Home({ customerReviews, partnersData }: HomeProps) {
           </span>
         </a>
       </footer> */}
-      <dialog className="modal animated fadeInDown">
+      {/* <dialog className="modal animated fadeInDown">
         <Section.Dialog
           modalIsVisible={false}
           content="Nothing to see here yet"
         />
-      </dialog>
+      </dialog> */}
     </div>
   );
 }
