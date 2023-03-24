@@ -24,8 +24,9 @@ export const ParagraphL = ({
           font-size: 1.5rem;
           font-weight: ${fontWeight ?? "700"};
           text-align: left;
-          width: 90vw;
+          //width: 90%;
           tagged: ${tagged ?? false};
+          line-height: 2.25rem;
         }
       `}</style>
     </>
