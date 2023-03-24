@@ -1,8 +1,9 @@
 // define Intro Section properties
 import { useState } from "react";
 import { Typography } from "../typography";
-import { Cards } from "../cards";
 import { Spacer } from "./Spacer";
+import Image from "next/image";
+import staffPhoto from "../../assets/img/staffPhoto.png";
 import { HeroTextAnimation } from "../animations/HeroTextAnimation";
 
 type HeroSectionProps = {};
@@ -64,7 +65,15 @@ export const HeroSection = () => {
               fontWeight="700"
             />
           </div>
-          <div className="heroCustomerCard">
+          <div className="heroFatSlobs">
+            <Image
+              alt="Photo of Fat Slob Plumbing staff"
+              width={2609}
+              height={3914}
+              src={staffPhoto}
+              priority
+            />
+
             {/* <div className="custReviewCards">
               {data?.map(({ id, ...other }) => {
                 return (
@@ -79,33 +88,37 @@ export const HeroSection = () => {
         <Spacer />
         <Spacer />
 
-        {!showBookingsDiv ? (
-          <div className="heroButtons">
-            <button
-              className="heroButton btnBooking"
-              onClick={() => setShowBookingsDiv(true)}
-            >
-              MAKE A BOOKING
-            </button>
-            <Spacer />
-            <a href="#franchisesSection">
-              <button className="heroButton btnFranchise">
-                BUY A FRANCHISE
+        <div className="buttonWrapper">
+          {!showBookingsDiv ? (
+            <div className="heroButtons">
+              <button
+                className="heroButton btnBooking"
+                onClick={() => setShowBookingsDiv(true)}
+              >
+                MAKE A BOOKING
               </button>
-            </a>
-          </div>
-        ) : (
-          <div className="calendarBlocked">
-            <Typography.ParaC content="Sorry mate, the calendar's completely blocked up." />
-            <button
-              className="calendarButton"
-              onClick={() => setShowBookingsDiv(false)}
-            >
-              CLOSE
-            </button>
-          </div>
-        )}
+              <Spacer />
+              <a href="#franchisesSection">
+                <button className="heroButton btnFranchise">
+                  BUY A FRANCHISE
+                </button>
+              </a>
+            </div>
+          ) : (
+            <div className="calendarBlocked">
+              <Typography.ParaC content="Sorry mate, the calendar's completely blocked up." />
+              <button
+                className="calendarButton"
+                onClick={() => setShowBookingsDiv(false)}
+              >
+                CLOSE
+              </button>
+            </div>
+          )}
+        </div>
 
+        <Spacer />
+        <Spacer />
         <Spacer />
         <Spacer />
 
@@ -142,6 +155,12 @@ export const HeroSection = () => {
           width: 100%;
         }
 
+        .buttonWrapper {
+          display: flex;
+          place-items: center;
+          z-index: +2;
+        }
+
         .calendarBlocked {
           align-items: center;
           background: red;
@@ -152,9 +171,9 @@ export const HeroSection = () => {
           height: auto;
           justify-content: center;
           padding: 1.5rem;
-          width: 80%;
+          width: 100%;
         }
-        .heroCustomerCard {
+        .heroFatSlobs {
           // border: 1px solid white;
           display: none;
         }
@@ -166,20 +185,35 @@ export const HeroSection = () => {
           }
           .heroIntroText {
             left: 200vw;
+            padding-left: 20px;
+            width: 50%;
           }
-          .heroCustomerCard {
-            // display:none;
+          .heroFatSlobs {
+            /* display: inline-block;
+            height: 600px;
+            width: 50%; */
           }
         }
 
         @media screen and (min-width: 1028px) {
           .heroIntroText {
-            padding-left: 20px;
+            padding-left: 40px;
             width: 50%;
           }
-          .heroCustomerCard {
+          .heroFatSlobs {
             display: inline-block;
             width: 50%;
+            height: 600px;
+            margin-right: 60px;
+            margin-top: -80px;
+
+            z-index: 1;
+          }
+
+          .buttonWrapper {
+            flex-direction: column;
+            place-items: center;
+            z-index: +2;
           }
         }
       `}</style>
