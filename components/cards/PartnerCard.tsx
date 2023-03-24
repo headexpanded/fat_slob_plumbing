@@ -23,6 +23,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
       <style jsx>{`
         .partnerCard {
           background-color: var(--defaultLight);
+          border-radius: 4px;
           display: flex;
           flex-direction: column;
           border: 1px solid var(--defaultLight);
