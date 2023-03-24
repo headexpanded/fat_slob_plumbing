@@ -34,11 +34,17 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           width: 320px;
         }
 
-        /* @media screen and (min-width: 640px) {
+         @media screen and (min-width: 640px) {
           .partnerCard {
-            // width: 320px;
+            width: 400px;
           }
-        } */
+        }
+
+        @media screen and (min-width: 1028px){
+          .partnerCard {
+            width: 480px;
+          }
+        }
 
         .partnerCard > h3 {
           margin: 0;
