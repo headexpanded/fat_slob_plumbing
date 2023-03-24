@@ -43,6 +43,7 @@ body {
     hsl(239, 93%, 83%) 1%,
     hsl(238, 100%, 80%) 20%
   );
+  font-family: "Inter var", sans-serif;
 }
 
 h1 {
