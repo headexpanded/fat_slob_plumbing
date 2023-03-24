@@ -9,7 +9,6 @@ import { PartnersSection } from "./PartnersSection";
 import { OurStorySection } from "./OurStorySection";
 import { FooterSection } from "./FooterSection";
 import { Spacer } from "./Spacer";
-import { Dialog } from "./Dialog";
 
 export const Section = {
   NavBar: NavBar,
@@ -22,5 +21,4 @@ export const Section = {
   OurStory: OurStorySection,
   Footer: FooterSection,
   Spacer: Spacer,
-  Dialog: Dialog,
 };
