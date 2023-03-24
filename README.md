@@ -1,5 +1,7 @@
 # Fat Slob Plumbing
 
+![Fat Slob Plumbing staff photo](./assets/img/staffPhoto.png)
+
 I'm a lucky guy! As a junior web developer, it's tough to land your first free-lance gig.
 
 That's why I'm honoured to have been hired by Fat Slob Plumbing to build their website!
@@ -22,15 +24,13 @@ Business is booming - they're franchising!
 
 # To Do:
 
-- helpful slider ("Trish")
+- bookings with "Trish"
 
 - Franchise section
 
 - About Us section: HyGraph, photos, card, text
 
 - e-commerce: Fat Slob Plumbing t-shirts
-
-- Fat Slob images
 
 - logo
 
