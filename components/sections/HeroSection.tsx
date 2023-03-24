@@ -35,7 +35,7 @@ export const HeroSection = () => {
               fontWeight="700"
             />
             <Typography.ParaL
-              content="Friends over - and your lav blocks up."
+              content="Friends over - & your lav blocks up."
               color="var(--defaultLight)"
               fontWeight="700"
             />
@@ -119,8 +119,7 @@ export const HeroSection = () => {
 
         <Spacer />
         <Spacer />
-        <Spacer />
-        <Spacer />
+        
 
         <Typography.ParaC
           content="Not sure? Here's what our customers say..."
@@ -145,14 +144,15 @@ export const HeroSection = () => {
           } */
         }
         .heroBlock {
-          // border: 1px solid red;
+          //border: 2px solid red;
           display: flex;
           flex-direction: column;
+          place-items: center;
         }
 
         .heroIntroText {
-          // border: 1px solid yellow;
-          width: 100%;
+          //border: 2px solid yellow;
+          max-width: 90%;
         }
 
         .buttonWrapper {
@@ -174,7 +174,7 @@ export const HeroSection = () => {
           width: 100%;
         }
         .heroFatSlobs {
-          // border: 1px solid white;
+          //border: 1px solid white;
           display: none;
         }
 
@@ -189,23 +189,27 @@ export const HeroSection = () => {
             width: 50%;
           }
           .heroFatSlobs {
-            /* display: inline-block;
-            height: 600px;
-            width: 50%; */
+            display: inline-block;
+            height: 400px;
+            overflow: hidden;
+            margin-top: -48px;
+            margin-left: 20px;
+            width: 50%;
           }
         }
 
         @media screen and (min-width: 1028px) {
           .heroIntroText {
-            padding-left: 40px;
+            margin-left: 40px;
             width: 50%;
           }
           .heroFatSlobs {
             display: inline-block;
             width: 50%;
-            height: 600px;
+            height: 440px;
             margin-right: 60px;
             margin-top: -80px;
+            overflow: hidden;
 
             z-index: 1;
           }
