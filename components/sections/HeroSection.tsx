@@ -111,7 +111,7 @@ export const HeroSection = () => {
         <Spacer />
         
 
-        <Typography.ParaC
+        <Typography.SubHeader
           content="Not sure? Here's what our customers say..."
           color="var(--defaultLight)"
         />
