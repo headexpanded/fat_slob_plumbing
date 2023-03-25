@@ -16,7 +16,7 @@
   font-size: 16px;
 
   --boxshadow: 1px 1px 8px 1px var(--defaultDark);
-  --borderRadius: 0.5rem;
+  --borderRadius: 0.25rem;
 }
 
 @supports (font-variation-settings: normal) {
@@ -97,7 +97,7 @@ button {
   );
 
   border: none;
-  border-radius: 4px;
+  border-radius: var(--borderRadius);
   box-shadow: var(--boxshadow);
   color: var(--defaultLight);
   font-size: 1rem;
