@@ -37,7 +37,7 @@ export const HowWeWorkSection = () => {
           content="100% Commitment"
           color="var(--defaultLight)"
         />
-        <Typography.ParaL content="Every morning starts with coffee, & a few cigarettes." />
+        <Typography.ParaL content="Each job starts with coffee, & a few cigarettes." />
         <Typography.ParaL content="This makes sure there's no waiting around." />
         <Typography.ParaL content="Because you can't wait for results." />
         <Typography.ParaL content="And we can't wait to get started." />
