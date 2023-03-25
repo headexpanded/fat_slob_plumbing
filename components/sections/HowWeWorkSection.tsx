@@ -56,10 +56,10 @@ export const HowWeWorkSection = () => {
       </section>
 
       <style jsx>{`
-        .howWeWorkText {
+        /* .howWeWorkText {
           display: flex;
           justify-content: space-around;
-        }
+        } */
       `}</style>
     </>
   );
