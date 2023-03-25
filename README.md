@@ -2,7 +2,9 @@
 
 <p align="center"><img width="auto" height="400px" alt="Fat Slob Plumbing staff photo" src="./assets/img/staffPhoto-sm.png"/></p>
 
-I'm a lucky guy! As a solo free-lance web developer, it's always tough to get hired by a world-class business!
+I'm a lucky guy!
+
+As a solo free-lance web developer, it's always tough to get hired by a world-class business!
 
 That's why I'm honoured to have been hired by [**Fat Slob Plumbing**](https://fat-slob-plumbing.vercel.app/) to build their website!
 
