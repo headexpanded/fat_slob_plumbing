@@ -18,8 +18,7 @@ export const HowWeWorkSection = () => {
           color="var(--defaultLight)"
         />
         <Typography.ParaL
-          content=" Our experienced,
-                    professional toilet testers visit your home."
+          content=" Our professional toilet testers visit your home."
         />
         <Typography.ParaL
           content="By the time we
