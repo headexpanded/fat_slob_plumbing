@@ -25,7 +25,7 @@ export const HeroSection = () => {
           />
         </div>
 
-        <Spacer />
+       
 
         <div className="heroBlock">
           <div className="heroIntroText">
@@ -35,7 +35,7 @@ export const HeroSection = () => {
               fontWeight="900"
             />
             <Typography.ParaL
-              content="Friends over - & your lav blocks up."
+              content="Friends over - and your lav blocks up."
               color="var(--defaultLight)"
               fontWeight="900"
             />
@@ -55,7 +55,7 @@ export const HeroSection = () => {
               fontWeight="900"
             />
             <Typography.ParaL
-              content="The U.K.'s number 2 toilet testing service."
+              content="England's number 2 toilet testing service."
               color="var(--defaultLight)"
               fontWeight="900"
             />
@@ -145,7 +145,6 @@ export const HeroSection = () => {
         .buttonWrapper {
           display: flex;
           place-items: center;
-          z-index: +2;
         }
 
         .calendarBlocked {
@@ -177,7 +176,7 @@ export const HeroSection = () => {
             display: inline-block;
             height: 400px;
             overflow: hidden;
-            margin-top: -48px;
+            margin-top: -40px;
             margin-left: 20px;
             width: 50%;
           }
@@ -190,7 +189,7 @@ export const HeroSection = () => {
           .heroFatSlobs {
             height: 440px;
             margin-right: 60px;
-            margin-top: -80px;
+            margin-top: -44px;
             overflow: hidden;
             z-index: 1;
           }
