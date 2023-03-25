@@ -5,7 +5,7 @@ type ParagraphLProps = {
   content: string;
   color?: string;
   fontWeight?: string;
-  tagged?: boolean;
+  width?: string;
 };
 
 // define ParagraphL component
@@ -13,7 +13,7 @@ export const ParagraphL = ({
   content,
   color,
   fontWeight,
-  tagged,
+  width,
 }: ParagraphLProps) => {
   return (
     <>
@@ -24,8 +24,7 @@ export const ParagraphL = ({
           font-size: 1.5rem;
           font-weight: ${fontWeight ?? "700"};
           text-align: left;
-          //width: 90%;
-          tagged: ${tagged ?? false};
+          width: ${width ?? "100%"};
           line-height: 2.25rem;
         }
       `}</style>
