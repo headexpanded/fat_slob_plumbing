@@ -1,6 +1,6 @@
 # Fat Slob Plumbing
 
-![Fat Slob Plumbing staff photo](./assets/img/staffPhoto-sm.png)
+<p align="center"><img width="auto" alt="Fat Slob Plumbing staff photo" src="./assets/img/staffPhoto-sm.png"/></p>
 
 I'm a lucky guy! As a solo free-lance web developer, it's always tough to get hired by a world-class business!
 
