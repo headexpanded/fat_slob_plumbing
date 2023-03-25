@@ -34,7 +34,7 @@ export const HowWeWorkSection = () => {
         <Typography.ParaL content="This ensures regular performance." />
         <Spacer />
         <Typography.SubHeader
-          content="100% Commitment"
+          content="Fast Results"
           color="var(--defaultLight)"
         />
         <Typography.ParaL content="Each job starts with coffee, & a few cigarettes." />

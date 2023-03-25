@@ -69,7 +69,7 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="For Ron had realised that he was not alone. No! Thousands, even millions of innocent people were living their lives at the risk of an unexpected toilet blockage."
+          content="For Ron had realised that he was not alone... No! Thousands, even millions of innocent people were living their lives at the risk of an unexpected toilet blockage."
           color="var(--defaultFontColor)"
         />
 
