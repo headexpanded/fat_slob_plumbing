@@ -50,14 +50,19 @@ export const HowWeWorkSection = () => {
           content="Fast Results"
           color="var(--defaultLight)"
         />
+
+        <Typography.ParaL content="No waiting around." width="" />
+
         <Typography.ParaL
           content="Each job starts with coffee & a few cigarettes."
           width=""
         />
+
         <Typography.ParaL
-          content="This makes sure there's no waiting around."
+          content="Even prune juice sometimes."
           width=""
         />
+
         <Typography.ParaL
           content="Because you can't wait for results."
           width=""
