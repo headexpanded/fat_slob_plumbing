@@ -37,7 +37,7 @@ export const CustReviewCard = ({
         }
         @media screen and (min-width: 640px) {
           .custReviewCard {
-            min-width: 400px;
+            max-width: 520px;
           }
         }
 
