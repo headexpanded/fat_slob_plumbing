@@ -15,7 +15,7 @@ Business is booming - they're franchising!
 ## React
 
 - Just about everything's a React component
-- HTML sections, cards, typography, even spacers
+- HTML sections, customer & partner cards, typography, even spacers
 
 ## Pure CSS
 
