@@ -17,9 +17,7 @@ export const HowWeWorkSection = () => {
           content="Dedicated Experts"
           color="var(--defaultLight)"
         />
-        <Typography.ParaL
-          content=" Our professional toilet testers visit your home."
-        />
+        <Typography.ParaL content=" Our professional toilet testers visit your home." />
         <Typography.ParaL
           content="By the time we
                           leave, you'll know if your
@@ -35,7 +33,10 @@ export const HowWeWorkSection = () => {
         <Typography.ParaL content="Curries. Kebabs. Lager. Full English. And so on." />
         <Typography.ParaL content="This ensures regular performance." />
         <Spacer />
-        <Typography.SubHeader content="100% Commitment" color="var(--defaultLight)" />
+        <Typography.SubHeader
+          content="100% Commitment"
+          color="var(--defaultLight)"
+        />
         <Typography.ParaL content="Every morning starts with coffee, & a few cigarettes." />
         <Typography.ParaL content="This makes sure there's no waiting around." />
         <Typography.ParaL content="Because you can't wait for results." />
@@ -45,16 +46,8 @@ export const HowWeWorkSection = () => {
           color="var(--defaultLight)"
           fontWeight="900"
         />
-        <Typography.ParaL
-          content="Don't wait - book us today!"
-          color=""
-          fontWeight="700"
-        />
-        <Typography.ParaL
-          content="Or sign up for a monthly plan."
-          color=""
-          fontWeight="700"
-        />
+        {/* <Typography.ParaL content="Don't wait - book us today!" />
+        <Typography.ParaL content="Or sign up for a monthly plan." /> */}
         {/* <Typography.SubHeader
           content="refer a friend for a 10% discount!"
           color="var(--defaultLight)"
