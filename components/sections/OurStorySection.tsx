@@ -29,52 +29,179 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="Ron woke up. Made a pot of tea. Flicked on the radio. And sat down on the toilet."
+          content="Ron woke up. Made a pot of tea. Flicked on the radio."
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="He wasn't expecting much - after all, it hadn't been a big night, just the seven pints and two kebabs."
+          content="And sat down on the toilet."
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="But ten minutes later, Ron got the surprise of his life. The toilet was blocked! The stupid thing just wouldn't flush it away, no matter how much he pogo'd the scrubbing brush."
+          content="He wasn't expecting much. After all, it hadn't been a big night, just the seven pints and two kebabs."
+          color="var(--defaultFontColor)"
+        />
+
+        <Spacer />
+
+        <Typography.ParaC
+          content="Horror in the Morning"
+          color="var(--defaultLight)"
+          fontWeight="900"
+        />
+
+        <Typography.ParaL
+          content="But ten minutes later, Ron got the surprise of his life."
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="Ron tried everything. Boiling water. A litre of bleach. Paint thinner. But nothing worked."
+          content="The toilet was blocked!"
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="Time was ticking by. Ron would be late for warm-up with the darts team at The King's Seat!"
+          content="The stupid thing just wouldn't flush it away, no matter how much he pogo'd the scrubbing brush."
+          color="var(--defaultFontColor)"
+        />
+
+        <Spacer />
+
+        <Typography.ParaC
+          content="Sheer Panic"
+          color="var(--defaultLight)"
+          fontWeight="900"
+        />
+
+        <Typography.ParaL
+          content="Ron tried everything. Boiling water. A litre of bleach. Paint thinner."
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="Four hours later, Ron finally got the toilet unblocked. Don't ask him how - he was beyond normal consciousness, past the point of psychic truth."
+          content="But nothing worked. And time was ticking by!"
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="What's worse, he'd missed opening time, missed the warm-up, and missed his usual morning full English."
+          content="Ron would be late for warm-up with the darts team at The King's Seat!"
+          color="var(--defaultFontColor)"
+        />
+
+        <Spacer />
+
+        <Typography.ParaC
+          content="Disaster. Shame. Ruin."
+          color="var(--defaultLight)"
+          fontWeight="900"
+        />
+        <Typography.ParaL
+          content="Two hours later, Ron finally got the toilet unblocked."
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="Ron raised his eyes to the ceiling and let out an anguished cry of despair! Not just for himself. Not just for the darts team. But for the whole of humanity."
+          content="Don't ask him how. The memories are too painful."
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="For Ron had realised that he was not alone... No! Thousands, even millions of innocent people were living their lives at the risk of an unexpected toilet blockage."
+          content="He'd missed opening time."
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="And it was then that Ron found his true calling. In that moment, Ron decided to devote his life to saving humanity from blocked toilets."
+          content="He'd missed the darts warm-up."
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="And he'd missed his usual full English."
+          color="var(--defaultFontColor)"
+        />
+
+        <Spacer />
+
+        <Typography.ParaC
+          content="Hopeless Despair"
+          color="var(--defaultLight)"
+          fontWeight="900"
+        />
+
+        <Typography.ParaL
+          content="Ron raised his eyes to the ceiling and let out an anguished cry of despair!"
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="Total despair!"
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="Not just for himself."
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="Not just for the darts team."
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="But for the whole of humanity!"
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="HOW CAN WE GO ON LIVING LIKE THIS?!?!"
+          color="var(--defaultFontColor)"
+        />
+
+        <Spacer />
+
+        <Typography.ParaC
+          content="A Light From Above."
+          color="var(--defaultLight)"
+          fontWeight="900"
+        />
+
+        <Typography.ParaL
+          content="And it was then - in the most profound depths of his hopeless melancholy - that Ron had one of them epiphany things."
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="You know, like in the old days."
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="For Ron suddenly realised that he was not alone. Not alone!"
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="Thousands - millions! - of innocent people were living their lives at the terrible risk of an unexpected toilet blockage."
+          color="var(--defaultFontColor)"
+        />
+
+        <Typography.ParaL
+          content="And that he could help."
+          color="var(--defaultFontColor)"
+        />
+
+        <Spacer />
+
+        <Typography.ParaC
+          content="Saving Humanity"
+          color="var(--defaultLight)"
+          fontWeight="900"
+        />
+
+        <Typography.ParaL
+          content="In that moment, Ron decided to devote his life to saving humanity from blocked toilets."
           color="var(--defaultFontColor)"
         />
 
@@ -84,23 +211,23 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="'Dave!', he said, 'Dave! I've got an idea.'"
+          content="'Dave!', he said, 'Dave! I've got an idea!'"
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="And Fat Slob Plumbing was born. The rest is history."
+          content="Fat Slob Plumbing was born."
           color="var(--defaultFontColor)"
           fontWeight="700"
         />
 
-        {/* {employees.map(({ id, ...other }) => {
-          return (
-            <div className="col-8" key={id}>
-              {other.title}
-            </div>
-          );
-        })} */}
+        <Typography.ParaL
+          content="The rest is history."
+          color="var(--defaultFontColor)"
+          fontWeight="700"
+        />
+
+      <Spacer />
       </section>
 
       <style jsx>{`
