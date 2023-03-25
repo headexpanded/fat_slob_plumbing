@@ -120,11 +120,10 @@ button.calendarButton {
 @media screen and (min-width: 640px) {
   div ~ p {
     font-size: 1.5rem;
-    font-weight: 500;
     display: flex;
     flex-direction: row;
     justify-content: left;
-    max-width: clamp(70%, 80vw, 60%);
+    max-width: clamp(70%, 80vw, 90%);
   }
   section[class$="Section"] .heroButtons {
     display: flex;
