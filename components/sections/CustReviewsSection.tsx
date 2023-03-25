@@ -46,7 +46,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         .custReviewCards {
           width: 90vw;
           display: grid;
-          gap: 2rem;
+          gap: 5rem;
           grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
           justify-content: space-evenly;
           margin-bottom: 4rem;
