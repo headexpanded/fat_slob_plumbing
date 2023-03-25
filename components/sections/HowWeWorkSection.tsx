@@ -43,7 +43,7 @@ export const HowWeWorkSection = () => {
         <Typography.ParaL
           content="At your request, we bring our own reading material."
           color="var(--defaultLight)"
-          fontWeight="700"
+          fontWeight="900"
         />
         <Typography.ParaL
           content="Don't wait - book us today!"
