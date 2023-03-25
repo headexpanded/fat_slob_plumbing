@@ -4,7 +4,7 @@
 
 I'm a lucky guy!
 
-As a solo free-lance web developer, it's always tough to get hired by a world-class business!
+As a solo freelance dev, it's not easy to get hired by a world-class business!
 
 That's why I'm honoured to have been hired by [**Fat Slob Plumbing**](https://fat-slob-plumbing.vercel.app/) to build their website!
 
