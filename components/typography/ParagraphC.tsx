@@ -11,9 +11,9 @@ type ParagraphCProps = {
 export const ParagraphC = ({ content, color, fontSize, fontWeight }: ParagraphCProps) => {
   return (
     <>
-      <h2>{content}</h2>
+      <span>{content}</span>
       <style jsx>{`
-        h2 {
+        span {
           color: ${color ?? ""};
           font-size: ${fontSize ?? "2rem"};
           font-weight: ${fontWeight ?? "700"};
