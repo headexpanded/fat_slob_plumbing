@@ -33,7 +33,7 @@ export const CustReviewCard = ({
           background-color: var(--defaultLight);
           border-radius: 4px;
           padding: 0.5rem;
-          box-shadow: 1px 0px 10px 0px var(--defaultDark);
+          box-shadow: var(--boxShadow);
         }
         @media screen and (min-width: 640px) {
           .custReviewCard {
@@ -74,7 +74,7 @@ export const CustReviewCard = ({
           border: 2px solid var(--defaultLight);
           border-radius: 50%;
           filter: grayscale(90%) contrast(90%) brightness(90%);
-          height: 80px;
+          height: 140px;
           aspect-ratio: 1/1;
         }
       `}</style>
