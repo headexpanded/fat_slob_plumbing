@@ -32,22 +32,22 @@ export const HeroSection = () => {
             <Typography.ParaL
               content="Imagine it."
               color="var(--defaultLight)"
-              fontWeight="700"
+              fontWeight="900"
             />
             <Typography.ParaL
               content="Friends over - & your lav blocks up."
               color="var(--defaultLight)"
-              fontWeight="700"
+              fontWeight="900"
             />
             <Typography.ParaL
               content="You don't need that."
               color="var(--defaultLight)"
-              fontWeight="700"
+              fontWeight="900"
             />
             <Typography.ParaL
               content="So hire us."
               color="var(--defaultLight)"
-              fontWeight="700"
+              fontWeight="900"
             />
             <Typography.ParaL
               content="Fat Slob Plumbing."
@@ -57,12 +57,12 @@ export const HeroSection = () => {
             <Typography.ParaL
               content="The U.K.'s number 2 toilet testing service."
               color="var(--defaultLight)"
-              fontWeight="700"
+              fontWeight="900"
             />
             <Typography.ParaL
               content="We'll give it a good stress test."
               color="var(--defaultLight)"
-              fontWeight="700"
+              fontWeight="900"
             />
           </div>
           <div className="heroFatSlobs">
@@ -73,16 +73,6 @@ export const HeroSection = () => {
               src={staffPhoto}
               priority
             />
-
-            {/* <div className="custReviewCards">
-              {data?.map(({ id, ...other }) => {
-                return (
-                  <div key={id}>
-                    <Cards.CustReviewCard {...other} />
-                  </div>
-                );
-              })}
-            </div> */}
           </div>
         </div>
         <Spacer />
@@ -134,7 +124,6 @@ export const HeroSection = () => {
         .heroStrap {
           display: flex;
           align-items: baseline;
-          /* align-items: baseline;
           display: flex;
           justify-content: space-evenly;
           margin-top: 1rem;
@@ -144,14 +133,12 @@ export const HeroSection = () => {
           } */
         }
         .heroBlock {
-          //border: 2px solid red;
           display: flex;
           flex-direction: column;
           place-items: center;
         }
 
         .heroIntroText {
-          //border: 2px solid yellow;
           max-width: 90%;
         }
 
@@ -164,7 +151,6 @@ export const HeroSection = () => {
         .calendarBlocked {
           align-items: center;
           background: red;
-          // border: 2px solid var(--defaultDark);
           box-shadow: var(--boxshadow);
           display: flex;
           flex-direction: column;
@@ -174,7 +160,6 @@ export const HeroSection = () => {
           width: 100%;
         }
         .heroFatSlobs {
-          //border: 1px solid white;
           display: none;
         }
 
@@ -210,7 +195,6 @@ export const HeroSection = () => {
             margin-right: 60px;
             margin-top: -80px;
             overflow: hidden;
-
             z-index: 1;
           }
 
