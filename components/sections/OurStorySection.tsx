@@ -39,10 +39,14 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="He wasn't expecting much. After all, it hadn't been a big night, just the seven pints and two kebabs."
+          content="He wasn't expecting much."
           color="var(--defaultFontColor)"
         />
 
+        <Typography.ParaL
+          content="After all, it hadn't been a big night, just the seven pints and two kebabs."
+          color="var(--defaultFontColor)"
+        />
         <Spacer />
 
         <Typography.ParaC
@@ -183,7 +187,7 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="Ron realised that thousands - millions! - of innocent people must also fear the terrible risk of an unexpected toilet blockage."
+          content="Ron realised that thousands - millions! - of other people must also fear the terrible risk of an unexpected toilet blockage."
           color="var(--defaultFontColor)"
         />
 
@@ -227,7 +231,7 @@ export const OurStorySection = () => {
           fontWeight="700"
         />
 
-      <Spacer />
+        <Spacer />
       </section>
 
       <style jsx>{`
