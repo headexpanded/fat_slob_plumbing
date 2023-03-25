@@ -1,6 +1,6 @@
 # Fat Slob Plumbing
 
-<p align="center"><img width="auto" height="320px" alt="Fat Slob Plumbing staff photo" src="./assets/img/staffPhoto-sm.png"/></p>
+<p align="center"><img width="auto" height="400px" alt="Fat Slob Plumbing staff photo" src="./assets/img/staffPhoto-sm.png"/></p>
 
 I'm a lucky guy! As a solo free-lance web developer, it's always tough to get hired by a world-class business!
 
