@@ -15,7 +15,7 @@
   /* Base Font Size */
   font-size: 16px;
 
-  --boxshadow: 1px 1px 8px 1px var(--defaultDark);
+  --boxShadow: 1px 1px 8px 1px var(--defaultDark);
   --borderRadius: 0.25rem;
 }
 
@@ -98,7 +98,7 @@ button {
 
   border: none;
   border-radius: var(--borderRadius);
-  box-shadow: var(--boxshadow);
+  box-shadow: var(--boxShadow);
   color: var(--defaultLight);
   font-size: 1rem;
   font-weight: 900;
