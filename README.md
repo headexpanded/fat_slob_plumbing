@@ -8,17 +8,20 @@ That's why I'm honoured to have been hired by [**Fat Slob Plumbing**](https://fa
 
 Ron & Dave are on a mission to save humanity from the horror of a blocked toilet.
 
-Meanwhile, I'm on a mission to leverage TypeScript, Next.js, React, HyGraph, and **pure CSS** to produce the best website possible for Fat Slob Plumbing.
+Meanwhile, I'm on a mission to leverage TypeScript, Next.js, React, HyGraph, and pure CSS to produce the best website possible for Fat Slob Plumbing.
 
 Business is booming - they're franchising!
 
 ## React
 
-- I intend to make just about everything a React component, including cards, paragraphs, animations, spacers, and more. Plenty more to do on that.
+- Just about everything's a React component
+- HTML sections, cards, typography, even spacers
 
 ## Pure CSS
 
-- Why highlight the pure CSS? Because I'm proud of it! Take a look at the responsive design, the functions, and globals.css if you're interested. I've tried hard to write _cascading_ styles which respect HMTL semantics.
+- responsive design
+- _cascading_ styles, which respect HMTL semantics
+
 
 ## TypeScript
 
