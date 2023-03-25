@@ -183,12 +183,12 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="Thousands - millions! - of innocent people were living their lives at the terrible risk of an unexpected toilet blockage."
+          content="Ron realised that thousands - millions! - of innocent people must also fear the terrible risk of an unexpected toilet blockage."
           color="var(--defaultFontColor)"
         />
 
         <Typography.ParaL
-          content="And that he could help."
+          content="And Ron knew that he could help."
           color="var(--defaultFontColor)"
         />
 
@@ -201,7 +201,7 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="In that moment, Ron decided to devote his life to saving humanity from blocked toilets."
+          content="In that moment, Ron decided to devote his life to saving humanity from the horror of a blocked toilet."
           color="var(--defaultFontColor)"
         />
 
