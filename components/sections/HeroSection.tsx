@@ -186,11 +186,8 @@ export const HeroSection = () => {
         @media screen and (min-width: 1028px) {
           .heroIntroText {
             margin-left: 40px;
-            width: 50%;
           }
           .heroFatSlobs {
-            display: inline-block;
-            width: 50%;
             height: 440px;
             margin-right: 60px;
             margin-top: -80px;
