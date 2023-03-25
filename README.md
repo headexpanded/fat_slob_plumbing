@@ -22,15 +22,14 @@ Business is booming - they're franchising!
 
 ## TypeScript
 
-- The goal is no anys at all. Lots to do.
+- strict: true
+- noImplicitAnys: true 
 
 # To Do:
 
 - bookings with "Trish"
 
-- Franchise section
-
-- About Us section: HyGraph, photos, card, text
+- Maps of available franchises
 
 - e-commerce: Fat Slob Plumbing t-shirts
 
