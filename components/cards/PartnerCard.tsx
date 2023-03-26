@@ -29,7 +29,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           border: 1px solid var(--defaultLight);
           align-items: center;
           justify-content: center;
-          box-shadow: var(--boxshadow);
+          box-shadow: var(--boxShadow);
           min-height: 340px;
           width: 320px;
         }
