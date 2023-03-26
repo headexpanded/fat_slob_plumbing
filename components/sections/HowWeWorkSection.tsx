@@ -64,7 +64,7 @@ export const HowWeWorkSection = () => {
         />
 
         <Typography.ParaL
-          content="Because you can't wait for results."
+          content="Because you can't wait for results!"
           width=""
         />
         <Typography.ParaL
