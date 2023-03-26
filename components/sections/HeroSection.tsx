@@ -96,7 +96,7 @@ export const HeroSection = () => {
             </div>
           ) : (
             <div className="calendarBlocked">
-              <Typography.ParaC content="Sorry mate, the calendar's completely blocked up." />
+              <Typography.ParaC content="Sorry mate. The calendar's completely blocked up." />
               <button
                 className="calendarButton"
                 onClick={() => setShowBookingsDiv(false)}
