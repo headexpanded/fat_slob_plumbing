@@ -13,7 +13,7 @@ export const FranchisesSection = () => {
         <Spacer />
         <div className="franchisesTitle">
           <Typography.SectionTitle
-            content="Franchises"
+            content="Buy A Franchise"
             color="var(--defaultLight)"
           />
         </div>
@@ -79,7 +79,7 @@ export const FranchisesSection = () => {
 
         <div className="phoneTrish">
           <Typography.SubHeader
-            content="Trish is waiting for your call!"
+            content="Contact Trish, our friendly sales rep!"
             color="var(--defaultLight)"
           />
         </div>
@@ -120,7 +120,7 @@ export const FranchisesSection = () => {
           }
           .phoneTrish {
             display: flex;
-            width: clamp(240px, 60vw + 36px, 600px);
+            width: clamp(260px, 88vw + 20px, 680px);
           }
           .franchiseText {
             width: 50%;
