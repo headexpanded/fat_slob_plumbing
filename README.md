@@ -4,7 +4,7 @@
 
 I'm a lucky guy!
 
-As a solo freelance dev, it's not easy to get hired by a world-class business!
+As a solo freelancer, it's not easy to get hired by a world-class business!
 
 That's why I'm **honoured** to have been hired by [**Fat Slob Plumbing**](https://fat-slob-plumbing.vercel.app/) to build their website.
 
@@ -12,7 +12,9 @@ Ron & Dave are on a mission to save humanity from the horror of a blocked toilet
 
 Meanwhile, I'm on a mission to leverage TypeScript, Next.js, React, GraphQL, and pure CSS to produce the best website possible for Fat Slob Plumbing.
 
-Business is booming - they're franchising!
+It's a pity my graphics card is a piece of crap. The colour palette looks different for most people than it does for me.
+
+Fortunately Ron and Dave don't mind about that - business is booming! They're franchising!
 
 ## React
 
