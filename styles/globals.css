@@ -16,7 +16,7 @@
   font-size: 16px;
 
   --boxShadow: 1px 1px  48px 1px var(--shadow);
-  --borderRadius: 0.25rem;
+  --borderRadius: 2.5rem;
 }
 
 @supports (font-variation-settings: normal) {
@@ -92,14 +92,14 @@ div ~ p {
 button {
   background-image: linear-gradient(
     15deg,
-    hsl(120, 100%, 40%) 1%,
-    hsl(120, 100%, 50%) 100%
+    hsl(120, 43%, 99%) 1%,
+    hsl(120, 100%, 98%) 100%
   );
 
   border: none;
   border-radius: var(--borderRadius);
-  box-shadow: var(--boxShadow);
-  color: var(--defaultLight);
+  box-shadow: inherit;
+  color: var(--defaultDark);
   font-size: 1rem;
   font-weight: 900;
   width: min(45vw, 240px);
