@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
 import trishPhoto from "../../assets/img/trishPhoto.png";
+import { Cards } from "../cards";
+import { ServicesCard } from "../cards/ServicesCard";
 
 type FranchisesSectionProps = {};
 
@@ -84,6 +86,7 @@ export const FranchisesSection = () => {
           />
         </div>
         <Spacer />
+        {/* <div className="mapImage"><Cards.ServicesCard title= "London" price = "23,000"/></div> */}
       </section>
 
       <style jsx>{`
