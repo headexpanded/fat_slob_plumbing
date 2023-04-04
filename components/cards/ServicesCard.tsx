@@ -9,6 +9,34 @@ type ServicesCardProps = {
 // define ServicesCard component
 export const ServicesCard = ({ title, price }: ServicesCardProps) => {
   const pound = "\u00a3";
+  const apiKey = "qMK2y5AV5ye1BPFQqX0REQlwGYQ76yMf";
+  const location = "Manchester";
+  let mapImage;
+
+  /* const mapUrl =
+    "https://api.os.uk/maps/raster/v1/wmts?" +
+    "request=GetTile&service=WMTS&version=1.0.0&layer=Light_3857&" +
+    "style=default&format=image/png&tileMatrixSet=EPSG:3857&" +
+    "tileMatrix={z}&tileRow={y}&tileCol={x}&" +
+    "apiKey=qMK2y5AV5ye1BPFQqX0REQlwGYQ76yMf";
+
+  mapImage = <img src={mapUrl} alt="Map of Manchester" />; */
+
+   fetch(
+    "https://api.os.uk/maps/raster/v1/wmts?" +
+    "request=GetCapabilities&service=WMTS&version=2.0.0&layer=Light_3857&" +
+    "style=default&format=image/png&tileMatrixSet=EPSG:3857&" +
+    "tileMatrix=2&tileRow=1&tileCol=2" +
+    "&key=qMK2y5AV5ye1BPFQqX0REQlwGYQ76yMf"
+  )
+    .then((resp) => resp.json())
+    .then((data) => {
+      //const mapUrl = `https://api.os.uk/maps/raster/v1/zxy/Outdoor_27700/{z}/{x}/{y}.png?key=${apiKey}&height=600&width=800&layer=base`;
+      mapImage = <img src="" alt="Map of Manchester" />;
+      console.log(data.results);
+    });
+  console.log("Hello"); 
+
   return (
     <>
       <div className="servicesCard">
@@ -24,13 +52,18 @@ export const ServicesCard = ({ title, price }: ServicesCardProps) => {
         <div>
           <div>
             <div>
-              <Typography.SubHeader content="only" color="var(--richBrown)" />
+              <Typography.SubHeader
+                content="only"
+                color="var(--defaultLight)"
+              />
             </div>
 
-            <Typography.SectionTitle
+            <div className="mapImage">{mapImage}</div>
+
+            {/* <Typography.SectionTitle
               content={price}
-              color="var(--solidBrown)"
-            />
+              color="var(--defaultLight)"
+            /> */}
           </div>
         </div>
         <div>
@@ -38,8 +71,8 @@ export const ServicesCard = ({ title, price }: ServicesCardProps) => {
             <div className="col resLink p-0 m-0">
               <a href="#">
                 <Typography.SubHeader
-                  content="Make Your Reservation"
-                  color="var(--solidBrown)"
+                  content="{{location}}"
+                  color="var(--defaultLight)"
                 />
               </a>
             </div>
@@ -48,15 +81,15 @@ export const ServicesCard = ({ title, price }: ServicesCardProps) => {
       </div>
       <style jsx>{`
             .servicesCard{
-                background-color:var(--hintOfBrown);
-                // border: 2px solid var(--solidBrown);
+                background-color:var(--defaultDark);
+                // border: 2px solid var(--defaultLight);
                 border-radius: 10px;
-                min-height: 400px;
+                height: 300px;
                 transition: color 0.15s ease, border-color 0.15s ease;
-                filter: drop-shadow(2px 2px 4px var(--solidBrown));
+                filter: drop-shadow(2px 2px 4px var(--defaultLight));
             }
             .servicesCard h2, p {
-                color: var(--solidBrown);
+                color: var(--defaultLight);
                 padding: 6px;
                 
             }
@@ -89,7 +122,7 @@ export const ServicesCard = ({ title, price }: ServicesCardProps) => {
             }
 
             .resLink a:hover {
-                color: var(--lemonCurry);
+                color: var(--defaultLight);
                 transform: scale(1.25);
             }
 
