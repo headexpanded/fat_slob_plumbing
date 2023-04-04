@@ -95,7 +95,7 @@ export const HeroSection = () => {
               </a>
             </div>
           ) : (
-            <div className="calendarBlocked">
+            <div className="calendarBlocked animated fadeInDown">
               <Typography.ParaC content="Sorry mate. The calendar's completely blocked up." />
               <button
                 className="calendarButton"
