@@ -10,7 +10,13 @@ That's why I'm **honoured** to have been hired by [**Fat Slob Plumbing**](https:
 
 Ron & Dave are on a mission to save humanity from the horror of a blocked toilet.
 
-Meanwhile, I'm on a mission to leverage TypeScript, Next.js, React, GraphQL, and pure CSS to produce the best website possible for Fat Slob Plumbing.
+Meanwhile, I'm on a mission to leverage:
+- TypeScript
+- Next.js/React
+- GraphQL, and
+- pure CSS
+
+to produce the best website possible for Fat Slob Plumbing.
 
 It's a pity my graphics card is a piece of crap. The colour palette looks different for most people than it does for me.
 
