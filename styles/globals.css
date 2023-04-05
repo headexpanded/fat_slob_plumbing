@@ -11,7 +11,7 @@
   --shadow: hsla(236, 95%, 60%, 0.75);
 
   /* Font Family */
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", Tahoma, Verdana, sans-serif;
   /* Base Font Size */
   font-size: 16px;
 
@@ -21,7 +21,7 @@
 
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: "Inter var", sans-serif;
+    font-family: "Inter var", Tahoma, Verdana, sans-serif;
   }
 }
 
