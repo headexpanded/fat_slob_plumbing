@@ -3,15 +3,7 @@ import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
 
 export const OurStorySection = () => {
-  const employees = [
-    {
-      id: "1",
-      title: "Ron",
-      content: "",
-    },
-    { id: "2", title: "Dave", content: "" },
-    { id: "3", title: "Trish", content: "" },
-  ];
+  
   return (
     <>
       <section id="ourStorySection" className="ourStorySection">
@@ -52,6 +44,7 @@ export const OurStorySection = () => {
         <Typography.ParaC
           content="Horror in the Morning"
           color="var(--defaultLight)"
+          fontSize="3rem"
           fontWeight="900"
         />
 
@@ -75,6 +68,7 @@ export const OurStorySection = () => {
         <Typography.ParaC
           content="Sheer Panic"
           color="var(--defaultLight)"
+          fontSize="3rem"
           fontWeight="900"
         />
 
@@ -98,6 +92,7 @@ export const OurStorySection = () => {
         <Typography.ParaC
           content="Disaster. Shame. Ruin."
           color="var(--defaultLight)"
+          fontSize="3rem"
           fontWeight="900"
         />
         <Typography.ParaL
@@ -130,6 +125,7 @@ export const OurStorySection = () => {
         <Typography.ParaC
           content="Hopeless Despair"
           color="var(--defaultLight)"
+          fontSize="3rem"
           fontWeight="900"
         />
 
@@ -168,6 +164,7 @@ export const OurStorySection = () => {
         <Typography.ParaC
           content="A Light From Above."
           color="var(--defaultLight)"
+          fontSize="3rem"
           fontWeight="900"
         />
 
@@ -201,6 +198,7 @@ export const OurStorySection = () => {
         <Typography.ParaC
           content="Saving Humanity"
           color="var(--defaultLight)"
+          fontSize="3rem"
           fontWeight="900"
         />
 
