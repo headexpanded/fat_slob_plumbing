@@ -17,6 +17,7 @@ export const ParagraphC = ({ content, color, fontSize, fontWeight }: ParagraphCP
           color: ${color ?? ""};
           font-size: ${fontSize ?? "2rem"};
           font-weight: ${fontWeight ?? "700"};
+          padding-top: 0.8rem;
         }
       `}</style>
     </>
