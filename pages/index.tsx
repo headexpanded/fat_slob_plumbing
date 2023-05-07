@@ -1,14 +1,55 @@
-
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import { gql, request } from "graphql-request";
-import { CustomerReview } from "../components/sections/CustReviewsSection";
-import { Partner } from "../components/sections/PartnersSection";
-import { Section } from "../components/sections";
+import Head from 'next/head';
+import { gql, request } from 'graphql-request';
+import { CustomerReview } from '../components/sections/CustReviewsSection';
+import { Partner } from '../components/sections/PartnersSection';
+import { Section } from '../components/sections';
 
 type HomeProps = {
   customerReviews: CustomerReview[];
   partnersData: Partner[];
+};
+
+export const metadata = {
+  title: { default: 'Fat Slob Plumbing' },
+  description:
+    "Fat Slob Plumbing stress tests toilets. We're the UK's number 2 toilet testing service! Book Fat Slob Plumbing to stress test YOUR toilet!",
+  keywords: [
+    'toilet blocked',
+    'blocked toilet',
+    'blocked toilet repair',
+    'blocked toilet replacement',
+    'blocked toilet service',
+    'blocked toilet repair service',
+    'blocked toilet replacement service',
+    'blocked toilet service repair',
+    'blocked toilet repair service repair',
+    'blocked toilet replacement service repair',
+    'blocked toilet service repair',
+    'blocked lav',
+    'blocked lav repair',
+    'blocked lav replacement',
+    'lav blocked',
+    'lav blocked repair',
+    'toilet emergency',
+    'toilet emergency repair',
+    'toilet emergency replacement',
+    'toilet emergency service',
+    'toilet emergency repair service',
+    'toilet emergency replacement service',
+    'toilet emergency service repair',
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 function Home({ customerReviews, partnersData }: HomeProps) {
@@ -70,7 +111,6 @@ function Home({ customerReviews, partnersData }: HomeProps) {
   );
 }
 
-
 export default Home;
 
 export async function getStaticProps() {
@@ -97,12 +137,12 @@ export async function getStaticProps() {
   `;
 
   const custReviewData = await request(
-    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
+    'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master',
     custReviewQuery
   );
 
   const partnersData = await request(
-    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
+    'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master',
     partnersQuery
   );
 
