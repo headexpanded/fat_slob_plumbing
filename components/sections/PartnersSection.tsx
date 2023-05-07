@@ -44,7 +44,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           display: grid;
           gap: 2rem;
           grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-          justify-content: space-between;
+          justify-content: center;
           margin-bottom: 4rem;
           place-items: center;
         }
@@ -53,6 +53,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           .partnerCards {
             grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
             flex-grow: 1;
+            
           }
         }
       `}</style>

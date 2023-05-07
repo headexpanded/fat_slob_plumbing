@@ -11,17 +11,17 @@
   --shadow: hsla(236, 95%, 60%, 0.75);
 
   /* Font Family */
-  font-family: "Inter", Tahoma, Verdana, sans-serif;
+  font-family: 'Inter', Tahoma, Verdana, sans-serif;
   /* Base Font Size */
   font-size: 16px;
 
-  --boxShadow: 1px 1px  48px 1px var(--shadow);
+  --boxShadow: 1px 1px 48px 1px var(--shadow);
   --borderRadius: 2.5rem;
 }
 
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: "Inter var", Tahoma, Verdana, sans-serif;
+    font-family: 'Inter var', Tahoma, Verdana, sans-serif;
   }
 }
 
@@ -38,23 +38,25 @@ html {
 
 body {
   /* background-color: white; */
-  background-image: linear-gradient(
+
+  background: linear-gradient(180deg, #53b1fd 0%, #69b4c7 100%);
+  /* background: linear-gradient(
     170deg,
     hsl(239, 93%, 83%) 1%,
     hsl(238, 100%, 80%) 20%
-  );
-  font-family: "Inter var", sans-serif;
+  ); */
+  font-family: 'Inter var', sans-serif;
 }
 
 h1 {
   display: inline-block;
   font-size: clamp(2rem, 10vw, 80px);
-  font-family: "Inter var", sans-serif;
+  font-family: 'Inter var', sans-serif;
   font-weight: 900;
   letter-spacing: -0.1rem;
   margin: 0px;
   text-align: left;
-  translate: "no";
+  translate: 'no';
 }
 
 h2 {
@@ -65,11 +67,11 @@ h2 {
   letter-spacing: -0.1rem;
   margin: 0px;
   text-align: center;
-  translate: "no";
+  translate: 'no';
 }
 
 /* Set defaults for html <section> tags */
-section[class$="Section"] {
+section[class$='Section'] {
   color: var(--defaultDark);
   display: flex;
   flex-direction: column;
@@ -77,7 +79,7 @@ section[class$="Section"] {
 }
 
 /* Override h1 for Hero section */
-section[class$="Section"] h1:not(.heroSection h1) {
+section[class$='Section'] h1:not(.heroSection h1) {
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -86,7 +88,7 @@ div ~ p {
   font-weight: 800;
   margin: 0 auto;
   padding: 1rem 4rem;
-  translate: "no";
+  translate: 'no';
 }
 
 button {
@@ -125,7 +127,7 @@ button.calendarButton {
     justify-content: left;
     max-width: clamp(70%, 80vw, 90%);
   }
-  section[class$="Section"] .heroButtons {
+  section[class$='Section'] .heroButtons {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -137,24 +139,24 @@ button.calendarButton {
 }
 
 .animated {
-    -webkit-animation-duration: 0.3s;
-    animation-duration: 0.3s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 .fadeInDown {
-    -webkit-animation-name: fadeInDown;
-    animation-name: fadeInDown;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
 }
 
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
