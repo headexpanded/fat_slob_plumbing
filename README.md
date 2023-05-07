@@ -18,7 +18,7 @@ Meanwhile, I'm on a mission to leverage:
 
 to produce the best website possible for Fat Slob Plumbing.
 
-It's a pity my graphics card is a piece of crap. The colour palette looks different for most people than it does for me.
+It's a pity my graphics card is broken. The colour palette looks different for most people than it does for me.
 
 Fortunately Ron and Dave don't mind about that - business is booming! They're franchising!
 

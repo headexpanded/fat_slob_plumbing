@@ -1,8 +1,12 @@
 // define How We Work Section
+import { Cards } from "../cards";
 import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
 
-type HowWeWorkSectionProps = {};
+export type HowWeWorkBlurb = {
+  title: string;
+  desc: string;
+};
 
 export const HowWeWorkSection = () => {
   return (
@@ -13,69 +17,104 @@ export const HowWeWorkSection = () => {
           content="How We Work"
           color="var(--defaultDark)"
         />
-        <Typography.SubHeader
-          content="Dedicated Experts"
-          color="var(--defaultLight)"
-        />
-        <Typography.ParaL
-          content=" Our professional toilet testers visit your home."
-          width=""
-        />
-        <Typography.ParaL
-          content="By the time we
-                          leave, you'll know if your
-                          toilet can take it - or not!"
-          width=""
-        />
+        <div className="howWeWorkBlurb">
+          <div className="howWeWorkSingleBlurbWrapper animated fadeInDown">
+            <div className="howWeWorkSubHeader">
+              <Typography.SubHeader
+                content="Dedicated Experts"
+                color="var(--defaultLight)"
+              />
+            </div>
+            <div className="howWeWorkDesc">
+              <Typography.ParaC
+                content=" Our professional toilet testers visit your home."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+              <Typography.ParaC
+                content="By the time we
+                                leave, you'll know if your
+                                toilet can take it - or not!"
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+            </div>
+          </div>
+          <Spacer />
+          <div className="howWeWorkSingleBlurbWrapper animated fadeInDown">
+            <div className="howWeWorkSubHeader">
+              <Typography.SubHeader
+                content="Regular Performance"
+                color="var(--defaultLight)"
+              />
+            </div>
+            <div className="howWeWorkDesc">
+              <Typography.ParaC
+                content="Every day, we ingest a special blend of food and drink."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+              <Typography.ParaC
+                content="Curries. Kebabs. Lager. Full English."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
 
+              <Typography.ParaC
+                content="And so on."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+
+              <Typography.ParaC
+                content="This ensures regular performance."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+            </div>
+          </div>
+          <Spacer />
+          <div className="howWeWorkSingleBlurbWrapper animated fadeInDown">
+            <div className="howWeWorkSubHeader">
+              <Typography.SubHeader
+                content="Fast Results"
+                color="var(--defaultLight)"
+              />
+            </div>
+            <div className="howWeWorkDesc">
+              <Typography.ParaC
+                content="No waiting around."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+              <Typography.ParaC
+                content="Each job starts with coffee & a few cigarettes."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+              <Typography.ParaC
+                content="Even prune juice sometimes."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+              <Typography.ParaC
+                content="Because you can't wait for results!"
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+              <Typography.ParaC
+                content="And we can't wait to get started."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+            </div>
+          </div>
+        </div>
         <Spacer />
         <Typography.SubHeader
-          content="Regular Performance"
-          color="var(--defaultLight)"
-        />
-        <Typography.ParaL
-          content="Every day, we ingest a special blend of food and drink."
-          width=""
-        />
-        <Typography.ParaL
-          content="Curries. Kebabs. Lager. Full English. And so on."
-          width=""
-        />
-        <Typography.ParaL
-          content="This ensures regular performance."
-          width=""
-        />
-        <Spacer />
-        <Typography.SubHeader
-          content="Fast Results"
-          color="var(--defaultLight)"
-        />
-
-        <Typography.ParaL content="No waiting around." width="" />
-
-        <Typography.ParaL
-          content="Each job starts with coffee & a few cigarettes."
-          width=""
-        />
-
-        <Typography.ParaL
-          content="Even prune juice sometimes."
-          width=""
-        />
-
-        <Typography.ParaL
-          content="Because you can't wait for results!"
-          width=""
-        />
-        <Typography.ParaL
-          content="And we can't wait to get started."
-          width=""
-        />
-        <Typography.ParaL
           content="At your request, we bring our own reading material."
           color="var(--defaultLight)"
-          width=""
-          fontWeight="900"
+          
         />
         {/* <Typography.ParaL content="Don't wait - book us today!" />
         <Typography.ParaL content="Or sign up for a monthly plan." /> */}
@@ -87,10 +126,26 @@ export const HowWeWorkSection = () => {
       </section>
 
       <style jsx>{`
-        /* .howWeWorkText {
+        .howWeWorkSingleBlurbWrapper {
+          //border: yellow solid 1px;
+          margin: 0 auto;
           display: flex;
-          justify-content: space-around;
-        } */
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .howWeWorkSubHeader h2 {
+          text-align: center;
+        }
+
+        .howWeWorkDesc {
+          //border: red 1px solid;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+        }
       `}</style>
     </>
   );
