@@ -55,13 +55,25 @@ export const HowWeWorkSection = () => {
                 fontWeight="700"
               />
               <Typography.ParaC
-                content="Curries. Kebabs. Lager. Full English."
+                content="Curries."
                 fontSize="1.5rem"
                 fontWeight="700"
               />
 
               <Typography.ParaC
-                content="And so on."
+                content="Kebabs."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+
+              <Typography.ParaC
+                content="Lager."
+                fontSize="1.5rem"
+                fontWeight="700"
+              />
+
+              <Typography.ParaC
+                content="Full English."
                 fontSize="1.5rem"
                 fontWeight="700"
               />
@@ -114,7 +126,6 @@ export const HowWeWorkSection = () => {
         <Typography.SubHeader
           content="At your request, we bring our own reading material."
           color="var(--defaultLight)"
-          
         />
         {/* <Typography.ParaL content="Don't wait - book us today!" />
         <Typography.ParaL content="Or sign up for a monthly plan." /> */}
