@@ -96,7 +96,7 @@ export const HeroSection = () => {
             </div>
           ) : (
             <div className="calendarBlocked animated fadeInDown">
-              <Typography.ParaC content="Sorry mate. The calendar's completely blocked up." />
+              <Typography.ParaC content="Sorry mate. The calendar's completely blocked up." color='var(--defaultLight)' />
               <button
                 className="calendarButton"
                 onClick={() => setShowBookingsDiv(false)}

@@ -6,10 +6,7 @@ import { Typography } from "../typography";
 export const NavBar = () => {
   const [showSoldOut, setShowSoldOut] = useState(false);
 
-  const handleTShirtClick = () => {
-    setShowSoldOut(true);
-    setTimeout(() => setShowSoldOut(false), 3000);
-  };
+ 
   return (
     <>
       <section className="navBar" role="navigation">
@@ -19,20 +16,9 @@ export const NavBar = () => {
 
         <a href="#franchisesSection">Franchises</a>
 
-        <a href="#" onClick={handleTShirtClick}>
-          T-Shirts
-        </a>
-
         <a href="#partnersSection">Partners</a>
       </section>
-      {showSoldOut && (
-        <div className="soldOut">
-          <Typography.ParaC
-            content="Sorry, all sold out mate."
-            color="var(--defaultLight)"
-          />
-        </div>
-      )}
+      
       <style jsx>{`
         .navBar {
           align-items: center;
