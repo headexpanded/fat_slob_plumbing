@@ -103,7 +103,7 @@ export const FranchisesSection = () => {
 
         .trish,
         .phoneTrish {
-          display: none;
+          //display: none;
         }
 
         .franchiseText {
