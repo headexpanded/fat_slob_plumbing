@@ -90,7 +90,7 @@ export const OurStorySection = () => {
         />
 
         <Typography.ParaL
-          content="Thirdly, to use custom functions like min(), max(), calc(), and clamp() instead of media queries where it made sense to do so."
+          content="Thirdly, to use custom functions like min(), max(), calc(), and clamp() for the responsive design, instead of media queries (where it made sense to do so)."
           color="var(--defaultFontColor)"
         />
 
@@ -114,7 +114,6 @@ export const OurStorySection = () => {
         />
 
         <Spacer />
-
       </section>
 
       <style jsx>{`
