@@ -4,7 +4,6 @@ import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
 import Image from "next/image";
 import staffPhoto from "../../assets/img/staffPhoto.png";
-import { HeroTextAnimation } from "../animations/HeroTextAnimation";
 
 type HeroSectionProps = {};
 
@@ -15,8 +14,6 @@ export const HeroSection = () => {
       <section className="heroSection">
         <Spacer />
         <Typography.Title content="Fat Slob Plumbing" />
-
-        {/* <HeroTextAnimation></HeroTextAnimation> */}
 
         <div className="heroStrap">
           <Typography.SubHeader
@@ -159,7 +156,7 @@ export const HeroSection = () => {
           width: 100%;
         }
         .heroFatSlobs {
-          display: none;
+          //display: none;
         }
 
         @media screen and (min-width: 640px) {
