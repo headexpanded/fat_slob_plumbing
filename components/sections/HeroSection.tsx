@@ -124,6 +124,7 @@ export const HeroSection = () => {
           display: flex;
           justify-content: space-evenly;
           margin-top: 1rem;
+          margin-bottom: 1rem;
           width: clamp(240px, 60vw + 36px, 600px);
           .heroStrap p:last-child {
             // padding-right: 1rem;
