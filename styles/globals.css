@@ -37,14 +37,8 @@ html {
 }
 
 body {
-  /* background-color: white; */
 
   background: linear-gradient(180deg, #299cfa 0%, #69b4c7 100%);
-  /* background: linear-gradient(
-    170deg,
-    hsl(239, 93%, 83%) 1%,
-    hsl(238, 100%, 80%) 20%
-  ); */
   font-family: 'Inter var', sans-serif;
 }
 
