@@ -23,7 +23,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
       <style jsx>{`
         .partnerCard {
           background-color: var(--defaultLight);
-          border-radius: 4px;
+          border-radius: var(--borderRadius);
           display: flex;
           flex-direction: column;
           border: 1px solid var(--defaultLight);
@@ -42,7 +42,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
 
         @media screen and (min-width: 1028px){
           .partnerCard {
-            width: 480px;
+             width: 500px;
           }
         }
 
@@ -59,6 +59,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           filter: grayscale(100%);
           height: 320px;
           aspect-ratio: 1/1;
+          padding: 0px 20px;
         }
 
         .partnerDesc {

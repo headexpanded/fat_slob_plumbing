@@ -53,7 +53,13 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           .partnerCards {
             grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
             flex-grow: 1;
-            
+          }
+        }
+
+        @media screen and (min-width: 1669px) {
+          .partnerCards {
+            grid-template-columns: repeat(2, 1fr);
+            flex-grow: 1;
           }
         }
       `}</style>

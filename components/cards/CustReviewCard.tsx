@@ -31,13 +31,14 @@ export const CustReviewCard = ({
       <style jsx>{`
         .custReviewCard {
           background-color: var(--defaultLight);
-          border-radius: 4px;
+          border-radius: var(--borderRadius);
           padding: 0.5rem;
           box-shadow: var(--boxShadow);
+          width: 320px;
         }
         @media screen and (min-width: 640px) {
           .custReviewCard {
-            max-width: 520px;
+            width: 400px;
           }
         }
 

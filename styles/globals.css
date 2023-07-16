@@ -16,7 +16,7 @@
   font-size: 16px;
 
   --boxShadow: 1px 1px 48px 1px var(--shadow);
-  --borderRadius: 2.5rem;
+  --borderRadius: 4px;
 }
 
 @supports (font-variation-settings: normal) {
@@ -38,7 +38,7 @@ html {
 
 body {
 
-  background: linear-gradient(180deg, #299cfa 0%, #69b4c7 100%);
+  background: linear-gradient(180deg, #2385d6 0%, #69b4c7 100%);
   font-family: 'Inter var', sans-serif;
 }
 
