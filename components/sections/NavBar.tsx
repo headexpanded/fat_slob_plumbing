@@ -11,14 +11,11 @@ export const NavBar = () => {
     <>
       <section className="navBar" role="navigation">
         <a href="#">Home</a>
-
-        <a href="#ourStorySection">Our Story</a>
-
         <a href="#franchisesSection">Franchises</a>
-
         <a href="#partnersSection">Partners</a>
+        <a href="#ourStorySection">Our Story</a>
       </section>
-      
+
       <style jsx>{`
         .navBar {
           align-items: center;
@@ -48,7 +45,7 @@ export const NavBar = () => {
 
         .navBar > a:hover::after,
         .navBar > a:focus::after {
-          content: "";
+          content: '';
           height: 2px;
           background-color: var(--defaultLight);
         }
