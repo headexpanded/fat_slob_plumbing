@@ -9,7 +9,7 @@ type HomeProps = {
   partnersData: Partner[];
 };
 
-export const metadata = {
+/* export const metadata = {
   title: { default: 'Fat Slob Plumbing' },
   description:
     "Fat Slob Plumbing stress tests toilets. We're the UK's number 2 toilet testing service! Book Fat Slob Plumbing to stress test YOUR toilet!",
@@ -38,20 +38,9 @@ export const metadata = {
     'toilet emergency replacement service',
     'toilet emergency service repair',
   ],
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
+  
 };
-
+ */
 function Home({ customerReviews, partnersData }: HomeProps) {
   return (
     <div className="main">
@@ -63,10 +52,42 @@ function Home({ customerReviews, partnersData }: HomeProps) {
           content="Fat Slob Plumbing stress tests toilets. We're the UK's number 2 toilet testing service! Book Fat Slob Plumbing to stress test YOUR toilet!"
         />
         <meta property="og:title" content="Fat Slob Plumbing" />
+        <meta name="robots" content="all" />
+        <meta name="google" content="notranslate" />
         <meta
           property="og:description"
           content="The UK's number 2 toilet testing service."
         />
+        <meta
+          name="keywords"
+          content="
+    toilet blocked,
+    blocked toilet,
+    blocked toilet repair,
+    blocked toilet replacement,
+    blocked toilet service,
+    blocked toilet repair service,
+    blocked toilet replacement service,
+    blocked toilet service repair,
+    blocked toilet repair service repair,
+    blocked toilet replacement service repair,
+    blocked toilet service repair,
+    blocked lav,
+    blocked lav repair,
+    blocked lav replacement,
+    lav blocked,
+    lav blocked repair,
+    toilet emergency,
+    toilet emergency repair,
+    toilet emergency replacement,
+    toilet emergency service,
+    toilet emergency repair service,
+    toilet emergency replacement service,
+    toilet emergency service repair
+  "
+        />
+        <meta name="charset" content="utf-8" />
+
         <link rel="preconnect" href="https://rsms.me/" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="icon" href="/favicon.ico" />
@@ -89,7 +110,6 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       <Section.OurStory></Section.OurStory>
       {/* Footer */}
       <Section.Footer />
-      
     </div>
   );
 }
