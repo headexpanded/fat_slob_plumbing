@@ -9,6 +9,7 @@ import { SectionTitle } from "./SectionTitle";
 import { NavLink } from "./NavLink";
 import { HeroText } from "./HeroText";
 import { HeroTextEM } from "./HeroTextEM";
+import { FooterText } from './FooterText';
 
 export const Typography ={
     ParaL: ParagraphL,
@@ -18,6 +19,7 @@ export const Typography ={
     SectionTitle:SectionTitle,
     NavLink: NavLink,
     Hero: HeroText,
-    HeroEM: HeroTextEM
+    HeroEM: HeroTextEM,
+    FooterText: FooterText
 };
 
