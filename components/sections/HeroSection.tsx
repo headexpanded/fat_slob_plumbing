@@ -13,6 +13,7 @@ export const HeroSection = () => {
     <>
       <section className="heroSection">
         <Spacer />
+        <Spacer />
         <Typography.Title content="Fat Slob Plumbing" />
 
         <div className="heroStrap">
@@ -195,7 +196,7 @@ export const HeroSection = () => {
           .buttonWrapper {
             flex-direction: column;
             place-items: center;
-            z-index: +2;
+            
           }
         }
       `}</style>
