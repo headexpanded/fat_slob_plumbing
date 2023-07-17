@@ -1,12 +1,10 @@
 // define NavBar properties
 
-import { useState } from "react";
-import { Typography } from "../typography";
+
+import { Typography } from '../typography';
 
 export const NavBar = () => {
-  const [showSoldOut, setShowSoldOut] = useState(false);
 
- 
   return (
     <>
       <section className="navBar" role="navigation">
@@ -26,10 +24,13 @@ export const NavBar = () => {
           height: 2rem;
           justify-content: space-evenly;
           width: 100%;
+          background-color: var(--defaultLight);
+          position:fixed;
+          z-index: 2;
         }
 
         .navBar > a {
-          color: var(--defaultLight);
+          color: var(--defaultDark);
           text-decoration: none;
           cursor: pointer;
           text-transform: uppercase;
@@ -47,16 +48,7 @@ export const NavBar = () => {
         .navBar > a:focus::after {
           content: '';
           height: 2px;
-          background-color: var(--defaultLight);
-        }
-
-        .soldOut {
-          background: red;
-          box-shadow: var(--boxshadow);
-          display: flex;
-          justify-content: center;
-          padding: 1.5rem;
-          width: 100%;
+          background-color: var(--defaultDark);
         }
       `}</style>
     </>
