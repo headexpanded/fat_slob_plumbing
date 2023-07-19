@@ -3,6 +3,7 @@
 import { Cards } from "../cards";
 import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
+import { size } from '../../styles/breakpoints';
 
 export type Partner = {
   title: string;
@@ -49,14 +50,14 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           place-items: center;
         }
 
-        @media screen and (min-width: 640px) {
+        @media screen and (min-width: ${size.mobile}) {
           .partnerCards {
             grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
             flex-grow: 1;
           }
         }
 
-        @media screen and (min-width: 1669px) {
+        @media screen and (min-width: ${size.xl}) {
           .partnerCards {
             grid-template-columns: repeat(2, 1fr);
             flex-grow: 1;

@@ -4,6 +4,7 @@ import { Typography } from "../typography";
 import { Spacer } from "./Spacer";
 import Image from "next/image";
 import staffPhoto from "../../assets/img/staffPhoto.png";
+import { size } from '../../styles/breakpoints';
 
 type HeroSectionProps = {};
 
@@ -161,7 +162,7 @@ export const HeroSection = () => {
           //display: none;
         }
 
-        @media screen and (min-width: 640px) {
+        @media screen and (min-width: ${size.mobile}) {
           .heroBlock {
             flex-direction: row;
             justify-content: space-between;
@@ -181,7 +182,7 @@ export const HeroSection = () => {
           }
         }
 
-        @media screen and (min-width: 1028px) {
+        @media screen and (min-width: ${size.desktop}) {
           .heroIntroText {
             margin-left: 40px;
           }

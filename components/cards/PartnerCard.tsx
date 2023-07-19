@@ -1,3 +1,6 @@
+
+import { size } from '../../styles/breakpoints';
+
 // define PartnerCard properties
 
 type PartnerCardProps = {
@@ -34,13 +37,13 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           width: 320px;
         }
 
-         @media screen and (min-width: 640px) {
+         @media screen and (min-width: ${size.mobile}) {
           .partnerCard {
             width: 400px;
           }
         }
 
-        @media screen and (min-width: 1028px){
+        @media screen and (min-width: ${size.desktop}){
           .partnerCard {
              width: 500px;
           }

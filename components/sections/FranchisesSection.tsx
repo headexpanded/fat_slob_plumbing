@@ -1,10 +1,9 @@
 // define Franchises Section properties
-import Image from "next/image";
-import { Typography } from "../typography";
-import { Spacer } from "./Spacer";
-import trishPhoto from "../../assets/img/trishPhoto.png";
-import { Cards } from "../cards";
-import { ServicesCard } from "../cards/ServicesCard";
+import Image from 'next/image';
+import { Typography } from '../typography';
+import { Spacer } from './Spacer';
+import trishPhoto from '../../assets/img/trishPhoto.png';
+import { size } from '../../styles/breakpoints';
 
 type FranchisesSectionProps = {};
 
@@ -86,7 +85,7 @@ export const FranchisesSection = () => {
           />
         </div>
         <Spacer />
-        {/* <div className="mapImage"><Cards.ServicesCard title= "London" price = "23,000"/></div> */}
+         
       </section>
 
       <style jsx>{`
@@ -111,7 +110,7 @@ export const FranchisesSection = () => {
           max-width: 90%;
         }
 
-        @media screen and (min-width: 640px) {
+        @media screen and (min-width: ${size.mobile}) {
           .franchiseImageAndTextBlock {
             flex-direction: row;
             justify-content: space-between;
@@ -130,7 +129,7 @@ export const FranchisesSection = () => {
           }
         }
 
-        @media screen and (min-width: 1028px) {
+        @media screen and (min-width: ${size.desktop}) {
           .franchiseText {
           }
           .trish {

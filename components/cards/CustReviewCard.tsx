@@ -1,3 +1,6 @@
+
+import { size } from '../../styles/breakpoints';
+
 // define CustReviewCard properties
 type CustReviewCardProps = {
   review: string;
@@ -36,7 +39,7 @@ export const CustReviewCard = ({
           box-shadow: var(--boxShadow);
           width: 320px;
         }
-        @media screen and (min-width: 640px) {
+        @media screen and (min-width: ${size.mobile}) {
           .custReviewCard {
             width: 400px;
           }
