@@ -24,8 +24,6 @@ export const HeroSection = () => {
           />
         </div>
 
-       
-
         <div className="heroBlock">
           <div className="heroIntroText">
             <Typography.ParaL
@@ -95,7 +93,10 @@ export const HeroSection = () => {
             </div>
           ) : (
             <div className="calendarBlocked animated fadeInDown">
-              <Typography.ParaC content="Sorry mate. The calendar's completely blocked up." color='var(--defaultLight)' />
+              <Typography.ParaC
+                content="Sorry mate. The calendar's completely blocked up."
+                color="var(--defaultLight)"
+              />
               <button
                 className="calendarButton"
                 onClick={() => setShowBookingsDiv(false)}
@@ -108,7 +109,6 @@ export const HeroSection = () => {
 
         <Spacer />
         <Spacer />
-        
 
         <Typography.SubHeader
           content="Not sure? Here's what our customers say..."
