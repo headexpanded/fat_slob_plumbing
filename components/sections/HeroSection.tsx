@@ -17,14 +17,14 @@ export const HeroSection = () => {
         <Spacer />
         <Typography.Title content="Fat Slob Plumbing" />
 
-        <div className="heroStrap animatedStrapText fadeInFirst">
+        <div className="heroStrap">
           <Typography.SubHeader
             content="can YOUR lav flush a big load?"
             color="var(--defaultLight)"
           />
         </div>
 
-        <div className="heroBlock animatedHeroBlock fadeInUp">
+        <div className="heroBlock">
           <div className="heroIntroText">
             <Typography.ParaL
               content="Imagine it."
@@ -62,7 +62,7 @@ export const HeroSection = () => {
               fontWeight="900"
             />
           </div>
-          <div className="heroFatSlobs animatedHeroImage fadeInUpSecond">
+          <div className="heroFatSlobs">
             <Image
               alt="Photo of Fat Slob Plumbing staff"
               width={2609}
@@ -92,7 +92,7 @@ export const HeroSection = () => {
               </a>
             </div>
           ) : (
-            <div className="calendarBlocked animated fadeInUp">
+            <div className="calendarBlocked animated fadeInDown">
               <Typography.ParaC
                 content="Sorry mate. The calendar's completely blocked up."
                 color="var(--defaultLight)"
