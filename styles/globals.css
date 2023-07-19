@@ -132,23 +132,52 @@ button.calendarButton {
   }
 }
 
-.animated {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
+.animatedStrapText {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-delay: 0.25s;
 }
 
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+.animatedHeroBlock {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
 }
 
-@keyframes fadeInDown {
+.fadeInFirst {
+  -webkit-animation-name: fadeInFirst;
+  animation-name: fadeInFirst;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInFirst {
     0% {
         opacity: 0;
-        transform: translateY(-4px);
+        transform: translateY(4px);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(440px);
+    } 
     100% {
         opacity: 1;
         transform: translateY(0);
