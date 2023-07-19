@@ -25,7 +25,7 @@ export const HeroSection = () => {
         </div>
 
         <div className="heroBlock">
-          <div className="heroIntroText">
+          <div className="heroIntroText  ">
             <Typography.ParaL
               content="Imagine it."
               color="var(--defaultLight)"

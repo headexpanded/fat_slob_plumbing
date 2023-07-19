@@ -133,10 +133,13 @@ button.calendarButton {
 }
 
 .animated {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
 }
 
 .fadeInDown {
@@ -146,9 +149,9 @@ button.calendarButton {
 
 @keyframes fadeInDown {
     0% {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(-4px);
-    }
+    } 
     100% {
         opacity: 1;
         transform: translateY(0);
