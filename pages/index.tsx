@@ -9,38 +9,6 @@ type HomeProps = {
   partnersData: Partner[];
 };
 
-/* export const metadata = {
-  title: { default: 'Fat Slob Plumbing' },
-  description:
-    "Fat Slob Plumbing stress tests toilets. We're the UK's number 2 toilet testing service! Book Fat Slob Plumbing to stress test YOUR toilet!",
-  keywords: [
-    'toilet blocked',
-    'blocked toilet',
-    'blocked toilet repair',
-    'blocked toilet replacement',
-    'blocked toilet service',
-    'blocked toilet repair service',
-    'blocked toilet replacement service',
-    'blocked toilet service repair',
-    'blocked toilet repair service repair',
-    'blocked toilet replacement service repair',
-    'blocked toilet service repair',
-    'blocked lav',
-    'blocked lav repair',
-    'blocked lav replacement',
-    'lav blocked',
-    'lav blocked repair',
-    'toilet emergency',
-    'toilet emergency repair',
-    'toilet emergency replacement',
-    'toilet emergency service',
-    'toilet emergency repair service',
-    'toilet emergency replacement service',
-    'toilet emergency service repair',
-  ],
-  
-};
- */
 function Home({ customerReviews, partnersData }: HomeProps) {
   return (
     <div className="main">
@@ -100,13 +68,11 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       <Section.CustReviews data={customerReviews}></Section.CustReviews>
       {/* How We Work */}
       <Section.HowWeWork />
-      {/* Services */}
-      {/* <Section.Services /> */}
       {/* Franchises */}
       <Section.Franchises />
-      {/* Valued Partners */}
+      {/* Partners */}
       <Section.Partners data={partnersData}></Section.Partners>
-      {/* About Us */}
+      {/* Our Story */}
       <Section.OurStory></Section.OurStory>
       {/* Footer */}
       <Section.Footer />
