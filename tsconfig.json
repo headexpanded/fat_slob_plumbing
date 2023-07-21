@@ -20,6 +20,6 @@
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"],
   "paths": {
-    "@styles/*": ["./styles/*"],
+    "@styles/*":["./src/styles/*"]
   }
 }
