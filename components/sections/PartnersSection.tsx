@@ -1,8 +1,8 @@
 // define About Us section
 
-import { Cards } from "../cards";
-import { Typography } from "../typography";
-import { Spacer } from "./Spacer";
+import { Cards } from '../cards';
+import { Typography } from '../typography';
+import { Spacer } from '../utils/Spacer';
 import { size } from '../../styles/breakpoints';
 
 export type Partner = {

@@ -1,13 +1,13 @@
 // section components index for Fat Slob Plumbing
-import { NavBar } from "./NavBar";
-import { HeroSection } from "./HeroSection";
-import { HowWeWorkSection } from "./HowWeWorkSection";
-import { CustReviewsSection } from "./CustReviewsSection";
-import { FranchisesSection } from "./FranchisesSection";
-import { PartnersSection } from "./PartnersSection";
-import { OurStorySection } from "./OurStorySection";
-import { FooterSection } from "./FooterSection";
-import { Spacer } from "./Spacer";
+import { NavBar } from './NavBar';
+import { HeroSection } from './HeroSection';
+import { HowWeWorkSection } from './HowWeWorkSection';
+import { CustReviewsSection } from './CustReviewsSection';
+import { FranchisesSection } from './FranchisesSection';
+import { PartnersSection } from './PartnersSection';
+import { OurStorySection } from './OurStorySection';
+import { FooterSection } from './FooterSection';
+import { Spacer } from '../utils/Spacer';
 
 export const Section = {
   NavBar: NavBar,
@@ -18,5 +18,5 @@ export const Section = {
   Partners: PartnersSection,
   OurStory: OurStorySection,
   Footer: FooterSection,
-  Spacer: Spacer,
+  //Spacer: Spacer,
 };

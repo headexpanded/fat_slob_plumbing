@@ -1,7 +1,7 @@
 // define Franchises Section properties
 import Image from 'next/image';
 import { Typography } from '../typography';
-import { Spacer } from './Spacer';
+import { Spacer } from '../utils/Spacer';
 import trishPhoto from '../../assets/img/trishPhoto.png';
 import { size } from '../../styles/breakpoints';
 
@@ -85,7 +85,6 @@ export const FranchisesSection = () => {
           />
         </div>
         <Spacer />
-         
       </section>
 
       <style jsx>{`

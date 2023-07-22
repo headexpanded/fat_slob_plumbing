@@ -1,8 +1,8 @@
 // define Customer Reviews section
 
-import { Cards } from "../cards";
-import { Typography } from "../typography";
-import { Spacer } from "./Spacer";
+import { Cards } from '../cards';
+import { Typography } from '../typography';
+import { Spacer } from '../utils/Spacer';
 
 export type CustomerReview = {
   id: string;

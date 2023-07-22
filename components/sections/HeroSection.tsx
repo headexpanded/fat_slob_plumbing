@@ -1,9 +1,9 @@
 // define Intro Section properties
-import { useState } from "react";
-import { Typography } from "../typography";
-import { Spacer } from "./Spacer";
-import Image from "next/image";
-import staffPhoto from "../../assets/img/staffPhoto.png";
+import { useState } from 'react';
+import { Typography } from '../typography';
+import { Spacer } from '../utils/Spacer';
+import Image from 'next/image';
+import staffPhoto from '../../assets/img/staffPhoto.png';
 import { size } from '../../styles/breakpoints';
 
 type HeroSectionProps = {};

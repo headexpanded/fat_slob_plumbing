@@ -1,9 +1,8 @@
 // define Our Story section
-import { Typography } from "../typography";
-import { Spacer } from "./Spacer";
+import { Typography } from '../typography';
+import { Spacer } from '../utils/Spacer';
 
 export const OurStorySection = () => {
-  
   return (
     <>
       <section id="ourStorySection" className="ourStorySection">
