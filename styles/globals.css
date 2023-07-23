@@ -1,6 +1,7 @@
 /* Global styles for Fat Slob Plumbing */
 /* The idea here is to set cascading globals,
 /* then make exceptions lower in the hierarchy as required
+/* or in the jsx
 */
 
 :root {
@@ -10,9 +11,9 @@
   --shadow: hsla(236, 95%, 60%, 0.75);
 
   /* Font Family */
-  font-family: 'Inter', Tahoma, Verdana, sans-serif;
+  --ff-primary: 'Inter', Tahoma, Verdana, sans-serif;
   /* Base Font Size */
-  font-size: 16px;
+  --fs-base: 16px;
 
   --boxShadow: 1px 1px 48px 1px var(--shadow);
   --borderRadius: 4px;
@@ -20,37 +21,56 @@
 
 @supports (font-variation-settings: normal) {
   :root {
-    font-family: 'Inter var', Tahoma, Verdana, sans-serif;
+    font-family: var(--ff-primary);
   }
 }
+
+/****** RESET *****/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/***** DEFAULT STYLES *****/
 
 html {
   scroll-behavior: smooth;
   user-select: none;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  height: 100%;
 }
 
 body {
 
   background: linear-gradient(180deg, #2385d6 0%, #69b4c7 100%);
-  font-family: 'Inter var', sans-serif;
+  font-family: var(--ff-primary);
+  text-rendering: optimizeSpeed;
   width:100%;
 }
 
 h1 {
   display: inline-block;
   font-size: clamp(2rem, 10vw, 80px);
-  font-family: 'Inter var', sans-serif;
+  font-family: var(--ff-primary);
   font-weight: 900;
   letter-spacing: -0.1rem;
   margin: 0px;
   text-align: left;
-  translate: 'no';
 }
 
 h2 {
@@ -61,7 +81,6 @@ h2 {
   letter-spacing: -0.1rem;
   margin: 0px;
   text-align: center;
-  translate: 'no';
 }
 
 /* Set defaults for html <section> tags */
@@ -82,7 +101,6 @@ div ~ p {
   font-weight: 800;
   margin: 0 auto;
   padding: 1rem 4rem;
-  translate: 'no';
 }
 
 button {
@@ -96,7 +114,7 @@ button {
   border-radius: var(--borderRadius);
   box-shadow: inherit;
   color: var(--defaultDark);
-  font-size: 1rem;
+  font-size: var(--fs-base);
   font-weight: 900;
   width: min(45vw, 240px);
   aspect-ratio: 3/1;
@@ -106,11 +124,6 @@ button:hover,
 :focus {
   cursor: pointer;
   transform: scale(1.05);
-}
-
-button.calendarButton {
-  margin-top: 2rem;
-  width: max(5vw, 120px);
 }
 
 @media screen and (min-width: 640px) {

@@ -78,17 +78,12 @@ export const HeroSection = () => {
         <div className="buttonWrapper">
           {!showBookingsDiv ? (
             <div className="heroButtons">
-              <button
-                className="heroButton btnBooking"
-                onClick={() => setShowBookingsDiv(true)}
-              >
+              <button onClick={() => setShowBookingsDiv(true)}>
                 MAKE A BOOKING
               </button>
               <Spacer />
               <a href="#franchisesSection">
-                <button className="heroButton btnFranchise">
-                  BUY A FRANCHISE
-                </button>
+                <button>BUY A FRANCHISE</button>
               </a>
             </div>
           ) : (
@@ -158,10 +153,13 @@ export const HeroSection = () => {
           padding: 1.5rem;
           width: 100%;
         }
-        .heroFatSlobs {
-          //display: none;
-        }
 
+        .calendarButton {
+          margin-top: 2rem;
+          width: max(5vw, 120px);
+          color: var(--defaultDark);
+}
+        
         @media screen and (min-width: ${size.mobile}) {
           .heroBlock {
             flex-direction: row;
