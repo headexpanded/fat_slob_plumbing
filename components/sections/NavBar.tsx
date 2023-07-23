@@ -7,12 +7,12 @@ export const NavBar = () => {
 
   return (
     <>
-      <section className="navBar" role="navigation">
+      <nav className="navBar" role="navigation">
         <a href="#">Home</a>
         <a href="#franchisesSection">Franchises</a>
         <a href="#partnersSection">Partners</a>
         <a href="#ourStorySection">Our Story</a>
-      </section>
+      </nav>
 
       <style jsx>{`
         .navBar {
