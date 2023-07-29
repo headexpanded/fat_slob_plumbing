@@ -8,6 +8,7 @@
   /* Colour Palette */
   --defaultDark: hsl(249, 100%, 20%);
   --defaultLight: hsl(0, 0%, 99%);
+  --clr-bg: hsl(208, 100%, 83%);
   --shadow: hsla(236, 95%, 60%, 0.75);
 
   /* Font Family */
@@ -57,7 +58,8 @@ html {
 
 body {
 
-  background: linear-gradient(180deg, #2385d6 0%, #69b4c7 100%);
+  /* background: linear-gradient(180deg, hsl(207, 72%, 49%) 0%, #69b4c7 100%); */
+  background-color: var(--clr-bg);
   font-family: var(--ff-primary);
   text-rendering: optimizeSpeed;
   width:100%;
