@@ -145,7 +145,7 @@ export const HeroSection = () => {
         .calendarBlocked {
           align-items: center;
           background: red;
-          box-shadow: var(--boxshadow);
+          box-shadow: var(--boxShadow);
           display: flex;
           flex-direction: column;
           height: auto;
