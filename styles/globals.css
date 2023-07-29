@@ -16,7 +16,7 @@
   /* Base Font Size */
   --fs-base: 16px;
 
-  --boxShadow: 1px 1px 48px 1px var(--shadow);
+  --boxShadow: 1px 1px 12px 1px var(--shadow);
   --borderRadius: 4px;
 }
 
