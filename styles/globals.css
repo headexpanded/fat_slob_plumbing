@@ -114,7 +114,7 @@ button {
 
   border: none;
   border-radius: var(--borderRadius);
-  box-shadow: inherit;
+  box-shadow: var(--boxShadow);
   color: var(--defaultDark);
   font-size: var(--fs-base);
   font-weight: 900;
