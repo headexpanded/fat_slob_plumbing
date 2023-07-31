@@ -27,6 +27,7 @@ export const OurStorySection = () => {
         </div>
         <Typography.ParaC
           content="No CSS Framework"
+          color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
@@ -44,6 +45,7 @@ export const OurStorySection = () => {
         </div>
         <Typography.ParaC
           content="Cascading Styles"
+          color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
@@ -61,6 +63,7 @@ export const OurStorySection = () => {
         </div>
         <Typography.ParaC
           content="Custom Functions"
+          color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
@@ -73,6 +76,7 @@ export const OurStorySection = () => {
         </div>
         <Typography.ParaC
           content="More To Do"
+          color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
