@@ -72,8 +72,8 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
         }
 
         .picture > img {
-          // background-size: cover;
-          // background-position: center;
+          background-size: cover;
+          background-position: center;
           border: 1px solid var(--clr-bg-light);
           border-radius: var(--borderRadius);
           filter: grayscale(100%);
