@@ -67,7 +67,7 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       {/* Customer Reviews */}
       <Section.CustReviews data={customerReviews}></Section.CustReviews>
       {/* How We Work */}
-      <Section.HowWeWork />
+      {/* <Section.HowWeWork /> */}
       {/* Franchises */}
       <Section.Franchises />
       {/* Partners */}
