@@ -6,9 +6,15 @@
 
 :root {
   /* Colour Palette */
-  --defaultDark: hsl(249, 100%, 20%);
-  --defaultLight: hsl(0, 0%, 99%);
-  --clr-bg: hsl(208, 100%, 83%);
+  --clr-text-primary: hsl(0,100%,50%);
+  --clr-text-secondary: hsl(249, 100%, 20%);
+  --clr-text-light: hsl(0,0%, 99%);
+  
+  --clr-bg-primary: hsl(249, 100%, 20%);
+  --clr-bg-secondary: hsl(0,100%,50%);
+  --clr-bg-light: hsl(0,0%,99%);
+  
+  --clr-btn-hover: whitesmoke;
   --shadow: hsla(236, 95%, 60%, 0.75);
 
   /* Font Family */
@@ -59,13 +65,13 @@ html {
 body {
 
   /* background: linear-gradient(180deg, hsl(207, 72%, 49%) 0%, #69b4c7 100%); */
-  background-color: var(--clr-bg);
+  background-color: var(--clr-bg-primary);
   font-family: var(--ff-primary);
   text-rendering: optimizeSpeed;
   width:100%;
 }
 
-h1 {
+ h1 {
   display: inline-block;
   font-size: clamp(2rem, 10vw, 80px);
   font-family: var(--ff-primary);
@@ -75,19 +81,9 @@ h1 {
   text-align: left;
 }
 
-h2 {
-  color: var(--defaultLight);
-  display: inline-flex;
-  font-size: clamp(1.25rem, 10vw, 40px);
-  font-weight: 900;
-  letter-spacing: -0.1rem;
-  margin: 0px;
-  text-align: center;
-}
-
 /* Set defaults for html <section> tags */
 section[class$='Section'] {
-  color: var(--defaultDark);
+  color: var(--clr-text-primary);
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -99,23 +95,12 @@ section[class$='Section'] h1:not(.heroSection h1) {
   text-align: center;
 }
 
-div ~ p {
-  font-weight: 800;
-  margin: 0 auto;
-  padding: 1rem 4rem;
-}
-
 button {
-  background-image: linear-gradient(
-    15deg,
-    hsl(120, 43%, 99%) 1%,
-    hsl(120, 100%, 98%) 100%
-  );
-
+  background-color: var(--clr-bg-light);
   border: none;
   border-radius: var(--borderRadius);
   box-shadow: var(--boxShadow);
-  color: var(--defaultDark);
+  color: var(--clr-text-secondary);
   font-size: var(--fs-base);
   font-weight: 900;
   width: min(45vw, 240px);
@@ -125,7 +110,7 @@ button {
 button:hover,
 :focus {
   cursor: pointer;
-  transform: scale(1.05);
+  background-color: var(--clr-btn-hover);
 }
 
 @media screen and (min-width: 640px) {
