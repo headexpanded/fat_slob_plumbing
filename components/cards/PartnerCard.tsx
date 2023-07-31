@@ -64,12 +64,12 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           padding: 1rem 0;
         }
 
-        .picture{
+        /* .picture{
           width: 80%;
           display: flex:
           flex-direction: column;
           place-items: center;
-        }
+        } */
 
         .picture > img {
           background-size: cover;
