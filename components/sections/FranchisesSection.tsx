@@ -85,7 +85,7 @@ export const FranchisesSection = () => {
           }
           .phoneTrish {
             display: flex;
-            width: clamp(260px, 88vw + 20px, 680px);
+            width: clamp(280px, 95vw, 760px);
           }
           .franchiseText {
             width: 50%;
