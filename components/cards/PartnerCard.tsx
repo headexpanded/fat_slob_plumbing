@@ -65,7 +65,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
         }
 
         .picture{
-          
+          width: 80%;
           display: flex:
           flex-direction: column;
           place-items: center;
@@ -77,7 +77,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           border: 1px solid var(--clr-bg-light);
           border-radius: var(--borderRadius);
           filter: grayscale(100%);
-          min-height: 80%;
+          height: 80%;
           aspect-ratio: 1/1;
           padding: 0px 20px;
         }
