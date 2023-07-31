@@ -78,7 +78,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           border-radius: var(--borderRadius);
           filter: grayscale(100%);
           // height: 80%;
-          aspect-ratio: 1/1;
+          aspect-ratio: 4/3;
           max-width: 100%;
           padding: 0px 12px;
         }
