@@ -31,9 +31,6 @@ export const FranchisesSection = () => {
             />
           </div>
           <div className="franchiseText">
-            <Typography.ParaL content="Be your own boss." />
-            <Typography.ParaL content="Get out and about." />
-            <Typography.ParaL content="Make people happy." />
             <Typography.ParaL content="We're looking for people who can deliver value." />
             <Typography.ParaL
               content="People who can fill a bowl."
