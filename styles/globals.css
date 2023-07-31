@@ -63,8 +63,6 @@ html {
 }
 
 body {
-
-  /* background: linear-gradient(180deg, hsl(207, 72%, 49%) 0%, #69b4c7 100%); */
   background-color: var(--clr-bg-primary);
   font-family: var(--ff-primary);
   text-rendering: optimizeSpeed;
