@@ -82,10 +82,16 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <Typography.ParaC
-            content="I'd like to use CSS modules instead of a single global style sheet, but for this site I'm not sure it's worth it"
+            content="E-commerce: the world needs Fat Slob Plumbing hoodies"
             fontSize="1.5rem"
             fontWeight="700"
           />
+          <Typography.ParaC
+            content="Franchises: interactive map of available locations"
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+          
           <Typography.ParaC
             content="Also, CSS layers would be fun to learn, so maybe I'll do that sooner or later."
             fontSize="1.5rem"
