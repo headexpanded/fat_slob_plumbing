@@ -33,7 +33,7 @@ export const CustReviewCard = ({
 
       <style jsx>{`
         .custReviewCard {
-          background-color: var(--defaultLight);
+          background-color: var(--clr-bg-light);
           border-radius: var(--borderRadius);
           padding: 0.5rem;
           box-shadow: var(--boxShadow);
@@ -46,7 +46,7 @@ export const CustReviewCard = ({
         }
 
         p {
-          color: var(--defaultDark);
+          color: var(--clr-text-primary);
           font-size: 1.25rem;
           font-style: italic;
           font-weight: bold;
@@ -75,7 +75,6 @@ export const CustReviewCard = ({
         img {
           background-size: cover;
           background-position: center;
-          border: 2px solid var(--defaultLight);
           border-radius: 50%;
           filter: grayscale(90%) contrast(90%) brightness(90%);
           height: 140px;
