@@ -122,6 +122,7 @@ export const HeroSection = () => {
           margin-top: 2rem;
           width: max(5vw, 120px);
           color: var(--clr-text-secondary);
+          box-shadow: none;
         }
 
         @media screen and (min-width: ${size.mobile}) {
