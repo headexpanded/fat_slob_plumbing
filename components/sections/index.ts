@@ -7,7 +7,6 @@ import { FranchisesSection } from './FranchisesSection';
 import { PartnersSection } from './PartnersSection';
 import { OurStorySection } from './OurStorySection';
 import { FooterSection } from './FooterSection';
-import { Spacer } from '../utils/Spacer';
 
 export const Section = {
   NavBar: NavBar,
@@ -18,5 +17,4 @@ export const Section = {
   Partners: PartnersSection,
   OurStory: OurStorySection,
   Footer: FooterSection,
-  //Spacer: Spacer,
 };
