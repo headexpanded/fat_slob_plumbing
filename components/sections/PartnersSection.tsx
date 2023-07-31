@@ -37,7 +37,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
             );
           })}
         </div>
-        <Spacer />
+        
       </section>
       <style jsx>{`
         .partnerCards {

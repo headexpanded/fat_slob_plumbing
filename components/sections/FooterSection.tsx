@@ -2,28 +2,22 @@
 
 import { Typography } from '../typography';
 
-type FooterSectionProps = {
-  content: string;
-};
+type FooterSectionProps = {};
 
 export const FooterSection = () => {
   return (
     <>
       <footer className="footerSection ">
+        <Typography.FooterText content="We are not licenced plumbers." />
         <Typography.FooterText
-          color="var(--defaultDark)"
-          content="We are not licenced plumbers."
-          fontSize="1rem"
-          fontWeight="500"
-        />
-        <Typography.FooterText
-          color="var(--defaultDark)"
           content="In case of emergency, you should contact
           a real plumber."
-          fontSize="1rem"
-          fontWeight="500"
         />
-        <a href="https://github.com/headexpanded/fat_slob_plumbing/blob/main/README.md" target='_blank' rel='noreferrer'>
+        <a
+          href="https://github.com/headexpanded/fat_slob_plumbing/blob/main/README.md"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className="githubContainer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,18 +32,12 @@ export const FooterSection = () => {
       </footer>
       <style jsx>{`
         .footerSection {
-          background-color: var(--defaultLight);
+          background-color: var(--clr-bg-light);
           display: flex;
           flex-direction: column;
-          padding: 0.5rem 0px;
+          padding-top: 0.5rem;
           place-items: center;
         }
-        /* .footerSection p {
-          color: var(--defaultDark);
-          font-size: 0.5rem;
-          margin: 0px;
-          padding: 0.5rem 0;
-        } */
 
         .githubContainer {
           display: flex;

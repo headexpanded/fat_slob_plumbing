@@ -18,49 +18,21 @@ export const HeroSection = () => {
         <Typography.Title content="Fat Slob Plumbing" />
 
         <div className="heroStrap">
-          <Typography.SubHeader
-            content="can YOUR lav flush a big load?"
-            color="var(--defaultLight)"
-          />
+          <Typography.SubHeader content="can YOUR lav flush a big load?" />
         </div>
 
         <div className="heroBlock">
           <div className="heroIntroText">
-            <Typography.ParaL
-              content="Imagine it."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="Friends over - and your lav blocks up."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="You don't need that."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="So hire us."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
+            <Typography.ParaL content="Imagine it." />
+            <Typography.ParaL content="Friends over - and your lav blocks up." />
+            <Typography.ParaL content="You don't need that." />
+            <Typography.ParaL content="So hire us." />
             <Typography.ParaL
               content="Fat Slob Plumbing."
-              color="var(--defaultDark)"
-              fontWeight="900"
+              color="var(--clr-text-primary)"
             />
-            <Typography.ParaL
-              content="England's number 2 toilet testing service."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="We'll give it a good stress test."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
+            <Typography.ParaL content="England's number 2 toilet testing service." />
+            <Typography.ParaL content="We'll give it a good stress test." />
           </div>
           <div className="heroFatSlobs">
             <Image
@@ -78,19 +50,17 @@ export const HeroSection = () => {
         <div className="buttonWrapper">
           {!showBookingsDiv ? (
             <div className="heroButtons">
-              <button onClick={() => setShowBookingsDiv(true)}>
-                MAKE A BOOKING
-              </button>
+              <button onClick={() => setShowBookingsDiv(true)}>BOOKINGS</button>
               <Spacer />
               <a href="#franchisesSection">
-                <button>BUY A FRANCHISE</button>
+                <button>FRANCHISES</button>
               </a>
             </div>
           ) : (
             <div className="calendarBlocked animated fadeInDown">
               <Typography.ParaC
                 content="Sorry mate. The calendar's completely blocked up."
-                color="var(--defaultLight)"
+                color="var(--clr-text-light)"
               />
               <button
                 className="calendarButton"
@@ -105,10 +75,7 @@ export const HeroSection = () => {
         <Spacer />
         <Spacer />
 
-        <Typography.SubHeader
-          content="Not sure? Here's what our customers say..."
-          color="var(--defaultLight)"
-        />
+        <Typography.SubHeader content="Not sure? Here's what our customers say..." />
       </section>
 
       <style jsx>{`
@@ -123,9 +90,6 @@ export const HeroSection = () => {
           margin-top: 1rem;
           margin-bottom: 1rem;
           width: clamp(240px, 60vw + 36px, 600px);
-          .heroStrap p:last-child {
-            // padding-right: 1rem;
-          } */
         }
         .heroBlock {
           display: flex;
@@ -144,8 +108,8 @@ export const HeroSection = () => {
 
         .calendarBlocked {
           align-items: center;
-          background: red;
-          box-shadow: var(--boxShadow);
+          background: var(--clr-bg-secondary);
+
           display: flex;
           flex-direction: column;
           height: auto;
@@ -157,9 +121,9 @@ export const HeroSection = () => {
         .calendarButton {
           margin-top: 2rem;
           width: max(5vw, 120px);
-          color: var(--defaultDark);
-}
-        
+          color: var(--clr-text-secondary);
+        }
+
         @media screen and (min-width: ${size.mobile}) {
           .heroBlock {
             flex-direction: row;
@@ -195,7 +159,6 @@ export const HeroSection = () => {
           .buttonWrapper {
             flex-direction: column;
             place-items: center;
-            
           }
         }
       `}</style>

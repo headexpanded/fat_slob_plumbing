@@ -15,16 +15,15 @@ export const HowWeWorkSection = () => {
         <Spacer />
         <Typography.SectionTitle
           content="How We Work"
-          color="var(--defaultDark)"
+          color="var(--clr-text-primary)"
         />
         <div className="howWeWorkBlurb">
-          <div className="howWeWorkSingleBlurbWrapper animated fadeInDown">
-            <div className="howWeWorkSubHeader">
+          <div className="howWeWorkSingleBlurbWrapper">
+            
               <Typography.SubHeader
                 content="Dedicated Experts"
-                color="var(--defaultLight)"
               />
-            </div>
+            
             <div className="howWeWorkDesc">
               <Typography.ParaC
                 content=" Our professional toilet testers visit your home."
@@ -41,13 +40,13 @@ export const HowWeWorkSection = () => {
             </div>
           </div>
           <Spacer />
-          <div className="howWeWorkSingleBlurbWrapper animated fadeInDown">
-            <div className="howWeWorkSubHeader">
+          <div className="howWeWorkSingleBlurbWrapper">
+            
               <Typography.SubHeader
                 content="Regular Performance"
                 color="var(--defaultLight)"
               />
-            </div>
+            
             <div className="howWeWorkDesc">
               <Typography.ParaC
                 content="Every day, we ingest a special blend of food and drink."
@@ -125,7 +124,7 @@ export const HowWeWorkSection = () => {
         <Spacer />
         <Typography.SubHeader
           content="At your request, we bring our own reading material."
-          color="var(--defaultLight)"
+          color="var(--clr-text-light)"
         />
         {/* <Typography.ParaL content="Don't wait - book us today!" />
         <Typography.ParaL content="Or sign up for a monthly plan." /> */}
@@ -138,7 +137,6 @@ export const HowWeWorkSection = () => {
 
       <style jsx>{`
         .howWeWorkSingleBlurbWrapper {
-          //border: yellow solid 1px;
           margin: 0 auto;
           display: flex;
           flex-direction: column;
@@ -146,9 +144,7 @@ export const HowWeWorkSection = () => {
           align-items: center;
         }
 
-        .howWeWorkSubHeader h2 {
-          text-align: center;
-        }
+        
 
         .howWeWorkDesc {
           //border: red 1px solid;

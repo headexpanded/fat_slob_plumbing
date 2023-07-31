@@ -7,116 +7,66 @@ export const OurStorySection = () => {
     <>
       <section id="ourStorySection" className="ourStorySection">
         <Spacer />
-        <div className="ourStoryTitle">
-          <Typography.SectionTitle
-            content="Our Story"
-            color="var(--defaultFontColor)"
-          />
+        <Typography.SectionTitle content="Our Story" />
+
+        <div className="ourStoryText">
+          <Typography.ParaL content="This is not actually a real business." />
+          <Typography.ParaL content="It's just a site I made for my teenage son and his friends." />
+          <Typography.ParaL content="And yes, they think it's funny." />
         </div>
 
-        <Typography.ParaL
-          content="This is not actually a real business..."
-          color="var(--defaultFontColor)"
-        />
-
-        <Typography.ParaL
-          content="It's just a site I made for my teenage son and his friends."
-          color="var(--defaultFontColor)"
-        />
-
-        <Typography.ParaL
-          content="And yes, they think it's funny."
-          color="var(--defaultFontColor)"
-        />
-
-        <Spacer />
-
         <Typography.ParaC
-          content="Pure CSS"
-          color="var(--defaultLight)"
+          content="No CSS Framework"
           fontSize="3rem"
           fontWeight="900"
         />
-
         <Spacer />
-
-        <Typography.ParaL
-          content="For the styling, I had three main objectives:"
-          color="var(--defaultFontColor)"
-        />
-
-        <Typography.ParaC
-          content="No Framework"
-          color="var(--defaultLight)"
-          fontSize="3rem"
-          fontWeight="900"
-        />
-
-        <Typography.ParaL
-          content="First, to write pure CSS without using a framework such as Tailwind or Bootstrap."
-          color="var(--defaultFontColor)"
-        />
-
-        <Typography.ParaL
-          content="I wanted to see how much I could do writing the CSS myself (that's why there are still a few niggly little things to fix up)."
-          color="var(--defaultFontColor)"
-        />
+        <div className="ourStoryText">
+          <Typography.ParaL content="I had three main goals. First, to write pure CSS without using a framework such as Tailwind or Bootstrap." />
+          <Typography.ParaL content="I wanted to see how much I could do writing the CSS myself (that's why there are still a few niggly little things to fix up)." />
+        </div>
+        <Spacer />
 
         <Typography.ParaC
           content="Cascading Styles"
-          color="var(--defaultLight)"
           fontSize="3rem"
           fontWeight="900"
         />
-
-        <Typography.ParaL
-          content="Secondly, to make the CSS cascade down through the HTML elements and match the semantics."
-          color="var(--defaultFontColor)"
-        />
-
-        <Typography.ParaL
-          content="For example, set default styles for the html <section> element, then override as necessary."
-          color="var(--defaultFontColor)"
-        />
-
+        <Spacer />
+        <div className="ourStoryText">
+          <Typography.ParaL content="Secondly, to make the CSS cascade down through the HTML elements and match the semantics." />
+          <Typography.ParaL content="For example, set default styles for the html <section> element, then override as necessary." />
+        </div>
         <Spacer />
 
         <Typography.ParaC
           content="Custom Functions"
-          color="var(--defaultLight)"
           fontSize="3rem"
           fontWeight="900"
         />
-
-        <Typography.ParaL
-          content="Thirdly, to use custom functions like min(), max(), calc(), and clamp() for the responsive design, instead of media queries (where it made sense to do so)."
-          color="var(--defaultFontColor)"
-        />
-
+        <div className="ourStoryText">
+          <Typography.ParaL content="Thirdly, to use custom functions like min(), max(), calc(), and clamp() for the responsive design, instead of media queries (where it made sense to do so)." />
+        </div>
         <Spacer />
 
         <Typography.ParaC
           content="More To Do"
-          color="var(--defaultLight)"
           fontSize="3rem"
           fontWeight="900"
         />
-
-        <Typography.ParaL
-          content="I'd like to use CSS modules instead of a single global style sheet, but for this site I'm not sure it's worth it"
-          color="var(--defaultFontColor)"
-        />
-
-        <Typography.ParaL
-          content="Also, CSS layers would be fun to learn, so maybe I'll do that sooner or later."
-          color="var(--defaultFontColor)"
-        />
-
+        <div className="ourStoryText">
+          <Typography.ParaL content="I'd like to use CSS modules instead of a single global style sheet, but for this site I'm not sure it's worth it" />
+          <Typography.ParaL content="Also, CSS layers would be fun to learn, so maybe I'll do that sooner or later." />
+        </div>
         <Spacer />
       </section>
 
       <style jsx>{`
-        .ourStorySection {
+        .ourStoryText {
+          display: flex;
+          flex-direction: column;
+          place-items: center;
+          width: 90vw;
         }
       `}</style>
     </>

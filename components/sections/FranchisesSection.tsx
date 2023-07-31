@@ -15,13 +15,10 @@ export const FranchisesSection = () => {
         <div className="franchisesTitle">
           <Typography.SectionTitle
             content="Buy A Franchise"
-            color="var(--defaultLight)"
+            color="var(--clr-text-primary)"
           />
         </div>
-        <Typography.SubHeader
-          content="Can YOU deliver on demand?"
-          color="var(--defaultLight)"
-        />
+        <Typography.SubHeader content="Can YOU deliver on demand?" />
         <Spacer />
         <div className="franchiseImageAndTextBlock">
           <div className="trish">
@@ -34,46 +31,17 @@ export const FranchisesSection = () => {
             />
           </div>
           <div className="franchiseText">
-            <Typography.ParaL
-              content="Be your own boss."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="Get out and about."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="Make people happy."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="We're looking for people who can deliver value."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
+            <Typography.ParaL content="Be your own boss." />
+            <Typography.ParaL content="Get out and about." />
+            <Typography.ParaL content="Make people happy." />
+            <Typography.ParaL content="We're looking for people who can deliver value." />
             <Typography.ParaL
               content="People who can fill a bowl."
-              color=""
-              fontWeight="900"
+              color="var(--clr-text-primary)"
             />
-            <Typography.ParaL
-              content="Any time, any place."
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="Does that sound like you?"
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
-            <Typography.ParaL
-              content="Buy a Fat Slob Plumbing franchise today!"
-              color="var(--defaultLight)"
-              fontWeight="900"
-            />
+            <Typography.ParaL content="Any time, any place." />
+            <Typography.ParaL content="Does that sound like you?" />
+            <Typography.ParaL content="Buy a Fat Slob Plumbing franchise today!" />
           </div>
         </div>
         <Spacer />
@@ -81,7 +49,6 @@ export const FranchisesSection = () => {
         <div className="phoneTrish">
           <Typography.SubHeader
             content="Contact Trish, our friendly sales rep!"
-            color="var(--defaultLight)"
           />
         </div>
         <Spacer />
@@ -105,7 +72,7 @@ export const FranchisesSection = () => {
         }
 
         .franchiseText {
-          padding-left: 20px;
+          padding-left: 1.25rem;
           max-width: 90%;
         }
 

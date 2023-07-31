@@ -24,7 +24,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
         <div>
           <Typography.SectionTitle
             content="Happy Customers"
-            color="var(--defaultFontColor)"
+            color="var(--clr-text-primary)"
           />
         </div>
         <Spacer />
