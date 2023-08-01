@@ -21,15 +21,6 @@ export const FranchisesSection = () => {
         <Typography.SubHeader content="Can YOU deliver on demand?" />
         <Spacer />
         <div className="franchiseImageAndTextBlock">
-          <div className="trish">
-            <Image
-              alt="Photo of Fat Slob Plumbing secretary"
-              src={trishPhoto}
-              width={5184}
-              height={3456}
-              priority
-            />
-          </div>
           <div className="franchiseText">
             <Typography.ParaL content="We're looking for people who can deliver value." />
             <Typography.ParaL
@@ -40,63 +31,54 @@ export const FranchisesSection = () => {
             <Typography.ParaL content="Does that sound like you?" />
             <Typography.ParaL content="Buy a Fat Slob Plumbing franchise today!" />
           </div>
+
+          <div className="trish">
+            <Image
+              alt="Photo of Fat Slob Plumbing secretary"
+              src={trishPhoto}
+              width={5184}
+              height={3456}
+              priority
+            />
+          </div>
         </div>
         <Spacer />
 
         <div className="phoneTrish">
-          <Typography.SubHeader
-            content="Contact Trish, our friendly sales rep!"
-          />
+          <Typography.SubHeader content="Contact Trish, our friendly sales rep!" />
         </div>
         <Spacer />
       </section>
 
       <style jsx>{`
-        .franchisesSection {
-        }
-        .franchisesTitle {
-        }
-
         .franchiseImageAndTextBlock {
           display: flex;
           flex-direction: column;
-          place-items: center;
+          align-items: center;
+          gap: 1rem;
         }
 
-        .trish,
-        .phoneTrish {
-          //display: none;
+        .trish {
+          width: clamp(320px, 90vw, 560px);
         }
-
-        .franchiseText {
-          padding-left: 1.25rem;
-          max-width: 90%;
-        }
-
-        @media screen and (min-width: ${size.mobile}) {
+        // change to grid for larger screens
+        @media screen and (min-width: ${size.desktop}) {
           .franchiseImageAndTextBlock {
-            flex-direction: row;
-            justify-content: space-between;
+            display: grid;
+            grid-template-areas: 'trish text';
+            grid-template-columns: 2fr;
+            grid-template-rows: 400px;
           }
           .trish {
-            display: flex;
-            width: 50%;
-            height: auto;
+            grid-area: trish;
+          }
+          .franchiseText {
+            grid-area: text;
           }
           .phoneTrish {
-            display: flex;
-            width: clamp(280px, 95vw, 760px);
-          }
-          .franchiseText {
-            width: 50%;
-          }
-        }
-
-        @media screen and (min-width: ${size.desktop}) {
-          .franchiseText {
-          }
-          .trish {
-            overflow: hidden;
+            grid-column: 1/2;
+            grid-row: 2;
+            width: clamp(320px, 90vw, 960px);
           }
         }
       `}</style>
