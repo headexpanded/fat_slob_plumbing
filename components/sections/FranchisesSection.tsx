@@ -62,6 +62,11 @@ export const FranchisesSection = () => {
         .trish {
           width: clamp(320px, 90vw, 560px);
         }
+
+        .franchiseText {
+          padding: 0 1rem;
+        }
+
         // change to grid for larger screens
         @media screen and (min-width: ${size.desktop}) {
           .franchiseImageAndTextBlock {
@@ -75,6 +80,7 @@ export const FranchisesSection = () => {
           }
           .franchiseText {
             grid-area: text;
+            padding: 0 1rem 0 0;
           }
           .phoneTrish {
             grid-column: 1/2;
