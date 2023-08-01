@@ -31,6 +31,7 @@ export const FranchisesSection = () => {
             <Typography.ParaL content="Does that sound like you?" />
             <Typography.ParaL content="Buy a Fat Slob Plumbing franchise today!" />
           </div>
+
           <div className="trish">
             <Image
               alt="Photo of Fat Slob Plumbing secretary"
@@ -40,6 +41,7 @@ export const FranchisesSection = () => {
               priority
             />
           </div>
+        
         </div>
         <Spacer />
 
@@ -53,19 +55,14 @@ export const FranchisesSection = () => {
         .franchiseImageAndTextBlock {
           display: flex;
           flex-direction: column;
-          place-items: center;
+          align-items: center;
           gap: 1rem;
         }
 
         .trish {
           width: clamp(320px, 90vw, 560px);
         }
-
-        .franchiseText {
-          padding-left: 1.25rem;
-          max-width: 90%;
-        }
-
+        // change to grid for larger screens
         @media screen and (min-width: ${size.desktop}) {
           .franchiseImageAndTextBlock {
             display: grid;
@@ -84,8 +81,7 @@ export const FranchisesSection = () => {
             grid-row: 2;
             width: clamp(320px, 90vw, 960px);
           }
-
-        
+        }
       `}</style>
     </>
   );
