@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { Typography } from '../typography';
 import { Spacer } from '../utils/Spacer';
-import trishPhoto from '../../assets/img/trishPhoto.png';
+import trishPhoto from '../../assets/img/trishPhoto-cr.png';
 import { size } from '../../styles/breakpoints';
 
 type FranchisesSectionProps = {};
@@ -23,12 +23,12 @@ export const FranchisesSection = () => {
         <div className="franchiseImageAndTextBlock">
           <div className="franchiseText">
             <Typography.ParaL content="We're looking for people who can deliver value." />
+            <Typography.ParaL content="People who can fill a bowl." />
+            <Typography.ParaL content="Any time, any place." />
             <Typography.ParaL
-              content="People who can fill a bowl."
+              content="Does that sound like you?"
               color="var(--clr-text-primary)"
             />
-            <Typography.ParaL content="Any time, any place." />
-            <Typography.ParaL content="Does that sound like you?" />
             <Typography.ParaL content="Buy a Fat Slob Plumbing franchise today!" />
           </div>
 
@@ -41,7 +41,6 @@ export const FranchisesSection = () => {
               priority
             />
           </div>
-        
         </div>
         <Spacer />
 
