@@ -178,5 +178,5 @@ const LocationMapModal = (props) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyD85NXoD-nBhtXU3XEphioV335zJgnU1lg',
+  apiKey: process.env.FSP_GOOGLE_MAPS_API_KEY,
 })(LocationMapModal);
