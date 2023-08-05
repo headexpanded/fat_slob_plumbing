@@ -4,10 +4,23 @@ import { Typography } from '../typography';
 import { Spacer } from '../utils/Spacer';
 import trishPhoto from '../../assets/img/trishPhoto-cr.png';
 import { size } from '../../styles/breakpoints';
+import LocationMapModal from '../modals/LocationMapModal';
+import { useState } from 'react';
 
-type FranchisesSectionProps = {};
+export type Franchise = {
+  locationName: string;
+  desc: string;
+  price: string;
+  latitude: number;
+  longitude: number;
+};
 
-export const FranchisesSection = () => {
+type FranchisesSectionProps = {
+  data: Array<Franchise> | undefined;
+};
+
+export const FranchisesSection = ({ data }: FranchisesSectionProps) => {
+  const [showLocations, setShowLocations] = useState(false);
   return (
     <>
       <section id="franchisesSection" className="franchisesSection">
@@ -30,6 +43,21 @@ export const FranchisesSection = () => {
               color="var(--clr-text-primary)"
             />
             <Typography.ParaL content="Buy a Fat Slob Plumbing franchise today!" />
+            <div className="locations">
+              {!showLocations ? (
+                <div className="locationButton">
+                  <Spacer />
+                  <button
+                    className="button"
+                    onClick={() => setShowLocations(true)}
+                  >
+                    LOCATIONS
+                  </button>
+                </div>
+              ) : (
+                <LocationMapModal onClose={() => setShowLocations(false)} data={data} />
+              )}
+            </div>
           </div>
 
           <div className="trish">
@@ -49,7 +77,6 @@ export const FranchisesSection = () => {
         </div>
         <Spacer />
       </section>
-
       <style jsx>{`
         .franchiseImageAndTextBlock {
           display: flex;
@@ -64,6 +91,13 @@ export const FranchisesSection = () => {
 
         .franchiseText {
           padding: 0 1rem;
+        }
+
+        .locationButton {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
         // change to grid for larger screens
@@ -85,6 +119,9 @@ export const FranchisesSection = () => {
             grid-column: 1/2;
             grid-row: 2;
             width: clamp(320px, 90vw, 960px);
+          }
+          .locationButton {
+            align-items: flex-start;
           }
         }
       `}</style>
