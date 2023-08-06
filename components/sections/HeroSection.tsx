@@ -110,7 +110,7 @@ export const HeroSection = () => {
         .calendarBlocked {
           align-items: center;
           background: var(--clr-bg-secondary);
-
+          border-radius: var(--borderRadius);
           display: flex;
           flex-direction: column;
           height: auto;
