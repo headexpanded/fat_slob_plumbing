@@ -103,6 +103,7 @@ export const HeroSection = () => {
 
         .buttonWrapper {
           display: flex;
+          flex-direction: column;
           place-items: center;
         }
 
@@ -143,6 +144,11 @@ export const HeroSection = () => {
             margin-left: 20px;
             width: 50%;
           }
+          .heroButtons {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+          }
         }
 
         @media screen and (min-width: ${size.desktop}) {
@@ -158,7 +164,7 @@ export const HeroSection = () => {
           }
 
           .buttonWrapper {
-            flex-direction: column;
+            flex-direction: row;
             place-items: center;
           }
         }
