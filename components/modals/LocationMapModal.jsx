@@ -95,7 +95,7 @@ const LocationMapModal = (props) => {
                   <div className="infoWindow">
                     <h3>{selectPlace.locationName}</h3>
                     <p>{selectPlace.description}</p>
-                    <p>Frachise Price: {selectPlace.price}</p>
+                    <p>Franchise Price: {selectPlace.price}</p>
                   </div>
                 </InfoWindow>
               )}
