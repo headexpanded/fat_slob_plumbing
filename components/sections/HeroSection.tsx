@@ -57,7 +57,7 @@ export const HeroSection = () => {
               </a>
             </div>
           ) : (
-            <div className="calendarBlocked animated fadeInDown">
+            <div className="calendarBlocked animated fadeInUp">
               <Typography.ParaC
                 content="Sorry mate. The calendar's completely blocked up."
                 color="var(--clr-text-light)"
