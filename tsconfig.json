@@ -17,9 +17,9 @@
     "incremental": true,
     "strictNullChecks": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/modals/LocationMapModal.jsx", "components/modals/CustomerReviewModal.jsx"],
   "exclude": ["node_modules"],
   "paths": {
-    "@styles/*":["./src/styles/*"]
+    "@styles/*":["./styles/*"]
   }
 }
