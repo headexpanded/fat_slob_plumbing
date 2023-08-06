@@ -42,11 +42,23 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           inline-size: min(100% - 4rem, 90rem);
           display: grid;
           grid-auto-flow: column;
-          gap: 2.5rem;
+          gap: 2rem;
           overflow-x: auto;
           overscroll-behavior-inline: contain;
           justify-content: flex-start;
           padding-bottom: 2rem;
+        }
+
+        @media screen and (min-width: ${size.mobile}) {
+          .partnerCards {
+            //gap:4rem;
+          }
+        }
+
+        @media screen and (min-width: ${size.xl}) {
+          .partnerCards {
+            gap: 3rem;
+          }
         }
 
         .snaps-inline {
@@ -55,6 +67,12 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
 
         .snaps-inline > * {
           scroll-snap-align: center;
+        }
+
+        .cardWrapper {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
         }
       `}</style>
     </>
