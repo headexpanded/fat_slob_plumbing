@@ -4,6 +4,14 @@
 /* or in the jsx
 */
 
+/* import breakpoints from breakpoints.ts */
+:import('./breakpoints.ts'){
+  --mobile: size.mobile;
+  --desktop: size.desktop;
+  --xl: size.xl;
+}
+
+
 :root {
   /* Colour Palette */
   --clr-text-primary: hsl(0,100%,50%);
@@ -111,7 +119,7 @@ button:hover,
   background-color: var(--clr-btn-hover);
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: var(--mobile)) {
   div ~ p {
     font-size: 1.5rem;
     display: flex;
