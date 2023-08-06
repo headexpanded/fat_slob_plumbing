@@ -5,23 +5,22 @@
 */
 
 /* import breakpoints from breakpoints.ts */
-:import('./breakpoints.ts'){
+:import('./breakpoints.ts') {
   --mobile: size.mobile;
   --desktop: size.desktop;
   --xl: size.xl;
 }
 
-
 :root {
   /* Colour Palette */
-  --clr-text-primary: hsl(0,100%,50%);
+  --clr-text-primary: hsl(0, 100%, 50%);
   --clr-text-secondary: hsl(249, 100%, 20%);
-  --clr-text-light: hsl(0,0%, 99%);
-  
+  --clr-text-light: hsl(0, 0%, 99%);
+
   --clr-bg-primary: hsl(249, 100%, 30%);
-  --clr-bg-secondary: hsl(0,100%,50%);
-  --clr-bg-light: hsl(0,0%,99%);
-  
+  --clr-bg-secondary: hsl(0, 100%, 50%);
+  --clr-bg-light: hsl(0, 0%, 99%);
+
   --clr-btn-hover: whitesmoke;
   --shadow: hsla(236, 95%, 60%, 0.75);
 
@@ -57,27 +56,26 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
+ul[role='list'],
+ol[role='list'] {
   list-style: none;
-}
+  /***** DEFAULT STYLES *****/
 
-/***** DEFAULT STYLES *****/
-
-html {
-  scroll-behavior: smooth;
-  user-select: none;
-  height: 100%;
+  html {
+    scroll-behavior: smooth;
+    user-select: none;
+    height: 100%;
+  }
 }
 
 body {
   background-color: var(--clr-bg-primary);
   font-family: var(--ff-primary);
   text-rendering: optimizeSpeed;
-  width:100%;
+  width: 100%;
 }
 
- h1 {
+h1 {
   display: inline-block;
   font-size: clamp(2rem, 10vw, 80px);
   font-family: var(--ff-primary);
@@ -135,12 +133,39 @@ button:hover,
 }
 
 @keyframes fadeInUp {
-    0% {
-        opacity: 1;
-        transform: translateY(4px);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 1;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Our Partners scrollbar styles */
+::-webkit-scrollbar {
+  /* show horizontal scrollbar */
+  height: 0.5rem;
+  /* don't show vertical scrollbar */
+  width: 0rem;
+}
+
+.partnersSection ::-webkit-scrollbar-track {
+  background-color: var(--clr-bg-light);
+  border-radius: var(--borderRadius);
+}
+
+.partnersSection ::-webkit-scrollbar-thumb {
+  background-color: var(--clr-bg-secondary);
+  border-radius: var(--borderRadius);
+  border: 0.05rem solid var(--clr-bg-light);
+}
+
+/* Firefox scrollbar styles: shows vertical too, but can't be helped */
+@supports (scrollbar-width: var(--clr-bg-secondary) var(--clr-bg-light)) {
+  .partnersSection {
+    scrollbar-color: var(--clr-bg-secondary) var(--clr-bg-light);
+    scrollbar-width: thin;
+  }
 }
