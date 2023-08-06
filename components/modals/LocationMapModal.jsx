@@ -2,7 +2,7 @@ import { Typography } from '../typography';
 import { size } from '../../styles/breakpoints';
 import { useState } from 'react';
 
-import { GoogleApiWrapper, Marker, Map, InfoWindow } from 'google-maps-react';
+import { GoogleApiWrapper, Marker, Map, InfoWindow } from 'google-maps-react-18-support';
 
 const locations = [
   {
