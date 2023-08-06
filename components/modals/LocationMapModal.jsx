@@ -67,7 +67,7 @@ const LocationMapModal = (props) => {
   return (
     <>
       <div className="modalBackdrop" onClick={handleBackdropClick}>
-        <div className="modalContent">
+        <div className="modalContent animated fadeInUp">
           <div className="mapContainer">
             <Map
               google={props.google}
@@ -139,7 +139,7 @@ const LocationMapModal = (props) => {
         }
 
         .mapContainer > div {
-            position: relative;
+          position: relative;
         }
 
         .infoWindow {
