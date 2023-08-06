@@ -18,7 +18,7 @@
   --clr-text-secondary: hsl(249, 100%, 20%);
   --clr-text-light: hsl(0,0%, 99%);
   
-  --clr-bg-primary: hsl(249, 100%, 20%);
+  --clr-bg-primary: hsl(249, 100%, 30%);
   --clr-bg-secondary: hsl(0,100%,50%);
   --clr-bg-light: hsl(0,0%,99%);
   
@@ -119,28 +119,9 @@ button:hover,
   background-color: var(--clr-btn-hover);
 }
 
-@media screen and (min-width: var(--mobile)) {
-  div ~ p {
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    max-width: clamp(70%, 80vw, 90%);
-  }
-  section[class$='Section'] .heroButtons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: min(90vw, 800px);
-  }
-  h1 {
-    letter-spacing: -0.2rem;
-  }
-}
-
 .animated {
-  -webkit-animation-duration: 0.25s;
-  animation-duration: 0.25s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-iteration-count: 1;
@@ -148,12 +129,12 @@ button:hover,
   animation-delay: 0s;
 }
 
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
 }
 
-@keyframes fadeInDown {
+@keyframes fadeInUp {
     0% {
         opacity: 1;
         transform: translateY(4px);
