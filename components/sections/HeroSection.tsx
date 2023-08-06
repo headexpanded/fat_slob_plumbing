@@ -45,7 +45,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <Spacer />
-        <Spacer />
+        
 
         <div className="buttonWrapper">
           {!showBookingsDiv ? (
@@ -95,6 +95,7 @@ export const HeroSection = () => {
           display: flex;
           flex-direction: column;
           place-items: center;
+          inline-size: min(100% - 4rem, 90rem);
         }
 
         .heroIntroText {
