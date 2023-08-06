@@ -47,7 +47,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
 
         @media screen and (min-width: ${size.mobile}) {
           .partnerCard {
-              width: 320px;
+            width: 320px;
           }
         }
 
