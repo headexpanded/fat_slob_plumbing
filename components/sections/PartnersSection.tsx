@@ -28,7 +28,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
 
         {/*  extract key from Partners, spread the rest into PartnerCard component */}
 
-        <div className="partnerCards">
+        <div className="partnerCards snaps-inline">
           {data.map(({ id, ...other }) => {
             return (
               <div className="cardWrapper" key={id}>
@@ -37,31 +37,43 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
             );
           })}
         </div>
-        
       </section>
       <style jsx>{`
         .partnerCards {
-          width: 90vw;
+          inline-size: min(100% - 4rem, 90rem);
           display: grid;
+          grid-auto-flow: column;
           gap: 2rem;
-          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-          justify-content: center;
-          margin-bottom: 4rem;
-          place-items: center;
+          overflow-x: auto;
+          overscroll-behavior-inline: contain;
+          justify-content: flex-start;
+          padding-bottom: 2rem;
         }
 
         @media screen and (min-width: ${size.mobile}) {
           .partnerCards {
-            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-            flex-grow: 1;
+            //gap:4rem;
           }
         }
 
         @media screen and (min-width: ${size.xl}) {
           .partnerCards {
-            grid-template-columns: repeat(2, 1fr);
-            flex-grow: 1;
+            gap: 3rem;
           }
+        }
+
+        .snaps-inline {
+          scroll-snap-type: inline mandatory;
+        }
+
+        .snaps-inline > * {
+          scroll-snap-align: center;
+        }
+
+        .cardWrapper {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
         }
       `}</style>
     </>
