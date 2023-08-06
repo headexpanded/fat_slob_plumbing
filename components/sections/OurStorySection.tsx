@@ -6,6 +6,7 @@ export const OurStorySection = () => {
   return (
     <>
       <section id="ourStorySection" className="ourStorySection">
+        <Spacer />
         <Typography.SectionTitle content="Our Story" />
         <div className="ourStoryText">
           <Typography.ParaC
