@@ -47,11 +47,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
 
         @media screen and (min-width: ${size.mobile}) {
           .partnerCard {
-<<<<<<< HEAD
             width: 320px;
-=======
-              width: 320px;
->>>>>>> 92b7e15 (UI: adds h-scroll to partnerCards)
           }
         }
 
