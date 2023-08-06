@@ -3,7 +3,6 @@
 import { Cards } from '../cards';
 import { Typography } from '../typography';
 import { Spacer } from '../utils/Spacer';
-import { size } from '../../styles/breakpoints';
 
 export type Partner = {
   title: string;
@@ -23,7 +22,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
         <Spacer />
         <Typography.SectionTitle
           content="Our Partners"
-          color="var(--defaultLight)"
+          color="var(--clr-text-primary)"
         />
 
         {/*  extract key from Partners, spread the rest into PartnerCard component */}
@@ -31,7 +30,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
         <div className="partnerCards snaps-inline">
           {data.map(({ id, ...other }) => {
             return (
-              <div className="cardWrapper" key={id}>
+              <div key={id}>
                 <Cards.PartnerCard {...other} />
               </div>
             );
@@ -43,23 +42,11 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           inline-size: min(100% - 4rem, 90rem);
           display: grid;
           grid-auto-flow: column;
-          gap: 2rem;
+          gap: 2.5rem;
           overflow-x: auto;
           overscroll-behavior-inline: contain;
           justify-content: flex-start;
           padding-bottom: 2rem;
-        }
-
-        @media screen and (min-width: ${size.mobile}) {
-          .partnerCards {
-            //gap:4rem;
-          }
-        }
-
-        @media screen and (min-width: ${size.xl}) {
-          .partnerCards {
-            gap: 3rem;
-          }
         }
 
         .snaps-inline {
@@ -68,12 +55,6 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
 
         .snaps-inline > * {
           scroll-snap-align: center;
-        }
-
-        .cardWrapper {
-          display: flex;
-          flex-direction: column;
-          width: fit-content;
         }
       `}</style>
     </>
