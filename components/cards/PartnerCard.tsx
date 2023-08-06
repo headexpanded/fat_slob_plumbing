@@ -47,13 +47,13 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
 
         @media screen and (min-width: ${size.mobile}) {
           .partnerCard {
-            width: 400px;
+              width: 320px;
           }
         }
 
         @media screen and (min-width: ${size.desktop}) {
           .partnerCard {
-            width: 500px;
+            width: 400px;
           }
         }
 
@@ -64,23 +64,15 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           padding: 1rem 0;
         }
 
-        /* .picture{
-          width: 80%;
-          display: flex:
-          flex-direction: column;
-          place-items: center;
-        } */
-
         .picture > img {
           background-size: cover;
           background-position: center;
-          border: 1px solid var(--clr-bg-light);
-          border-radius: var(--borderRadius);
+          //border: 1px solid var(--clr-bg-primary);
           filter: grayscale(100%);
-          // height: 80%;
           aspect-ratio: 4/3;
-          max-width: 100%;
+          inline-size: 100%;
           padding: 0px 12px;
+          object-fit: cover;
         }
 
         .partnerDesc {
