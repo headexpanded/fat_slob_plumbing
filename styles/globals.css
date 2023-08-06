@@ -133,14 +133,14 @@ button:hover,
 }
 
 @keyframes fadeInUp {
-  0% {
-    opacity: 1;
-    transform: translateY(4px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    0% {
+        opacity: 1;
+        transform: translateY(4px);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Our Partners scrollbar styles */
