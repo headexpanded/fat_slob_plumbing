@@ -49,36 +49,36 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
 
       <style jsx>{`
         .partnerCard {
+          align-items: center;
           background-color: var(--clr-bg-light);
+          border: 1px solid var(--clr-bg-light);
           border-radius: var(--borderRadius);
+          box-shadow: var(--boxShadow);
           display: flex;
           flex-direction: column;
-          border: 1px solid var(--clr-bg-light);
-          align-items: center;
           justify-content: center;
-          box-shadow: var(--boxShadow);
           min-height: 340px;
-          width: 320px;
+          inline-size: 320px;
         }
 
         .partnerCard h1 {
           color: var(--clr-text-secondary);
+          font-size: 1.5rem;
           font-weight: 700;
           margin: 0;
           padding: 1rem 0;
           text-align: center;
-          font-size: 1.5rem;
         }
 
         @media screen and (min-width: ${size.mobile}) {
           .partnerCard {
-            width: 320px;
+            inline-size: 320px;
           }
         }
 
         @media screen and (min-width: ${size.desktop}) {
           .partnerCard {
-            width: 400px;
+            inline-size: 400px;
           }
         }
 

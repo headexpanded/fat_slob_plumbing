@@ -1,4 +1,4 @@
-// define About Us section
+// define Partners section
 
 import { Cards } from '../cards';
 import { Typography } from '../typography';
