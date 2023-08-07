@@ -19,7 +19,7 @@ type FranchisesSectionProps = {
   data: Array<Franchise> | undefined;
 };
 
-export const FranchisesSection = ({ data }: FranchisesSectionProps) => {
+export const FranchisesSection = () => {
   const [showLocations, setShowLocations] = useState(false);
   return (
     <>
@@ -57,7 +57,7 @@ export const FranchisesSection = ({ data }: FranchisesSectionProps) => {
               ) : (
                 <LocationMapModal
                   onClose={() => setShowLocations(false)}
-                  data={data}
+                 
                 />
               )}
             </div>
