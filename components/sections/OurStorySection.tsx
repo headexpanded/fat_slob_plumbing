@@ -21,7 +21,7 @@ export const OurStorySection = () => {
           />
 
           <Typography.ParaC
-            content="And yes, I think it's funny."
+            content="I had three main goals:"
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -34,7 +34,7 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <Typography.ParaC
-            content="I had three main goals. First, to write pure CSS without using a framework such as Tailwind or Bootstrap."
+            content="Firstly, to write responsive CSS without using a framework such as Tailwind or Bootstrap."
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -45,32 +45,32 @@ export const OurStorySection = () => {
           />
         </div>
         <Typography.ParaC
-          content="Cascading Styles"
+          content="Re-usable Code"
           color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
         <div className="ourStoryText">
           <Typography.ParaC
-            content="Secondly, to make the CSS cascade down through the HTML elements and match the semantics."
+            content="Secondly, to write components which I can copy from here & paste into another project."
             fontSize="1.5rem"
             fontWeight="700"
           />
           <Typography.ParaC
-            content="For example, set default styles for the html <section> element, then override as necessary."
+            content="For example, typography, spacers, loaders, etc."
             fontSize="1.5rem"
             fontWeight="700"
           />
         </div>
         <Typography.ParaC
-          content="Custom Functions"
+          content="Have A Laugh"
           color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
         <div className="ourStoryText">
           <Typography.ParaC
-            content="Thirdly, to use custom functions like min(), max(), calc(), and clamp() for the responsive design, instead of media queries (where it made sense to do so)."
+            content="And thirdly, to write some tight copy for a business which might be quite difficult to promote in real life."
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -87,26 +87,16 @@ export const OurStorySection = () => {
             fontSize="1.5rem"
             fontWeight="700"
           />
-          <Typography.ParaC
-            content="Franchises: interactive map of available locations"
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
-          
-          <Typography.ParaC
-            content="Also, CSS layers would be fun to learn, so maybe I'll do that sooner or later."
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
         </div>
+        <Spacer />
       </section>
 
       <style jsx>{`
         .ourStoryText {
           display: flex;
           flex-direction: column;
+          inline-size: 72vw;
           place-items: center;
-          width: 90vw;
         }
       `}</style>
     </>
