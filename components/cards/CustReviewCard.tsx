@@ -1,4 +1,4 @@
-
+import { Suspense } from 'react';
 import { size } from '../../styles/breakpoints';
 
 // define CustReviewCard properties
@@ -17,18 +17,19 @@ export const CustReviewCard = ({
   return (
     <>
       <div className="custReviewCard">
-        <div className="custReview">
-          <img src={photo} alt="Customer photo" loading="lazy" />
-
-          <p>{review}</p>
-        </div>
-        <div className="custNameWrapper">
-          <div className="custName">
-            <p>- {customerName}</p>
+        <Suspense fallback={<div>Loading...</div>}>
+          <div className="custReview">
+            <img src={photo} alt="Customer photo" loading="lazy" />
+            <p>{review}</p>
           </div>
-        </div>
+          <div className="custNameWrapper">
+            <div className="custName">
+              <p>- {customerName}</p>
+            </div>
+          </div>
 
-        <div className="imgWrapper"></div>
+          <div className="imgWrapper"></div>
+        </Suspense>
       </div>
 
       <style jsx>{`

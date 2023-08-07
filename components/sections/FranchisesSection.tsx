@@ -5,7 +5,7 @@ import { Spacer } from '../utils/Spacer';
 import trishPhoto from '../../assets/img/trishPhoto-cr.png';
 import { size } from '../../styles/breakpoints';
 import LocationMapModal from '../modals/LocationMapModal';
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 
 export type Franchise = {
   locationName: string;
@@ -55,22 +55,21 @@ export const FranchisesSection = () => {
                   </button>
                 </div>
               ) : (
-                <LocationMapModal
-                  onClose={() => setShowLocations(false)}
-                 
-                />
+                <LocationMapModal onClose={() => setShowLocations(false)} />
               )}
             </div>
           </div>
 
           <div className="trish">
-            <Image
-              alt="Photo of Fat Slob Plumbing secretary"
-              src={trishPhoto}
-              width={5184}
-              height={3456}
-              loading='lazy'
-            />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Image
+                alt="Photo of Fat Slob Plumbing secretary"
+                src={trishPhoto}
+                width={5184}
+                height={3456}
+                loading="lazy"
+              />
+            </Suspense>
           </div>
         </div>
         <Spacer />

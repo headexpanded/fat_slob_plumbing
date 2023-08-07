@@ -1,5 +1,5 @@
 // define Intro Section properties
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { Typography } from '../typography';
 import { Spacer } from '../utils/Spacer';
 import Image from 'next/image';
@@ -35,17 +35,18 @@ export const HeroSection = () => {
             <Typography.ParaL content="We'll give it a good stress test." />
           </div>
           <div className="heroFatSlobs">
-            <Image
-              alt="Photo of Fat Slob Plumbing staff"
-              width={2609}
-              height={3914}
-              src={staffPhoto}
-              loading='lazy'
-            />
+            <Suspense fallback={<div>Loading...</div>}>
+              <Image
+                alt="Photo of Fat Slob Plumbing staff"
+                width={2609}
+                height={3914}
+                src={staffPhoto}
+                loading="lazy"
+              />
+            </Suspense>
           </div>
         </div>
         <Spacer />
-        
 
         <div className="buttonWrapper">
           {!showBookingsDiv ? (

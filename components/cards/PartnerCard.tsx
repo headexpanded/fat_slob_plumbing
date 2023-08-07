@@ -1,5 +1,6 @@
 import { size } from '../../styles/breakpoints';
 import { Typography } from '../typography';
+import { Suspense } from 'react';
 
 // define PartnerCard properties
 
@@ -14,21 +15,23 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
   return (
     <>
       <div className="partnerCard">
-        <h3>{title}</h3>
-        <picture className="picture">
-          <img src={photo} alt={'Photo of ' + title} loading="lazy" />
-        </picture>
-        <div className="partnerDesc">
-          <Typography.ParaL
-            color="var(--clr-text-secondary)"
-            content={desc}
-            fontSize="0.75rem"
-            fontWeight="700"
-            lineHeight="1rem"
-            padding="1rem"
-            width="90%"
-          />
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <h3>{title}</h3>
+          <picture className="picture">
+            <img src={photo} alt={'Photo of ' + title} loading="lazy" />
+          </picture>
+          <div className="partnerDesc">
+            <Typography.ParaL
+              color="var(--clr-text-secondary)"
+              content={desc}
+              fontSize="0.75rem"
+              fontWeight="700"
+              lineHeight="1rem"
+              padding="1rem"
+              width="90%"
+            />
+          </div>
+        </Suspense>
       </div>
 
       <style jsx>{`

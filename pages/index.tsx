@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { lazy, Suspense } from 'react';
 import { gql, request } from 'graphql-request';
 import { CustomerReview } from '../components/sections/CustReviewsSection';
 import { Partner } from '../components/sections/PartnersSection';
@@ -62,17 +63,23 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       {/* Navbar Section */}
       <Section.NavBar />
       {/* Hero Section */}
-      <Section.Hero />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Section.Hero />
+      </Suspense>
       {/* Customer Reviews */}
-      <Section.CustReviews data={customerReviews}></Section.CustReviews>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Section.CustReviews data={customerReviews}></Section.CustReviews>
+      </Suspense>
       {/* How We Work */}
       {/* <Section.HowWeWork /> */}
       {/* Franchises */}
-
-      <Section.Franchises />
-
+      <Suspense fallback={<div>Loading...</div>}>
+        <Section.Franchises />
+      </Suspense>
       {/* Partners */}
-      <Section.Partners data={partnersData}></Section.Partners>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Section.Partners data={partnersData}></Section.Partners>
+      </Suspense>
       {/* Our Story */}
       <Section.OurStory></Section.OurStory>
       {/* Footer */}
