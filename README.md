@@ -41,10 +41,6 @@ Fortunately Ron and Dave don't mind about that - business is booming! They're fr
 
 ## To Do:
 
-- bookings with "Trish"
-
-- Maps of available franchises
-
 - e-commerce: Fat Slob Plumbing t-shirts
 
 - logo
