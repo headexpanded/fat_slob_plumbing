@@ -3,16 +3,16 @@ import { gql, request } from 'graphql-request';
 import { CustomerReview } from '../components/sections/CustReviewsSection';
 import { Partner } from '../components/sections/PartnersSection';
 import { Section } from '../components/sections';
-import { Franchise } from '../components/sections/FranchisesSection';
+//import { Franchise } from '../components/sections/FranchisesSection';
 
 
 type HomeProps = {
   customerReviews: CustomerReview[];
   partnersData: Partner[];
-  franchisesData?: Franchise[] | undefined;
+  //franchisesData?: Franchise[] | undefined;
 };
 
-function Home({ customerReviews, partnersData, franchisesData }: HomeProps) {
+function Home({ customerReviews, partnersData }: HomeProps) {
   return (
     <div className="main">
       <Head>
@@ -72,7 +72,9 @@ function Home({ customerReviews, partnersData, franchisesData }: HomeProps) {
       {/* How We Work */}
       {/* <Section.HowWeWork /> */}
       {/* Franchises */}
-      <Section.Franchises  />
+
+      <Section.Franchises />
+
       {/* Partners */}
       <Section.Partners data={partnersData}></Section.Partners>
       {/* Our Story */}
