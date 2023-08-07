@@ -5,7 +5,6 @@ import { Partner } from '../components/sections/PartnersSection';
 import { Section } from '../components/sections';
 //import { Franchise } from '../components/sections/FranchisesSection';
 
-
 type HomeProps = {
   customerReviews: CustomerReview[];
   partnersData: Partner[];
@@ -58,9 +57,6 @@ function Home({ customerReviews, partnersData }: HomeProps) {
   "
         />
         <meta name="charset" content="utf-8" />
-
-        <link rel="preconnect" href="https://rsms.me/" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Navbar Section */}
