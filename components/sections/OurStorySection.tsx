@@ -10,12 +10,12 @@ export const OurStorySection = () => {
         <Typography.SectionTitle content="Our Story" />
         <div className="ourStoryText">
           <Typography.ParaC
-            content="This is not actually a real business."
+            content="This is not a real business."
             fontSize="1.5rem"
             fontWeight="700"
           />
           <Typography.ParaC
-            content=" It's just a site I made to practice CSS & React."
+            content=" It's a site I made to practice CSS & React."
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -34,12 +34,12 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <Typography.ParaC
-            content="Firstly, to write responsive CSS without using a framework such as Tailwind or Bootstrap."
+            content="1/ design & build an entire responsive site with pure CSS."
             fontSize="1.5rem"
             fontWeight="700"
           />
           <Typography.ParaC
-            content="I wanted to see how much I could do writing the CSS myself (that's why there are still a few niggly little things to fix up)."
+            content="(no Tailwind, no Bootstrap)"
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -52,12 +52,12 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <Typography.ParaC
-            content="Secondly, to write components which I can copy from here & paste into another project."
+            content="2/ build stuff I can copy from here & paste into another project."
             fontSize="1.5rem"
             fontWeight="700"
           />
           <Typography.ParaC
-            content="For example, typography, spacers, loaders, etc."
+            content="(typography, spacers, loaders, etc.)"
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -70,7 +70,14 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <Typography.ParaC
-            content="And thirdly, to write some tight copy for a business which might be quite difficult to promote in real life."
+            content="3/ Write some tight, rain-making copy."
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+        </div>
+        <div className="ourStoryText">
+          <Typography.ParaC
+            content="You're only young once, but you can be immature forever."
             fontSize="1.5rem"
             fontWeight="700"
           />
