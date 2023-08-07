@@ -1,8 +1,14 @@
 import { Typography } from '../typography';
 import { size } from '../../styles/breakpoints';
 import { useState } from 'react';
+import { Client } from '@googlemaps/google-maps-services-js';
 
-import { GoogleApiWrapper, Marker, Map, InfoWindow } from 'google-maps-react-18-support';
+import {
+  GoogleApiWrapper,
+  Marker,
+  Map,
+  InfoWindow,
+} from 'google-maps-react-18-support';
 
 const locations = [
   {
@@ -18,22 +24,22 @@ const locations = [
     latitude: 53.7938,
     longitude: -1.7564,
     price: 'GBP 80,000',
-    description: "Plenty of jobs here - it's the curries.",
+    description: "Plenty of jobs here - it's all the great curries & kebabs!",
   },
   {
     locationName: 'Warrington',
     latitude: 53.39,
     longitude: -2.597,
     price: 'GBP 72,000',
-    description:
-      '17 square miles of toilets. All of them need stress tests!',
+    description: '17 square miles of toilets. All of them need stress tests!',
   },
   {
     locationName: 'Preston',
     latitude: 53.7632,
     longitude: -2.7031,
     price: 'GBP 80,000',
-    description: "North End? South End more like it - lots of toilets hereabouts.",
+    description:
+      'North End? South End more like it - lots of toilets hereabouts.',
   },
 ];
 
@@ -64,6 +70,8 @@ const LocationMapModal = (props) => {
     lng: -2.1561,
   };
 
+  const mapsKey = process.env.FSP_GOOGLE_MAPS_API_KEY;
+
   return (
     <>
       <div className="modalBackdrop" onClick={handleBackdropClick}>
@@ -72,8 +80,20 @@ const LocationMapModal = (props) => {
             <Map
               google={props.google}
               zoom={8}
-              style={{ width: '100%', height: '100%', margin: 'auto' }}
+              style={{
+                width: '100%',
+                height: '100%',
+                margin: 'auto',
+              }}
+              containerStyle={{
+                border: '2px solid white',
+              }}
               initialCenter={rochdale}
+              mapTypeControl={false}
+              streetViewControl={false}
+              panControl={false}
+              fullscreenControl={false}
+              zoomControl={false}
             >
               {locations.slice(0, 10).map((location, index) => (
                 <Marker
@@ -83,7 +103,6 @@ const LocationMapModal = (props) => {
                   location={location}
                   price={location.price}
                   onClick={onMarkerClick}
-                  zIndex={1000}
                 />
               ))}
               {selectPlace && (
@@ -93,9 +112,10 @@ const LocationMapModal = (props) => {
                   onClose={onClose}
                 >
                   <div className="infoWindow">
-                    <h3>{selectPlace.locationName}</h3>
+                    <h3>
+                      {selectPlace.locationName}: {selectPlace.price}
+                    </h3>
                     <p>{selectPlace.description}</p>
-                    <p>Franchise Price: {selectPlace.price}</p>
                   </div>
                 </InfoWindow>
               )}
@@ -133,7 +153,6 @@ const LocationMapModal = (props) => {
 
         .mapContainer {
           flex: 1;
-          //margin-top: 0.5rem;
           min-height: 400px;
           min-width: 1000px;
         }
@@ -156,21 +175,9 @@ const LocationMapModal = (props) => {
 
         .infoWindow p {
           font-size: 1rem;
-          font-weight: 500;
+          font-weight: 400;
           color: var(--clr-text-secondary);
           padding: 0.5rem 0rem;
-        }
-
-        .closeButton {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
-          padding: 0.5rem 1rem;
-          background-color: var(--clr-bg-light);
-          color: var(--clr-text-secondary);
-          border: none;
-          cursor: pointer;
-          z-index: 2;
         }
       `}</style>
     </>
@@ -178,6 +185,5 @@ const LocationMapModal = (props) => {
 };
 
 export default GoogleApiWrapper({
-  apiKey: process.env.FSP_GOOGLE_MAPS_API_KEY,
+  apiKey: process.env.REACT_APP_GOOGLE_API_KEY,
 })(LocationMapModal);
-
