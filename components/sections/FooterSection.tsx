@@ -17,6 +17,7 @@ export const FooterSection = () => {
           href="https://github.com/headexpanded/fat_slob_plumbing/blob/main/README.md"
           target="_blank"
           rel="noreferrer"
+          aria-label="Link to GitHub repository"
         >
           <div className="githubContainer">
             <svg
