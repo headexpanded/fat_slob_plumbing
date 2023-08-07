@@ -17,6 +17,7 @@
   --clr-text-primary: hsl(0, 100%, 50%);
   --clr-text-secondary: hsl(249, 100%, 20%);
   --clr-text-light: hsl(0, 0%, 99%);
+  --clr-text-hi-contrast: hsl(0, 100%, 40%);
 
   --clr-bg-primary: hsl(249, 100%, 30%);
   --clr-bg-secondary: hsl(0, 100%, 50%);
