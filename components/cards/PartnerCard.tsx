@@ -15,7 +15,7 @@ type PartnerCardProps = {
 export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
   // define image style
   const imageStyle = {
-    filter: 'grayscale(100%)',
+    filter: 'grayscale(100%) contrast(90%) brightness(90%)',
   };
 
   return (
