@@ -14,13 +14,13 @@
 
 :root {
   /* Colour Palette */
-  --clr-text-primary: hsl(0, 100%, 60%);
-  --clr-text-secondary: hsl(249, 100%, 20%);
+  --clr-text-primary: hsl(0, 100%, 47%);
+  --clr-text-secondary: hsl(249, 100%, 25%);
   --clr-text-light: hsl(0, 0%, 99%);
-  --clr-text-hi-contrast: hsl(0, 100%, 60%);
+  --clr-text-hi-contrast: hsl(0, 100%, 47%);
 
-  --clr-bg-primary: hsl(215, 100%, 40%);
-  --clr-bg-secondary: hsl(0, 100%, 60%);
+  --clr-bg-primary: hsl(215, 100%, 20%);
+  --clr-bg-secondary: hsl(0, 100%, 47%);
   --clr-bg-light: hsl(0, 0%, 99%);
 
   --clr-btn-hover: whitesmoke;
@@ -71,14 +71,14 @@ ol[role='list'] {
 }
 
 body {
-  /* background-color: var(--clr-bg-primary); */
-  background-color: hsl(216, 100%, 46%);
+  background-color: var(--clr-bg-primary);
+  /* background-color: hsl(216, 100%, 51%);
   background-image: linear-gradient(
     160deg,
     hsl(228, 71%, 43%) 19%,
-    hsla(222, 89%, 45%, 0.745) 40%,
+    hsla(222, 90%, 51%, 0.745) 40%,
     hsl(228, 71%, 43%) 100%
-  );
+  ); */
 
   font-family: var(--ff-primary);
   text-rendering: optimizeSpeed;
