@@ -1,7 +1,5 @@
-import { Typography } from '../typography';
-import { size } from '../../styles/breakpoints';
+
 import { useState } from 'react';
-import { Client } from '@googlemaps/google-maps-services-js';
 
 import {
   GoogleApiWrapper,
@@ -69,8 +67,6 @@ const LocationMapModal = (props) => {
     lat: 53.6097,
     lng: -2.1561,
   };
-
-  const mapsKey = process.env.FSP_GOOGLE_MAPS_API_KEY;
 
   return (
     <>
