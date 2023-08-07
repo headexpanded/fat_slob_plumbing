@@ -118,7 +118,11 @@ export const HeroSection = () => {
           height: auto;
           justify-content: center;
           padding: 1.5rem;
-          width: 100%;
+          width: calc(100% - 2rem);
+        }
+
+        .calendarBlocked > p {
+          width: calc(100% - 2rem);
         }
 
         .calendarButton {
