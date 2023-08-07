@@ -22,7 +22,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
     <>
       <div className="partnerCard">
         <Suspense fallback={<div>Loading...</div>}>
-          <h3>{title}</h3>
+          <h1>{title}</h1>
           <picture className="picture">
             <Image
               alt={'Photo of ' + title}
@@ -59,6 +59,15 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           box-shadow: var(--boxShadow);
           min-height: 340px;
           width: 320px;
+        }
+
+        .partnerCard h1 {
+          color: var(--clr-text-secondary);
+          font-weight: 700;
+          margin: 0;
+          padding: 1rem 0;
+          text-align: center;
+          font-size: 1.5rem;
         }
 
         @media screen and (min-width: ${size.mobile}) {
