@@ -5,7 +5,7 @@
 */
 
 /* import breakpoints from breakpoints.ts */
-:import('./breakpoints.ts') {
+
 :import('./breakpoints.ts') {
   --mobile: size.mobile;
   --desktop: size.desktop;
