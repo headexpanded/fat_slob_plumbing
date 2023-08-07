@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { size } from '../../styles/breakpoints';
 import { Typography } from '../typography';
 import { Suspense } from 'react';
@@ -12,13 +13,25 @@ type PartnerCardProps = {
 
 // define PartnerCard component
 export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
+  // define image style
+  const imageStyle = {
+    filter: 'grayscale(100%)',
+  };
+
   return (
     <>
       <div className="partnerCard">
         <Suspense fallback={<div>Loading...</div>}>
           <h3>{title}</h3>
           <picture className="picture">
-            <img src={photo} alt={'Photo of ' + title} loading="lazy" />
+            <Image
+              alt={'Photo of ' + title}
+              src={photo}
+              width={300}
+              height={225}
+              loading="lazy"
+              style={imageStyle}
+            />
           </picture>
           <div className="partnerDesc">
             <Typography.ParaL
@@ -67,21 +80,12 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           padding: 1rem 0;
         }
 
-        .picture > img {
-          background-size: cover;
-          background-position: center;
-          //border: 1px solid var(--clr-bg-primary);
-          filter: grayscale(100%);
-          aspect-ratio: 4/3;
-          inline-size: 100%;
-          padding: 0px 12px;
-          object-fit: cover;
-        }
-
         .partnerDesc {
           display: flex;
           flex-direction: row;
           justify-content: center;
+          text-align: center;
+          width: calc(100% - 1rem);
         }
       `}</style>
     </>
