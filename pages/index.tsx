@@ -72,7 +72,9 @@ function Home({ customerReviews, partnersData }: HomeProps) {
       {/* How We Work */}
       {/* <Section.HowWeWork /> */}
       {/* Franchises */}
+
       <Section.Franchises />
+
       {/* Partners */}
       <Section.Partners data={partnersData}></Section.Partners>
       {/* Our Story */}
