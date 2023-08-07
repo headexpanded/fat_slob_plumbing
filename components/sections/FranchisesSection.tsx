@@ -69,7 +69,7 @@ export const FranchisesSection = () => {
               src={trishPhoto}
               width={5184}
               height={3456}
-              priority
+              loading='lazy'
             />
           </div>
         </div>

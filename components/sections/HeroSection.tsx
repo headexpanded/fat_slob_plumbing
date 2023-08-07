@@ -40,7 +40,7 @@ export const HeroSection = () => {
               width={2609}
               height={3914}
               src={staffPhoto}
-              priority
+              loading='lazy'
             />
           </div>
         </div>
