@@ -1,7 +1,7 @@
 # Fat Slob Plumbing
-
+<div >
 <p align="center"><img width="auto" height="400px" alt="Fat Slob Plumbing staff photo" src="./assets/img/staffPhoto-sm.png"/></p>
-
+</div>
 I'm a lucky guy!
 
 As a solo freelancer, it's not easy to get hired by a world-class business!
@@ -22,17 +22,15 @@ It's a pity my graphics card is broken. The colour palette looks different for m
 
 Fortunately Ron and Dave don't mind about that - business is booming! They're franchising!
 
-## React
+## Next/React
 
-- Just about everything's a React component
-- HTML sections, customer & partner cards, typography, you name it. Even spacers
+- Next 12.3 (might upgrade to 13.4 we'll see)
+- React 18.2 (Suspense)
 
 ## Pure CSS
 
 - responsive design
-- _cascading_ styles, which respect HMTL semantics
-- set global styles, make exceptions further down the hierarchy as required
-
+- no framework
 
 ## TypeScript
 
