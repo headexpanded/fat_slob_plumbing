@@ -1,7 +1,7 @@
 // define Intro Section properties
 import { useState, Suspense } from 'react';
 import { Typography } from '../typography';
-import { Spacer } from '../utils/Spacer';
+import { Utils } from '../utils';
 import Image from 'next/image';
 import staffPhoto from '../../assets/img/staffPhoto.png';
 import { size } from '../../styles/breakpoints';
@@ -13,8 +13,8 @@ export const HeroSection = () => {
   return (
     <>
       <section className="heroSection">
-        <Spacer />
-        <Spacer />
+        <Utils.Spacer />
+        <Utils.Spacer />
         <Typography.Title content="Fat Slob Plumbing" />
 
         <div className="heroStrap">
@@ -46,15 +46,18 @@ export const HeroSection = () => {
             </Suspense>
           </div>
         </div>
-        <Spacer />
+        <Utils.Spacer />
 
         <div className="buttonWrapper">
           {!showBookingsDiv ? (
             <div className="heroButtons">
-              <button onClick={() => setShowBookingsDiv(true)}>BOOKINGS</button>
-              <Spacer />
+              <Utils.Button
+                btnText="BOOK NOW"
+                onClick={() => setShowBookingsDiv(true)}
+              />
+              <Utils.Spacer />
               <a href="#franchisesSection">
-                <button>FRANCHISES</button>
+                <Utils.Button btnText="FRANCHISES" />
               </a>
             </div>
           ) : (
@@ -63,18 +66,16 @@ export const HeroSection = () => {
                 content="Sorry mate. The calendar's completely blocked up."
                 color="var(--clr-text-light)"
               />
-              <button
-                className="calendarButton"
+              <Utils.CalendarButton
+                btnText="CLOSE"
                 onClick={() => setShowBookingsDiv(false)}
-              >
-                CLOSE
-              </button>
+              />
             </div>
           )}
         </div>
 
-        <Spacer />
-        <Spacer />
+        <Utils.Spacer />
+        <Utils.Spacer />
 
         <Typography.SubHeader content="Not sure? Here's what our customers say..." />
       </section>
@@ -123,13 +124,6 @@ export const HeroSection = () => {
 
         .calendarBlocked > p {
           width: calc(100% - 2rem);
-        }
-
-        .calendarButton {
-          margin-top: 2rem;
-          width: max(5vw, 120px);
-          color: var(--clr-text-secondary);
-          box-shadow: none;
         }
 
         @media screen and (min-width: ${size.mobile}) {

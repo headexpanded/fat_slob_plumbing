@@ -1,7 +1,7 @@
 // define Franchises Section properties
 import Image from 'next/image';
 import { Typography } from '../typography';
-import { Spacer } from '../utils/Spacer';
+import { Utils } from '../utils';
 import trishPhoto from '../../assets/img/trishPhoto-cr.png';
 import { size } from '../../styles/breakpoints';
 import LocationMapModal from '../modals/LocationMapModal';
@@ -24,7 +24,7 @@ export const FranchisesSection = () => {
   return (
     <>
       <section id="franchisesSection" className="franchisesSection">
-        <Spacer />
+        <Utils.Spacer />
         <div className="franchisesTitle">
           <Typography.SectionTitle
             content="Buy A Franchise"
@@ -32,7 +32,7 @@ export const FranchisesSection = () => {
           />
         </div>
         <Typography.SubHeader content="Can YOU deliver on demand?" />
-        <Spacer />
+        <Utils.Spacer />
         <div className="franchiseImageAndTextBlock">
           <div className="franchiseText">
             <Typography.ParaL content="We're looking for people who can deliver value." />
@@ -46,13 +46,11 @@ export const FranchisesSection = () => {
             <div className="locations">
               {!showLocations ? (
                 <div className="locationButton">
-                  <Spacer />
-                  <button
-                    className="button"
+                  <Utils.Spacer />
+                  <Utils.Button
+                    btnText="LOCATIONS"
                     onClick={() => setShowLocations(true)}
-                  >
-                    LOCATIONS
-                  </button>
+                  />
                 </div>
               ) : (
                 <LocationMapModal onClose={() => setShowLocations(false)} />
@@ -72,12 +70,12 @@ export const FranchisesSection = () => {
             </Suspense>
           </div>
         </div>
-        <Spacer />
+        <Utils.Spacer />
 
         <div className="phoneTrish">
           <Typography.SubHeader content="Contact Trish, our friendly sales rep!" />
         </div>
-        <Spacer />
+        <Utils.Spacer />
       </section>
       <style jsx>{`
         .franchiseImageAndTextBlock {

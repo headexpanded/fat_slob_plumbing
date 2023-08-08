@@ -61,6 +61,7 @@
 ul[role='list'],
 ol[role='list'] {
   list-style: none;
+
   /***** DEFAULT STYLES *****/
 
   html {
@@ -107,24 +108,6 @@ section[class$='Section'] {
 section[class$='Section'] h1:not(.heroSection h1) {
   margin-bottom: 2rem;
   text-align: center;
-}
-
-button {
-  background-color: var(--clr-bg-light);
-  border: none;
-  border-radius: var(--borderRadius);
-  box-shadow: var(--boxShadow);
-  color: var(--clr-text-secondary);
-  font-size: var(--fs-base);
-  font-weight: 900;
-  width: min(45vw, 240px);
-  aspect-ratio: 3/1;
-}
-
-button:hover,
-:focus {
-  cursor: pointer;
-  background-color: var(--clr-btn-hover);
 }
 
 .animated {

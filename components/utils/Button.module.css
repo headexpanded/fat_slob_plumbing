@@ -1,0 +1,29 @@
+.btn {
+  border: none;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--boxShadow);
+  color: var(--clr-text-secondary);
+  font-size: var(--fs-base);
+  font-weight: 900;
+  text-align: center;
+  aspect-ratio: 3/1;
+}
+
+.cta {
+  background-color: var(--clr-bg-light);
+  inline-size: min(45vw, 240px);
+}
+
+.cta:hover,
+.calendar:hover,
+.cta:focus,
+.calendar:focus {
+  cursor: pointer;
+  background-color: var(--clr-btn-hover);
+}
+
+.calendar {
+  box-shadow: none;
+  margin-top: 1rem;
+  inline-size: max(5vw, 120px);
+}

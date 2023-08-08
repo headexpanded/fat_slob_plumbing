@@ -1,4 +1,5 @@
-// define Hero text component
+// define Spacer component
+
 type SpacerProps = {
   content?: string;
 };
