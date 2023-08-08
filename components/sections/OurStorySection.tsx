@@ -34,7 +34,7 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <ParaC
-            content="1/ design & build an entire responsive site with pure CSS."
+            content="1: design & build an entire responsive site with pure CSS."
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -52,7 +52,7 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <ParaC
-            content="2/ build stuff I can copy from here & paste into another project."
+            content="2: build stuff I can copy from here & paste into another project."
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -70,7 +70,7 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <ParaC
-            content="3/ Write some tight, rain-making copy."
+            content="3: Write some tight, rain-making copy."
             fontSize="1.5rem"
             fontWeight="700"
           />

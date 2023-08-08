@@ -109,12 +109,7 @@ type ParaCProps = {
 };
 
 // define Paragraph component
-export const ParaC = ({
-  content,
-  color,
-  fontSize,
-  fontWeight,
-}: ParaCProps) => {
+export const ParaC = ({ content, color, fontSize, fontWeight }: ParaCProps) => {
   return (
     <>
       <span>{content}</span>

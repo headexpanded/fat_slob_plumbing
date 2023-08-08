@@ -81,8 +81,6 @@ export const HeroSection = () => {
       </section>
 
       <style jsx>{`
-        .heroSection {
-        }
 
         .heroStrap {
           display: flex;
