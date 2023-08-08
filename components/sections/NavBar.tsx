@@ -1,8 +1,5 @@
 // define NavBar properties
 
-
-import { Typography } from '../typography';
-
 export const NavBar = () => {
 
   return (
@@ -17,27 +14,25 @@ export const NavBar = () => {
       <style jsx>{`
         .navBar {
           align-items: center;
-          border-bottom: 1px solid var(--defaultDark);
-          box-shadow: 0px 1px 8px 0px var(--shadow);
+          background-color: var(--clr-bg-light);
           display: flex;
           flex-grow: 1;
           height: 2rem;
           justify-content: space-evenly;
-          width: 100%;
-          background-color: var(--clr-bg-light);
           position: fixed;
+          width: 100%;
           z-index: 2;
         }
 
         .navBar > a {
           color: var(--clr-text-secondary);
-          text-decoration: none;
           cursor: pointer;
-          text-transform: uppercase;
-          font-size: 0.75rem;
-          font-weight: 700;
           display: flex;
           flex-direction: column;
+          font-size: 0.75rem;
+          font-weight: 700;
+          text-decoration: none;
+          text-transform: uppercase;
         }
 
         .navBar > a:hover {
@@ -46,9 +41,9 @@ export const NavBar = () => {
 
         .navBar > a:hover::after,
         .navBar > a:focus::after {
+          background-color: var(--clr-text-secondary);
           content: '';
           height: 2px;
-          background-color: var(--clr-text-secondary);
         }
       `}</style>
     </>
