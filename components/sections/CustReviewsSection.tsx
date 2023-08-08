@@ -1,8 +1,8 @@
 // define Customer Reviews section
 
-import { Cards } from '../cards';
-import { Typography } from '../typography';
-import { Spacer } from '../utils/Spacer';
+import { CustReviewCard } from '@cards/CustReviewCard';
+import { Typography } from '@typography/index';
+import { Spacer } from '@utils/index';
 
 export type CustomerReview = {
   id: string;
@@ -35,7 +35,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
           {data?.map(({ id, ...other }) => {
             return (
               <div key={id}>
-                <Cards.CustReviewCard {...other} />
+                <CustReviewCard {...other} />
               </div>
             );
           })}

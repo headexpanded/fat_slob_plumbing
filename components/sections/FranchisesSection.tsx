@@ -1,11 +1,14 @@
 // define Franchises Section properties
-import Image from 'next/image';
-import { SectionTitle, SubHeader, ParaL } from '../typography';
-import { Spacer, Button } from '../utils';
-import trishPhoto from '../../assets/img/trishPhoto-cr.png';
-import { size } from '../../styles/breakpoints';
-import LocationMapModal from '../modals/LocationMapModal';
 import { useState, Suspense } from 'react';
+import Image from 'next/image';
+
+import { SectionTitle, SubHeader, ParaL } from '@typography/index';
+import { Spacer, Button } from '@utils/index';
+import { size } from '@styles/breakpoints';
+
+import trishPhoto from '../../assets/img/trishPhoto-cr.png';
+
+import LocationMapModal from '@modals/LocationMapModal';
 
 export type Franchise = {
   locationName: string;

@@ -1,6 +1,6 @@
 // define Our Story section
-import { SectionTitle, ParaC } from '../typography';
-import { Spacer } from '../utils/Spacer';
+import { SectionTitle, ParaC } from '@typography/index';
+import { Spacer } from '@utils/index';
 
 export const OurStorySection = () => {
   return (

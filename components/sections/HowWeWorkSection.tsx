@@ -1,7 +1,7 @@
 // define How We Work Section
 import { Cards } from '../cards';
-import { Typography } from '../typography';
-import { Spacer } from '../utils/Spacer';
+import { Typography } from '@typography/index';
+import { Spacer } from '@utils/index';
 
 export type HowWeWorkBlurb = {
   title: string;

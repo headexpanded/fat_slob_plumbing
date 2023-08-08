@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import { lazy, Suspense } from 'react';
 import { gql, request } from 'graphql-request';
-import { CustomerReview } from '../components/sections/CustReviewsSection';
-import { Partner } from '../components/sections/PartnersSection';
-import { Section } from '../components/sections';
+
+import { CustomerReview } from '@sections/CustReviewsSection';
+import { Partner } from '@sections/PartnersSection';
+import { Section } from '@sections/index';
 //import { Franchise } from '../components/sections/FranchisesSection';
 
 type HomeProps = {

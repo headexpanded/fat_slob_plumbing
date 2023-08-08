@@ -1,10 +1,14 @@
 // define Intro Section properties
 import { useState, Suspense } from 'react';
-import { Title, SubHeader, ParaL, ParaC } from '../typography';
-import { Spacer, Button, CalendarButton } from '../utils';
 import Image from 'next/image';
+
+import { Title, SubHeader, ParaL, ParaC } from '@typography/index';
+import { Spacer, Button, CalendarButton } from '@utils/index';
+import { size } from '@styles/breakpoints';
+
+
 import staffPhoto from '../../assets/img/staffPhoto.png';
-import { size } from '../../styles/breakpoints';
+
 
 type HeroSectionProps = {};
 

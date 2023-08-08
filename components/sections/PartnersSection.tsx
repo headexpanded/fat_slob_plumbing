@@ -1,9 +1,9 @@
 // define Partners section
 
-import { Cards } from '../cards';
-import { SectionTitle } from '../typography';
-import { Spacer } from '../utils';
-import { size } from '../../styles/breakpoints';
+import { PartnerCard } from '@cards/PartnerCard';
+import { SectionTitle } from '@typography/index';
+import { Spacer } from '@utils/index';
+import { size } from '@styles/breakpoints';
 
 export type Partner = {
   title: string;
@@ -32,7 +32,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           {data.map(({ id, ...other }) => {
             return (
               <div key={id}>
-                <Cards.PartnerCard {...other} />
+                <PartnerCard {...other} />
               </div>
             );
           })}

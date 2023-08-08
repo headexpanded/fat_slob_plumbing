@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
-import { size } from '../../styles/breakpoints';
+
+import { size } from '@styles/breakpoints';
 
 // define CustReviewCard properties
 type CustReviewCardProps = {
