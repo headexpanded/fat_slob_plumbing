@@ -1,7 +1,7 @@
 // define Franchises Section properties
 import Image from 'next/image';
-import { Typography } from '../typography';
-import { Utils } from '../utils';
+import { SectionTitle, SubHeader, ParaL } from '../typography';
+import { Spacer, Button } from '../utils';
 import trishPhoto from '../../assets/img/trishPhoto-cr.png';
 import { size } from '../../styles/breakpoints';
 import LocationMapModal from '../modals/LocationMapModal';
@@ -24,30 +24,30 @@ export const FranchisesSection = () => {
   return (
     <>
       <section id="franchisesSection" className="franchisesSection">
-        <Utils.Spacer />
+        <Spacer />
         <div className="franchisesTitle">
-          <Typography.SectionTitle
+          <SectionTitle
             content="Buy A Franchise"
             color="var(--clr-text-primary)"
           />
         </div>
-        <Typography.SubHeader content="Can YOU deliver on demand?" />
-        <Utils.Spacer />
+        <SubHeader content="Can YOU deliver on demand?" />
+        <Spacer />
         <div className="franchiseImageAndTextBlock">
           <div className="franchiseText">
-            <Typography.ParaL content="We're looking for people who can deliver value." />
-            <Typography.ParaL content="People who can fill a bowl." />
-            <Typography.ParaL content="Any time, any place." />
-            <Typography.ParaL
+            <ParaL content="We're looking for people who can deliver value." />
+            <ParaL content="People who can fill a bowl." />
+            <ParaL content="Any time, any place." />
+            <ParaL
               content="Does that sound like you?"
               color="var(--clr-text-primary)"
             />
-            <Typography.ParaL content="Buy a Fat Slob Plumbing franchise today!" />
+            <ParaL content="Buy a Fat Slob Plumbing franchise today!" />
             <div className="locations">
               {!showLocations ? (
                 <div className="locationButton">
-                  <Utils.Spacer />
-                  <Utils.Button
+                  <Spacer />
+                  <Button
                     btnText="LOCATIONS"
                     onClick={() => setShowLocations(true)}
                   />
@@ -70,12 +70,12 @@ export const FranchisesSection = () => {
             </Suspense>
           </div>
         </div>
-        <Utils.Spacer />
+        <Spacer />
 
         <div className="phoneTrish">
-          <Typography.SubHeader content="Contact Trish, our friendly sales rep!" />
+          <SubHeader content="Contact Trish, our friendly sales rep!" />
         </div>
-        <Utils.Spacer />
+        <Spacer />
       </section>
       <style jsx>{`
         .franchiseImageAndTextBlock {

@@ -1,7 +1,7 @@
 // define Intro Section properties
 import { useState, Suspense } from 'react';
-import { Typography } from '../typography';
-import { Utils } from '../utils';
+import { Title, SubHeader, ParaL, ParaC } from '../typography';
+import { Spacer, Button, CalendarButton } from '../utils';
 import Image from 'next/image';
 import staffPhoto from '../../assets/img/staffPhoto.png';
 import { size } from '../../styles/breakpoints';
@@ -13,26 +13,26 @@ export const HeroSection = () => {
   return (
     <>
       <section className="heroSection">
-        <Utils.Spacer />
-        <Utils.Spacer />
-        <Typography.Title content="Fat Slob Plumbing" />
+        <Spacer />
+        <Spacer />
+        <Title content="Fat Slob Plumbing" />
 
         <div className="heroStrap">
-          <Typography.SubHeader content="can YOUR lav flush a big load?" />
+          <SubHeader content="can YOUR lav flush a big load?" />
         </div>
 
         <div className="heroBlock">
           <div className="heroIntroText">
-            <Typography.ParaL content="Imagine it." />
-            <Typography.ParaL content="Friends over - and your lav blocks up." />
-            <Typography.ParaL content="You don't need that." />
-            <Typography.ParaL content="So hire us." />
-            <Typography.ParaL
+            <ParaL content="Imagine it." />
+            <ParaL content="Friends over - and your lav blocks up." />
+            <ParaL content="You don't need that." />
+            <ParaL content="So hire us." />
+            <ParaL
               content="Fat Slob Plumbing."
               color="var(--clr-text-primary)"
             />
-            <Typography.ParaL content="England's number 2 toilet testing service." />
-            <Typography.ParaL content="We'll give it a good stress test." />
+            <ParaL content="England's number 2 toilet testing service." />
+            <ParaL content="We'll give it a good stress test." />
           </div>
           <div className="heroFatSlobs">
             <Suspense fallback={<div>Loading...</div>}>
@@ -46,27 +46,27 @@ export const HeroSection = () => {
             </Suspense>
           </div>
         </div>
-        <Utils.Spacer />
+        <Spacer />
 
         <div className="buttonWrapper">
           {!showBookingsDiv ? (
             <div className="heroButtons">
-              <Utils.Button
+              <Button
                 btnText="BOOK NOW"
                 onClick={() => setShowBookingsDiv(true)}
               />
-              <Utils.Spacer />
+              <Spacer />
               <a href="#franchisesSection">
-                <Utils.Button btnText="FRANCHISES" />
+                <Button btnText="FRANCHISES" />
               </a>
             </div>
           ) : (
             <div className="calendarBlocked animated fadeInUp">
-              <Typography.ParaC
+              <ParaC
                 content="Sorry mate. The calendar's completely blocked up."
                 color="var(--clr-text-light)"
               />
-              <Utils.CalendarButton
+              <CalendarButton
                 btnText="CLOSE"
                 onClick={() => setShowBookingsDiv(false)}
               />
@@ -74,10 +74,10 @@ export const HeroSection = () => {
           )}
         </div>
 
-        <Utils.Spacer />
-        <Utils.Spacer />
+        <Spacer />
+        <Spacer />
 
-        <Typography.SubHeader content="Not sure? Here's what our customers say..." />
+        <SubHeader content="Not sure? Here's what our customers say..." />
       </section>
 
       <style jsx>{`

@@ -1,5 +1,5 @@
 // define Our Story section
-import { Typography } from '../typography';
+import { SectionTitle, ParaC } from '../typography';
 import { Spacer } from '../utils/Spacer';
 
 export const OurStorySection = () => {
@@ -7,89 +7,89 @@ export const OurStorySection = () => {
     <>
       <section id="ourStorySection" className="ourStorySection">
         <Spacer />
-        <Typography.SectionTitle content="Our Story" />
+        <SectionTitle content="Our Story" />
         <div className="ourStoryText">
-          <Typography.ParaC
+          <ParaC
             content="This is not a real business."
             fontSize="1.5rem"
             fontWeight="700"
           />
-          <Typography.ParaC
+          <ParaC
             content=" It's a site I made to practice CSS & React."
             fontSize="1.5rem"
             fontWeight="700"
           />
 
-          <Typography.ParaC
+          <ParaC
             content="I had three main goals:"
             fontSize="1.5rem"
             fontWeight="700"
           />
         </div>
-        <Typography.ParaC
+        <ParaC
           content="No CSS Framework"
           color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
         <div className="ourStoryText">
-          <Typography.ParaC
+          <ParaC
             content="1/ design & build an entire responsive site with pure CSS."
             fontSize="1.5rem"
             fontWeight="700"
           />
-          <Typography.ParaC
+          <ParaC
             content="(no Tailwind, no Bootstrap)"
             fontSize="1.5rem"
             fontWeight="700"
           />
         </div>
-        <Typography.ParaC
+        <ParaC
           content="Re-usable Code"
           color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
         <div className="ourStoryText">
-          <Typography.ParaC
+          <ParaC
             content="2/ build stuff I can copy from here & paste into another project."
             fontSize="1.5rem"
             fontWeight="700"
           />
-          <Typography.ParaC
+          <ParaC
             content="(typography, spacers, loaders, etc.)"
             fontSize="1.5rem"
             fontWeight="700"
           />
         </div>
-        <Typography.ParaC
+        <ParaC
           content="Have A Laugh"
           color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
         <div className="ourStoryText">
-          <Typography.ParaC
+          <ParaC
             content="3/ Write some tight, rain-making copy."
             fontSize="1.5rem"
             fontWeight="700"
           />
         </div>
         <div className="ourStoryText">
-          <Typography.ParaC
+          <ParaC
             content="You're only young once, but you can be immature forever."
             fontSize="1.5rem"
             fontWeight="700"
           />
         </div>
-        <Typography.ParaC
+        <ParaC
           content="More To Do"
           color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
         <div className="ourStoryText">
-          <Typography.ParaC
+          <ParaC
             content="E-commerce: the world needs Fat Slob Plumbing hoodies"
             fontSize="1.5rem"
             fontWeight="700"

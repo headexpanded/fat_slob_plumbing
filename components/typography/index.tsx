@@ -64,7 +64,7 @@ export const SectionTitle = ({ content, color }: SectionTitleProps) => {
 };
 
 ///// LEFT-ALIGNED PARAGRAPH /////
-type ParagraphLProps = {
+type ParaLProps = {
   content: string;
   color?: string;
   fontSize?: string;
@@ -73,7 +73,7 @@ type ParagraphLProps = {
   padding?: string;
   width?: string;
 };
-export const ParagraphL = ({
+export const ParaL = ({
   content,
   color,
   fontSize,
@@ -81,7 +81,7 @@ export const ParagraphL = ({
   lineHeight,
   padding,
   width,
-}: ParagraphLProps) => {
+}: ParaLProps) => {
   return (
     <>
       <p>{content}</p>
@@ -101,7 +101,7 @@ export const ParagraphL = ({
 };
 
 ///// CENTER ALIGNED PARAGRAPH /////
-type ParagraphCProps = {
+type ParaCProps = {
   content: string;
   color?: string;
   fontSize?: string;
@@ -109,12 +109,12 @@ type ParagraphCProps = {
 };
 
 // define Paragraph component
-export const ParagraphC = ({
+export const ParaC = ({
   content,
   color,
   fontSize,
   fontWeight,
-}: ParagraphCProps) => {
+}: ParaCProps) => {
   return (
     <>
       <span>{content}</span>
@@ -169,7 +169,7 @@ export const Typography = {
   Title: Title,
   SubHeader: SubHeader,
   SectionTitle: SectionTitle,
-  ParaL: ParagraphL,
-  ParaC: ParagraphC,
+  ParaL: ParaL,
+  ParaC: ParaC,
   FooterText: FooterText,
 };

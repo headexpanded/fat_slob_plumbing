@@ -1,7 +1,7 @@
 // define Partners section
 
 import { Cards } from '../cards';
-import { Typography } from '../typography';
+import { SectionTitle } from '../typography';
 import { Spacer } from '../utils';
 import { size } from '../../styles/breakpoints';
 
@@ -21,7 +21,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
     <>
       <section id="partnersSection" className="partnersSection">
         <Spacer />
-        <Typography.SectionTitle
+        <SectionTitle
           content="Our Partners"
           color="var(--clr-text-primary)"
         />
