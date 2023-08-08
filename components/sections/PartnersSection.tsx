@@ -2,7 +2,8 @@
 
 import { Cards } from '../cards';
 import { Typography } from '../typography';
-import { Spacer } from '../utils/Spacer';
+import { Spacer } from '../utils';
+import { size } from '../../styles/breakpoints';
 
 export type Partner = {
   title: string;
@@ -42,7 +43,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           inline-size: min(100% - 4rem, 90rem);
           display: grid;
           grid-auto-flow: column;
-          gap: 2.5rem;
+          gap: 1rem;
           overflow-x: auto;
           overscroll-behavior-inline: contain;
           justify-content: flex-start;
@@ -55,6 +56,32 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
 
         .snaps-inline > * {
           scroll-snap-align: center;
+        }
+
+        @media screen and (min-width: ${size.mobile}) {
+          .partnersSection ::-webkit-scrollbar-track {
+            background-color: var(--clr-bg-light);
+            border-radius: var(--borderRadius);
+          }
+
+          .partnersSection ::-webkit-scrollbar-thumb {
+            background-color: var(--clr-bg-secondary);
+            border-radius: var(--borderRadius);
+            border: 0.05rem solid var(--clr-bg-light);
+          }
+
+          /* Firefox scrollbar styles: shows vertical too, but can't be helped */
+          @supports (
+            scrollbar-width: var(--clr-bg-secondary) var(--clr-bg-light)
+          ) {
+            .partnersSection {
+              scrollbar-color: var(--clr-bg-secondary) var(--clr-bg-light);
+              scrollbar-width: thin;
+            }
+          }
+          .partnerCards {
+            gap: 2.5rem;
+          }
         }
       `}</style>
     </>
