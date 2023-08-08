@@ -15,11 +15,23 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@styles/*": ["styles/*"],
+      "@sections/*": ["components/sections/*"],
+      "@cards/*": ["components/cards/*"],
+      "@typography/*": ["components/typography/*"],
+      "@utils/*": ["components/utils/*"],
+      "@modals/*": ["components/modals/*"],
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/modals/LocationMapModal.jsx", "components/modals/CustomerReviewModal.jsx"],
-  "exclude": ["node_modules"],
-  "paths": {
-    "@styles/*":["./styles/*"]
-  }
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/modals/LocationMapModal.jsx",
+    "components/modals/CustomerReviewModal.jsx"
+  ],
+  "exclude": ["node_modules"]
 }
