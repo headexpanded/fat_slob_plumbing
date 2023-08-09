@@ -6,14 +6,15 @@ import { Title, SubHeader, ParaL, ParaC } from '@typography/index';
 import { Spacer, Button, CalendarButton } from '@utils/index';
 import { size } from '@styles/breakpoints';
 
-
 import staffPhoto from '../../assets/img/staffPhoto.png';
-
 
 type HeroSectionProps = {};
 
 export const HeroSection = () => {
   const [showBookingsDiv, setShowBookingsDiv] = useState(false);
+
+  const dataURL = process.env.NEXT_PUBLIC_BLURDATA_URL
+  
   return (
     <>
       <section className="heroSection">
@@ -45,7 +46,9 @@ export const HeroSection = () => {
                 width={2609}
                 height={3914}
                 src={staffPhoto}
-                loading="lazy"
+                priority
+                placeholder='blur'
+                blurDataURL={dataURL}
               />
             </Suspense>
           </div>
@@ -85,7 +88,6 @@ export const HeroSection = () => {
       </section>
 
       <style jsx>{`
-
         .heroStrap {
           display: flex;
           align-items: baseline;

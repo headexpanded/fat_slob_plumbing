@@ -24,6 +24,9 @@ type FranchisesSectionProps = {
 
 export const FranchisesSection = () => {
   const [showLocations, setShowLocations] = useState(false);
+
+  const dataURL = process.env.NEXT_PUBLIC_BLURDATA_URL;
+
   return (
     <>
       <section id="franchisesSection" className="franchisesSection">
@@ -69,6 +72,8 @@ export const FranchisesSection = () => {
                 width={5184}
                 height={3456}
                 loading="lazy"
+                placeholder="blur"
+                blurDataURL={dataURL}
               />
             </Suspense>
           </div>
