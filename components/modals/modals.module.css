@@ -1,0 +1,55 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalContent {
+  position: relative;
+  background-color: white;
+  border-radius: var(--borderRadius);
+  /* padding: 1rem; */
+  color: var(--clr-text-light);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 90%;
+  max-width: 90%;
+}
+
+.mapContainer {
+  flex: 1;
+  min-height: 400px;
+  min-width: 1000px;
+}
+
+.mapContainer > div {
+  position: relative;
+}
+
+.infoWindow {
+  background-color: var(--clr-bg-light);
+  color: var(--clr-text-secondary);
+  padding: 1 rem 2rem;
+}
+
+.infoWindow h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--clr-text-secondary);
+}
+
+.infoWindow p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-text-secondary);
+  padding: 0.5rem 0rem;
+}

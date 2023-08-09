@@ -1,5 +1,6 @@
-
 import { useState } from 'react';
+
+import styles from './modals.module.css';
 
 import {
   GoogleApiWrapper,
@@ -58,7 +59,7 @@ const LocationMapModal = (props) => {
   };
 
   const handleBackdropClick = (event) => {
-    if (event.target.classList.contains('modalBackdrop')) {
+    if (event.target.classList.contains(styles.modalBackdrop)) {
       props.onClose();
     }
   };
@@ -69,114 +70,55 @@ const LocationMapModal = (props) => {
   };
 
   return (
-    <>
-      <div className="modalBackdrop" onClick={handleBackdropClick}>
-        <div className="modalContent animated fadeInUp">
-          <div className="mapContainer">
-            <Map
-              google={props.google}
-              zoom={8}
-              style={{
-                width: '100%',
-                height: '100%',
-                margin: 'auto',
-              }}
-              containerStyle={{
-                border: '2px solid white',
-              }}
-              initialCenter={rochdale}
-              mapTypeControl={false}
-              streetViewControl={false}
-              panControl={false}
-              fullscreenControl={false}
-              zoomControl={false}
-            >
-              {locations.slice(0, 10).map((location, index) => (
-                <Marker
-                  key={index}
-                  position={{ lat: location.latitude, lng: location.longitude }}
-                  title={location.locationName}
-                  location={location}
-                  price={location.price}
-                  onClick={onMarkerClick}
-                />
-              ))}
-              {selectPlace && (
-                <InfoWindow
-                  marker={availableMarker}
-                  visible={showInfoWindow}
-                  onClose={onClose}
-                >
-                  <div className="infoWindow">
-                    <h3>
-                      {selectPlace.locationName}: {selectPlace.price}
-                    </h3>
-                    <p>{selectPlace.description}</p>
-                  </div>
-                </InfoWindow>
-              )}
-            </Map>
-          </div>
+    <div className={styles.modalBackdrop} onClick={handleBackdropClick}>
+      <div className={`${styles.modalContent}`} animated fadeInUp>
+        <div className={styles.mapContainer}>
+          <Map
+            google={props.google}
+            zoom={8}
+            style={{
+              width: '100%',
+              height: '100%',
+              margin: 'auto',
+            }}
+            containerStyle={{
+              border: '2px solid white',
+            }}
+            initialCenter={rochdale}
+            mapTypeControl={false}
+            streetViewControl={false}
+            panControl={false}
+            fullscreenControl={false}
+            zoomControl={false}
+          >
+            {locations.slice(0, 10).map((location, index) => (
+              <Marker
+                key={index}
+                position={{ lat: location.latitude, lng: location.longitude }}
+                title={location.locationName}
+                location={location}
+                price={location.price}
+                onClick={onMarkerClick}
+              />
+            ))}
+            {selectPlace && (
+              <InfoWindow
+                marker={availableMarker}
+                visible={showInfoWindow}
+                onClose={onClose}
+              >
+                <div className={styles.infoWindow}>
+                  <h3>
+                    {selectPlace.locationName}: {selectPlace.price}
+                  </h3>
+                  <p>{selectPlace.description}</p>
+                </div>
+              </InfoWindow>
+            )}
+          </Map>
         </div>
       </div>
-      <style jsx>{`
-        .modalBackdrop {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(0, 0, 0, 0.5);
-          z-index: 100;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-
-        .modalContent {
-          position: relative;
-          background-color: white;
-          border-radius: var(--borderRadius);
-          //padding: 1rem;
-          color: var(--clr-text-light);
-          border: none;
-          display: flex;
-          flex-direction: column;
-          overflow: hidden;
-          max-height: 90%;
-          max-width: 90%;
-        }
-
-        .mapContainer {
-          flex: 1;
-          min-height: 400px;
-          min-width: 1000px;
-        }
-
-        .mapContainer > div {
-          position: relative;
-        }
-
-        .infoWindow {
-          background-color: var(--clr-bg-light);
-          color: var(--clr-text-secondary);
-          padding: 1 rem 2rem;
-        }
-
-        .infoWindow h3 {
-          font-size: 1.5rem;
-          font-weight: 900;
-          color: var(--clr-text-secondary);
-        }
-
-        .infoWindow p {
-          font-size: 1rem;
-          font-weight: 400;
-          color: var(--clr-text-secondary);
-          padding: 0.5rem 0rem;
-        }
-      `}</style>
-    </>
+    </div>
   );
 };
 
