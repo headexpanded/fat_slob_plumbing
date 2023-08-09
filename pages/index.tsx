@@ -1,11 +1,10 @@
 import Head from 'next/head';
-import { lazy, Suspense } from 'react';
+import { Suspense } from 'react';
 import { gql, request } from 'graphql-request';
 
 import { CustomerReview } from '@sections/CustReviewsSection';
 import { Partner } from '@sections/PartnersSection';
 import { Section } from '@sections/index';
-//import { Franchise } from '../components/sections/FranchisesSection';
 
 type IndexProps = {
   customerReviews: CustomerReview[];
@@ -71,8 +70,6 @@ function Index({ customerReviews, partnersData }: IndexProps) {
       <Suspense fallback={<div>Loading...</div>}>
         <Section.CustReviews data={customerReviews}></Section.CustReviews>
       </Suspense>
-      {/* How We Work */}
-      {/* <Section.HowWeWork /> */}
       {/* Franchises */}
       <Suspense fallback={<div>Loading...</div>}>
         <Section.Franchises />
@@ -91,7 +88,8 @@ function Index({ customerReviews, partnersData }: IndexProps) {
 
 export default Index;
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
+  
   const custReviewQuery = gql`
     {
       customerReviews {
@@ -149,4 +147,4 @@ export async function getStaticProps() {
       franchisesData: franchisesData.franchises,
     }, // will be passed to the page component as props
   };
-}
+};
