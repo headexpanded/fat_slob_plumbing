@@ -72,8 +72,6 @@ export const FranchisesSection = () => {
                 width={5184}
                 height={3456}
                 loading="lazy"
-                placeholder="blur"
-                blurDataURL={dataURL}
               />
             </Suspense>
           </div>

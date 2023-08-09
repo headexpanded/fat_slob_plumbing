@@ -47,8 +47,6 @@ export const HeroSection = () => {
                 height={3914}
                 src={staffPhoto}
                 priority
-                placeholder='blur'
-                blurDataURL={dataURL}
               />
             </Suspense>
           </div>
