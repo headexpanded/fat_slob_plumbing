@@ -7,13 +7,13 @@ import { Partner } from '@sections/PartnersSection';
 import { Section } from '@sections/index';
 //import { Franchise } from '../components/sections/FranchisesSection';
 
-type HomeProps = {
+type IndexProps = {
   customerReviews: CustomerReview[];
   partnersData: Partner[];
   //franchisesData?: Franchise[] | undefined;
 };
 
-function Home({ customerReviews, partnersData }: HomeProps) {
+function Index({ customerReviews, partnersData }: IndexProps) {
   return (
     <div className="main">
       <Head>
@@ -89,7 +89,7 @@ function Home({ customerReviews, partnersData }: HomeProps) {
   );
 }
 
-export default Home;
+export default Index;
 
 export async function getStaticProps() {
   const custReviewQuery = gql`
