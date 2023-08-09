@@ -2,7 +2,7 @@
 
 import styles from './utils.module.css';
 
-//***** SPACER *****//
+/***** SPACER *****/
 
 type SpacerProps = {
   content?: string;
@@ -21,8 +21,13 @@ export const Spacer = ({ content }: SpacerProps) => {
   );
 };
 
-//***** BUTTONS *****//
+/***** SPINNER *****/
 
+export const Spinner = () => {
+  return <div className="spinner"></div>;
+};
+
+/***** BUTTONS *****/
 
 type ButtonProps = {
   btnText: string;
@@ -56,6 +61,7 @@ export const CalendarButton = ({ btnText, onClick }: ButtonProps) => {
 //***** EXPORTS *****//
 export const Utils = {
   Spacer: Spacer,
+  Spinner: Spinner,
   Button: Button,
   CalendarButton: CalendarButton,
 };

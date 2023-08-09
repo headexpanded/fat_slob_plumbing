@@ -1,3 +1,5 @@
+/***** BUTTON STYLES *****/
+
 .btn {
   border: none;
   border-radius: var(--borderRadius);
@@ -26,4 +28,24 @@
   box-shadow: none;
   margin-top: 1rem;
   inline-size: max(5vw, 120px);
+}
+
+/***** SPINNER STYLES *****/
+
+.spinner {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #1c73ac;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
 }
