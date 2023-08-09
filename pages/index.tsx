@@ -5,6 +5,7 @@ import { gql, request } from 'graphql-request';
 import { CustomerReview } from '@sections/CustReviewsSection';
 import { Partner } from '@sections/PartnersSection';
 import { Section } from '@sections/index';
+import { Spinner } from '@utils/index';
 
 type IndexProps = {
   customerReviews: CustomerReview[];
@@ -63,19 +64,19 @@ function Index({ customerReviews, partnersData }: IndexProps) {
       {/* Navbar Section */}
       <Section.NavBar />
       {/* Hero Section */}
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner />}>
         <Section.Hero />
       </Suspense>
       {/* Customer Reviews */}
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner />}>
         <Section.CustReviews data={customerReviews}></Section.CustReviews>
       </Suspense>
       {/* Franchises */}
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner />}>
         <Section.Franchises />
       </Suspense>
       {/* Partners */}
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Spinner />}>
         <Section.Partners data={partnersData}></Section.Partners>
       </Suspense>
       {/* Our Story */}
@@ -89,7 +90,6 @@ function Index({ customerReviews, partnersData }: IndexProps) {
 export default Index;
 
 export const getStaticProps = async () => {
-  
   const custReviewQuery = gql`
     {
       customerReviews {
