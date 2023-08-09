@@ -1,5 +1,7 @@
 //***** Index of various utils for Fat Slob Plumbing *****//
 
+import styles from './utils.module.css';
+
 //***** SPACER *****//
 
 type SpacerProps = {
@@ -21,7 +23,6 @@ export const Spacer = ({ content }: SpacerProps) => {
 
 //***** BUTTONS *****//
 
-import styles from './Button.module.css';
 
 type ButtonProps = {
   btnText: string;
