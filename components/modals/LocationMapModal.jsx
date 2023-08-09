@@ -8,6 +8,9 @@ import {
   Map,
   InfoWindow,
 } from 'google-maps-react-18-support';
+import { Spinner } from '@utils/index';
+
+const LoadingContainer = () => <Spinner />;
 
 const locations = [
   {
@@ -124,4 +127,5 @@ const LocationMapModal = (props) => {
 
 export default GoogleApiWrapper({
   apiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY,
+  LoadingContainer: LoadingContainer,
 })(LocationMapModal);
