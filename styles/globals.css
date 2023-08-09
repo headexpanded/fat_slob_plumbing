@@ -14,13 +14,13 @@
 
 :root {
   /* Colour Palette */
-  --clr-text-primary: hsl(0, 100%, 47%);
-  --clr-text-secondary: hsl(249, 100%, 25%);
+  --clr-text-primary: hsl(0, 100%, 57%);
+  --clr-text-secondary: hsl(249, 100%, 14%);
   --clr-text-light: hsl(0, 0%, 99%);
-  --clr-text-hi-contrast: hsl(0, 100%, 47%);
+  --clr-text-hi-contrast: hsl(0, 100%, 57%);
 
-  --clr-bg-primary: hsl(215, 100%, 20%);
-  --clr-bg-secondary: hsl(0, 100%, 47%);
+  --clr-bg-primary: hsl(249, 100%, 14%);
+  --clr-bg-secondary: hsl(0, 100%, 57%);
   --clr-bg-light: hsl(0, 0%, 99%);
 
   --clr-btn-hover: whitesmoke;
