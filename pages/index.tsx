@@ -80,7 +80,7 @@ function Index({ customerReviews, partnersData }: IndexProps) {
         <Section.Partners data={partnersData}></Section.Partners>
       </Suspense>
       {/* Our Story */}
-      <Section.OurStory></Section.OurStory>
+      <Section.OurStory />
       {/* Footer */}
       <Section.Footer />
     </div>

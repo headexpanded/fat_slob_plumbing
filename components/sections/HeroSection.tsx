@@ -3,18 +3,15 @@ import { useState, Suspense } from 'react';
 import Image from 'next/image';
 
 import { Title, SubHeader, ParaL, ParaC } from '@typography/index';
-import { Spacer, Button, CalendarButton } from '@utils/index';
+import { Spacer, Button, CalendarButton, Spinner } from '@utils/index';
 import { size } from '@styles/breakpoints';
-
-import staffPhoto from '../../assets/img/staffPhoto.png';
+import staffPhoto from '@assets/img/staffPhoto.png';
 
 type HeroSectionProps = {};
 
 export const HeroSection = () => {
   const [showBookingsDiv, setShowBookingsDiv] = useState(false);
 
-  const dataURL = process.env.NEXT_PUBLIC_BLURDATA_URL
-  
   return (
     <>
       <section className="heroSection">
@@ -40,7 +37,7 @@ export const HeroSection = () => {
             <ParaL content="We'll give it a good stress test." />
           </div>
           <div className="heroFatSlobs">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Spinner />}>
               <Image
                 alt="Photo of Fat Slob Plumbing staff"
                 width={2609}

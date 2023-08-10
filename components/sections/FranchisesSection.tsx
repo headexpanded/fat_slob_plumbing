@@ -3,11 +3,9 @@ import { useState, Suspense } from 'react';
 import Image from 'next/image';
 
 import { SectionTitle, SubHeader, ParaL } from '@typography/index';
-import { Spacer, Button } from '@utils/index';
+import { Spacer, Button, Spinner } from '@utils/index';
 import { size } from '@styles/breakpoints';
-
-import trishPhoto from '../../assets/img/trishPhoto-cr.png';
-
+import trishPhoto from '@assets/img/trishPhoto-cr.png';
 import LocationMapModal from '@modals/LocationMapModal';
 
 export type Franchise = {
@@ -65,7 +63,7 @@ export const FranchisesSection = () => {
           </div>
 
           <div className="trish">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Spinner />}>
               <Image
                 alt="Photo of Fat Slob Plumbing secretary"
                 src={trishPhoto}
