@@ -2,7 +2,7 @@
 import { NavBar } from './NavBar';
 import { HeroSection } from './HeroSection';
 import { HowWeWorkSection } from './HowWeWorkSection';
-import { CustReviewsSection } from './CustReviewsSection';
+import { CustomerReviewsSection } from './CustomerReviewsSection';
 import { FranchisesSection } from './FranchisesSection';
 import { PartnersSection } from './PartnersSection';
 import { OurStorySection } from './OurStorySection';
@@ -12,7 +12,7 @@ export const Section = {
   NavBar: NavBar,
   Hero: HeroSection,
   HowWeWork: HowWeWorkSection,
-  CustReviews: CustReviewsSection,
+  CustomerReviews: CustomerReviewsSection,
   Franchises: FranchisesSection,
   Partners: PartnersSection,
   OurStory: OurStorySection,

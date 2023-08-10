@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Suspense } from 'react';
 import { gql, request } from 'graphql-request';
 
-import { CustomerReview } from '@sections/CustReviewsSection';
+import { CustomerReview } from '@sections/CustomerReviewsSection';
 import { Partner } from '@sections/PartnersSection';
 import { Section } from '@sections/index';
 import { Spinner } from '@utils/index';
@@ -69,7 +69,7 @@ function Index({ customerReviews, partnersData }: IndexProps) {
       </Suspense>
       {/* Customer Reviews */}
       <Suspense fallback={<Spinner />}>
-        <Section.CustReviews data={customerReviews}></Section.CustReviews>
+        <Section.CustomerReviews data={customerReviews}></Section.CustomerReviews>
       </Suspense>
       {/* Franchises */}
       <Suspense fallback={<Spinner />}>
@@ -90,7 +90,7 @@ function Index({ customerReviews, partnersData }: IndexProps) {
 export default Index;
 
 export const getStaticProps = async () => {
-  const custReviewQuery = gql`
+  const customerReviewQuery = gql`
     {
       customerReviews {
         customerName
@@ -125,9 +125,9 @@ export const getStaticProps = async () => {
     }
   `;
 
-  const custReviewData = await request(
+  const customerReviewData = await request(
     'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master',
-    custReviewQuery
+    customerReviewQuery
   );
 
   const partnersData = await request(
@@ -142,7 +142,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      customerReviews: custReviewData.customerReviews,
+      customerReviews: customerReviewData.customerReviews,
       partnersData: partnersData.partners,
       franchisesData: franchisesData.franchises,
     }, // will be passed to the page component as props
