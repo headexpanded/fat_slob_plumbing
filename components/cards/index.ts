@@ -1,9 +1,9 @@
 // index of card styles for Fat Slob Plumbing
 
-import { CustReviewCard } from './CustReviewCard';
+import { CustomerReviewCard } from './CustomerReviewCard';
 import { PartnerCard } from './PartnerCard';
 
 export const Cards = {
-  CustReviewCard: CustReviewCard,
+  CustomerReviewCard: CustomerReviewCard,
   PartnerCard: PartnerCard,
 };
