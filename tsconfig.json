@@ -24,6 +24,7 @@
       "@typography/*": ["components/typography/*"],
       "@utils/*": ["components/utils/*"],
       "@modals/*": ["components/modals/*"],
+      "@assets/*": ["assets/*"]
     }
   },
   "include": [
