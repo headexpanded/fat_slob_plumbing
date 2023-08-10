@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 
 import { size } from '@styles/breakpoints';
+import { Spinner } from '@utils/index';
 
 // define CustomerReviewCard properties
 type CustomerReviewCardProps = {
@@ -18,7 +19,7 @@ export const CustomerReviewCard = ({
   return (
     <>
       <div className="customerReviewCard">
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Spinner />}>
           <div className="customerReview">
             <img src={photo} alt="Customer photo" loading="lazy" />
             <p>{review}</p>
