@@ -31,7 +31,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
 
         {/*  extract key from custReviews, spread the rest into CustReviewCard component */}
 
-        <div className="custReviewCards">
+        <div className="customerReviewCards">
           {data?.map(({ id, ...other }) => {
             return (
               <div key={id}>
@@ -43,7 +43,7 @@ export const CustReviewsSection = ({ data }: CustReviewsSectionProps) => {
       </section>
 
       <style jsx>{`
-        .custReviewCards {
+        .customerReviewCards {
           width: 90vw;
           display: grid;
           gap: 5rem;
