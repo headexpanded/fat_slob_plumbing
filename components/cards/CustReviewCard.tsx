@@ -47,7 +47,7 @@ export const CustReviewCard = ({
           }
         }
 
-        p {
+        .custReview p {
           color: var(--clr-text-hi-contrast);
           font-size: 1.25rem;
           font-style: italic;
