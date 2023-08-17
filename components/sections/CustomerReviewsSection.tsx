@@ -49,7 +49,7 @@ export const CustomerReviewsSection = ({
         .customerReviewCards {
           width: 90vw;
           display: grid;
-          gap: 5rem;
+          gap: 3rem;
           grid-template-columns: repeat(auto-fit, minmax(40%, 400px));
           justify-content: space-evenly;
           margin-bottom: 4rem;

@@ -70,12 +70,6 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           text-align: center;
         }
 
-        @media screen and (min-width: ${size.mobile}) {
-          .partnerCard {
-            inline-size: 320px;
-          }
-        }
-
         @media screen and (min-width: ${size.desktop}) {
           .partnerCard {
             inline-size: 400px;
