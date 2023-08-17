@@ -41,11 +41,25 @@ export const CustomerReviewCard = ({
           padding: 0.5rem;
           box-shadow: var(--boxShadow);
           width: 320px;
-          overflow:hidden
+          overflow: hidden;
         }
         @media screen and (min-width: ${size.mobile}) {
           .customerReviewCard {
             width: 400px;
+          }
+        }
+
+        .customerReview {
+          padding-top: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        @media screen and (min-width: ${size.mobile}) {
+          .customerReview {
+            flex-direction: row;
           }
         }
 
@@ -56,13 +70,6 @@ export const CustomerReviewCard = ({
           font-weight: bold;
           padding: 0px 0.5rem;
           margin: 0px;
-        }
-
-        .customerReview {
-          padding-top: 1rem;
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
         }
 
         .customerNameWrapper {
