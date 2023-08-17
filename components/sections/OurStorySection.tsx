@@ -90,7 +90,7 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <ParaC
-            content="E-commerce: the world needs Fat Slob Plumbing hoodies"
+            content="e-commerce: the world needs Fat Slob Plumbing hoodies"
             fontSize="1.5rem"
             fontWeight="700"
           />
