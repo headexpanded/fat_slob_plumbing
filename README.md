@@ -2,9 +2,8 @@
 <div >
 <p align="center"><img width="auto" height="400px" alt="Fat Slob Plumbing staff photo" src="./assets/img/staffPhoto-sm.png"/></p>
 </div>
-I'm a lucky guy!
-
-As a solo freelancer, it's not easy to get hired by a world-class business!
+<p>I'm a lucky guy!</p>
+<p>As a solo freelancer, it's not every day you work with a world-class business!</p>
 
 That's why I'm **honoured** to have been hired by [**Fat Slob Plumbing**](https://fat-slob-plumbing.vercel.app/) to build their website.
 
