@@ -43,6 +43,7 @@ export const HeroSection = () => {
                 width={2609}
                 height={3914}
                 src={staffPhoto}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
               />
             </Suspense>
