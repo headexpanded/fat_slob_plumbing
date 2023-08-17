@@ -64,7 +64,7 @@ export const CustomerReviewCard = ({
         }
 
         .customerReview p {
-          color: var(--clr-text-hi-contrast);
+          color: var(--clr-text-primary);
           font-size: 1.25rem;
           font-style: italic;
           font-weight: bold;
@@ -80,7 +80,9 @@ export const CustomerReviewCard = ({
         }
 
         .customerName p {
+          color: var(--clr-text-primary);
           font-size: 1rem;
+          font-weight: bold;
         }
 
         img {
