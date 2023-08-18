@@ -21,10 +21,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
     <>
       <section id="partnersSection" className="partnersSection">
         <Spacer />
-        <SectionTitle
-          content="Our Partners"
-          color="var(--clr-text-primary)"
-        />
+        <SectionTitle content="Our Partners" color="var(--clr-text-primary)" />
 
         {/*  extract key from Partners, spread the rest into PartnerCard component */}
 
@@ -56,6 +53,17 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
 
         .snaps-inline > * {
           scroll-snap-align: center;
+        }
+
+        .partnersSection ::-webkit-scrollbar-track {
+          background-color: var(--clr-bg-light);
+          border-radius: var(--borderRadius);
+        }
+
+        .partnersSection ::-webkit-scrollbar-thumb {
+          background-color: var(--clr-bg-secondary);
+          border-radius: var(--borderRadius);
+          border: 0.05rem solid var(--clr-bg-light);
         }
 
         @media screen and (min-width: ${size.mobile}) {
