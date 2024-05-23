@@ -13,7 +13,7 @@ Meanwhile, I'm on a mission to leverage:
 - TypeScript
 - Next.js/React
 - GraphQL, and
-- pure CSS
+- plain vanilla CSS
 
 to produce the best website possible for Fat Slob Plumbing.
 
