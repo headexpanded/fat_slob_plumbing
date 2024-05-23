@@ -1,4 +1,4 @@
-// define Our Story section
+n// define Our Story section
 import { SectionTitle, ParaC } from '@typography/index';
 import { Spacer } from '@utils/index';
 
@@ -10,87 +10,39 @@ export const OurStorySection = () => {
         <SectionTitle content="Our Story" />
         <div className="ourStoryText">
           <ParaC
-            content="Most people don't test their toilets properly."
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
-          <ParaC
-            content="Ron & Dave decided to do something about it."
+            content="Chatting at the pub one day, Ron & Dave agreed that most people don't test their toilets properly."
             fontSize="1.5rem"
             fontWeight="700"
           />
 
           <ParaC
-            content="Chatting at the pub, they realised they could provide a service like no other."
+            content="The landlord of The King's Seat confirmed he had NEVER had the pub's toilets tested. Not professionally, that is."
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+
+          <ParaC
+            content="Indeed, NONE of their friends or work-mates had EVER hired a professional toilet tester!"
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+
+          <ParaC
+            content="Ron & Dave realised they could provide that service."
             fontSize="1.5rem"
             fontWeight="700"
           />
         </div>
+        
         <ParaC
-          content="No CSS Framework"
+          content="Personalised Toilet Tests"
           color="var(--clr-text-primary)"
           fontSize="3rem"
           fontWeight="900"
         />
         <div className="ourStoryText">
           <ParaC
-            content="1: design & build an entire responsive site with pure CSS."
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
-          <ParaC
-            content="(no Tailwind, no Bootstrap)"
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
-        </div>
-        <ParaC
-          content="Re-usable Code"
-          color="var(--clr-text-primary)"
-          fontSize="3rem"
-          fontWeight="900"
-        />
-        <div className="ourStoryText">
-          <ParaC
-            content="2: build stuff I can copy from here & paste into another project."
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
-          <ParaC
-            content="(typography, spacers, loaders, etc.)"
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
-        </div>
-        <ParaC
-          content="Have A Laugh"
-          color="var(--clr-text-primary)"
-          fontSize="3rem"
-          fontWeight="900"
-        />
-        <div className="ourStoryText">
-          <ParaC
-            content="3: Write some tight, rain-making copy."
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
-        </div>
-        <div className="ourStoryText">
-          <ParaC
-            content="You're only young once, but you can be immature forever."
-            fontSize="1.5rem"
-            fontWeight="700"
-          />
-        </div>
-        <ParaC
-          content="More To Do"
-          color="var(--clr-text-primary)"
-          fontSize="3rem"
-          fontWeight="900"
-        />
-        <div className="ourStoryText">
-          <ParaC
-            content="e-commerce: the world needs Fat Slob Plumbing hoodies"
+            content="The market is huge! Millions of un-tested toilets!"
             fontSize="1.5rem"
             fontWeight="700"
           />
