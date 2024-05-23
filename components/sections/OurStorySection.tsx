@@ -10,7 +10,7 @@ export const OurStorySection = () => {
         <SectionTitle content="Our Story" />
         <div className="ourStoryText">
           <ParaC
-            content="Chatting at the pub one day, Ron & Dave agreed that most people don't test their toilets properly."
+            content="Chatting at the pub, Ron & Dave agreed that most people don't test their toilets properly."
             fontSize="1.5rem"
             fontWeight="700"
           />
