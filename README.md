@@ -23,10 +23,10 @@ Fortunately Ron and Dave don't mind about that - business is booming! They're fr
 
 ## Next/React
 
-- Next 12.3 (might upgrade to 13.4 we'll see)
-- React 18.2 (Suspense)
+- Next 12.3
+- React 18.2
 
-## Pure CSS
+## Vanilla CSS
 
 - responsive design
 - no framework
@@ -38,7 +38,7 @@ Fortunately Ron and Dave don't mind about that - business is booming! They're fr
 
 ## To Do:
 
-- e-commerce: Fat Slob Plumbing t-shirts
+- e-commerce: the world needs Fat Slob Plumbing t-shirts
 
 - logo
 
