@@ -1,4 +1,3 @@
-n// define Our Story section
 import { SectionTitle, ParaC } from '@typography/index';
 import { Spacer } from '@utils/index';
 
