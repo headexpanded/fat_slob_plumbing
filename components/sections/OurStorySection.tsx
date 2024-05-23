@@ -9,13 +9,25 @@ export const OurStorySection = () => {
         <SectionTitle content="Our Story" />
         <div className="ourStoryText">
           <ParaC
-            content="Chatting at the pub, Ron & Dave agreed that most people don't test their toilets properly."
+            content="Chatting at the pub, Ron & Dave agreed:"
             fontSize="1.5rem"
             fontWeight="700"
           />
 
           <ParaC
-            content="The landlord of The King's Seat confirmed he had NEVER had the pub's toilets tested. Not professionally, that is."
+            content="Most people don't test their toilets properly."
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+
+          <ParaC
+            content="The landlord of The King's Seat confirmed he had NEVER had the pub's toilets tested."
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+
+          <ParaC
+            content="Not professionally, that is."
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -27,7 +39,7 @@ export const OurStorySection = () => {
           />
 
           <ParaC
-            content="Ron & Dave realised they could provide that service."
+            content="Ron & Dave suddenly saw an opportunity. And they took it!"
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -41,7 +53,25 @@ export const OurStorySection = () => {
         />
         <div className="ourStoryText">
           <ParaC
-            content="The market is huge! Millions of un-tested toilets!"
+            content="They both quit their jobs the very next day."
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+
+          <ParaC
+            content="Ron used to be a lorry driver. Dave used to be a nuclear physicist."
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+
+          <ParaC
+            content="But now they're professional toilet testers."
+            fontSize="1.5rem"
+            fontWeight="700"
+          />
+
+          <ParaC
+            content="And the market is huge! Millions of un-tested toilets!"
             fontSize="1.5rem"
             fontWeight="700"
           />
