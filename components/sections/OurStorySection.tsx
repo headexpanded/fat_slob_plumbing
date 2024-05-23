@@ -10,18 +10,18 @@ export const OurStorySection = () => {
         <SectionTitle content="Our Story" />
         <div className="ourStoryText">
           <ParaC
-            content="This is not a real business."
+            content="Most people don't test their toilets properly."
             fontSize="1.5rem"
             fontWeight="700"
           />
           <ParaC
-            content=" It's a site I made to practice CSS & React."
+            content="Ron & Dave decided to do something about it."
             fontSize="1.5rem"
             fontWeight="700"
           />
 
           <ParaC
-            content="I had three main goals:"
+            content="Chatting at the pub, they realised they could provide a service like no other."
             fontSize="1.5rem"
             fontWeight="700"
           />
