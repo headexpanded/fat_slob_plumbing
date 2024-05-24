@@ -17,7 +17,7 @@ const locations = [
     locationName: 'Rochdale',
     latitude: 53.6097,
     longitude: -2.1561,
-    price: 'GBP 65,000',
+    price: 'GBP 265,000',
     description:
       'Council sewage system often fails, & that means plenty of work!',
   },
@@ -25,21 +25,21 @@ const locations = [
     locationName: 'Bradford',
     latitude: 53.7938,
     longitude: -1.7564,
-    price: 'GBP 80,000',
+    price: 'GBP 380,000',
     description: "Plenty of jobs here - it's all the great curries & kebabs!",
   },
   {
     locationName: 'Warrington',
     latitude: 53.39,
     longitude: -2.597,
-    price: 'GBP 72,000',
+    price: 'GBP 272,000',
     description: '17 square miles of toilets. All of them need stress tests!',
   },
   {
     locationName: 'Preston',
     latitude: 53.7632,
     longitude: -2.7031,
-    price: 'GBP 80,000',
+    price: 'GBP 195,000',
     description:
       'North End? South End more like it - lots of toilets hereabouts.',
   },
