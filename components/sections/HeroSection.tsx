@@ -91,7 +91,7 @@ export const HeroSection = () => {
           justify-content: space-evenly;
           margin-top: 1rem;
           margin-bottom: 1rem;
-          width: clamp(240px, 60vw + 36px, 600px);
+          width: clamp(240px, 60vw + 60px, 600px);
         }
         .heroBlock {
           display: flex;
