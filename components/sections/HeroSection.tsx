@@ -66,7 +66,7 @@ export const HeroSection = () => {
           ) : (
             <div className="calendarBlocked animated fadeInUp">
               <ParaC
-                content="Sorry mate. The calendar's completely blocked up."
+                content="Sorry mate. We're completely blocked up."
                 color="var(--clr-text-light)"
               />
               <CalendarButton
