@@ -37,19 +37,19 @@
 
 .infoWindow {
   background-color: var(--clr-bg-light);
-  color: var(--clr-text-secondary);
+  color: var(--clr-text-dark);
   padding: 1 rem 2rem;
 }
 
 .infoWindow h3 {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--clr-text-secondary);
+  color: var(--clr-text-dark);
 }
 
 .infoWindow p {
   font-size: 1rem;
   font-weight: 400;
-  color: var(--clr-text-secondary);
+  color: var(--clr-text-dark);
   padding: 0.5rem 0rem;
 }
