@@ -4,7 +4,7 @@
   border: none;
   border-radius: var(--borderRadius);
   box-shadow: var(--boxShadow);
-  color: var(--clr-text-secondary);
+  color: var(--clr-text-dark);
   font-size: var(--fs-base);
   font-weight: 900;
   text-align: center;
