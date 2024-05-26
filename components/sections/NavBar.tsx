@@ -25,7 +25,7 @@ export const NavBar = () => {
         }
 
         .navBar > a {
-          color: var(--clr-text-light);
+          color: var(--clr-text-dark);
           cursor: pointer;
           display: flex;
           flex-direction: column;
