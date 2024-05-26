@@ -14,7 +14,7 @@
 
 :root {
   /* Colour Palette */
-  --clr-text-primary: hsl(0, 100%, 57%);
+  --clr-text-primary: hsl(0, 98%, 50%);
   --clr-text-secondary: hsl(249, 100%, 14%);
   --clr-text-light: hsl(0, 0%, 99%);
   --clr-text-dark: hsl(192, 5%, 19%);
