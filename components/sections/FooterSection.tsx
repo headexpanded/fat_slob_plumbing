@@ -33,7 +33,7 @@ export const FooterSection = () => {
       </footer>
       <style jsx>{`
         .footerSection {
-          background-color: var(--clr-bg-light);
+          background-color: var(--clr-bg-dark);
           display: flex;
           flex-direction: column;
           padding-top: 0.5rem;
