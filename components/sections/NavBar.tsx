@@ -14,7 +14,7 @@ export const NavBar = () => {
       <style jsx>{`
         .navBar {
           align-items: center;
-          background-color: var(--clr-bg-light);
+          background-color: var(--clr-bg-primary);
           display: flex;
           flex-grow: 1;
           height: 2rem;
@@ -25,7 +25,7 @@ export const NavBar = () => {
         }
 
         .navBar > a {
-          color: var(--clr-text-secondary);
+          color: var(--clr-text-light);
           cursor: pointer;
           display: flex;
           flex-direction: column;
