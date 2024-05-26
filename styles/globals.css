@@ -25,7 +25,7 @@
   --clr-bg-dark: hsl(192, 5%, 19%);
 
   --clr-btn-hover: hsl(0, 0%, 92%);
-  --shadow: hsla(236, 95%, 60%, 0.75);
+  --shadow: hsla(192, 5%, 19%, 0.75);
 
   /* Font Family */
   --ff-primary: 'Inter', Tahoma, Verdana, sans-serif;
