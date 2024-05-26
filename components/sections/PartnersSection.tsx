@@ -37,6 +37,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
       </section>
       <style jsx>{`
         .partnerCards {
+          min-height: 360px,
           inline-size: min(100% - 4rem, 90rem);
           display: grid;
           grid-auto-flow: column;
