@@ -17,6 +17,7 @@
   --clr-text-primary: hsl(0, 100%, 57%);
   --clr-text-secondary: hsl(249, 100%, 14%);
   --clr-text-light: hsl(0, 0%, 99%);
+  --clr-text-dark: hsl(249, 100%, 14%),
 
   --clr-bg-primary: hsl(249, 100%, 14%);
   --clr-bg-secondary: hsl(0, 100%, 57%);
@@ -71,7 +72,7 @@ ol[role='list'] {
 }
 
 body {
-  background-color: var(--clr-bg-primary);
+  background-color: var(--clr-bg-light);
   /* background-color: hsl(216, 100%, 51%);
   background-image: linear-gradient(
     160deg,
@@ -97,7 +98,7 @@ h1 {
 
 /* Set defaults for html <section> tags */
 section[class$='Section'] {
-  color: var(--clr-text-primary);
+  color: var(--clr-text-secondary);
   display: flex;
   flex-direction: column;
   place-items: center;
