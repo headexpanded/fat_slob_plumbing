@@ -45,7 +45,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           overscroll-behavior-inline: contain;
           justify-content: flex-start;
           padding-bottom: 2rem;
-          padding-top: 2rem,
+          padding-top: 2rem;
         }
 
         .snaps-inline {
