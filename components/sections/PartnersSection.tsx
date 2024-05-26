@@ -25,7 +25,6 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
 
         {/*  extract key from Partners, spread the rest into PartnerCard component */}
 
-        <div>
         <div className="partnerCards snaps-inline">
           {data.map(({ id, ...other }) => {
             return (
@@ -34,7 +33,6 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
               </div>
             );
           })}
-        </div>
         </div>
       </section>
       <style jsx>{`
