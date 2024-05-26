@@ -25,7 +25,7 @@ export const SubHeader = ({ content, color }: SubHeaderProps) => {
       </div>
       <style jsx>{`
         h2 {
-          color: ${color ?? 'var(--clr-text-light)'};
+          color: ${color ?? 'var(--clr-text-dark)'};
           font-size: clamp(1.25rem, 10vw, 40px);
           font-weight: 900;
           text-align: center;
@@ -87,7 +87,7 @@ export const ParaL = ({
       <p>{content}</p>
       <style jsx>{`
         p {
-          color: ${color ?? 'var(--clr-text-light)'};
+          color: ${color ?? 'var(--clr-text-dark)'};
           font-size: ${fontSize ?? '1.5rem'};
           font-weight: ${fontWeight ?? '900'};
           line-height: ${lineHeight ?? '2.25rem'};
@@ -115,7 +115,7 @@ export const ParaC = ({ content, color, fontSize, fontWeight }: ParaCProps) => {
       <span>{content}</span>
       <style jsx>{`
         span {
-          color: ${color ?? 'var(--clr-text-light)'};
+          color: ${color ?? 'var(--clr-text-dark)'};
           font-size: ${fontSize ?? '2rem'};
           font-weight: ${fontWeight ?? '700'};
           padding: 1.5rem 0rem;
@@ -148,7 +148,7 @@ export const FooterText = ({
       <span>{content}</span>
       <style jsx>{`
         span {
-          color: ${color ?? 'var(--clr-text-secondary)'};
+          color: ${color ?? 'var(--clr-text-light)'};
           font-size: ${fontSize ?? '1rem'};
           font-weight: ${fontWeight ?? '500'};
           padding-top: ${paddingTop ?? '0rem'};
