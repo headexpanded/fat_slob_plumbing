@@ -35,7 +35,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
           </picture>
           <div className="partnerDesc">
             <Typography.ParaL
-              color="var(--clr-text-secondary)"
+              color="var(--clr-text-dark)"
               content={desc}
               fontSize="0.75rem"
               fontWeight="700"
@@ -62,7 +62,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
         }
 
         .partnerCard h1 {
-          color: var(--clr-text-secondary);
+          color: var(--clr-text-dark);
           font-size: 1.5rem;
           font-weight: 700;
           margin: 0;
@@ -77,7 +77,7 @@ export const PartnerCard = ({ title, desc, photo }: PartnerCardProps) => {
         }
 
         .partnerCard h3 {
-          color: var(--clr-text-secondary);
+          color: var(--clr-text-dark);
           font-weight: 700;
           margin: 0;
           padding: 1rem 0;
