@@ -47,24 +47,24 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           padding: 2rem;
         }
 
-        .snaps-inline {
-          scroll-snap-type: inline mandatory;
-        }
+        // .snaps-inline {
+        //   scroll-snap-type: inline mandatory;
+        // }
 
-        .snaps-inline > * {
-          scroll-snap-align: center;
-        }
+        // .snaps-inline > * {
+        //   scroll-snap-align: center;
+        // }
 
-        .partnersSection ::-webkit-scrollbar-track {
-          background-color: var(--clr-bg-light);
-          border-radius: var(--borderRadius);
-        }
+        // .partnersSection ::-webkit-scrollbar-track {
+        //   background-color: var(--clr-bg-light);
+        //   border-radius: var(--borderRadius);
+        // }
 
-        .partnersSection ::-webkit-scrollbar-thumb {
-          background-color: var(--clr-bg-primary);
-          border-radius: var(--borderRadius);
-          border: 0.05rem solid var(--clr-bg-light);
-        }
+        // .partnersSection ::-webkit-scrollbar-thumb {
+        //   background-color: var(--clr-bg-primary);
+        //   border-radius: var(--borderRadius);
+        //   border: 0.05rem solid var(--clr-bg-light);
+        // }
 
         @media screen and (min-width: ${size.mobile}) {
           .partnersSection ::-webkit-scrollbar-track {
