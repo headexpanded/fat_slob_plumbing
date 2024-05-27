@@ -83,7 +83,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
             scrollbar-width: var(--clr-bg-secondary) var(--clr-bg-light)
           ) {
             .partnersSection {
-              scrollbar-color: var(--clr-bg-secondary) var(--clr-bg-light);
+              scrollbar-color: var(--clr-bg-dark) var(--clr-bg-light);
               scrollbar-width: thin;
             }
           }
