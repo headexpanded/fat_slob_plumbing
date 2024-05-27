@@ -73,7 +73,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           }
 
           .partnersSection ::-webkit-scrollbar-thumb {
-            background-color: var(--clr-bg-primary);
+            background-color: var(--clr-bg-dark);
             border-radius: var(--borderRadius);
             border: 0.05rem solid var(--clr-bg-light);
           }
