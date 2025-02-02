@@ -125,13 +125,6 @@ export const HeroSection = () => {
           align-items: center;
         }
 
-        .heroButtons > * {
-          width: 100%;
-          max-width: 200px;
-          font-size: clamp(0.8rem, 2vw, 1rem);
-          padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
-        }
-
          .calendarBlocked {
           align-items: center;
           background: var(--clr-bg-secondary);
