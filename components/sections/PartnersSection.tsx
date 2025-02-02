@@ -44,28 +44,27 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           overflow-x: auto;
           overscroll-behavior-inline: contain;
           justify-content: flex-start;
-          padding-bottom: 2rem;
-          padding-top: 2rem;
+          padding: 2rem;
         }
 
-        .snaps-inline {
-          scroll-snap-type: inline mandatory;
-        }
+        // .snaps-inline {
+        //   scroll-snap-type: inline mandatory;
+        // }
 
-        .snaps-inline > * {
-          scroll-snap-align: center;
-        }
+        // .snaps-inline > * {
+        //   scroll-snap-align: center;
+        // }
 
-        .partnersSection ::-webkit-scrollbar-track {
-          background-color: var(--clr-bg-light);
-          border-radius: var(--borderRadius);
-        }
+        // .partnersSection ::-webkit-scrollbar-track {
+        //   background-color: var(--clr-bg-light);
+        //   border-radius: var(--borderRadius);
+        // }
 
-        .partnersSection ::-webkit-scrollbar-thumb {
-          background-color: var(--clr-bg-primary);
-          border-radius: var(--borderRadius);
-          border: 0.05rem solid var(--clr-bg-light);
-        }
+        // .partnersSection ::-webkit-scrollbar-thumb {
+        //   background-color: var(--clr-bg-primary);
+        //   border-radius: var(--borderRadius);
+        //   border: 0.05rem solid var(--clr-bg-light);
+        // }
 
         @media screen and (min-width: ${size.mobile}) {
           .partnersSection ::-webkit-scrollbar-track {
@@ -74,7 +73,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
           }
 
           .partnersSection ::-webkit-scrollbar-thumb {
-            background-color: var(--clr-bg-primary);
+            background-color: var(--clr-bg-dark);
             border-radius: var(--borderRadius);
             border: 0.05rem solid var(--clr-bg-light);
           }
@@ -84,7 +83,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
             scrollbar-width: var(--clr-bg-secondary) var(--clr-bg-light)
           ) {
             .partnersSection {
-              scrollbar-color: var(--clr-bg-secondary) var(--clr-bg-light);
+              scrollbar-color: var(--clr-bg-dark) var(--clr-bg-light);
               scrollbar-width: thin;
             }
           }
