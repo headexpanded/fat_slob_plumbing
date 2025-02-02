@@ -36,7 +36,8 @@ export const HeroSection = () => {
             <ParaL content="England's number 2 toilet testing service." />
             <ParaL content="We'll give it a good stress test." />
           </div>
-          <div className="heroFatSlobs">
+        </div>
+        <div className="heroFatSlobs">
             <Suspense fallback={<Spinner />}>
               <Image
                 alt="Photo of Fat Slob Plumbing staff"
@@ -48,7 +49,6 @@ export const HeroSection = () => {
               />
             </Suspense>
           </div>
-        </div>
         <Spacer />
 
         <div className="buttonWrapper">
@@ -126,6 +126,27 @@ export const HeroSection = () => {
           width: calc(100% - 2rem);
         }
 
+        .heroFatSlobs {
+          display: block;
+          width: 100%;
+          max-width: 400px;
+          margin: 0 auto;
+        }
+
+        @media screen and (max-width: ${size.mobile}) {
+          .heroBlock {
+            flex-direction: column;
+          }
+          .heroFatSlobs {
+          order: 1;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+        .buttonWrapper {
+          order: 2;
+        }
+      }
+
         @media screen and (min-width: ${size.mobile}) {
           .heroBlock {
             flex-direction: row;
@@ -144,11 +165,11 @@ export const HeroSection = () => {
             margin-left: 20px;
             width: 50%;
           }
-          .heroButtons {
+          /* .heroButtons {
             display: flex;
             flex-direction: row;
             gap: 2rem;
-          }
+          } */
         }
 
         @media screen and (min-width: ${size.desktop}) {
