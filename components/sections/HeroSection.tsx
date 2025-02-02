@@ -48,7 +48,7 @@ export const HeroSection = () => {
                 priority
               />
             </Suspense>
-          </div>
+        </div>
         <Spacer />
 
         <div className="buttonWrapper">
