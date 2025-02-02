@@ -21,7 +21,7 @@ export const NavBar = () => {
           justify-content: space-evenly;
           position: fixed;
           width: 100%;
-          z-index: 2;
+          z-index: 2000;
         }
 
         .navBar > a {
