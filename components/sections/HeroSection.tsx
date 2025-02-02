@@ -133,7 +133,7 @@ export const HeroSection = () => {
           flex-direction: column;
           height: auto;
           justify-content: center;
-          margin-left: 5vw;
+          margin-left: 2.5vw;
           padding: 1.5rem;
           width: 80vw;
           z-index :1000;
