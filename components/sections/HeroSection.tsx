@@ -125,6 +125,7 @@ export const HeroSection = () => {
         }
 
         .calendarBlocked {
+          position: fixed;
           align-items: center;
           background: var(--clr-bg-secondary);
           border-radius: var(--borderRadius);
