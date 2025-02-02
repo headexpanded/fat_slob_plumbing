@@ -134,6 +134,7 @@ export const HeroSection = () => {
           justify-content: center;
           padding: 1.5rem;
           width: 80vw;
+          z-index: 1000;
         }
 
         .calendarBlocked > p {
