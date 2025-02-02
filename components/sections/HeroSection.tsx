@@ -126,16 +126,15 @@ export const HeroSection = () => {
 
         .calendarBlocked {
           position: fixed;
-          align-items: center;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
           background: var(--clr-bg-secondary);
+          padding: 2rem;
           border-radius: var(--borderRadius);
-          display: flex;
-          flex-direction: column;
-          height: auto;
-          justify-content: center;
-          padding: 1.5rem;
-          width: 80vw;
           z-index: 1000;
+          width: 80%;
+          max-width: 400px;
         }
 
         .calendarBlocked > p {
