@@ -24,17 +24,43 @@ export const HeroSection = () => {
         </div>
 
         <div className="heroBlock">
-          <div className="heroIntroText">
-            <ParaL content="Imagine it." />
-            <ParaL content="Friends over - and your lav blocks up." />
-            <ParaL content="You don't need that." />
-            <ParaL content="So hire us." />
-            <ParaL
-              content="Fat Slob Plumbing."
-              color="var(--clr-text-primary)"
-            />
-            <ParaL content="England's number 2 toilet testing service." />
-            <ParaL content="We'll give it a good stress test." />
+          <div className="heroContent">
+            <div className="heroIntroText">
+              <ParaL content="Imagine it." />
+              <ParaL content="Friends over - and your lav blocks up." />
+              <ParaL content="You don't need that." />
+              <ParaL content="So hire us." />
+              <ParaL
+                content="Fat Slob Plumbing."
+                color="var(--clr-text-primary)"
+              />
+              <ParaL content="England's number 2 toilet testing service." />
+              <ParaL content="We'll give it a good stress test." />
+            </div>
+            <div className="buttonWrapper">
+              {!showBookingsDiv ? (
+                <div className="heroButtons">
+                  <Button
+                    btnText="BOOK NOW"
+                    onClick={() => setShowBookingsDiv(true)}
+                  />
+                  <a href="#franchisesSection">
+                    <Button btnText="FRANCHISES" />
+                  </a>
+                </div>
+              ) : (
+                <div className="calendarBlocked animated fadeInUp">
+                  <ParaC
+                    content="Sorry mate. We're completely blocked up."
+                    color="var(--clr-text-light)"
+                  />
+                  <CalendarButton
+                    btnText="CLOSE"
+                    onClick={() => setShowBookingsDiv(false)}
+                  />
+                </div>
+              )}
+            </div>
           </div>
           <div className="heroFatSlobs">
             <Suspense fallback={<Spinner />}>
@@ -49,35 +75,6 @@ export const HeroSection = () => {
             </Suspense>
           </div>
         </div>
-      
-        <Spacer />
-
-        <div className="buttonWrapper">
-          {!showBookingsDiv ? (
-            <div className="heroButtons">
-              <Button
-                btnText="BOOK NOW"
-                onClick={() => setShowBookingsDiv(true)}
-              />
-              <Spacer />
-              <a href="#franchisesSection">
-                <Button btnText="FRANCHISES" />
-              </a>
-            </div>
-          ) : (
-            <div className="calendarBlocked animated fadeInUp">
-              <ParaC
-                content="Sorry mate. We're completely blocked up."
-                color="var(--clr-text-light)"
-              />
-              <CalendarButton
-                btnText="CLOSE"
-                onClick={() => setShowBookingsDiv(false)}
-              />
-            </div>
-          )}
-        </div>
-
         <Spacer />
         <Spacer />
 
@@ -94,6 +91,7 @@ export const HeroSection = () => {
           margin-bottom: 1rem;
           width: clamp(240px, 60vw + 36px, 620px);
         }
+        
         .heroBlock {
           display: flex;
           flex-direction: column;
@@ -101,14 +99,28 @@ export const HeroSection = () => {
           inline-size: min(100% - 4rem, 90rem);
         }
 
+        .heroContent {
+          width: 100%;
+        }
+
         .heroIntroText {
           max-width: 90%;
         }
 
+        .heroFatSlobs {
+          width: 100%;
+          max-width: 400px;
+          margin: 20px auto;
+        }
+
         .buttonWrapper {
+          margin-top: 20px;
+        }
+
+        .heroButtons {
           display: flex;
           flex-direction: column;
-          place-items: center;
+          gap: 1rem;
         }
 
         .calendarBlocked {
@@ -127,12 +139,6 @@ export const HeroSection = () => {
           width: calc(100% - 2rem);
         }
 
-        .heroFatSlobs {
-          width: 100%;
-          max-width: 400px;
-          margin: 20px auto;
-        }
-
 
         @media screen and (min-width: ${size.mobile}) {
           .heroBlock {
@@ -140,8 +146,10 @@ export const HeroSection = () => {
             justify-content: space-between;
             align-items: flex-start;
           }
-          .heroIntroText {
+          .heroContent {
             width: 50%;
+          }
+          .heroIntroText {
             padding-right: 20px;
           }
           .heroFatSlobs {
@@ -149,10 +157,14 @@ export const HeroSection = () => {
             margin: 0;
             margin-top: -40px;
           }
+          .heroButtons {
+            flex-direction: row;
+            gap: 2rem;
+          }
         }
 
         @media screen and (min-width: ${size.desktop}) {
-          .heroIntroText {
+          .heroContent {
             margin-left: 40px;
           }
           .heroFatSlobs {
@@ -161,11 +173,6 @@ export const HeroSection = () => {
             margin-top: -44px;
             overflow: hidden;
             z-index: 1;
-          }
-
-          .buttonWrapper {
-            flex-direction: row;
-            place-items: center;
           }
         }
       `}</style>
