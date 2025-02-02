@@ -111,6 +111,7 @@ export const HeroSection = () => {
           width: 100%;
           max-width: 400px;
           margin: 20px auto;
+          z-index: 500;
         }
 
         .buttonWrapper {
