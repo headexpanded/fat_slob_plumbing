@@ -1,14 +1,12 @@
-import { useState, Suspense } from "react";
-import { Spacer, Button, CalendarButton, Spinner } from "@utils/index";
+import { useState } from "react";
+import { Spacer, Button, CalendarButton } from "@utils/index";
 import { SectionTitle, ParaC, ParaL } from "@typography/index";
-
-// import { Spacer } from "@utils/index";
 
 export const FaqSection = () => {
   const [showBookingsDiv, setShowBookingsDiv] = useState(false);
   return (
     <>
-      <section id="faqSection" className="ourStorySection">
+      <section id="faqSection" className="faqSection">
         <Spacer />
         <SectionTitle content="F.A.Q" />
         <div className="faqText">
