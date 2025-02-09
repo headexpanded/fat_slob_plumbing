@@ -1,11 +1,11 @@
-import Head from 'next/head';
-import { Suspense } from 'react';
-import { gql, request } from 'graphql-request';
+import Head from "next/head";
+import { Suspense } from "react";
+import { gql, request } from "graphql-request";
 
-import { CustomerReview } from '@sections/CustomerReviewsSection';
-import { Partner } from '@sections/PartnersSection';
-import { Section } from '@sections/index';
-import { Spinner } from '@utils/index';
+import { CustomerReview } from "@sections/CustomerReviewsSection";
+import { Partner } from "@sections/PartnersSection";
+import { Section } from "@sections/index";
+import { Spinner } from "@utils/index";
 
 type IndexProps = {
   customerReviews: CustomerReview[];
@@ -69,7 +69,9 @@ function Index({ customerReviews, partnersData }: IndexProps) {
       </Suspense>
       {/* Customer Reviews */}
       <Suspense fallback={<Spinner />}>
-        <Section.CustomerReviews data={customerReviews}></Section.CustomerReviews>
+        <Section.CustomerReviews
+          data={customerReviews}
+        ></Section.CustomerReviews>
       </Suspense>
       {/* Franchises */}
       <Suspense fallback={<Spinner />}>
@@ -79,8 +81,8 @@ function Index({ customerReviews, partnersData }: IndexProps) {
       <Suspense fallback={<Spinner />}>
         <Section.Partners data={partnersData}></Section.Partners>
       </Suspense>
-      {/* Our Story */}
-      <Section.OurStory />
+      {/* FAQ */}
+      <Section.Faq />
       {/* Footer */}
       <Section.Footer />
     </div>
@@ -126,17 +128,17 @@ export const getStaticProps = async () => {
   `;
 
   const customerReviewData = await request(
-    'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master',
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     customerReviewQuery
   );
 
   const partnersData = await request(
-    'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master',
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     partnersQuery
   );
 
   const franchisesData = await request(
-    'https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master',
+    "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/cl9cidxte4hnw01ueb5tfbvuh/master",
     franchisesQuery
   );
 

@@ -1,14 +1,13 @@
 // define NavBar properties
 
 export const NavBar = () => {
-
   return (
     <>
       <nav className="navBar" role="navigation">
         <a href="#">Home</a>
         <a href="#franchisesSection">Franchises</a>
         <a href="#partnersSection">Partners</a>
-        <a href="#ourStorySection">Our Story</a>
+        <a href="#faqSection">F.A.Q.</a>
       </nav>
 
       <style jsx>{`
@@ -42,7 +41,7 @@ export const NavBar = () => {
         .navBar > a:hover::after,
         .navBar > a:focus::after {
           background-color: var(--clr-text-secondary);
-          content: '';
+          content: "";
           height: 2px;
         }
       `}</style>

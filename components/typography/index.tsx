@@ -1,4 +1,5 @@
 //***** Index of various font styles for Fat Slob Plumbing *****//
+import { size } from "@styles/breakpoints";
 
 ///// TITLE /////
 type TitleProps = {
@@ -25,7 +26,7 @@ export const SubHeader = ({ content, color }: SubHeaderProps) => {
       </div>
       <style jsx>{`
         h2 {
-          color: ${color ?? 'var(--clr-text-dark)'};
+          color: ${color ?? "var(--clr-text-dark)"};
           font-size: clamp(1.25rem, 10vw, 40px);
           font-weight: 900;
           text-align: center;
@@ -87,13 +88,18 @@ export const ParaL = ({
       <p>{content}</p>
       <style jsx>{`
         p {
-          color: ${color ?? 'var(--clr-text-dark)'};
-          font-size: ${fontSize ?? '1.5rem'};
-          font-weight: ${fontWeight ?? '900'};
-          line-height: ${lineHeight ?? '2.25rem'};
-          padding: ${padding ?? '0'};
+          color: ${color ?? "var(--clr-text-dark)"};
+          font-size: ${fontSize ?? "1.5rem"};
+          font-weight: ${fontWeight ?? "900"};
+          line-height: ${lineHeight ?? "2.25rem"};
+          padding: ${padding ?? "0"};
           text-align: left;
-          width: ${width ?? '100%'};
+          width: ${width ?? "100%"};
+        }
+        @media screen and (max-width: ${size.mobile}) {
+          p {
+            text-align: center;
+          }
         }
       `}</style>
     </>
@@ -115,9 +121,9 @@ export const ParaC = ({ content, color, fontSize, fontWeight }: ParaCProps) => {
       <span>{content}</span>
       <style jsx>{`
         span {
-          color: ${color ?? 'var(--clr-text-dark)'};
-          font-size: ${fontSize ?? '2rem'};
-          font-weight: ${fontWeight ?? '700'};
+          color: ${color ?? "var(--clr-text-dark)"};
+          font-size: ${fontSize ?? "2rem"};
+          font-weight: ${fontWeight ?? "700"};
           padding: 1.5rem 0rem;
           text-align: center;
         }
@@ -148,10 +154,10 @@ export const FooterText = ({
       <span>{content}</span>
       <style jsx>{`
         span {
-          color: ${color ?? 'var(--clr-text-light)'};
-          font-size: ${fontSize ?? '1rem'};
-          font-weight: ${fontWeight ?? '500'};
-          padding-top: ${paddingTop ?? '0rem'};
+          color: ${color ?? "var(--clr-text-light)"};
+          font-size: ${fontSize ?? "1rem"};
+          font-weight: ${fontWeight ?? "500"};
+          padding-top: ${paddingTop ?? "0rem"};
           text-align: center;
         }
       `}</style>
