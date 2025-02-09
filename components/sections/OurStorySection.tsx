@@ -1,11 +1,10 @@
-import { SectionTitle, ParaC } from '@typography/index';
-import { Spacer } from '@utils/index';
+import { SectionTitle, ParaC } from "@typography/index";
+import { Spacer } from "@utils/index";
 
 export const OurStorySection = () => {
   return (
     <>
       <section id="ourStorySection" className="ourStorySection">
-        <Spacer />
         <SectionTitle content="Our Story" />
         <div className="ourStoryText">
           <ParaC
@@ -44,7 +43,7 @@ export const OurStorySection = () => {
             fontWeight="700"
           />
         </div>
-        
+
         <ParaC
           content="Personalised Toilet Tests"
           color="var(--clr-text-primary)"
@@ -76,7 +75,7 @@ export const OurStorySection = () => {
             fontWeight="700"
           />
         </div>
-        <Spacer />
+        {/* <Spacer /> */}
       </section>
 
       <style jsx>{`

@@ -1,9 +1,9 @@
 // define Customer Reviews section
 
-import { CustomerReviewCard } from '@cards/CustomerReviewCard';
-import { Typography } from '@typography/index';
-import { Spacer } from '@utils/index';
-import { size } from '@styles/breakpoints';
+import { CustomerReviewCard } from "@cards/CustomerReviewCard";
+import { Typography } from "@typography/index";
+import { Spacer } from "@utils/index";
+import { size } from "@styles/breakpoints";
 
 export type CustomerReview = {
   id: string;
@@ -22,8 +22,6 @@ export const CustomerReviewsSection = ({
   return (
     <>
       <section id="customerReviews" className="customerReviewsSection">
-        <Spacer />
-        <Spacer />
         <div>
           <Typography.SectionTitle
             content="Happy Customers"
@@ -52,7 +50,7 @@ export const CustomerReviewsSection = ({
           gap: 3rem;
           grid-template-columns: repeat(auto-fit, minmax(40%, 400px));
           justify-content: space-evenly;
-          margin-bottom: 4rem;
+          margin-bottom: 2rem;
           place-items: center;
         }
 
