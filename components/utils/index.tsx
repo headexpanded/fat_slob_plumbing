@@ -14,7 +14,7 @@ export const Spacer = ({ content }: SpacerProps) => {
       <div className="spacer">{content}</div>
       <style jsx>{`
         .spacer {
-          height: 1.5rem;
+          height: 2rem;
         }
       `}</style>
     </>
