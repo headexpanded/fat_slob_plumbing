@@ -1,13 +1,11 @@
 // define Intro Section properties
-import { useState, Suspense } from 'react';
-import Image from 'next/image';
+import { useState, Suspense } from "react";
+import Image from "next/image";
 
-import { Title, SubHeader, ParaL, ParaC } from '@typography/index';
-import { Spacer, Button, CalendarButton, Spinner } from '@utils/index';
-import { size } from '@styles/breakpoints';
-import staffPhoto from '@assets/img/staffPhoto.png';
-
-type HeroSectionProps = {};
+import { Title, SubHeader, ParaL, ParaC } from "@typography/index";
+import { Spacer, Button, CalendarButton, Spinner } from "@utils/index";
+import { size } from "@styles/breakpoints";
+import staffPhoto from "@assets/img/staffPhoto.png";
 
 export const HeroSection = () => {
   const [showBookingsDiv, setShowBookingsDiv] = useState(false);
@@ -15,7 +13,6 @@ export const HeroSection = () => {
   return (
     <>
       <section className="heroSection">
-        <Spacer />
         <Spacer />
         <Title content="Fat Slob Plumbing" />
 
@@ -27,7 +24,7 @@ export const HeroSection = () => {
           <div className="heroContent">
             <div className="heroIntroText">
               <ParaL content="Imagine it." />
-              <ParaL content="Friends over - and your lav blocks up." />
+              <ParaL content="Friends over - and the lav blocks up." />
               <ParaL content="You don't need that." />
               <ParaL content="So hire us." />
               <ParaL
@@ -75,10 +72,6 @@ export const HeroSection = () => {
             </Suspense>
           </div>
         </div>
-        <Spacer />
-        <Spacer />
-
-        <SubHeader content="Not sure? Here's what our customers say..." />
       </section>
 
       <style jsx>{`
@@ -91,7 +84,7 @@ export const HeroSection = () => {
           margin-bottom: 1rem;
           width: clamp(240px, 60vw + 36px, 620px);
         }
-        
+
         .heroBlock {
           display: flex;
           flex-direction: column;
@@ -105,13 +98,14 @@ export const HeroSection = () => {
         }
 
         .heroIntroText {
+          display: none;
           max-width: 90%;
         }
 
         .heroFatSlobs {
           width: 100%;
           max-width: 400px;
-          margin: 20px auto;
+          margin: 0px auto;
         }
 
         .buttonWrapper {
@@ -125,7 +119,7 @@ export const HeroSection = () => {
           align-items: center;
         }
 
-         .calendarBlocked {
+        .calendarBlocked {
           align-items: center;
           background: var(--clr-bg-secondary);
           border-radius: var(--borderRadius);
@@ -133,16 +127,20 @@ export const HeroSection = () => {
           flex-direction: column;
           height: auto;
           justify-content: center;
-          margin-left: 2.5vw;
+          margin-left: auto;
+          margin-right: auto;
           padding: 1.5rem;
           width: 80vw;
-          z-index :1000;
+          z-index: 1000;
+          position: fixed;
+          top: 40%;
+          left: 10%;
+          transform: translateX(-50%);
         }
 
         .calendarBlocked > p {
           width: calc(100% - 2rem);
         }
-
 
         @media screen and (min-width: ${size.mobile}) {
           .heroBlock {
@@ -154,6 +152,8 @@ export const HeroSection = () => {
             width: 50%;
           }
           .heroIntroText {
+            display: flex;
+            flex-direction: column;
             padding-right: 20px;
           }
           .heroFatSlobs {
