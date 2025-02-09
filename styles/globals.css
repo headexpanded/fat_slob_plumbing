@@ -6,7 +6,7 @@
 
 /* import breakpoints from breakpoints.ts */
 
-:import('./breakpoints.ts') {
+:import("./breakpoints.ts") {
   --mobile: size.mobile;
   --desktop: size.desktop;
   --xl: size.xl;
@@ -28,7 +28,7 @@
   --shadow: hsla(192, 5%, 19%, 0.75);
 
   /* Font Family */
-  --ff-primary: 'Inter', Tahoma, Verdana, sans-serif;
+  --ff-primary: "Inter", Tahoma, Verdana, sans-serif;
   /* Base Font Size */
   --fs-base: 16px;
 
@@ -59,8 +59,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 
   /***** DEFAULT STYLES *****/
@@ -99,7 +99,7 @@ h1 {
 }
 
 /* Set defaults for html <section> tags */
-section[class$='Section'] {
+section[class$="Section"] {
   color: var(--clr-text-secondary);
   display: flex;
   flex-direction: column;
@@ -107,8 +107,8 @@ section[class$='Section'] {
 }
 
 /* Override h1 for Hero section */
-section[class$='Section'] h1:not(.heroSection h1) {
-  margin-bottom: 2rem;
+section[class$="Section"] h1:not(.heroSection h1) {
+  margin-bottom: 1rem;
   text-align: center;
 }
 
