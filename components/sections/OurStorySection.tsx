@@ -5,6 +5,7 @@ export const OurStorySection = () => {
   return (
     <>
       <section id="ourStorySection" className="ourStorySection">
+        <Spacer />
         <SectionTitle content="Our Story" />
         <div className="ourStoryText">
           <ParaC
@@ -75,7 +76,6 @@ export const OurStorySection = () => {
             fontWeight="700"
           />
         </div>
-        {/* <Spacer /> */}
       </section>
 
       <style jsx>{`

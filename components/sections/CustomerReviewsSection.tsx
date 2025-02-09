@@ -22,6 +22,7 @@ export const CustomerReviewsSection = ({
   return (
     <>
       <section id="customerReviews" className="customerReviewsSection">
+        <Spacer />
         <div>
           <Typography.SectionTitle
             content="Happy Customers"

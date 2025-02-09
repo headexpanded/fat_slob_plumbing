@@ -24,12 +24,11 @@ export const FranchisesSection = () => {
   return (
     <>
       <section id="franchisesSection" className="franchisesSection">
-        <div className="franchisesTitle">
-          <SectionTitle
-            content="Buy A Franchise"
-            color="var(--clr-text-primary)"
-          />
-        </div>
+        <Spacer />
+        <SectionTitle
+          content="Buy A Franchise"
+          color="var(--clr-text-primary)"
+        />
         <SubHeader content="Can YOU deliver on demand?" />
         <Spacer />
         <div className="franchiseImageAndTextBlock">
@@ -56,7 +55,6 @@ export const FranchisesSection = () => {
               )}
             </div>
           </div>
-
           <div className="trish">
             <Suspense fallback={<Spinner />}>
               <Image
@@ -70,11 +68,9 @@ export const FranchisesSection = () => {
           </div>
         </div>
         <Spacer />
-
         <div className="phoneTrish">
           <SubHeader content="Contact Trish, our friendly sales rep!" />
         </div>
-        <Spacer />
       </section>
       <style jsx>{`
         .franchiseImageAndTextBlock {

@@ -20,6 +20,7 @@ export const PartnersSection = ({ data }: PartnersSectionProps) => {
   return (
     <>
       <section id="partnersSection" className="partnersSection">
+        <Spacer />
         <SectionTitle content="Our Partners" color="var(--clr-text-primary)" />
 
         {/*  extract key from Partners, spread the rest into PartnerCard component */}
