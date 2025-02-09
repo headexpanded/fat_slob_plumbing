@@ -1,12 +1,12 @@
 // define Franchises Section properties
-import { useState, Suspense } from 'react';
-import Image from 'next/image';
+import { useState, Suspense } from "react";
+import Image from "next/image";
 
-import { SectionTitle, SubHeader, ParaL } from '@typography/index';
-import { Spacer, Button, Spinner } from '@utils/index';
-import { size } from '@styles/breakpoints';
-import trishPhoto from '@assets/img/trishPhoto-cr.png';
-import LocationMapModal from '@modals/LocationMapModal';
+import { SectionTitle, SubHeader, ParaL } from "@typography/index";
+import { Spacer, Button, Spinner } from "@utils/index";
+import { size } from "@styles/breakpoints";
+import trishPhoto from "@assets/img/trishPhoto-cr.png";
+import LocationMapModal from "@modals/LocationMapModal";
 
 export type Franchise = {
   locationName: string;
@@ -14,10 +14,6 @@ export type Franchise = {
   price: string;
   latitude: number;
   longitude: number;
-};
-
-type FranchisesSectionProps = {
-  data: Array<Franchise> | undefined;
 };
 
 export const FranchisesSection = () => {
@@ -28,7 +24,6 @@ export const FranchisesSection = () => {
   return (
     <>
       <section id="franchisesSection" className="franchisesSection">
-        <Spacer />
         <div className="franchisesTitle">
           <SectionTitle
             content="Buy A Franchise"
@@ -108,7 +103,7 @@ export const FranchisesSection = () => {
         @media screen and (min-width: ${size.desktop}) {
           .franchiseImageAndTextBlock {
             display: grid;
-            grid-template-areas: 'trish text';
+            grid-template-areas: "trish text";
             grid-template-columns: 2fr;
             grid-template-rows: 400px;
           }
