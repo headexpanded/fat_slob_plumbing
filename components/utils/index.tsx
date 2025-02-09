@@ -1,6 +1,6 @@
 //***** Index of various utils for Fat Slob Plumbing *****//
 
-import styles from './utils.module.css';
+import styles from "./utils.module.css";
 
 /***** SPACER *****/
 
@@ -14,7 +14,7 @@ export const Spacer = ({ content }: SpacerProps) => {
       <div className="spacer">{content}</div>
       <style jsx>{`
         .spacer {
-          height: 2rem;
+          height: 1.5rem;
         }
       `}</style>
     </>
