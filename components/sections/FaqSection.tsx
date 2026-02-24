@@ -11,6 +11,19 @@ export const FaqSection = () => {
         <SectionTitle content="F.A.Q" />
         <div className="faqText">
           <ParaL
+              color="var(--clr-text-primary)"
+              content="How much do you charge?"
+              fontSize="1.5rem"
+              fontWeight="900"
+          />
+
+          <ParaC
+              content="200 quid per kilo, so it's usually about 300-400 quid."
+              fontSize="1.5rem"
+              fontWeight="700"
+          />
+
+          <ParaL
             color="var(--clr-text-primary)"
             content="Do you bring your own toilet paper?"
             fontSize="1.5rem"
@@ -18,7 +31,7 @@ export const FaqSection = () => {
           />
 
           <ParaC
-            content="Yes! But we might run out so you should have a good supply handy."
+            content="No. So make sure you have a good supply handy."
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -44,7 +57,7 @@ export const FaqSection = () => {
           />
 
           <ParaC
-            content="Yes! But there's a 50% surcharge on our normal price."
+            content="You're having a laugh mate."
             fontSize="1.5rem"
             fontWeight="700"
           />
@@ -66,7 +79,7 @@ export const FaqSection = () => {
           />
 
           <ParaC
-            content="You'll have to wait, or go round to the neighbour's."
+            content="You'll have to wait, or go round the neighbour's."
             fontSize="1.5rem"
             fontWeight="700"
           />
